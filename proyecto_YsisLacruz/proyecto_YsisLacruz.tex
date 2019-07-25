@@ -1,0 +1,441 @@
+\documentclass[12pt,oneside]{book}
+
+\usepackage{ulamonog} % formato para la propuesta o proyecto de grado
+
+\usepackage{multirow}  % Para la columna del cronograma
+
+\usepackage{colortbl}
+
+\usepackage{pgfgantt}
+
+
+%*********************************
+%\usepackage[ansinew]{inputenc} % escribir acentos. Leer lo que sigue a continuación:
+
+%Verifique que la palabra Índice aparezca de forma correcta en las páginas de índices. Si no es así, intente con las siguientes opciones (Tomado de http://es.tldp.org/CervanTeX/CervanTeX/FAQ/FAQ-CervanTeX/FAQ-CervanTeX-6.html el 11 de enero de 2016):
+
+%"El paquete inputenc permite escribir directamente en la página de códigos habitual, convirtiéndose internamente el texto introducido a texto LaTeX, de acuerdo con las diferentes tablas de equivalencia para las distintas páginas de códigos y de forma completamente transparente al usuario."
+
+%Sustituya el código "\usepackage[ansinew]{inputenc}" por:
+
+\usepackage[latin1]{inputenc}
+% Si está trabajando en UNIX
+
+% \usepackage[cp850]{inputenc}
+% Si está trabajando con DOS
+
+% \usepackage[applemac]{inputenc}
+% Si está trabajando con Macintosh
+%**********************************
+
+\usepackage{color}
+
+%\usepackage[hidelinks]{hyperref}
+\usepackage[colorlinks]{hyperref}
+\usepackage{url}
+\urlstyle{same}
+%\usepackage[activeacute,spanish]{babel}
+
+\usepackage{indentfirst}
+
+\usepackage{graphicx}
+\usepackage{float}
+
+\usepackage{breqn}
+
+\usepackage{slashbox,pict2e}
+
+% ***************************************************************** %
+% En el siguiente comando se pueden modificar:
+% Titulo, Autor, Palabras clave
+% ***************************************************************** %
+
+% si se va a imprimir,
+% se incluye al final despues de citecolor=blue, el comando draft=true
+% Las siguientes son propiedades del pdf, más no cambian nada dentro del
+% texto de la monografía
+\hypersetup{pdftitle={Propuesta de Gemelo Digital para el Proceso de Potabilización en Hidrológicas desde la visión de la Industria 4.0},
+	pdfauthor={Ysis Lacruz},
+	pdfsubject={Proyecto de Grado}, % se deja igual (se cambia para el proyecto de grado)
+	pdfkeywords={}, pdfstartview=FitH,
+	bookmarks=true, citecolor=blue}%, draft=true}
+
+% ***************************************************************** %
+% FIN DE
+% Titulo, Autor, Palabras clave
+% ***************************************************************** %
+
+% Si desea que no aparezca la lista de tablas o figuras descomente las siguientes lineas
+% \nolistoftables
+\nolistoffigures
+
+\usepackage{natbib}
+
+\graphicspath{{./figuras/}}
+
+\sloppy
+
+\begin{document}
+	
+	\frontmatter
+	
+	
+	% ***************************************************************** %
+	% Portada y resumen
+	% ***************************************************************** %
+	
+	% Si desea que el logo de la ULA aparezca en la parte superior,
+	% descomente la siguiente línea. Por defecto aparece en la parte inferior
+	%\logoarriba{}
+	
+	% Año en el cual se entrega el proyecto de grado o la propuesta
+	\copyrightyear{2019}
+	
+	% Al final cuando hayan presentado, sin comentar,
+	% deberia ser el número de tesis presentada y la opción, IO por ejemplo
+	% (Actualmente, 11-03-08, no se está trabajando con esta metodología de llevar un
+	% número de proyecto para las tesis, por lo cual debe ir comentado)
+	%\numproy{00IO}
+	
+	% En caso de hacer la propuesta, descomente la siguiente
+	% instrucción. Para el Proyecto de Grado debe comentarse. Modifica
+	% tanto la categoría de la monografía, como la aparición de
+	% "Presentado ante la ilustre Universidad de Los Andes
+	% como requisito parcial para obtener el Título de" en la portada
+	%\tipomonografia{Propuesta de Proyecto de Grado}
+	
+	
+	% Título de la monografía, el cual saldrá en la portada
+	\title{Propuesta de Gemelo Digital para el Proceso de Potabilización en Hidrológicas desde la visión de la Industria 4.0}
+	
+	% Autor de la monografía, el cual saldrá en la portada
+	\author{Ysis Lacruz}
+	
+	% La fechaentrega, presentaciondia, presentacionlugar
+	% y mencionespecial, es para aquel caso en el cual se
+	% vaya a utilizar la hoja del veredicto en el formato
+	% que se presenta aquí. El primerjurado, segundojurado,
+	% y cedula, son campos que pueden llenarse, pero sólo
+	% aparecerán si se utiliza la página del veredicto
+	
+	% Cédula del autor de la monografía
+	\cedula{23.055.149}
+	
+	% Tutor del Proyecto de Grado
+	\tutor{PhD. Juan Cardillo}
+	
+	% Cualquiera de los instructores que aparecen a continuación
+	% pueden comentarse o descomentarse según sea el caso:
+	
+	%%% Cotutor del Proyecto de Grado
+	
+	% Comente y descomente según su caso para agregar o quitar cotutores
+	\cotutor{PhD. Edgar Chacón}
+	
+	%%% FIN de Cotutor del Proyecto de Grado
+	
+	%%% Asesor del Proyecto de Grado
+	% \asesor{Dr. Asesor}
+	%%% Asesor Industrial del Proyecto de Grado
+	% \asesorindustrial{Dr. Asesor Industrial}
+	%%% Tutor Industrial del Proyecto de Grado
+	% \tutorindustrial{Dr. Tutor Industrial}
+	%%% Jurados del Proyecto de Grado
+	\primerjurado{Dr. Primer Profesor}
+	\segundojurado{Prof. Segundo Profesor}
+	
+	% ***************************************************************** %
+	% Si sabe la fecha de presentación
+	%
+	% con o sin comentar
+	% (Esta hoja es un formato para asentar la nota del proyecto de grado;
+	% sin embargo, la hoja que se utiliza para ese fin, se busca en la escuela
+	% días antes de la presentación)
+	% ***************************************************************** %
+	%\fechaentrega{Septiembre, 2018} % IMPORTANTE IMPORTANTE IMPORTANTE: aquí debe colocar el mes de presentación, ya que es el que va en la portada. Si está comentado, tomará el mes en que esté compilando. Por ejemplo, si presentó a finales de mes, pero compiló la versión final el mes siguiente, saldrá el mes erróneo.
+	%\presentaciondia{7 de Diciembre de 2005} % si conoce exactamente el día
+	%\presentacionlugar{Salón de reuniones EISULA} % si conoce exactamente el lugar donde se presentó
+	% ***************************************************************** %
+	% FIN DE
+	% Si sabe la fecha de presentación
+	% ***************************************************************** %
+	
+	
+	% ***************************************************************** %
+	% Si tiene mencion especial
+	% con o sin comentar
+	% ***************************************************************** %
+	%\mencionespecial{Este proyecto fue seleccionado como \textbf{mejor
+	%proyecto de grado} de la Escuela de Ingeniería de Sistemas, en el
+	%IC aniversario de la Facultad de Ingeniería.} % si tiene mención especial
+	% (El texto puede cambiarse \mencionespecial{*********} según corresponda
+	% ***************************************************************** %
+	% FIN DE
+	% Si tiene mencion especial
+	% con o sin comentar
+	% ***************************************************************** %
+	
+	% NO TOCAR si es Ingenieria de Sistemas
+	% \grado{Ingeniero Químico} % por defecto Ingeniero de Sistemas
+	
+	%\signaturepage ----- NO TOCAR
+	
+	%%%%%OJO%%%%%Arreglen esto según su opción
+	% Si es control y automatizacion se comentan las siguientes líneas. Si es de
+	% Sistemas Computacionales comenta la tercera. De Investigación de Operaciones
+	% comenta la segunda
+	%\opcion{Sistemas Computacionales}
+	%\opcion{Investigación de Operaciones}
+	\opcion{Control y Automatización}
+	
+	% Aqu? se escribe el resumen de la monograf?a
+	\resumen{Se propone el diseño de un gemelo digital para la unidad de potabilización de una planta hidrológica, en pro de cambiar el enfoque hacia la Industria 4.0. Se estudiará el modelo de negocio que rige a las hidrológicas y se realizarán los modelos del proceso para su sistematización basada en condición, así como el modelo del flujo de producto y de los recursos. Se construye el modelo de operación basado en los modelos anteriores. Se utilizarán Sistemas Híbridos para describir el comportamiento del proceso de potabilización. Los análisis y pruebas se realizarán en un ambiente de simulación.}
+	
+	
+	
+	% Aquí se escriben las palabras claves de la monografía
+	\descriptores{
+		Gemelo digital, Industria 4.0, Automatización, Sistemas Híbridos, Hidrológica.
+	}
+	
+	% Esto es para que salga la cota en la hoja del resumen. Actualmente,
+	% 11-03-08, en la Escuela de Ingeniería de Sistemas no es necesario
+	% buscar la cota previamente, sino que el Proyecto de Grado se entrega
+	% en la Escuela sin cota.
+	%\cota{IXD A01.1}
+	
+	% Si desea eliminar la frase "Este trabajo fue procesado en LATEX"
+	% del resumen, descomente la siguiente línea
+	\sinlatex{}
+	
+	% ***************************************************************** %
+	% FIN DE
+	% Portada y resumen
+	% ***************************************************************** %
+	
+	
+	% ***************************************************************** %
+	% Si tiene dedicatoria
+	% con o sin comentar
+	% ***************************************************************** %
+	%\dedicatoria{A todos los amados seres\\ cuando son dos líneas o más}
+	% ***************************************************************** %
+	% FIN DE
+	% Si tiene dedicatoria
+	% ***************************************************************** %
+	
+	\beforepreface
+	
+	% ***************************************************************** %
+	% Agradecimientos y capítulos NO numerados
+	% ***************************************************************** %
+	
+	%\prefacesection{Agradecimientos}
+	% Aún no hay agradecimientos
+	
+	%%% Capitulo sin numero, antes de la pagina 1
+	
+	%\prefacesection{Introducción}
+	% Este es un ejemplo de una sección no numerada.
+	
+	
+	% ***************************************************************** %
+	% FIN DE
+	% Agradecimientos y capítulos NO numerados
+	% ***************************************************************** %
+	
+	\afterpreface
+	
+	\pagestyle{fancyplain}
+	\renewcommand{\chaptermark}[1]{\markboth{#1}{\textsc{\footnotesize\thechapter\ #1}}}
+	\renewcommand{\sectionmark}[1]{\markright{\textsc{\footnotesize\thesection\ #1}}}
+	\lhead[\fancyplain{}{\textsc{\footnotesize\thepage}}]
+	{\fancyplain{}{\rightmark}}
+	\rhead[\fancyplain{}{\leftmark}]
+	{\fancyplain{}{\textsc{\footnotesize\thepage}}} \cfoot{}
+	
+	\mainmatter
+	
+	% ***************************************************************** %
+	% Cuerpo
+	% ***************************************************************** %
+	% De aquí en adelante se desarrollan los capítulos numerados de la monografía
+	
+	% ***************************************************************** %
+	% INICIO DE estructura tentativa de la Propuesta
+	% ***************************************************************** %
+	
+	\chapter{Introducción}
+	
+Los procesos industriales tienen un papel fundamental en el desarrollo de las comunidades, de ellos dependen un sinfín de bienes y artículos que benefician el día a día; es por ello que la evolución en este campo es constante, la industria debe ajustarse a las exigencias que la sociedad dictamina.
+
+La evolución tecnológica, a pasos agigantados, ha permitido la automatización de algunas industrias: desde el triángulo de automatización en la década de los 80, la manufactura integrada por computador y los SCADA para control supervisorio. Sin embargo, en pro del aprovechamiento de recursos y mejoras en los procesos industriales, se busca implantar un nuevo enfoque de integración basado en la Industria 4.0.
+
+Este enfoque plantea la aplicación de la teoría del Internet de las Cosas (IoT), a los procesos industriales, de forma que las unidades de producción, supervisión y gerencia mantengan una interconexión y un actuar inteligente, permitiendo la adaptación de la empresa ante cambios constantes en la demanda.
+
+Uno de los conceptos que se manejan con este nuevo enfoque es el de Gemelo Digital, que incluye no solo la representación digital de un sistema en el mundo real, su diferencia fundamental con respecto a las descripciones actuales es que este maneja el modelo de proceso clásico, y añade el modelo del flujo de producto y de los recursos, permitiendo utilizar mecanismos como Analítica y Big Data para establecer elementos de ayuda a la toma de decisiones.
+
+El enfoque de la Industria 4.0 ofrece nuevos métodos para encarar los procesos complejos de sistemas críticos [cita], aquellos sistemas clave en el desarrollo humano e industrial como son la electricidad, el agua, la salud, el transporte, y demás sistemas de sistemas que mantienen interrelación entre sí.
+
+El agua, siendo un recurso limitado, es un eslabón necesario en todos los ámbitos y el funcionamiento eficiente de la industria hidrológica es uno de los retos a asumir para dar forma a ciudades inteligentes. El hecho de proponer un Gemelo Digital en el proceso de potabilización en la industria hidrológica, se debe a que este proceso debe hacer uso de sistemas híbridos para su concepción. La interrelación del proceso es necesaria para evitar mayores pérdidas de flujo y recursos.
+
+	
+	\section{Antecedentes}
+	
+Siguiendo la tendencia mundial, en la que se proyecta a la industria en una nueva etapa de crecimiento e innovación, existen muchas tecnologías emergentes que comienzan a impulsar y sustentar este fenómeno conocido como industria 4.0. Esta se asume como la cuarta revolución industrial, que nace como la evolución natural de la tercera revolución industrial centrada en el uso de dispositivos electrónicos y computacionales. Así I4.0 se convierte en el esquema industrial centrado en la interconectividad de sistemas ciber-físicos.
+
+Los acontecimientos más destacados en la historia de la industria podemos ubicarlos en los tres grandes hitos que hicieron posible, entre otras cosas, el crecimiento económico y el desarrollo tecnológico a nivel mundial. Estos tres grandes hitos se conocen como las revoluciones industriales, donde la primera  revolución contempla la creación e implementación de la máquina de vapor en los centros de manufactura así como la mecanización en los puestos de trabajo permitiendo la elaboración de productos personalizados, posteriormente, la segunda revolución, es la incorporación del suministro de electricidad a las fábricas, implementación de nuevos paradigmas en la producción como lo es la división del trabajo, que permitieron elaborar productos de bajo costo. La tercera revolución industrial se basa en la puesta en marcha de las microcomputadoras, los PLC (Programmable Logic Controller por sus siglas en inglés) y los robots autónomos en las líneas de producción de las fábricas, haciendo posible la variedad de los productos y la masificación de la producción. La cuarta revolución industrial o también llamada industria 4.0, corresponde a una nueva manera de organizar los medios de producción, donde el objetivo es la puesta en marcha de fábricas capaces de una mayor adaptabilidad a las necesidades y a los procesos de producción, así como a una asignación más eficiente de los recursos usando la interconectividad. Esta nueva visión de la industria contempla una manufactura completamente equipada con sensores, actuadores y sistemas de comunicación, en donde mediante modelos holísticos de proceso, producto y recursos (gemelo digital), aunado a la aplicación de estrategias de computación, logren el despliegue de un control autónomo dentro de estas fábricas.
+
+La I4.0 corresponde a un concepto genérico de los Sistemas Ciber Físicos (SCF) aplicado a los Sistemas de Producción Industrial. Considerando a los SCF como la autonomía requerida por los Sistemas Físicos para operar, negociar e interactuar usando la conectividad y la identificación única de los recursos para interoperar, dando origen al internet industrial de las cosas (IIoT), cuya premisa es poder tener una representación de la Información de Ingeniería (conocimiento del proceso) comprensible en las máquinas (manufactura inteligente). Para poder implementar la visión antes descrita se requiere poder plasmar en el computador los modelos de conocimiento tanto del proceso, recursos, como de flujo de producto. Una de las grandes diferencias entre los esquemas de control y supervisión de I3.0 era poder interrogar al proceso de producción sobre su condición, esto es conocer condición de proceso y de producto; en I4.0 en vez de interrogar al proceso, se define un gemelo de comportamiento del proceso de producción en un sistema digital llamado Gemelo Digital, en donde no solo incorpora la condición del proceso y de del flujo de producto sino también de la condición de los recursos involucrados.
+
+En una empresa hidrológica, la cadena de valor asociada a producción esta genéricamente representada por 6 eslabones a saber: Fuente, Captación, Potabilización, Distribución, Recuperación, y Retorno, pudiéndose  incluir un eslabón de transporte entre cada uno de los mencionados. Para el eslabón de Distribución las empresas hidrológicas tienen rigurosos estudios sobre redes que incluyendo aplicaciones (WaterCAD, EPANET, etc) que permiten mostrar el comportamiento de flujo en la red, pero en los eslabones anteriores los modelos de comportamiento son continuos, por lo que generar un gemelo digital es más complicado y aunque necesario, es menos desarrollado en las industrias. 
+	
+	
+	\section{Planteamiento del problema}
+	
+Dada la importancia del proceso de potabilización como el generador del flujo a distribuir, se propone desarrollar los modelos de comportamiento del proceso de potabilización, que incluye el modelo de proceso, el modelo de flujo de producto y el modelo de los recursos, con el fin de determinar el modelo operacional (secuencia de operaciones) para establecer el gemelo digital de la unidad de potabilización. Para cada uno de los modelos mencionados se requiere definir: Condición normal de operación, condición degradada y condición de falla en cada una de las etapas: arranque, operación, parada y limpieza.
+	
+		
+	\section{Objetivos}
+	\subsection{Objetivo general}
+	\begin{itemize}
+		\item Generar un gemelo digital de la unidad de potabilización de una hidrológica desde la visión de la industria 4.0, basado en Sistemas Híbridos.
+	\end{itemize}
+	
+	\subsection{Objetivos específicos}
+	
+	\begin{itemize}
+		\item  Determinar los modelos de comportamiento de la unidad de potabilización (Modelo de comportamiento del proceso, flujo del producto y recursos).
+		\item  Establecer las condiciones de conmutación de los modelos obtenidos desde el punto de vista de sistemas a eventos discretos.
+		\item  Generar el modelo de comportamiento desde el punto de vista de los sistemas híbridos.
+		\item  Implementar el modelo de comportamiento de la unidad de potabilización en un ambiente de simulación.
+		\item  Establecer condiciones para generar el gemelo digital e incorporarlas al ambiente de simulación.
+	\end{itemize}
+	
+	
+	\section{Metodología}
+	
+	A fin de lograr el cumplimiento de los objetivos planteados, se presenta el procedimiento a seguir:
+	\begin{itemize}
+		\item Se realizará la revisión bibliográfica pertinente, con base en el estudio del proceso de potabilización y en la evolución que ofrece la industria 4.0 como enfoque en la integración de procesos.
+		\item Se estudiará el modelo de negocios que rige a la industria hidrológica.
+		\item Se determinarán los modelos del proceso, para realizar la sistematización del mismo basada en condición.
+		\item El proceso será definido como una unidad holónica de producción, en base al enfoque de la Industria 4.0.
+		\item Para el desarrollo de las simulaciones en el computador, se utilizarán redes de Petri, debido a la imposibilidad de implantarlo en el proceso real.
+	\end{itemize}
+	
+	
+	\chapter{Marco Teórico}
+	
+		\section{Ciudades Inteligentes}
+		
+Se pueden encontrar numerosas definiciones para el termino de Ciudad Inteligente, Vito et all (2015) se encargó de recopilar y analizar conceptos desde distintos puntos de vista, los cuales convergen en la idea de una ciudad que visualiza el desarrollo sustentable social y tecnológico, empleando tecnologías de información y comunicación para permitir la interrelación en los sistemas que la conforman. Una parte clave de las ciudades inteligentes es el continuo aprendizaje y manejo de conocimientos, generando desarrollo tecnológico que pueda implementarse en procedimientos de innovación.
+	
+		\section{Industria 4.0}
+		
+En adelante referida como I4.0, se trata de un proceso necesario de transformación digital en la industria, ocasionado por el avance vertiginoso en el ámbito tecnológico y los cambios que esto generó en la sociedad. La I4.0 busca aplicar las tecnologías de información y el aprovechamiento de la computación para reorganizar la metodología de los procesos industriales, basándose en el uso de Sistemas Ciber-Físicos. [12] Las características principales de cada evolución industrial se observan en la figura \ref{fig-i40}.
+		
+			\begin{figure}
+				\centering
+				\includegraphics{figures/industry40}
+				\caption{Evolución de la Industria.}
+				\label{fig-i40}
+			\end{figure}
+			
+			Los principales componentes de la I4.0 se describen a continuación:
+			
+			\subsection{Sistemas Ciber-Físicos}
+				
+Los Sistemas Ciber-Físicos (en adelante, CPS) son sistemas computacionales que guardan relación con un proceso físico en curso. Estos sistemas están dedicados a realizar funciones específicas en tiempo real, siendo capaces de recibir y tratar información, monitorear y actuar sobre elementos físicos del proceso asociado. [63]
+				
+La interrelación entre sistemas físicos y computacionales contribuye a la formación de ciudades inteligentes; beneficios como eficiencia en la transmisión de información, sistemas reconfigurables, eficiencia operativa, optimización, y demás aportes que se obtienen al implementar el concepto de CPS en los procesos existentes. [61]
+				
+En Laszlo Monostori et al (2016) se hace referencia a un gráfico del modelo de madurez de un CPS (véase figura \ref{fig-cps}), donde en un primer nivel se generan las condiciones para la implementación de un CPS, mientras que los niveles superiores representan la evolución en el procesamiento de la información y procesos de cooperación.
+				
+				\begin{figure}
+					\centering
+					\includegraphics[scale=0.7]{figures/cps}
+					\caption{Modelo de madurez de un CPS.}
+					\label{fig-cps}
+				\end{figure}
+			
+			\subsection{Internet de las Cosas (IoT) e Internet Industrial de las Cosas (IIoT)}
+			
+Son tecnologías emergentes, un conjunto de dispositivos interconectados que permiten la recopilación y acceso a datos compartidos, monitoreo y comunicación en tiempo real, con plataformas amigables para el usuario. [65]
+				
+En el entorno industrial se pueden obtener datos acerca del estado del proceso o el producto, dispositivos inteligentes y autónomos que optimizan el proceso de producción, lo que incluye la eficiencia en entrega del servicio, mayor productividad, reducción de costos y recopilación de datos de interés. [67]
+				
+La adopción del IIoT permite la aplicación de la tecnología a nivel de planta [Wallace Riddick], dando paso a lo que se denomina Smart Factory; siendo ésta una convergencia del proceso industrial de manufactura con tecnologías de información para mejorar y acelerar el proceso de producción. [68].
+
+			\subsection{Analítica de Datos}
+	
+Es una técnica que consiste en extraer datos de distintas fuentes y analizarlos para obtener información útil, necesaria para tomar mejores decisiones corporativas y plantear estrategias. El análisis de datos emplea grandes cantidades de información, descrita como Big Data, inmensos paquetes que requieren de software especial para su almacenamiento y tratamiento.[69]
+
+		\section{Sistemas de suministro de agua potable, hacia la I4.0}
+		
+WSS por sus siglas en inglés, son sistemas de sistemas encargados de proveer agua potable en una comunidad mediante amplias redes de distribución. Hacen parte de la clasificación de sistemas críticos debido a la importancia de la industria hidrológica, un proceso clave para el bienestar común y la persistencia de otros sistemas, considerando también que dependen de un recurso limitado y vulnerable como lo es el agua. [70]
+
+Los sistemas críticos mantienen una interdependencia entre ellos (electricidad, agua, salud, entre otros), son sistemas vitales para el buen funcionamiento de la sociedad y demás procesos tecnológicos. La falta de un sistema crítico tendría un impacto directo en el bienestar de la población, así como en la seguridad y defensa de los gobiernos. [64]
+
+El principal objetivo de la industria hidrológica es proveer agua potable de forma eficiente a las comunidades, teniendo como reto una buena coordinación entre los eslabones que conforman el proceso y asegurando un mínimo de pérdidas del recurso.
+
+Son numerosos los sistemas que dependen de los WSS y otros tantos que aportan a su desarrollo; en el mapa publicado por el Foro Económico Mundial (véase figura \ref{fig-wss}) se permite explorar los problemas interconectados en torno al agua, donde el enfoque de la I4.0 y sus componentes pueden ofrecer soluciones en torno a datos y tecnología del agua. [70]
+
+			\begin{figure}
+				\centering
+				\includegraphics{figures/wss}
+				\caption{Mapa general de problemas y soluciones interconectados en torno al agua.}
+				\label{fig-wss}
+			\end{figure}
+			
+		\section{Sistemas Holónicos}
+			Holón
+			Visión del proyecto
+		
+		\section{Gemelo Digital}
+			Planteamiento de Gemelo Digital en manufactura
+			Cómo construir un GD
+		
+		\section{Modelo de Conocimiento}
+		
+		\section{Modelo Híbrido}
+		
+	\chapter{Desarrollo}
+	
+		\section{Planteamiento del proceso como modelos UHP}
+			Cómo simular el comportamiento UPH
+		
+		\section{Propuesta}
+		
+		\section{Caso de Estudio}
+		
+	\chapter{Implementación}
+	
+		\section{Epanet y MATLAB}
+			¿Cómo realizar la simulación híbrida?
+		
+		\section{Simulación}
+		
+	\chapter{Conclusiones y Recomendaciones}
+
+	
+	
+	% Estilo de la bibliografía
+	\bibliographystyle{apa}
+	%\bibliographystyle{jtbnew}
+	
+	% ***************************************************************** %
+	% Para agregar toda la bibliografia del archivo .bib
+	% solo descomente el siguiente comando
+	% ***************************************************************** %
+	\nocite{*}
+	% ***************************************************************** %
+	% Nombre del archivo con extensión .bib en donde se almacena la bibliografía
+	\bibliography{Bibliog}
+	
+	% ***************************************************************** %
+	% FIN DE
+	% Cuerpo
+	% ***************************************************************** %
+	
+\end{document}
