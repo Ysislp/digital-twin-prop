@@ -1,16 +1,28 @@
-\contentsline {chapter}{\'Indice de Tablas}{iv}{chapter*.1}
+\contentsline {chapter}{\'Indice de Tablas}{v}{chapter*.1}
 \contentsline {chapter}{\numberline {1}Introducci\'on}{1}{chapter.1}
 \contentsline {section}{\numberline {1.1}Antecedentes}{2}{section.1.1}
 \contentsline {section}{\numberline {1.2}Planteamiento del problema}{4}{section.1.2}
-\contentsline {section}{\numberline {1.3}Objetivos}{4}{section.1.3}
-\contentsline {subsection}{\numberline {1.3.1}Objetivo general}{4}{subsection.1.3.1}
-\contentsline {subsection}{\numberline {1.3.2}Objetivos espec\IeC {\'\i }ficos}{4}{subsection.1.3.2}
+\contentsline {section}{\numberline {1.3}Objetivos}{5}{section.1.3}
+\contentsline {subsection}{\numberline {1.3.1}Objetivo general}{5}{subsection.1.3.1}
+\contentsline {subsection}{\numberline {1.3.2}Objetivos espec\IeC {\'\i }ficos}{5}{subsection.1.3.2}
 \contentsline {section}{\numberline {1.4}Metodolog\IeC {\'\i }a}{5}{section.1.4}
-\contentsline {chapter}{\numberline {2}Marco Te\'orico}{6}{chapter.2}
-\contentsline {section}{\numberline {2.1}Ciudades Inteligentes}{6}{section.2.1}
-\contentsline {section}{\numberline {2.2}Industria 4.0}{6}{section.2.2}
-\contentsline {subsection}{\numberline {2.2.1}Sistemas Ciber-F\IeC {\'\i }sicos}{7}{subsection.2.2.1}
-\contentsline {subsection}{\numberline {2.2.2}Internet de las Cosas (IoT) e Internet Industrial de las Cosas (IIoT)}{8}{subsection.2.2.2}
-\contentsline {subsection}{\numberline {2.2.3}Anal\IeC {\'\i }tica de Datos}{8}{subsection.2.2.3}
-\contentsline {section}{\numberline {2.3}Sistemas de suministro de agua potable, hacia la I4.0}{9}{section.2.3}
-\contentsline {chapter}{Bibliograf\'{\i }a}{11}{figure.2.3}
+\contentsline {chapter}{\numberline {2}Marco Te\'orico}{7}{chapter.2}
+\contentsline {section}{\numberline {2.1}Ciudades Inteligentes}{7}{section.2.1}
+\contentsline {section}{\numberline {2.2}Industria 4.0}{9}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}Sistemas Ciber-F\IeC {\'\i }sicos}{10}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {2.2.2}Internet de las Cosas (IoT) e Internet Industrial de las Cosas (IIoT)}{11}{subsection.2.2.2}
+\contentsline {subsection}{\numberline {2.2.3}Anal\IeC {\'\i }tica de Datos}{11}{subsection.2.2.3}
+\contentsline {section}{\numberline {2.3}I4.0: Gemelo Digital}{12}{section.2.3}
+\contentsline {section}{\numberline {2.4}Modelo de Conocimiento}{12}{section.2.4}
+\contentsline {section}{\numberline {2.5}Modelo Formal H\IeC {\'\i }brido}{12}{section.2.5}
+\contentsline {section}{\numberline {2.6}Sistemas Hol\'onicos}{12}{section.2.6}
+\contentsline {section}{\numberline {2.7}Sistemas de suministro de agua potable, hacia la I4.0}{12}{section.2.7}
+\contentsline {chapter}{\numberline {3}Desarrollo}{15}{chapter.3}
+\contentsline {section}{\numberline {3.1}Planteamiento del proceso como modelos UHP}{15}{section.3.1}
+\contentsline {section}{\numberline {3.2}Propuesta}{15}{section.3.2}
+\contentsline {section}{\numberline {3.3}Caso de Estudio}{15}{section.3.3}
+\contentsline {chapter}{\numberline {4}Implementaci\'on}{16}{chapter.4}
+\contentsline {section}{\numberline {4.1}Epanet y MATLAB}{16}{section.4.1}
+\contentsline {section}{\numberline {4.2}Simulaci\'on}{16}{section.4.2}
+\contentsline {chapter}{\numberline {5}Conclusiones y Recomendaciones}{17}{chapter.5}
+\contentsline {chapter}{Bibliograf\'{\i }a}{18}{chapter.5}

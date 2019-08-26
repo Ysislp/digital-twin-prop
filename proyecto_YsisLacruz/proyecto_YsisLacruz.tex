@@ -284,7 +284,14 @@ El agua, siendo un recurso limitado, es un eslabón necesario en todos los ámbito
 	
 Siguiendo la tendencia mundial, en la que se proyecta a la industria en una nueva etapa de crecimiento e innovación, existen muchas tecnologías emergentes que comienzan a impulsar y sustentar este fenómeno conocido como industria 4.0. Esta se asume como la cuarta revolución industrial, que nace como la evolución natural de la tercera revolución industrial centrada en el uso de dispositivos electrónicos y computacionales. Así I4.0 se convierte en el esquema industrial centrado en la interconectividad de sistemas ciber-físicos.
 
-Los acontecimientos más destacados en la historia de la industria podemos ubicarlos en los tres grandes hitos que hicieron posible, entre otras cosas, el crecimiento económico y el desarrollo tecnológico a nivel mundial. Estos tres grandes hitos se conocen como las revoluciones industriales, donde la primera  revolución contempla la creación e implementación de la máquina de vapor en los centros de manufactura así como la mecanización en los puestos de trabajo permitiendo la elaboración de productos personalizados, posteriormente, la segunda revolución, es la incorporación del suministro de electricidad a las fábricas, implementación de nuevos paradigmas en la producción como lo es la división del trabajo, que permitieron elaborar productos de bajo costo. La tercera revolución industrial se basa en la puesta en marcha de las microcomputadoras, los PLC (Programmable Logic Controller por sus siglas en inglés) y los robots autónomos en las líneas de producción de las fábricas, haciendo posible la variedad de los productos y la masificación de la producción. La cuarta revolución industrial o también llamada industria 4.0, corresponde a una nueva manera de organizar los medios de producción, donde el objetivo es la puesta en marcha de fábricas capaces de una mayor adaptabilidad a las necesidades y a los procesos de producción, así como a una asignación más eficiente de los recursos usando la interconectividad. Esta nueva visión de la industria contempla una manufactura completamente equipada con sensores, actuadores y sistemas de comunicación, en donde mediante modelos holísticos de proceso, producto y recursos (gemelo digital), aunado a la aplicación de estrategias de computación, logren el despliegue de un control autónomo dentro de estas fábricas.
+Los acontecimientos más destacados en la historia de la industria podemos ubicarlos en los tres grandes hitos que hicieron posible, entre otras cosas, el crecimiento económico y el desarrollo tecnológico a nivel mundial. Estos tres grandes hitos se conocen como las revoluciones industriales, donde la primera  revolución contempla la creación e implementación de la máquina de vapor en los centros de manufactura así como la mecanización en los puestos de trabajo permitiendo la elaboración de productos personalizados, posteriormente, la segunda revolución, es la incorporación del suministro de electricidad a las fábricas, implementación de nuevos paradigmas en la producción como lo es la división del trabajo, que permitieron elaborar productos de bajo costo. La tercera revolución industrial se basa en la puesta en marcha de las microcomputadoras, los PLC (Programmable Logic Controller por sus siglas en inglés) y los robots autónomos en las líneas de producción de las fábricas, haciendo posible la variedad de los productos y la masificación de la producción. La cuarta revolución industrial o también llamada industria 4.0, corresponde a una nueva manera de organizar los medios de producción, donde el objetivo es la puesta en marcha de fábricas capaces de una mayor adaptabilidad a las necesidades y a los procesos de producción, así como a una asignación más eficiente de los recursos usando la interconectividad. Esta nueva visión de la industria contempla una manufactura completamente equipada con sensores, actuadores y sistemas de comunicación, en donde mediante modelos holísticos de proceso, producto y recursos (gemelo digital), aunado a la aplicación de estrategias de computación, logren el despliegue de un control autónomo dentro de estas fábricas. Las características principales de cada evolución industrial se observan en la figura \ref{fig-i40}.
+		
+		\begin{figure}
+			\centering
+			\includegraphics{figures/industry40}
+			\caption{Evolución de la Industria.}
+			\label{fig-i40}
+		\end{figure}
 
 La I4.0 corresponde a un concepto genérico de los Sistemas Ciber Físicos (SCF) aplicado a los Sistemas de Producción Industrial. Considerando a los SCF como la autonomía requerida por los Sistemas Físicos para operar, negociar e interactuar usando la conectividad y la identificación única de los recursos para interoperar, dando origen al internet industrial de las cosas (IIoT), cuya premisa es poder tener una representación de la Información de Ingeniería (conocimiento del proceso) comprensible en las máquinas (manufactura inteligente). Para poder implementar la visión antes descrita se requiere poder plasmar en el computador los modelos de conocimiento tanto del proceso, recursos, como de flujo de producto. Una de las grandes diferencias entre los esquemas de control y supervisión de I3.0 era poder interrogar al proceso de producción sobre su condición, esto es conocer condición de proceso y de producto; en I4.0 en vez de interrogar al proceso, se define un gemelo de comportamiento del proceso de producción en un sistema digital llamado Gemelo Digital, en donde no solo incorpora la condición del proceso y de del flujo de producto sino también de la condición de los recursos involucrados.
 
@@ -329,28 +336,43 @@ Dada la importancia del proceso de potabilización como el generador del flujo a 
 	
 		\section{Ciudades Inteligentes}
 		
-Se pueden encontrar numerosas definiciones para el termino de Ciudad Inteligente, Vito et all (2015) se encargó de recopilar y analizar conceptos desde distintos puntos de vista, los cuales convergen en la idea de una ciudad que visualiza el desarrollo sustentable social y tecnológico, empleando tecnologías de información y comunicación para permitir la interrelación en los sistemas que la conforman. Una parte clave de las ciudades inteligentes es el continuo aprendizaje y manejo de conocimientos, generando desarrollo tecnológico que pueda implementarse en procedimientos de innovación.
+Se pueden encontrar numerosas definiciones para el termino de Ciudad Inteligente, Vito et all [94] se encargó de recopilar y analizar concepciones desde distintos puntos de vista, los cuales convergen en el concepto de una ciudad que visualiza el desarrollo sustentable social y tecnológico, empleando tecnologías de información y comunicación para permitir la interrelación en los sistemas que la conforman, tanto de infraestructura como servicios. Una parte clave de las ciudades inteligentes es el continuo aprendizaje y manejo de conocimientos, generando desarrollo tecnológico que pueda implementarse en procedimientos de innovación.
+
+Si bien la tecnología es una herramienta clave, una ciudad digitalizada no necesariamente es inteligente; la noción de ciudad inteligente es la fusión entre infraestructura tecnológica y sociedad de conocimiento (\ref{fig-smartcities}), permitiendo el intercambio de información entre máquinas y hombres, entre industrias y entes públicos, todo en pro de un desarrollo sustentable de la comunidad y eficiencia al buscar soluciones de problemas cotidianos. [94] Es aquí donde se aprecia uno de los conceptos que dan vida a las ciudades inteligentes, el Internet de las Cosas, el cual permite la virtualización y conexión de dispositivos para el intercambio de datos. [70]
+
+			\begin{figure}
+				\centering
+				\includegraphics[scale=0.7]{figures/smartcities}
+				\caption{Ciudades Inteligentes. [96]}
+				\label{fig-i40}
+			\end{figure}
+
+Una ciudad inteligente requiere además una industria que evolucione en eficiencia, de manera que pueda responder a las exigencias y necesidades de los consumidores. Uno de los nuevos conceptos trata de incluir el Internet de las Cosas, junto a demás nociones para el manejo y análisis de datos, en el ámbito industrial, dando paso al término de Industria 4.0.
 	
 		\section{Industria 4.0}
 		
-En adelante referida como I4.0, se trata de un proceso necesario de transformación digital en la industria, ocasionado por el avance vertiginoso en el ámbito tecnológico y los cambios que esto generó en la sociedad. La I4.0 busca aplicar las tecnologías de información y el aprovechamiento de la computación para reorganizar la metodología de los procesos industriales, basándose en el uso de Sistemas Ciber-Físicos. [12] Las características principales de cada evolución industrial se observan en la figura \ref{fig-i40}.
-		
-			\begin{figure}
-				\centering
-				\includegraphics{figures/industry40}
-				\caption{Evolución de la Industria.}
-				\label{fig-i40}
-			\end{figure}
-			
-			Los principales componentes de la I4.0 se describen a continuación:
+En adelante referida como I4.0, se trata de un proceso necesario de transformación digital en la industria, ocasionado por el avance vertiginoso en el ámbito tecnológico y los cambios que esto generó en la sociedad. La I4.0 busca aplicar las tecnologías de información para modificar la metodología de organización de la cadena de valor y gestión. Se basa en el uso de Sistemas Ciber-Físicos para monitorear los procesos, virtualizarlos, y hacer uso del Internet de las Cosas para generar comunicación y cooperación hombre-máquina y máquina-máquina en tiempo real. [12][97]
+
+Para que las organizaciones puedan identificar e implementar escenarios que permitan adaptarse a la tecnología de I4.0, se presentan algunos principios de diseño: [97]
+
+			\begin{itemize}
+				\item  \textbf{Interoperabilidad:} Es la habilidad para conectar y habilitar una comunicación entre máquinas y personas, haciendo uso del Internet de las Cosas.
+				\item  \textbf{Virtualización:} Se refiere a un vínculo entre los sistemas físicos instalados y modelos virtuales de la planta, permitiendo monitoreo y simulación del proceso.
+				\item  \textbf{Descentralización:} Es la capacidad de los sistemas físicos de tomar decisiones por sí mismos, siguiendo un modelo de comportamiento. Solo en caso de fallo las decisiones pasarían a un nivel superior, disminuyendo así la carga de un control central, sin descuidar el monitoreo de la cadena de producción.
+				\item  \textbf{Capacidad en Tiempo Real:} Recopilación de datos al instante, ya sea para almacenarlos o analizarlos y tomar decisiones de acuerdo a lo obtenido. La obtención del estado de la planta en tiempo real permite reaccionar ante fallos en el proceso.
+				\item  \textbf{Orientación al Servicio:} La producción debe estar orientada al cliente, en ese sentido, la empresa puede brindar servicios interna o externamente para mantener una interacción con el cliente final.
+				\item  \textbf{Modularidad:} Capacidad de adaptarse en un mercado cambiante, busca industrias reconfigurables. Con sistemas modulares se hace fácil el ajuste en caso de fluctuaciones en las solicitudes del mercado, mediante adición, ampliación o sustitución de módulos individuales.
+			\end{itemize}
+
+Los principales componentes de la I4.0 se describen a continuación:
 			
 			\subsection{Sistemas Ciber-Físicos}
 				
-Los Sistemas Ciber-Físicos (en adelante, CPS) son sistemas computacionales que guardan relación con un proceso físico en curso. Estos sistemas están dedicados a realizar funciones específicas en tiempo real, siendo capaces de recibir y tratar información, monitorear y actuar sobre elementos físicos del proceso asociado. [63]
+Los Sistemas Ciber-Físicos (en adelante CPS, por sus siglas en inglés) son sistemas que integran componentes físicos con componentes computacionales, guardando relación con un proceso en curso. Estos sistemas están dedicados a realizar funciones específicas en tiempo real, siendo capaces de recibir y tratar información, monitorear y actuar sobre elementos físicos del proceso asociado. [63]
 				
 La interrelación entre sistemas físicos y computacionales contribuye a la formación de ciudades inteligentes; beneficios como eficiencia en la transmisión de información, sistemas reconfigurables, eficiencia operativa, optimización, y demás aportes que se obtienen al implementar el concepto de CPS en los procesos existentes. [61]
 				
-En Laszlo Monostori et al (2016) se hace referencia a un gráfico del modelo de madurez de un CPS (véase figura \ref{fig-cps}), donde en un primer nivel se generan las condiciones para la implementación de un CPS, mientras que los niveles superiores representan la evolución en el procesamiento de la información y procesos de cooperación.
+En Laszlo Monostori et al [66] se hace referencia a un gráfico del modelo de madurez de un CPS (véase figura \ref{fig-cps}), donde en un primer nivel se generan las condiciones para la implementación y conexiones físicas, mientras que los niveles superiores representan la evolución en el procesamiento de la información y procesos de cooperación.
 				
 				\begin{figure}
 					\centering
@@ -358,47 +380,47 @@ En Laszlo Monostori et al (2016) se hace referencia a un gráfico del modelo de m
 					\caption{Modelo de madurez de un CPS.}
 					\label{fig-cps}
 				\end{figure}
+
+Los CPS hacen uso del Internet de las Cosas, red de sensores, almacenamiento de información, entre otras propiedades, para mantener una comunicación máquina-máquina y hombre-máquina eficiente, de manera que el proceso de producción se logre de forma eficiente.
 			
 			\subsection{Internet de las Cosas (IoT) e Internet Industrial de las Cosas (IIoT)}
 			
 Son tecnologías emergentes, un conjunto de dispositivos interconectados que permiten la recopilación y acceso a datos compartidos, monitoreo y comunicación en tiempo real, con plataformas amigables para el usuario. [65]
 				
-En el entorno industrial se pueden obtener datos acerca del estado del proceso o el producto, dispositivos inteligentes y autónomos que optimizan el proceso de producción, lo que incluye la eficiencia en entrega del servicio, mayor productividad, reducción de costos y recopilación de datos de interés. [67]
+Al aplicar el concepto en el entorno industrial, se pueden obtener datos acerca del estado del proceso o el producto, dispositivos inteligentes y autónomos que optimizan el proceso de producción, lo que incluye la eficiencia en entrega del servicio, mayor productividad, reducción de costos y recopilación de datos de interés. [67]
 				
 La adopción del IIoT permite la aplicación de la tecnología a nivel de planta [Wallace Riddick], dando paso a lo que se denomina Smart Factory; siendo ésta una convergencia del proceso industrial de manufactura con tecnologías de información para mejorar y acelerar el proceso de producción. [68].
 
 			\subsection{Analítica de Datos}
-	
+
 Es una técnica que consiste en extraer datos de distintas fuentes y analizarlos para obtener información útil, necesaria para tomar mejores decisiones corporativas y plantear estrategias. El análisis de datos emplea grandes cantidades de información, descrita como Big Data, inmensos paquetes que requieren de software especial para su almacenamiento y tratamiento.[69]
+
+		\section{I4.0: Gemelo Digital}
+			Planteamiento de Gemelo Digital en manufactura
+			Cómo construir un GD
+			
+		\section{Modelo de Conocimiento}
+		
+		\section{Modelo Formal Híbrido}
+		
+		\section{Sistemas Holónicos}
+			Holón
+			Visión del proyecto
 
 		\section{Sistemas de suministro de agua potable, hacia la I4.0}
 		
-WSS por sus siglas en inglés, son sistemas de sistemas encargados de proveer agua potable en una comunidad mediante amplias redes de distribución. Hacen parte de la clasificación de sistemas críticos debido a la importancia de la industria hidrológica, un proceso clave para el bienestar común y la persistencia de otros sistemas, considerando también que dependen de un recurso limitado y vulnerable como lo es el agua. [70]
+Los Sistemas de Suministro de Agua Potable, WSS por sus siglas en inglés, son sistemas encargados de proveer agua potable en una comunidad mediante amplias redes de distribución.[70] Según el Foro Económico Mundial, la crisis alrededor del agua se sitúa dentro de los diez principales riesgos sociales en el mundo, siendo todo un reto para la industria hidrológica el cumplir sus objetivos de forma eficiente, manteniendo una buena coordinación entre los eslabones que conforman el proceso y asegurando un mínimo de pérdidas del recurso. Aun con la prioridad de mantener un buen funcionamiento, el Banco Mundial calcula que la producción de agua pierde entre un 25\% y 30\% de flujo en fallas. [87]
 
-Los sistemas críticos mantienen una interdependencia entre ellos (electricidad, agua, salud, entre otros), son sistemas vitales para el buen funcionamiento de la sociedad y demás procesos tecnológicos. La falta de un sistema crítico tendría un impacto directo en el bienestar de la población, así como en la seguridad y defensa de los gobiernos. [64]
+Los WSS hacen parte de la clasificación de sistemas críticos debido a la importancia que gira en torno a la industria hidrológica, un proceso clave para el bienestar común y la persistencia de otros sistemas, considerando también que dependen de un recurso limitado y vulnerable como lo es el agua. [70]
 
-El principal objetivo de la industria hidrológica es proveer agua potable de forma eficiente a las comunidades, teniendo como reto una buena coordinación entre los eslabones que conforman el proceso y asegurando un mínimo de pérdidas del recurso.
-
-Son numerosos los sistemas que dependen de los WSS y otros tantos que aportan a su desarrollo; en el mapa publicado por el Foro Económico Mundial (véase figura \ref{fig-wss}) se permite explorar los problemas interconectados en torno al agua, donde el enfoque de la I4.0 y sus componentes pueden ofrecer soluciones en torno a datos y tecnología del agua. [70]
+Los sistemas críticos mantienen una interdependencia entre ellos (electricidad, agua, salud, entre otros), son sistemas vitales para el buen funcionamiento de la sociedad y demás procesos tecnológicos. La falta de un sistema crítico tendría un impacto directo en el bienestar de la población, así como en la seguridad y defensa de los gobiernos. [64] En el mapa publicado por el Foro Económico Mundial (véase figura \ref{fig-wss}) se permite explorar los problemas interconectados en torno al agua, donde el enfoque de la I4.0 y sus componentes, pueden ofrecer soluciones basadas en un seguimiento del proceso, junto a recolección y análisis de datos que aporten a la toma de decisiones. [70]
 
 			\begin{figure}
 				\centering
 				\includegraphics{figures/wss}
 				\caption{Mapa general de problemas y soluciones interconectados en torno al agua.}
 				\label{fig-wss}
-			\end{figure}
-			
-		\section{Sistemas Holónicos}
-			Holón
-			Visión del proyecto
-		
-		\section{Gemelo Digital}
-			Planteamiento de Gemelo Digital en manufactura
-			Cómo construir un GD
-		
-		\section{Modelo de Conocimiento}
-		
-		\section{Modelo Híbrido}
+			\end{figure}		
 		
 	\chapter{Desarrollo}
 	
