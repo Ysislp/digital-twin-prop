@@ -342,9 +342,9 @@ Si bien la tecnología es una herramienta clave, una ciudad digitalizada no neces
 
 			\begin{figure}
 				\centering
-				\includegraphics[scale=0.7]{figures/smartcities}
+				\includegraphics[scale=0.5]{figures/smartcities}
 				\caption{Ciudades Inteligentes. [96]}
-				\label{fig-i40}
+				\label{fig-smartcities}
 			\end{figure}
 
 Una ciudad inteligente requiere además una industria que evolucione en eficiencia, de manera que pueda responder a las exigencias y necesidades de los consumidores. Uno de los nuevos conceptos trata de incluir el Internet de las Cosas, junto a demás nociones para el manejo y análisis de datos, en el ámbito industrial, dando paso al término de Industria 4.0.
@@ -364,7 +364,7 @@ Para que las organizaciones puedan identificar e implementar escenarios que perm
 				\item  \textbf{Modularidad:} Capacidad de adaptarse en un mercado cambiante, busca industrias reconfigurables. Con sistemas modulares se hace fácil el ajuste en caso de fluctuaciones en las solicitudes del mercado, mediante adición, ampliación o sustitución de módulos individuales.
 			\end{itemize}
 
-Los principales componentes de la I4.0 se describen a continuación:
+Esta nueva revolución industrial busca ir más allá de modelos computacionales y sistemas de SCADA aislados, la colaboración es la clave para optimizar los procesos industriales; es partiendo de esa premisa que se adoptan los componentes de la I4.0, algunos de ellos se detallan a continuación: [97][88]
 			
 			\subsection{Sistemas Ciber-Físicos}
 				
@@ -395,13 +395,81 @@ La adopción del IIoT permite la aplicación de la tecnología a nivel de planta [W
 
 Es una técnica que consiste en extraer datos de distintas fuentes y analizarlos para obtener información útil, necesaria para tomar mejores decisiones corporativas y plantear estrategias. El análisis de datos emplea grandes cantidades de información, descrita como Big Data, inmensos paquetes que requieren de software especial para su almacenamiento y tratamiento.[69]
 
-		\section{I4.0: Gemelo Digital}
-			Planteamiento de Gemelo Digital en manufactura
-			Cómo construir un GD
-			
+		\section{Gemelo Digital}
+		
+Previamente se describe que los CPS interactúan con un sistema virtual a través de redes de comunicación, en ese sentido cada módulo físico tendrá una representación digital de sí mismo, permitiendo la interconexión de procesos en un dispositivo que pueda monitorear y controlar la unidad física, el término es conocido como Gemelo Digital. [101]
+
+El Gemelo Digital ofrece la posibilidad de crear una planta virtual haciendo uso de modelos matemáticos, modelos de comportamiento, medición de parámetros en campo, historial de datos y análisis, para visualizar posibles acciones a tomar según el estado real del proceso; estas acciones son accesibles gracias al IoT, debido a que facilita de forma eficiente la conexión entre el comportamiento real y el Gemelo Digital. [91][101]
+
+La aplicación de la tecnología de gemelos digitales ayuda a comprender las operaciones de la planta, visualizar mejorías y detectar problemas físicos en fases tempranas, de esta manera es posible cumplir las expectativas cada vez mayores de los clientes. [87]
+
+Para lograr la digitalización de una planta, es necesario en primera instancia conocer a fondo cómo opera y realizar la documentación necesaria, de manera que los detalles del proceso estén disponibles. Se deben implementar soluciones digitales a medida que se vayan recreando los modelos físicos en un ambiente virtual, mientras se hace revisión de las estrategias de control y producción, de modo que la colaboración entre virtualización y trabajadores resulte en mejoras de estrategias de gestión. [86]
+
+Entre los beneficios que esta tecnología ofrece, está la posibilidad de obtener un gemelo digital del producto, diseñar, planificar y optimizar, para luego generar simulaciones de la producción previas a la implementación física, de esta forma se pueden visualizar escenarios de riesgo sin necesidad de realizar inversiones en pruebas reales. Una vez que el sistema físico esté instalado, transmitirá datos al gemelo digital que actuará como monitor de desempeño, evaluando el proceso de producción y el producto resultante. Los datos obtenidos de planta deben ser analizados según el contexto para asegurar eficiencia en el sistema. [86]
+
+Si bien la implementación de un gemelo digital no es tarea sencilla, es una herramienta clave en la visión de la I4.0, permitiendo hacer gestión, coordinación, supervisión y seguimiento. En colaboración con los demás componentes da paso a industrias reconfigurables, aptas para generar respuestas eficientes de producción ya sea ante fluctuaciones en la demanda o ante situaciones adversas dentro del proceso mismo.
+
 		\section{Modelo de Conocimiento}
 		
-		\section{Modelo Formal Híbrido}
+El conocimiento, desde una visión organizacional, es considerado como la información que posee valor para la misma organización, tal información es necesaria para alcanzar objetivos, generar acciones y satisfacer necesidades de mercado. Desde el punto de vista de procesos, el conocimiento es el resultado de la utilización de la información partiendo de un contexto, información generada a partir de datos. [102]
+
+Un modelo, por su parte, es una representación en un lenguaje entendible que expresa el comportamiento de un fenómeno. Así se convierten en abstracciones particulares en función del interés del modelador.
+
+Una de las bases para desarrollar modelos de procesos específicos de una empresa es el uso de cadenas de valor, herramienta desarrollada por el investigador Michael Porter, la cual permite el análisis de la empresa mediante la disgregación en sus principales actividades. El nombre viene dado de la consideración de que cada eslabón de la cadena añade valor al producto. [108]
+
+La cadena de valor representa la relación entre procesos primarios, los que se relacionan directamente con la producción, y procesos de soporte que si bien añaden valor al producto, no están directamente relacionados con la producción, tales como la gestión de recursos humanos, investigación, planificación, finanzas y demás áreas que complementan la organización. (véase figura \ref{fig-valuechain})
+
+			\begin{figure}
+				\centering
+				\includegraphics{figures/valuechain}
+				\caption{Cadena de Valor en producción. Basada en [108]}
+				\label{fig-valuechain}
+			\end{figure}
+
+Cada eslabón de la cadena de valor es visto como una unidad de producción, la tipificación de cada una depende de la manera cómo evoluciona el recurso en ella, a saber: Continua, Lotes, Manufactura, Híbrida, etc. Además, cada unidad de producción realiza una acción específica, basada en un objetivo preestablecido.
+
+Ahora bien, partiendo de una cadena de valor se pueden adicionar modelos que determinen los modos de operación de cada eslabón, siendo el caso de un modelo de conocimiento. Este hace referencia a la caracterización de las unidades correspondientes al proceso de producción, descripción de las competencias, modelos y modos de operación de cada unidad asociada.
+
+El modelo de conocimiento abarca las caracterizaciones del proceso, el flujo de producto y los recursos necesarios para la transformación de tal producto: [104]
+
+			\begin{itemize}
+				\item El modelo del proceso determina cómo llevarlo a cabo, incluyendo información acerca de los parámetros necesarios para la elaboración de un producto o acción específica.
+				\item El modelo del producto describe la calidad y cantidad del flujo de producto, estructuras de datos y métodos para acceder a la información recabada.
+				\item El modelo de recursos por su parte, mantiene la información de los equipos usados por el proceso, estado de funcionamiento, disponibilidad.
+			\end{itemize}
+
+La gestión de los procesos de producción se asocia al conocimiento en sí, tanto de las recetas para generar el producto deseado, insumos y sus cualidades, como el proceso físico (transformación, transporte y distribución). Estos procesos de producción están concebidos para elaborar uno o más productos partiendo de una solicitud de producción, con garantía en la asignación de materia prima y recursos respectivos. Así, los modelos del proceso de producción son una descripción que inicia con un modelo simple caja negra de entrada ? salida (E/S), donde se define su funcionalidad y configuración.
+
+En [108] se describen los procesos de producción como una red de unidades o nodos, los cuales se dividen en Nodo Almacenamiento (materia prima, producto intermedio, producto final), Nodo Transporte (transportadores, canales, tuberías) y Nodo Producción (transformación); la red representa el desarrollo de una receta (véase figura \ref{fig-nodesnet1})
+
+			\begin{figure}
+				\centering
+				\includegraphics[scale=0.5]{figures/nodesnet1}
+				\caption{Descripción de una receta. [108]}
+				\label{fig-nodesnet1}
+			\end{figure}
+			
+La elaboración de productos está sujeta a la receta, esto genera un modelo para la fabricación del producto y un modelo del producto. La receta especifica las diferentes etapas donde la materia prima/producto intermedio pasa a través de ellos y se convierte en un producto intermedio /terminado. Este modelo de producto es proyectado sobre el proceso físico del proceso de producción, el cual determina una configuración que permite seguir el producto de acuerdo a la receta. En la red de la figura \ref{fig-nodesnet2} se representa el modelo físico y sus interacciones.
+
+			\begin{figure}
+				\centering
+				\includegraphics[scale=0.5]{figures/nodesnet2}
+				\caption{Representación de la planta física. [108]}
+				\label{fig-nodesnet2}
+			\end{figure}
+			
+Es posible, en algunos casos, que cuando el flujo de producto se coloca sobre el proceso físico, genere más de una configuración aceptable, y de éstas, se selecciona una de acuerdo a un criterio, estableciéndose como un patrón en la fabricación del producto. Al tratarse de una evolución dinámica, en algún momento puede haber un nuevo evento (interno o externo) capaz de alterar el rendimiento de la configuración seleccionada, por lo que es necesario realizar una reprogramación en el plan para corregir los efectos del evento ocurrido. El evento puede afectar, ya sea a la ejecución (regulación, control), a la supervisión/coordinación/gestión del dispositivo o unidad, o a una combinación de los mismos. Una nueva configuración admisible se establece a partir del conjunto de configuraciones admisibles que tengan como estado inicial el obtenido a partir de la aparición del evento, tratando de lograr el objetivo de la receta (disponibilidad, capacidad, interconexión, etc.), de lo contrario, el proceso debe pasar a una condición segura. (véase figura \ref{fig-nodesnet3})
+
+			\begin{figure}
+				\centering
+				\includegraphics[scale=0.5]{figures/nodesnet3}
+				\caption{Ejemplo de configuraciones admisibles. [108]}
+				\label{fig-nodesnet3}
+			\end{figure}
+			
+La interconexión entre representación del proceso de producción y modelos, permite transmitir información del estado actual de la planta, es por ellos que mantener un modelo de conocimiento adecuado contribuye a alcanzar un proceso de producción eficiente.
+		
+		\section{Modelo Híbrido}
 		
 		\section{Sistemas Holónicos}
 			Holón
