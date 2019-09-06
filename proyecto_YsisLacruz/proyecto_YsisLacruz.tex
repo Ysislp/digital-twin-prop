@@ -45,6 +45,9 @@
 
 \usepackage{slashbox,pict2e}
 
+% Math
+\usepackage{amssymb, amsmath, amsbsy}
+
 % ***************************************************************** %
 % En el siguiente comando se pueden modificar:
 % Titulo, Autor, Palabras clave
@@ -288,7 +291,7 @@ Los acontecimientos más destacados en la historia de la industria podemos ubicar
 		
 		\begin{figure}
 			\centering
-			\includegraphics{figures/industry40}
+			\includegraphics{figures/1industry40}
 			\caption{Evolución de la Industria.}
 			\label{fig-i40}
 		\end{figure}
@@ -342,7 +345,7 @@ Si bien la tecnología es una herramienta clave, una ciudad digitalizada no neces
 
 			\begin{figure}
 				\centering
-				\includegraphics[scale=0.5]{figures/smartcities}
+				\includegraphics[scale=0.5]{figures/2smartcities}
 				\caption{Ciudades Inteligentes. [96]}
 				\label{fig-smartcities}
 			\end{figure}
@@ -376,7 +379,7 @@ En Laszlo Monostori et al [66] se hace referencia a un gráfico del modelo de mad
 				
 				\begin{figure}
 					\centering
-					\includegraphics[scale=0.7]{figures/cps}
+					\includegraphics[scale=0.7]{figures/2cps}
 					\caption{Modelo de madurez de un CPS.}
 					\label{fig-cps}
 				\end{figure}
@@ -421,7 +424,7 @@ La cadena de valor representa la relación entre procesos primarios, los que se r
 
 			\begin{figure}
 				\centering
-				\includegraphics{figures/valuechain}
+				\includegraphics{figures/2valuechain}
 				\caption{Cadena de Valor en producción. Basada en [108]}
 				\label{fig-valuechain}
 			\end{figure}
@@ -444,7 +447,7 @@ En [108] se describen los procesos de producción como una red de unidades o nodo
 
 			\begin{figure}
 				\centering
-				\includegraphics[scale=0.5]{figures/nodesnet1}
+				\includegraphics[scale=0.5]{figures/2nodesnet1}
 				\caption{Descripción de una receta. [108]}
 				\label{fig-nodesnet1}
 			\end{figure}
@@ -453,7 +456,7 @@ La elaboración de productos está sujeta a la receta, esto genera un modelo para 
 
 			\begin{figure}
 				\centering
-				\includegraphics[scale=0.5]{figures/nodesnet2}
+				\includegraphics[scale=0.5]{figures/2nodesnet2}
 				\caption{Representación de la planta física. [108]}
 				\label{fig-nodesnet2}
 			\end{figure}
@@ -462,7 +465,7 @@ Es posible, en algunos casos, que cuando el flujo de producto se coloca sobre el
 
 			\begin{figure}
 				\centering
-				\includegraphics[scale=0.5]{figures/nodesnet3}
+				\includegraphics[scale=0.5]{figures/2nodesnet3}
 				\caption{Ejemplo de configuraciones admisibles. [108]}
 				\label{fig-nodesnet3}
 			\end{figure}
@@ -471,6 +474,53 @@ La interconexión entre representación del proceso de producción y modelos, permi
 		
 		\section{Modelo Híbrido}
 		
+Un sistema híbrido consta de varios modos de operación de dinámicas continuas en el tiempo, y transiciones entre dichos modos, las cuales ocurren bajo ciertas condiciones. Tales condiciones son descritas mediante modelos de tipo discreto. Por tanto, los sistemas híbridos son una interacción de dinámicas continuas y discretas. [84]
+
+Un modelo híbrido es la representación de las transiciones discretas y la evolución de las dinámicas continuas, afectadas por los eventos discretos. Al momento de modelar se debe cuidar tanto la precisión de los resultados como la simplicidad del modelo, incorporando correctamente las entradas, demás componentes del proceso y la interrelación entre ellos. [106] Para el desarrollo de los modelos híbridos se utilizan herramientas como ecuaciones diferenciales para dinámicas continuas del proceso y redes de Petri para los eventos discretos. [105]
+
+En [107] se definen las rede de Petri como una herramienta matemática que permite la representación gráfica de un modelo, facilitando el análisis y modificaciones del mismo. Están representadas por un diagrama compuesto de cuatro bloques: Lugares, transiciones, arcos y marcas o tokens; los lugares simbolizan los posibles estados del sistema, las transiciones representan los eventos que causan cambios en los estados, permitiendo la relación entre dos lugares, los arcos son la unión entre lugares y/o transiciones, armando la red e indicando el sentido del flujo y las marcas, que se ubican en los lugares, representan unidades de materia prima, productos en proceso o productos terminados. (véase figura \ref{fig-petrinet})
+
+			\begin{figure}
+				\centering
+				\includegraphics[scale=0.5]{figures/2petrinet}
+				\caption{Ejemplo: componentes de una red de Petri.}
+				\label{fig-petrinet}
+			\end{figure}
+			
+Formalmente las redes de Petri se denotan mediante una quíntupla: [105]
+		
+			\begin{equation}
+				\label{eq-petridef}
+				RdP = (P, T, D^{+}, D^{-}, \mu_{0})
+			\end{equation}
+			
+donde,\\
+$P = \{p_{1}, p_{2}, ..., p_{n},\}$ es un conjunto finito de lugares, \\
+$T = \{t_{1}, t_{2}, ..., t_{m},\}$ es un conjunto finito de transiciones, \\
+$D^{+} \in Z^{n \times m}$ es la matriz de los lugares de salida, \\
+$D^{-} \in Z^{n \times m}$ es la matriz de los lugares de entrada, \\
+$D = D^{+} - D^{-}$ es la matriz de incidencia, \\
+$\mu_{0}: P \rightarrow \{\mu_{1}, \mu_{2}, \mu_{3}, ..., \mu_{n}\}$ es el vector marcación inicial con dimensión $n \times 1$, donde $\mu_{i}$ es la marcación inicial de cada lugar $p_{i}$,
+$P \cap T = \emptyset$ y $P \cup T \neq \emptyset$.\\
+Cada elemento de la matriz $D^{+}$, es el peso del arco del lugar de salida ${i}$ desde la transición ${j}$, y cada elemento de la matriz $D^{-}$, es el peso del arco desde el lugar de entrada ${i}$ hacia la transición ${j}$.
+\\
+
+Por otro lado, un sistema continuo representa el cambio de estado en función del tiempo, mediante una ecuación diferencial de la forma:
+
+			\begin{equation}
+				\label{eq-contmodel}
+				\dot{x}(t) = f\Big(x(t), u(t), t\Big)
+			\end{equation}
+
+donde,\\
+$f$ es la función de transición de estado, \\
+$x(t)$ es el vector de variables de estado, \\
+$u(t)$ es el vector de entradas, \\
+$t$ es el tiempo,
+\\
+
+Con la integración de estos dos métodos, redes de Petri y ecuaciones diferenciales, es posible generar un modelo híbrido, el cual reduce la complejidad del orden al modelar algún sistema.
+
 		\section{Sistemas Holónicos}
 			Holón
 			Visión del proyecto
@@ -485,7 +535,7 @@ Los sistemas críticos mantienen una interdependencia entre ellos (electricidad, 
 
 			\begin{figure}
 				\centering
-				\includegraphics{figures/wss}
+				\includegraphics{figures/2wss}
 				\caption{Mapa general de problemas y soluciones interconectados en torno al agua.}
 				\label{fig-wss}
 			\end{figure}		
