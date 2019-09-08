@@ -522,8 +522,38 @@ $t$ es el tiempo,
 Con la integración de estos dos métodos, redes de Petri y ecuaciones diferenciales, es posible generar un modelo híbrido, el cual reduce la complejidad del orden al modelar algún sistema.
 
 		\section{Sistemas Holónicos}
-			Holón
-			Visión del proyecto
+		
+En [109] se define un holón como una unidad autónoma y cooperativa, capaz de transformar, transportar, almacenar y/o validar información y objetos físicos. Tiene la autonomía de crear y controlar la ejecución de sus propios planes mientras interactúa con otros holones; tal cooperación permite desarrollar un plan entre holones para llevar a cabo la meta del sistema.
+
+En [109] se propone que un holón en el proceso de producción debe estar compuesto por tres partes esenciales: un cuerpo, donde se desarrollen los procesos de transformación, transporte y almacenamiento; una cabeza, donde se desarrolle la toma de decisiones de la unidad, basada en el conocimiento del proceso y los recursos disponibles, acciones realizadas por dispositivos físicos y humanos en interacción; por último un cuello, que representa la interfaz entre los componentes previos, conformado por las tecnologías que transportan la información. (véase figura \ref{fig-holon})
+
+			\begin{figure}
+				\centering
+				\includegraphics[scale=0.5]{figures/2holon}
+				\caption{Holón en los procesos de producción. [109]}
+				\label{fig-holon}
+			\end{figure}
+
+Por su parte, PROSA (Product Resource Order Staff Architecture) presenta una estructura que describe los elementos que hacen a una unidad autónoma ser un holón, estos son: Orden, Producto y Recursos (véase figura \ref{fig-prosa}). Cada holón es responsable de un aspecto del control de manufactura, ya sea logístico, de planificación tecnológica o de capacidades de recursos, respectivamente. [104]
+
+			\begin{figure}
+				\centering
+				\includegraphics[scale=0.5]{figures/2prosa}
+				\caption{Sistema Holónico de Producción, modelo PROSA. [110]}
+				\label{fig-prosa}
+			\end{figure}
+
+Los tipos de holones del modelo PROSA se describen brevemente a continuación: [104]
+
+			\begin{itemize}
+				\item Un holón de orden representa una orden de un cliente, orden interna, orden de reparación, de recursos, entre otras. Es responsable de manejar el producto físico en producción, el modelo del estado del producto y el procesamiento de información relacionada a la producción.
+				\item Un holón de producto contiene el conocimiento del proceso y la producción, para asegurar la calidad en la realización del producto. Maneja información acerca del ciclo de vida del producto, diseño del proceso, modelos del producto, entre otras, con el fin de monitorear la eficiencia y calidad en la unidad de producción.
+				\item Un holón de recurso contiene la parte física de un recurso necesario para el proceso de manufactura y una parte de manejo de información para controlar el recurso. Contiene métodos y procedimientos para la asignación y organización de los recursos.
+			\end{itemize}
+			
+Un sistema holónico de producción no es más que alcanzar la cooperación entre distintos holones, cuya finalidad es obtener una visión completa de la unidad, desde la toma de decisiones hasta los procesos de máquina en el nivel más bajo. Este tipo de sistemas ofrece autonomía a los módulos individuales u holones, lo que permite generar respuestas a las perturbaciones del proceso de forma rápida, de igual forma se añade la habilidad de reconfiguración del proceso en caso de enfrentar nuevos requerimientos de producción. [108] Los sistemas holónicos proveen flexibilidad y adaptabilidad tal como los esquemas heterárquicos, manteniendo la estabilidad y optimización global de los esquemas jerárquicos. [62]
+
+Los atributos claves de un sistema holónico: autonomía, cooperación, proactividad y reactividad, hacen de ellos una solución eficiente para la ejecución del plan de producción, adaptándose a los requerimientos no programados del proceso, como solicitudes de urgencia, cambios en ordenes, fallas de recursos y demás inconvenientes que puedan afectar el buen funcionamiento de la planta.
 
 		\section{Sistemas de suministro de agua potable, hacia la I4.0}
 		

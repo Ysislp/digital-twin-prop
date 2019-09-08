@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6800) (preloaded format=pdflatex 2018.9.30)  6 SEP 2019 08:31
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6800) (preloaded format=pdflatex 2018.9.30)  8 SEP 2019 17:21
 entering extended mode
 **./proyecto_YsisLacruz.tex
 (proyecto_YsisLacruz.tex
@@ -1407,10 +1407,49 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [18]
-<figures/2wss.png, id=285, 425.33907pt x 418.56375pt>
+<figures/2holon.png, id=285, 489.83pt x 444.66125pt>
+File: figures/2holon.png Graphic file (type png)
+<use figures/2holon.png>
+Package pdftex.def Info: figures/2holon.png  used on input line 532.
+(pdftex.def)             Requested size: 244.9144pt x 222.33008pt.
+<figures/2prosa.png, id=287, 456.70625pt x 315.1775pt>
+File: figures/2prosa.png Graphic file (type png)
+<use figures/2prosa.png>
+Package pdftex.def Info: figures/2prosa.png  used on input line 541.
+(pdftex.def)             Requested size: 228.35255pt x 157.58836pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[19pdfTeX warning (ext4): destination with the same identifier (name{figure.2.8
+}) has been already used, duplicate ignored
+
+\@EveryShipout@Output ...@Org@Shipout \box \@cclv 
+                                                  
+l.551 				\item U
+                 n holón de recurso contiene la parte física de un recurso n...
+ <./figures/2holon.png>]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[20pdfTeX warning (ext4): destination with the same identifier (name{figure.2.9
+}) has been already used, duplicate ignored
+
+\@EveryShipout@Output ...@Org@Shipout \box \@cclv 
+                                                  
+l.558 		\section
+                {Sistemas de suministro de agua potable, hacia la I4.0} <./figu
+res/2prosa.png>]
+<figures/2wss.png, id=302, 425.33907pt x 418.56375pt>
 File: figures/2wss.png Graphic file (type png)
 <use figures/2wss.png>
-Package pdftex.def Info: figures/2wss.png  used on input line 538.
+Package pdftex.def Info: figures/2wss.png  used on input line 568.
 (pdftex.def)             Requested size: 425.33801pt x 418.56271pt.
 
 
@@ -1419,19 +1458,19 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[19]
+[21]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[20pdfTeX warning (ext4): destination with the same identifier (name{figure.2.8
-}) has been already used, duplicate ignored
+[22pdfTeX warning (ext4): destination with the same identifier (name{figure.2.1
+0}) has been already used, duplicate ignored
 
 \@EveryShipout@Output ...@Org@Shipout \box \@cclv 
                                                   
-l.543 	\chapter
+l.573 	\chapter
                {Desarrollo} <./figures/2wss.png>]
 Cap\'{\i }tulo 3.
 
@@ -1440,7 +1479,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[21
+[23
 
 ]
 Cap\'{\i }tulo 4.
@@ -1450,7 +1489,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[22
+[24
 
 ]
 Cap\'{\i }tulo 5.
@@ -1460,7 +1499,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[23
+[25
 
 ] (proyecto_YsisLacruz.bbl)
 
@@ -1469,23 +1508,23 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[24
+[26
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 581.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 581.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 611.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 611.
  (proyecto_YsisLacruz.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 581.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 581.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 611.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 611.
 Package rerunfilecheck Info: File `proyecto_YsisLacruz.out' has not changed.
 (rerunfilecheck)             Checksum: E9D0E55C85907E658A5727145AA7BCF7;1891.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 581.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 611.
  ) 
 Here is how much of TeX's memory you used:
- 28421 strings out of 492973
- 548148 string characters out of 3127135
- 591867 words of memory out of 3000000
- 31812 multiletter control sequences out of 15000+200000
+ 28437 strings out of 492973
+ 548407 string characters out of 3127135
+ 592016 words of memory out of 3000000
+ 31822 multiletter control sequences out of 15000+200000
  540357 words of font info for 53 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  62i,13n,65p,1923b,387s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1501,9 +1540,9 @@ pfb><C:/Users/Ysis/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfont
 s/cm/cmsy10.pfb><C:/Users/Ysis/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pu
 blic/amsfonts/cm/cmsy8.pfb><C:/Users/Ysis/AppData/Local/Programs/MiKTeX 2.9/fon
 ts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on proyecto_YsisLacruz.pdf (29 pages, 1142206 bytes).
+Output written on proyecto_YsisLacruz.pdf (31 pages, 1171786 bytes).
 PDF statistics:
- 373 PDF objects out of 1000 (max. 8388607)
- 78 named destinations out of 1000 (max. 500000)
- 287 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 391 PDF objects out of 1000 (max. 8388607)
+ 82 named destinations out of 1000 (max. 500000)
+ 297 words of extra memory for PDF output out of 10000 (max. 10000000)
 
