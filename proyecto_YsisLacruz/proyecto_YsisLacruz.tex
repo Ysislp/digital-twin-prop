@@ -551,7 +551,31 @@ Los tipos de holones del modelo PROSA se describen brevemente a continuación: [1
 				\item Un holón de recurso contiene la parte física de un recurso necesario para el proceso de manufactura y una parte de manejo de información para controlar el recurso. Contiene métodos y procedimientos para la asignación y organización de los recursos.
 			\end{itemize}
 			
-Un sistema holónico de producción no es más que alcanzar la cooperación entre distintos holones, cuya finalidad es obtener una visión completa de la unidad, desde la toma de decisiones hasta los procesos de máquina en el nivel más bajo. Este tipo de sistemas ofrece autonomía a los módulos individuales u holones, lo que permite generar respuestas a las perturbaciones del proceso de forma rápida, de igual forma se añade la habilidad de reconfiguración del proceso en caso de enfrentar nuevos requerimientos de producción. [108] Los sistemas holónicos proveen flexibilidad y adaptabilidad tal como los esquemas heterárquicos, manteniendo la estabilidad y optimización global de los esquemas jerárquicos. [62]
+Un sistema holónico de producción no es más que alcanzar la cooperación entre distintos holones, cuya finalidad es obtener una visión completa de la unidad, desde la toma de decisiones hasta los procesos de máquina en el nivel más bajo (véase figura \ref{fig-holonicunit}). Este tipo de sistemas ofrece autonomía a los módulos individuales u holones, lo que permite generar respuestas a las perturbaciones del proceso de forma rápida, de igual forma se añade la habilidad de reconfiguración del proceso en caso de enfrentar nuevos requerimientos de producción. [108] Los sistemas holónicos proveen flexibilidad y adaptabilidad tal como los esquemas heterárquicos, manteniendo la estabilidad y optimización global de los esquemas jerárquicos. [62]
+
+			\begin{figure}
+				\centering
+				\includegraphics[scale=0.4]{figures/2holonicunit}
+				\caption{Unidad Holónica. [108]}
+				\label{fig-holonicunit}
+			\end{figure}
+
+En la holarquía, los holones en diferentes niveles se comportan como un todo autónomo y como partes cooperantes, donde los mecanismos de toma de decisión son heredados del esquema jerárquico, de forma vertical, mientras los modelos de las entidades se integran de forma horizontal y vertical, para establecer el plan global, e individualmente un plan a seguir para cada unidad. Tal dualidad autonomía ? cooperación es balanceada por el modelo de conocimiento, el cual define el comportamiento del sistema mediante condiciones de funcionamiento. Es así como una empresa holónica, está constituida por unidades holónicas, con las mismas características cabeza ? cuello ? cuerpo descritas previamente para un holón de producción [108] (véase figura \ref{fig-holoniccompany})
+
+En el modelo referido de la figura \ref{fig-holoniccompany} [108], se propone que el manejo del conocimiento en una empresa holónica es llevado a cabo por tres entes: Gestor, Programador, Ejecutor; la cooperación de estos elementos permite generar tres mecanismos de toma de decisión cuyos modelos son considerados a eventos discretos, que reciben la información discretizada proveniente de los modelos del proceso, los cuales son continuos en cada etapa.
+
+			\begin{itemize}
+				\item  \textbf{Sistema de Gestión:} Se encarga de realizar tareas de planificación y evaluación de órdenes de producción. Realización de las diferentes formas de obtener un producto según la factibilidad de ejecución y los recursos disponibles. Genera el esquema de supervisión que va a ser utilizado por el supervisor en tiempo real.
+				\item  \textbf{Sistema de Coordinación/Supervisión:} Hace seguimiento y evalúa las secuencias de operaciones en tiempo real. Debe realizar la sincronización entre etapas e informar de fallos en caso de ser necesario, de modo que el planificador pueda adaptarse a los cambios.
+				\item  \textbf{Sistema de Ejecución/Control:} Seguimiento de las variables del proceso, detección de alarmas, evalúa la condición de equipos. Debe determinar el estado del proceso y del flujo de producto, para verificar las condiciones en la entrada y salida del proceso. Encargado de indicadores, alarmas y estados del sistema.
+			\end{itemize}
+
+			\begin{figure}
+				\centering
+				\includegraphics{figures/2holoniccompany}
+				\caption{Empresa Holónica. [108]}
+				\label{fig-holoniccompany}
+			\end{figure}
 
 Los atributos claves de un sistema holónico: autonomía, cooperación, proactividad y reactividad, hacen de ellos una solución eficiente para la ejecución del plan de producción, adaptándose a los requerimientos no programados del proceso, como solicitudes de urgencia, cambios en ordenes, fallas de recursos y demás inconvenientes que puedan afectar el buen funcionamiento de la planta.
 
