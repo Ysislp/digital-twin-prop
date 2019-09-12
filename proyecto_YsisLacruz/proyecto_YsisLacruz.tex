@@ -602,14 +602,168 @@ Un esquema que proporciona un sistema autónomo modular es el holónico; la idea d
 
 Partiendo de estas ideas es posible generar una propuesta de los modelos de unidades autónomas en el proceso de potabilización de agua, bajo un esquema holónico, en pro de automatizar e integrar los módulos correspondientes al sistema, teniendo como base de diseño los componentes de la I4.0.
 		
-	\chapter{Desarrollo}
+	\chapter{Caso de Estudio: Hidrológicas}
 	
-		\section{Planteamiento del proceso como modelos UHP}
-			Cómo simular el comportamiento UPH
+Las hidrológicas son una empresa de servicio cuya misión es proporcionar agua potable a una población, utilizando para ello las fuentes que proporciona la naturaleza, procesando el agua y devolviéndola al ambiente (véase figura \ref{fig-waterprocess}). Todas estas actividades las debe realizar de manera que sea una empresa autosostenible, manteniendo el costo de los servicios al público dentro de unos parámetros aceptables para el mismo.
+
+		\begin{figure}
+			\centering
+			\includegraphics[scale=0.5]{figures/3waterprocess}
+			\caption{Estructura física clásica de las hidrológicas. Basado en [111]}
+			\label{fig-waterprocess}
+		\end{figure}
+	
+		\section{Áreas de Negocio}
+
+Los principales procesos que definen las áreas de negocio básicas en una hidrológica (véase figura \ref{fig-chainhidro}) están dados por:
+
+			\begin{itemize}
+				\item Estudio de las fuentes para una determinada población.
+				\item La potabilización del agua, el tratamiento y retorno de aguas servidas al ambiente.
+				\item La comercialización del producto.
+			\end{itemize}
+
+			\begin{figure}
+				\centering
+				\includegraphics{figures/3chainhidro}
+				\caption{Areas de Negocio en Hidrológicas.}
+				\label{fig-chainhidro}
+			\end{figure}
+			
+			\subsection{Estudio de fuentes y caracterización de la demanda}
+			
+En esta área se contemplan los planes de desarrollo para satisfacer las demandas de agua en una población y su posterior tratamiento para devolverlas al ambiente, incluye:
 		
-		\section{Propuesta}
+				\begin{itemize}
+					\item Estudio y caracterización de la demanda de agua para el consumo.
+					\item Determinación de las posibles fuentes para satisfacción del consumo.
+					\item Elaboración de planes de desarrollo para satisfacer las necesidades de la población.
+					\item Planificación de los sistemas de acarreo del agua desde las fuentes a los centros poblados, potabilización del agua, almacenamiento y distribución del agua potable, tratamiento de las aguas servidas.
+					\item Estimación de los costos de desarrollo y operación de los sistemas.
+				\end{itemize}
+				
+			\subsection{Operación}
+			
+El área de operaciones contempla el proceso de convertir el agua cruda en agua potable y el proceso de tratar el agua servida y retornarla al ambiente.
+
+El proceso de obtención de agua potable a partir de agua cruda consiste en una serie de pasos que permiten eliminar la turbiedad y suciedad del agua cruda y transformarla en agua apta para el consumo humano. Este proceso capta, potabiliza y almacena agua hasta llevarla a las tuberías matrices de cada área de distribución. Está incluido el retorno de aguas servidas debido a que la conservación del ambiente es un factor importante para una empresa responsable del manejo del recurso hídrico y de su impacto en el ambiente. Los resultados de este proceso de operaciones están referidos al cumplimiento de las necesidades de agua potable para una población cualquiera.
+
+Así, teniendo:
+
+				\begin{itemize}
+					\item La caracterización de las unidades correspondientes a operación, modelo de conocimiento.
+					\item El plan de mantenimiento de las unidades operativas con el fin de asegurar su funcionamiento óptimo.
+					\item Los procedimientos para el manejo de los recursos para la potabilización y almacenamiento del agua y el tratamiento de agua servida.
+				\end{itemize}
+				
+Se determina:
+				
+				\begin{itemize}
+					\item Las condiciones operacionales de las diferentes unidades para asegurar el servicio de una manera eficiente y económica.
+					\item El seguimiento del comportamiento de las mismas.
+					\item Indicadores de rendimiento, gestión, etc.
+				\end{itemize}
+				
+			\subsection{Comercialización}
+			
+Las actividades asociadas a la comercialización tienen que ver con el transporte del agua potable desde las redes de distribución hasta los usuarios finales, la conexión de usuarios a la red, la recuperación de las aguas servidas desde los usuarios hasta el alcantarillado de cada localidad en los sitios donde esté disponible este servicio. Para ello se requiere de:
+
+				\begin{itemize}
+					\item Manejo del catastro poblacional.
+					\item Manejo de nuevos clientes, conexión a la red.
+					\item Manejo de clientes, prestación del servicio, desconexión, reconexión.
+					\item Facturación y cobranza.
+				\end{itemize}
+				
+			\subsection{Áreas de Soporte}
+			
+Las áreas de soporte son las responsables del apoyo a las actividades medulares de la hidrológica. Dentro de las funciones podemos mencionar:
+
+				\begin{itemize}
+					\item Manejo de los recursos financieros de la empresa.
+					\item Gestión del Recurso Humano.
+					\item Mantenimiento de la imagen de la empresa.
+					\item Soporte legal.
+					\item Protección del recurso humano, ambiente, equipos, etc. (Protección Integral)
+				\end{itemize}
+				
+Adicionalmente, es necesario realizar la coordinación y manejo de todos los procesos involucrados en las diferentes Áreas de Negocio mediante un conjunto de funciones de gestión de la empresa. Estas funciones son:
+
+				\begin{itemize}
+					\item Planificación.
+					\item Evaluación y control de la gestión.
+					\item Mejoramiento continuo de los procesos.
+					\item Manejo de la información y generación de indicadores de la gestión.
+					\item Preparación del presupuesto anual.
+					\item Presentación de nuevos proyectos.
+					\item Control del presupuesto.
+				\end{itemize}
 		
-		\section{Caso de Estudio}
+		\section{Cadena de Valor de cada Área de Negocio}
+		
+			\subsection{Fuentes y Estudio de la Demanda}
+			
+Se expande en cuatro eslabones (véase figura \ref{fig-chainsource}), con el fin de obtener la red que debe soportar el consumo de una población dada, considerando las fuentes y su calidad. Estos cuatro procesos son:
+			
+				\begin{itemize}
+					\item  \textbf{Estudio de la Población:} Para esto, se deben conocer los estudios de crecimiento poblacional para cada región.
+					\item  \textbf{Estimación del Consumo:} Con el estudio poblacional y caracterizando los hábitos de consumo se determinar el volumen de agua necesario para cada región.
+					\item  \textbf{Planificación de la Red:} Este proceso necesita de la estimación de consumo, evaluación de las fuentes hídricas para determinar las zonas de captación de agua junto con los recursos necesarios para realizar esta labor, el dimensionamiento, diseño, establecimiento de planes de construcción para el transporte del agua desde las zonas de captación hasta los centros de potabilización y el costo esperado para la construcción de la infraestructura, su mantenimiento y operación hasta los centros poblados.
+					\item \textbf{Determinación de Costos:} se determina cual es el costo final del agua, como este será trasladado a los usuarios.
+				\end{itemize}
+			
+				\begin{figure}
+					\centering
+					\includegraphics{figures/3chainsource}
+					\caption{Cadena de Valor Área fuente y estudio de la demanda.}
+					\label{fig-chainsource}
+				\end{figure}
+				
+			\subsection{Operaciones}
+			
+El área de operaciones se expande en nueve eslabones, cinco para el agua potable (Fuente, Captación, Transporte, Potabilización, Distribución) y cuatro para las aguas servidas (Recuperación, Transporte, Tratamiento, Retorno). (véase figura \ref{fig-chainop})
+
+				\begin{figure}
+					\centering
+					\includegraphics{figures/3chainop}
+					\caption{Cadena de Valor Área de operaciones.}
+					\label{fig-chainop}
+				\end{figure}
+				
+Asociada a esta cadena debe existir un sistema de logística que asegure los recursos necesarios para mantener la operación.
+
+			\subsection{Comercial}
+			
+En esta área se establecen los requerimientos de servicio que implican un análisis de los nuevos clientes y de la capacidad de distribución en el sitio, así como las estrategias de prestación de servicio de conexión, con el fin de generar la orden de conexión, luego se procede a la conexión física del usuario a la red, incluyendo un mecanismo de medición (fiable) y estableciendo los mecanismos de cobranza por el servicio. Así, el área de comercial se expande en cuatro eslabones: Requerimiento de Servicio, Conexión, Medición, Cobro. (véase figura \ref{fig-chaincom})
+
+				\begin{figure}
+					\centering
+					\includegraphics{figures/3chaincom}
+					\caption{Cadena de Valor Área de comercialización.}
+					\label{fig-chaincom}
+				\end{figure}
+				
+			\subsection{Soporte}
+			
+El área de soporte está conformada por: Finanzas, Contabilidad, Recursos Humanos, Relaciones Industriales, Protección Integral, Relaciones con otros organismos públicos y privados en general (véase figura \ref{fig-support}). Estas sub-áreas soportan todas las actividades de las otras áreas facilitándoles recursos humanos, financieros y apoyando la gestión de las mismas.
+
+				\begin{figure}
+					\centering
+					\includegraphics{figures/3support}
+					\caption{Área de soporte.}
+					\label{fig-support}
+				\end{figure}
+		
+		\section{Esquema Integral de Cadena de Valor para Hidrológicas}
+		
+El esquema integrado de las diferentes cadenas de valores, sin tomar en cuenta la actividad de planificación, coordinación y control de la gestión es el mostrado en la figura \ref{fig-valuechainhydro}.
+
+			\begin{figure}
+				\centering
+				\includegraphics{figures/3valuechainhydro}
+				\caption{Cadena de Valor de áreas de negocio en Hidrológicas.}
+				\label{fig-valuechainhydro}
+			\end{figure}
 		
 	\chapter{Implementación}
 	
