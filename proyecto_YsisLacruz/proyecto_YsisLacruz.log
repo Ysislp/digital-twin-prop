@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6800) (preloaded format=pdflatex 2018.9.30)  13 SEP 2019 22:21
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6800) (preloaded format=pdflatex 2018.9.30)  15 SEP 2019 20:44
 entering extended mode
 **./proyecto_YsisLacruz.tex
 (proyecto_YsisLacruz.tex
@@ -1098,7 +1098,7 @@ LaTeX Info: Redefining \nameref on input line 81.
 
 Most over/underfulls in first few pages are the fault of this package.
 Ignore all them. If uncorrectable errors occur, notify staff.
-<ula.png, id=149, 100.375pt x 140.525pt>
+<ula.png, id=161, 100.375pt x 140.525pt>
 File: ula.png Graphic file (type png)
 <use ula.png>
 Package pdftex.def Info: ula.png  used on input line 230.
@@ -1160,7 +1160,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [2]
-<figures/1industry40.png, id=223, 425.33907pt x 228.10219pt>
+<figures/1industry40.png, id=238, 425.33907pt x 228.10219pt>
 File: figures/1industry40.png Graphic file (type png)
 <use figures/1industry40.png>
 Package pdftex.def Info: figures/1industry40.png  used on input line 294.
@@ -1218,7 +1218,7 @@ Underfull \hbox (badness 1184) in paragraph at lines 344--345
 teligente es la fusion
  []
 
-<figures/2smartcities.png, id=244, 463.7325pt x 460.72125pt>
+<figures/2smartcities.png, id=259, 463.7325pt x 460.72125pt>
 File: figures/2smartcities.png Graphic file (type png)
 <use figures/2smartcities.png>
 Package pdftex.def Info: figures/2smartcities.png  used on input line 348.
@@ -1258,7 +1258,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [9]
-<figures/2cps.png, id=260, 443.40656pt x 301.125pt>
+<figures/2cps.png, id=275, 443.40656pt x 301.125pt>
 File: figures/2cps.png Graphic file (type png)
 <use figures/2cps.png>
 Package pdftex.def Info: figures/2cps.png  used on input line 382.
@@ -1296,7 +1296,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [12]
-<figures/2valuechain.png, id=275, 332.74312pt x 137.7647pt>
+<figures/2valuechain.png, id=290, 332.74312pt x 137.7647pt>
 File: figures/2valuechain.png Graphic file (type png)
 <use figures/2valuechain.png>
 Package pdftex.def Info: figures/2valuechain.png  used on input line 427.
@@ -1315,7 +1315,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
                                                   
 l.433 
        <./figures/2valuechain.png>]
-<figures/2nodesnet1.png, id=282, 479.7925pt x 336.25626pt>
+<figures/2nodesnet1.png, id=297, 479.7925pt x 336.25626pt>
 File: figures/2nodesnet1.png Graphic file (type png)
 <use figures/2nodesnet1.png>
 Package pdftex.def Info: figures/2nodesnet1.png  used on input line 450.
@@ -1328,7 +1328,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [14]
-<figures/2nodesnet2.png, id=290, 480.79625pt x 323.2075pt>
+<figures/2nodesnet2.png, id=305, 480.79625pt x 323.2075pt>
 File: figures/2nodesnet2.png Graphic file (type png)
 <use figures/2nodesnet2.png>
 Package pdftex.def Info: figures/2nodesnet2.png  used on input line 459.
@@ -1353,7 +1353,7 @@ l.465
                                                   
 l.465 
        <./figures/2nodesnet1.png> <./figures/2nodesnet2.png>]
-<figures/2nodesnet3.png, id=299, 483.8075pt x 322.20375pt>
+<figures/2nodesnet3.png, id=314, 483.8075pt x 322.20375pt>
 File: figures/2nodesnet3.png Graphic file (type png)
 <use figures/2nodesnet3.png>
 Package pdftex.def Info: figures/2nodesnet3.png  used on input line 468.
@@ -1373,7 +1373,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 l.479 U
        n modelo híbrido es la representación de las transiciones discretas y...
  <./figures/2nodesnet3.png>]
-<figures/2petrinet.png, id=307, 92.59593pt x 191.21437pt>
+<figures/2petrinet.png, id=322, 92.59593pt x 191.21437pt>
 File: figures/2petrinet.png Graphic file (type png)
 <use figures/2petrinet.png>
 Package pdftex.def Info: figures/2petrinet.png  used on input line 485.
@@ -1407,12 +1407,12 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [18]
-<figures/2holon.png, id=325, 489.83pt x 444.66125pt>
+<figures/2holon.png, id=340, 489.83pt x 444.66125pt>
 File: figures/2holon.png Graphic file (type png)
 <use figures/2holon.png>
 Package pdftex.def Info: figures/2holon.png  used on input line 532.
 (pdftex.def)             Requested size: 244.9144pt x 222.33008pt.
-<figures/2prosa.png, id=327, 456.70625pt x 315.1775pt>
+<figures/2prosa.png, id=342, 456.70625pt x 315.1775pt>
 File: figures/2prosa.png Graphic file (type png)
 <use figures/2prosa.png>
 Package pdftex.def Info: figures/2prosa.png  used on input line 541.
@@ -1432,7 +1432,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 l.551 				\item U
                  n holón de recurso contiene la parte física de un recurso n...
  <./figures/2holon.png>]
-<figures/2holonicunit.png, id=336, 730.73pt x 349.305pt>
+<figures/2holonicunit.png, id=351, 730.73pt x 349.305pt>
 File: figures/2holonicunit.png Graphic file (type png)
 <use figures/2holonicunit.png>
 Package pdftex.def Info: figures/2holonicunit.png  used on input line 558.
@@ -1464,7 +1464,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
                                                   
 l.571 			\end{itemize}
                        <./figures/2holonicunit.png>]
-<figures/2holoniccompany.png, id=352, 344.03531pt x 245.41687pt>
+<figures/2holoniccompany.png, id=367, 344.03531pt x 245.41687pt>
 File: figures/2holoniccompany.png Graphic file (type png)
 <use figures/2holoniccompany.png>
 Package pdftex.def Info: figures/2holoniccompany.png  used on input line 575.
@@ -1483,7 +1483,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
                                                   
 l.585 
        <./figures/2holoniccompany.png>]
-<figures/2wss.png, id=358, 425.33907pt x 418.56375pt>
+<figures/2wss.png, id=373, 425.33907pt x 418.56375pt>
 File: figures/2wss.png Graphic file (type png)
 <use figures/2wss.png>
 Package pdftex.def Info: figures/2wss.png  used on input line 592.
@@ -1524,15 +1524,15 @@ Underfull \hbox (badness 1248) in paragraph at lines 607--608
  es pro-por-cionar
  []
 
-<figures/3waterprocess.png, id=373, 1204.5pt x 579.66562pt>
+<figures/3waterprocess.png, id=388, 1204.5pt x 579.66562pt>
 File: figures/3waterprocess.png Graphic file (type png)
 <use figures/3waterprocess.png>
-Package pdftex.def Info: figures/3waterprocess.png  used on input line 611.
+Package pdftex.def Info: figures/3waterprocess.png  used on input line 613.
 (pdftex.def)             Requested size: 361.35278pt x 173.90102pt.
-<figures/3chainhydro.png, id=375, 231.11343pt x 70.01157pt>
+<figures/3chainhydro.png, id=390, 231.11343pt x 70.01157pt>
 File: figures/3chainhydro.png Graphic file (type png)
 <use figures/3chainhydro.png>
-Package pdftex.def Info: figures/3chainhydro.png  used on input line 628.
+Package pdftex.def Info: figures/3chainhydro.png  used on input line 630.
 (pdftex.def)             Requested size: 231.11287pt x 70.01138pt.
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1554,15 +1554,15 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 \@EveryShipout@Output ...@Org@Shipout \box \@cclv 
                                                   
-l.639 					\item D
-                  eterminación de las posibles fuentes para satisfacción del...
+l.640 					\item E
+                  studio y caracterización de la demanda de agua para el con...
 pdfTeX warning (ext4): destination with the same identifier (name{figure.3.2}) 
 has been already used, duplicate ignored
 
 \@EveryShipout@Output ...@Org@Shipout \box \@cclv 
                                                   
-l.639 					\item D
-                  eterminación de las posibles fuentes para satisfacción del...
+l.640 					\item E
+                  studio y caracterización de la demanda de agua para el con...
  <./figures/3waterprocess.png> <./figures/3chainhydro.png>]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1585,26 +1585,16 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [30]
-<figures/3chainsource.png, id=402, 307.1475pt x 37.64063pt>
+<figures/3chainsource.png, id=417, 307.1475pt x 37.64063pt>
 File: figures/3chainsource.png Graphic file (type png)
 <use figures/3chainsource.png>
-Package pdftex.def Info: figures/3chainsource.png  used on input line 717.
+Package pdftex.def Info: figures/3chainsource.png  used on input line 719.
 (pdftex.def)             Requested size: 307.14674pt x 37.64052pt.
-<figures/3chainop.png, id=404, 607.51968pt x 36.88782pt>
+<figures/3chainop.png, id=419, 607.51968pt x 36.88782pt>
 File: figures/3chainop.png Graphic file (type png)
 <use figures/3chainop.png>
-Package pdftex.def Info: figures/3chainop.png  used on input line 728.
+Package pdftex.def Info: figures/3chainop.png  used on input line 730.
 (pdftex.def)             Requested size: 425.26086pt x 25.82127pt.
-<figures/3chaincom.png, id=406, 288.3272pt x 36.88782pt>
-File: figures/3chaincom.png Graphic file (type png)
-<use figures/3chaincom.png>
-Package pdftex.def Info: figures/3chaincom.png  used on input line 741.
-(pdftex.def)             Requested size: 288.32648pt x 36.88771pt.
-
-Underfull \hbox (badness 3815) in paragraph at lines 748--749
-\OT1/cmr/m/n/12 Hu-manos, Rela-ciones In-dus-tri-ales, Pro-teccion In-te-gral,
- Rela-ciones con otros
- []
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1617,25 +1607,35 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 \@EveryShipout@Output ...@Org@Shipout \box \@cclv 
                                                   
-l.749 
+l.740 
       pdfTeX warning (ext4): destination with the same identifier (name{figure.
 3.4}) has been already used, duplicate ignored
 
 \@EveryShipout@Output ...@Org@Shipout \box \@cclv 
                                                   
-l.749 
+l.740 
        <./figures/3chainsource.png> <./figures/3chainop.png>]
-<figures/3support.png, id=414, 332.74312pt x 115.18031pt>
+<figures/3chaincom.png, id=426, 288.3272pt x 36.88782pt>
+File: figures/3chaincom.png Graphic file (type png)
+<use figures/3chaincom.png>
+Package pdftex.def Info: figures/3chaincom.png  used on input line 743.
+(pdftex.def)             Requested size: 288.32648pt x 36.88771pt.
+
+Underfull \hbox (badness 3815) in paragraph at lines 750--751
+\OT1/cmr/m/n/12 Hu-manos, Rela-ciones In-dus-tri-ales, Pro-teccion In-te-gral,
+ Rela-ciones con otros
+ []
+
+<figures/3support.png, id=428, 332.74312pt x 115.18031pt>
 File: figures/3support.png Graphic file (type png)
 <use figures/3support.png>
-Package pdftex.def Info: figures/3support.png  used on input line 752.
+Package pdftex.def Info: figures/3support.png  used on input line 754.
 (pdftex.def)             Requested size: 332.7423pt x 115.18001pt.
-<figures/3valuechainhydro.png, id=416, 623.32875pt x 375.65344pt>
+<figures/3valuechainhydro.png, id=430, 623.32875pt x 375.65344pt>
 File: figures/3valuechainhydro.png Graphic file (type png)
 <use figures/3valuechainhydro.png>
-Package pdftex.def Info: figures/3valuechainhydro.png  used on input line 763.
+Package pdftex.def Info: figures/3valuechainhydro.png  used on input line 765.
 (pdftex.def)             Requested size: 374.00014pt x 225.3938pt.
-
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
@@ -1647,15 +1647,30 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 \@EveryShipout@Output ...@Org@Shipout \box \@cclv 
                                                   
-l.768 	\chapter
-               {Implementación}pdfTeX warning (ext4): destination with the same
- identifier (name{figure.3.6}) has been already used, duplicate ignored
+l.773 
+      pdfTeX warning (ext4): destination with the same identifier (name{figure.
+3.6}) has been already used, duplicate ignored
 
 \@EveryShipout@Output ...@Org@Shipout \box \@cclv 
                                                   
-l.768 	\chapter
-               {Implementación} <./figures/3chaincom.png> <./figures/3support.p
-ng>]
+l.773 
+       <./figures/3chaincom.png> <./figures/3support.png>]
+<figures/3planning.png, id=440, 703.12688pt x 471.26062pt>
+File: figures/3planning.png Graphic file (type png)
+<use figures/3planning.png>
+Package pdftex.def Info: figures/3planning.png  used on input line 776.
+(pdftex.def)             Requested size: 351.56258pt x 235.62973pt.
+<figures/3aps.png, id=442, 373.833pt x 257.8725pt>
+File: figures/3aps.png Graphic file (type png)
+<use figures/3aps.png>
+Package pdftex.def Info: figures/3aps.png  used on input line 787.
+(pdftex.def)             Requested size: 261.68129pt x 180.5095pt.
+
+Underfull \hbox (badness 2781) in paragraph at lines 794--795
+\OT1/cmr/m/n/12 de-scripcion de las competencias-habilidades, mod-e-los y mo-d
+os de op-eracion,
+ []
+
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
@@ -1667,28 +1682,47 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 \@EveryShipout@Output ...@Org@Shipout \box \@cclv 
                                                   
-l.768 	\chapter
-               {Implementación} <./figures/3valuechainhydro.png>]
+l.795 
+       <./figures/3valuechainhydro.png>]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[34pdfTeX warning (ext4): destination with the same identifier (name{figure.3.8
+}) has been already used, duplicate ignored
+
+\@EveryShipout@Output ...@Org@Shipout \box \@cclv 
+                                                  
+l.795 
+      pdfTeX warning (ext4): destination with the same identifier (name{figure.
+3.9}) has been already used, duplicate ignored
+
+\@EveryShipout@Output ...@Org@Shipout \box \@cclv 
+                                                  
+l.795 
+       <./figures/3planning.png> <./figures/3aps.png>]
+<figures/3holonichydro.png, id=455, 572.1375pt x 414.79968pt>
+File: figures/3holonichydro.png Graphic file (type png)
+<use figures/3holonichydro.png>
+Package pdftex.def Info: figures/3holonichydro.png  used on input line 798.
+(pdftex.def)             Requested size: 343.28514pt x 248.88173pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[35pdfTeX warning (ext4): destination with the same identifier (name{figure.3.1
+0}) has been already used, duplicate ignored
+
+\@EveryShipout@Output ...@Org@Shipout \box \@cclv 
+                                                  
+l.805 	\chapter
+               {Implementación} <./figures/3holonichydro.png>]
 Cap\'{\i }tulo 4.
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 14.49998pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[34
-
-]
-Cap\'{\i }tulo 5.
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 14.49998pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[35
-
-] (proyecto_YsisLacruz.bbl)
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
@@ -1698,20 +1732,39 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 [36
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 797.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 797.
+Cap\'{\i }tulo 5.
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[37
+
+] (proyecto_YsisLacruz.bbl)
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[38
+
+]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 834.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 834.
  (proyecto_YsisLacruz.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 797.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 797.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 834.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 834.
 Package rerunfilecheck Info: File `proyecto_YsisLacruz.out' has not changed.
-(rerunfilecheck)             Checksum: ACAB8B3DBCE91FBCF5BAAD14F4FA3F55;2565.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 797.
+(rerunfilecheck)             Checksum: 4A94D290B097B743C7B6C0DA1DE99B56;2794.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 834.
  ) 
 Here is how much of TeX's memory you used:
- 28527 strings out of 492973
- 550157 string characters out of 3127135
- 592600 words of memory out of 3000000
- 31876 multiletter control sequences out of 15000+200000
+ 28556 strings out of 492973
+ 550658 string characters out of 3127135
+ 592781 words of memory out of 3000000
+ 31894 multiletter control sequences out of 15000+200000
  540357 words of font info for 53 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  62i,13n,65p,1923b,389s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1727,9 +1780,9 @@ pfb><C:/Users/Ysis/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfont
 s/cm/cmsy10.pfb><C:/Users/Ysis/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pu
 blic/amsfonts/cm/cmsy8.pfb><C:/Users/Ysis/AppData/Local/Programs/MiKTeX 2.9/fon
 ts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on proyecto_YsisLacruz.pdf (41 pages, 1673705 bytes).
+Output written on proyecto_YsisLacruz.pdf (43 pages, 2443551 bytes).
 PDF statistics:
- 510 PDF objects out of 1000 (max. 8388607)
- 109 named destinations out of 1000 (max. 500000)
- 406 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 545 PDF objects out of 1000 (max. 8388607)
+ 117 named destinations out of 1000 (max. 500000)
+ 445 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -289,7 +289,7 @@ Siguiendo la tendencia mundial, en la que se proyecta a la industria en una nuev
 
 Los acontecimientos más destacados en la historia de la industria podemos ubicarlos en los tres grandes hitos que hicieron posible, entre otras cosas, el crecimiento económico y el desarrollo tecnológico a nivel mundial. Estos tres grandes hitos se conocen como las revoluciones industriales, donde la primera  revolución contempla la creación e implementación de la máquina de vapor en los centros de manufactura así como la mecanización en los puestos de trabajo permitiendo la elaboración de productos personalizados, posteriormente, la segunda revolución, es la incorporación del suministro de electricidad a las fábricas, implementación de nuevos paradigmas en la producción como lo es la división del trabajo, que permitieron elaborar productos de bajo costo. La tercera revolución industrial se basa en la puesta en marcha de las microcomputadoras, los PLC (Programmable Logic Controller por sus siglas en inglés) y los robots autónomos en las líneas de producción de las fábricas, haciendo posible la variedad de los productos y la masificación de la producción. La cuarta revolución industrial o también llamada industria 4.0, corresponde a una nueva manera de organizar los medios de producción, donde el objetivo es la puesta en marcha de fábricas capaces de una mayor adaptabilidad a las necesidades y a los procesos de producción, así como a una asignación más eficiente de los recursos usando la interconectividad. Esta nueva visión de la industria contempla una manufactura completamente equipada con sensores, actuadores y sistemas de comunicación, en donde mediante modelos holísticos de proceso, producto y recursos (gemelo digital), aunado a la aplicación de estrategias de computación, logren el despliegue de un control autónomo dentro de estas fábricas. Las características principales de cada evolución industrial se observan en la figura \ref{fig-i40}.
 		
-		\begin{figure}
+		\begin{figure}[hbp]
 			\centering
 			\includegraphics{figures/1industry40}
 			\caption{Evolución de la Industria.}
@@ -377,7 +377,7 @@ La interrelación entre sistemas físicos y computacionales contribuye a la formac
 				
 En Laszlo Monostori et al [66] se hace referencia a un gráfico del modelo de madurez de un CPS (véase figura \ref{fig-cps}), donde en un primer nivel se generan las condiciones para la implementación y conexiones físicas, mientras que los niveles superiores representan la evolución en el procesamiento de la información y procesos de cooperación.
 				
-				\begin{figure}
+				\begin{figure}[hbp]
 					\centering
 					\includegraphics[scale=0.7]{figures/2cps}
 					\caption{Modelo de madurez de un CPS.}
@@ -422,7 +422,7 @@ Una de las bases para desarrollar modelos de procesos específicos de una empresa
 
 La cadena de valor representa la relación entre procesos primarios, los que se relacionan directamente con la producción, y procesos de soporte que si bien añaden valor al producto, no están directamente relacionados con la producción, tales como la gestión de recursos humanos, investigación, planificación, finanzas y demás áreas que complementan la organización. (véase figura \ref{fig-valuechain})
 
-			\begin{figure}
+			\begin{figure}[hbp]
 				\centering
 				\includegraphics{figures/2valuechain}
 				\caption{Cadena de Valor en producción. Basada en [108]}
@@ -441,7 +441,7 @@ El modelo de conocimiento abarca las caracterizaciones del proceso, el flujo de 
 				\item El modelo de recursos por su parte, mantiene la información de los equipos usados por el proceso, estado de funcionamiento, disponibilidad.
 			\end{itemize}
 
-La gestión de los procesos de producción se asocia al conocimiento en sí, tanto de las recetas para generar el producto deseado, insumos y sus cualidades, como el proceso físico (transformación, transporte y distribución). Estos procesos de producción están concebidos para elaborar uno o más productos partiendo de una solicitud de producción, con garantía en la asignación de materia prima y recursos respectivos. Así, los modelos del proceso de producción son una descripción que inicia con un modelo simple caja negra de entrada ? salida (E/S), donde se define su funcionalidad y configuración.
+La gestión de los procesos de producción se asocia al conocimiento en sí, tanto de las recetas para generar el producto deseado, insumos y sus cualidades, como el proceso físico (transformación, transporte y distribución). Estos procesos de producción están concebidos para elaborar uno o más productos partiendo de una solicitud de producción, con garantía en la asignación de materia prima y recursos respectivos. Así, los modelos del proceso de producción son una descripción que inicia con un modelo simple caja negra de entrada - salida (E/S), donde se define su funcionalidad y configuración.
 
 En [108] se describen los procesos de producción como una red de unidades o nodos, los cuales se dividen en Nodo Almacenamiento (materia prima, producto intermedio, producto final), Nodo Transporte (transportadores, canales, tuberías) y Nodo Producción (transformación); la red representa el desarrollo de una receta (véase figura \ref{fig-nodesnet1})
 
@@ -560,7 +560,7 @@ Un sistema holónico de producción no es más que alcanzar la cooperación entre di
 				\label{fig-holonicunit}
 			\end{figure}
 
-En la holarquía, los holones en diferentes niveles se comportan como un todo autónomo y como partes cooperantes, donde los mecanismos de toma de decisión son heredados del esquema jerárquico, de forma vertical, mientras los modelos de las entidades se integran de forma horizontal y vertical, para establecer el plan global, e individualmente un plan a seguir para cada unidad. Tal dualidad autonomía ? cooperación es balanceada por el modelo de conocimiento, el cual define el comportamiento del sistema mediante condiciones de funcionamiento. Es así como una empresa holónica, está constituida por unidades holónicas, con las mismas características cabeza ? cuello ? cuerpo descritas previamente para un holón de producción [108] (véase figura \ref{fig-holoniccompany})
+En la holarquía, los holones en diferentes niveles se comportan como un todo autónomo y como partes cooperantes, donde los mecanismos de toma de decisión son heredados del esquema jerárquico, de forma vertical, mientras los modelos de las entidades se integran de forma horizontal y vertical, para establecer el plan global, e individualmente un plan a seguir para cada unidad. Tal dualidad autonomía - cooperación es balanceada por el modelo de conocimiento, el cual define el comportamiento del sistema mediante condiciones de funcionamiento. Es así como una empresa holónica, está constituida por unidades holónicas, con las mismas características cabeza - cuello - cuerpo descritas previamente para un holón de producción [108] (véase figura \ref{fig-holoniccompany})
 
 En el modelo referido de la figura \ref{fig-holoniccompany} [108], se propone que el manejo del conocimiento en una empresa holónica es llevado a cabo por tres entes: Gestor, Programador, Ejecutor; la cooperación de estos elementos permite generar tres mecanismos de toma de decisión cuyos modelos son considerados a eventos discretos, que reciben la información discretizada proveniente de los modelos del proceso, los cuales son continuos en cada etapa.
 
@@ -605,6 +605,8 @@ Partiendo de estas ideas es posible generar una propuesta de los modelos de unid
 	\chapter{Caso de Estudio: Hidrológicas}
 	
 Las hidrológicas son una empresa de servicio cuya misión es proporcionar agua potable a una población, utilizando para ello las fuentes que proporciona la naturaleza, procesando el agua y devolviéndola al ambiente (véase figura \ref{fig-waterprocess}). Todas estas actividades las debe realizar de manera que sea una empresa autosostenible, manteniendo el costo de los servicios al público dentro de unos parámetros aceptables para el mismo.
+
+El desarrollo del trabajo se centra en el proceso de potabilización, sin embargo es necesario el estudio previo del funcionamiento de la industria hidrológica como un todo.
 
 		\begin{figure}
 			\centering
@@ -764,6 +766,41 @@ El esquema integrado de las diferentes cadenas de valores, sin tomar en cuenta l
 				\caption{Cadena de Valor de áreas de negocio en Hidrológicas.}
 				\label{fig-valuechainhydro}
 			\end{figure}
+			
+		\section{Planificación}
+		
+En el diagrama de planificación se observa que existe un eje vertical encargado de la toma de decisiones asociadas a la gestión de la empresa, definición de las metas, control y seguimiento de las mismas dentro de una autonomía operativa. Un esquema de interacción entre las áreas de soporte, operaciones, comercial con el eje de toma de decisiones. Es detallado en la figura \ref{fig-planning}.
+
+			\begin{figure}
+				\centering
+				\includegraphics[scale=0.5]{figures/3planning}
+				\caption{Esquema de interacciones.}
+				\label{fig-planning}
+			\end{figure}
+			
+		\section{Modelo APS en Hidrológicas}
+
+Se presenta el modelo APS (Advanced Planning \& Scheduling) para las hidrológicas (véase figura \ref{fig-aps}), asociado al modelo de tres ejes de manufactura colaborativa para i4.0 adaptado en industria de procesos. Un APS asigna recursos y capacidad de producción de forma óptima para equilibrar la demanda y la capacidad de la planta.
+
+			\begin{figure}
+				\centering
+				\includegraphics[scale=0.7]{figures/3aps}
+				\caption{Esquema de interacciones.}
+				\label{fig-aps}
+			\end{figure}
+			
+		\section{Unidades Holónicas en Hidrológicas}
+		
+Desde la visión propuesta de un enfoque holónico asociado a los sistemas ciber-físicos, la descripción del modelo de conocimiento de las unidades holónicas de producción (UPH) pasa por una caracterización del equipamiento de la unidad, descripción de las competencias-habilidades, modelos y modos de operación, información que constituye el modelo de conocimiento. Una visión que asocia la cadena de valor con unidades de producción para el área de operaciones es mostrado en la figura \ref{fig-holonichydro}.
+
+			\begin{figure}
+				\centering
+				\includegraphics[scale=0.6]{figures/3holonichydro}
+				\caption{Unidades Holónicas de Producción para Hidrológicas.}
+				\label{fig-holonichydro}
+			\end{figure}
+			
+De la cadena de unidades en las hidrológicas, se tomará para el estudio el proceso de Potabilización del Área de Operaciones, generar los modelos de conocimiento e integrarlos desde una visión de sistemas híbridos.
 		
 	\chapter{Implementación}
 	
