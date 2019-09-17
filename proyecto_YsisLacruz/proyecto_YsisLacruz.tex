@@ -78,6 +78,9 @@
 
 \sloppy
 
+\setcounter{secnumdepth}{3}
+\setcounter{tocdepth}{3}
+
 \begin{document}
 	
 	\frontmatter
@@ -604,9 +607,7 @@ Partiendo de estas ideas es posible generar una propuesta de los modelos de unid
 		
 	\chapter{Caso de Estudio: Hidrológicas}
 	
-Las hidrológicas son una empresa de servicio cuya misión es proporcionar agua potable a una población, utilizando para ello las fuentes que proporciona la naturaleza, procesando el agua y devolviéndola al ambiente (véase figura \ref{fig-waterprocess}). Todas estas actividades las debe realizar de manera que sea una empresa autosostenible, manteniendo el costo de los servicios al público dentro de unos parámetros aceptables para el mismo.
-
-El desarrollo del trabajo se centra en el proceso de potabilización, sin embargo es necesario el estudio previo del funcionamiento de la industria hidrológica como un todo.
+Las hidrológicas son una empresa de servicio cuya misión es proporcionar agua potable a una población, utilizando para ello las fuentes que proporciona la naturaleza, procesando el agua y devolviéndola al ambiente (véase figura \ref{fig-waterprocess}). Todas estas actividades las debe realizar de manera que sea una empresa autosostenible, manteniendo el costo del servicio dentro de márgenes accesibles para el público.
 
 		\begin{figure}
 			\centering
@@ -800,8 +801,95 @@ Desde la visión propuesta de un enfoque holónico asociado a los sistemas ciber-f
 				\label{fig-holonichydro}
 			\end{figure}
 			
-De la cadena de unidades en las hidrológicas, se tomará para el estudio el proceso de Potabilización del Área de Operaciones, generar los modelos de conocimiento e integrarlos desde una visión de sistemas híbridos.
+De la cadena de unidades en las hidrológicas, se tomará para el estudio el proceso de Potabilización del Área de Operaciones, con el fin de generar los modelos de conocimiento e integrarlos desde una visión de sistemas híbridos.
+
+Debido a la variedad posible en la configuración del proceso de potabilización, se toma como referencia la Planta de Potabilización "Dr. Eduardo Jauregui", ubicada en el Estado Mérida. La referencia no hace exclusiva la visión del proyecto, sino que sirve de base para el desarrollo de los modelos de comportamiento. 
+
+		\section{Descripción del Proceso de Potabilización}
 		
+La Unidad de Operación comprende el conjunto de recursos y actividades necesarias para administrar y operar los sistemas de agua, sumado al mantenimiento de las instalaciones y equipos utilizados [35]; incluye las unidades fundamentales del proceso de producción: captación, potabilización y almacenamiento.
+
+			\subsection{Captación del agua}
+
+La captación de agua cruda, en el caso de las plantas del Estado Mérida, se realiza mediante una estructura construida adyacente al cauce de la fuente (véase figura \ref{fig-catchwater}), de forma que el flujo se desvíe e ingrese al sistema mediante la rejilla de captación; el flujo es trasladado hacia un desripiador, donde se evacúa el material sólido de tamaño considerable que ha ingresado, y posteriormente hacia el desarenador, encargado de separar el agua cruda de la arena y partículas en suspensión de tamaño superior a 0,2 mm; luego el flujo ingresa a la planta de potabilización, cuyas unidades funcionales corresponden a: Coagulación ? Floculación ? Sedimentación ? Filtración ?Desinfección.[8]
+
+				\begin{figure}
+					\centering
+					\includegraphics[scale=0.6]{figures/3catchwater}
+					\caption{Proceso de captación del agua cruda. [33]}
+					\label{fig-catchwater}
+				\end{figure}
+				
+Las acciones operativas sobre el caudal dependen de la capacidad máxima de la planta, en caso de ser superado este nivel máximo o por el contrario, no contar con una fuente óptima, el agua como producto final no será adecuada para el consumo humano, por ello es necesario el conocimiento y regulación del flujo mediante operación de compuertas para cumplir con los requerimientos de la planta, tomando en cuenta el plan de consumo, calidad de la fuente y periodo climático de la localidad. [37]
+			
+			\subsection{Determinación de las características del agua cruda}
+			
+Para establecer la secuencia operacional de la unidad de potabilización se consideran dos condiciones principales, la calidad del flujo de entrada, que comprende la turbiedad, el caudal, el color, la temperatura, el cloro residual, oxígeno disuelto y el pH de la fuente proveniente de la unidad de captación, incluyendo valores de caudal, y la capacidad máxima de la planta de potabilización (en L/s o m3/s), en condiciones reales de funcionamiento.
+
+Las características del flujo se obtienen por medición, previo a realizar el traslado a la planta de potabilización; esta acción evita el ingreso de agua de mala calidad y ayuda a establecer el modo de operación del sistema. [23] Si la captación es por gravedad o mecanizada, con estructura física fija, el flujo de entrada es constante, según la calidad del agua. La estacionalidad define el caudal de extracción y la calidad, siempre se debe respetar el caudal ecológico, en cualquier caso.
+
+Las condiciones principales del flujo de salida de la unidad de potabilización, de igual forma, son calidad (pH, turbiedad, color y cloro residual) y cantidad (caudal). La calidad del agua al finalizar el proceso de potabilización, debe cumplir con las características físico químicas descritas en la tabla \ref{tabla-caract}.
+
+				\begin{table}[htbp]
+					\begin{center}
+						\resizebox{15cm}{!} {
+						\begin{tabular}{|l|l|l|}
+							\hline
+							\textbf{Características físicas} & \textbf{Expresadas como} & \textbf{Valor aceptable} \\
+							\hline \hline
+							Turbiedad & Unidades Nefelométricas de Turbiedad (NTU) & Hasta 2 NTU \\ \hline
+							pH & - & 6,5 - 9,0 \\ \hline
+							Cloro residual & mg/L & Hasta 2 mg/L \\ \hline
+							Color aparente & Unidades de Platino Cobalto (UPC) & Hasta 15 UPC \\ \hline
+							Olor y sabor & Aceptable o No Aceptable & Aceptable \\ \hline
+						\end{tabular}
+						}
+						\caption{Características físicas del agua potable. [37]}
+						\label{tabla-caract}
+					\end{center}
+				\end{table}
+
+				\subsubsection{Turbidez}
+				
+Es una medida del grado en el cual el agua pierde su transparencia debido a la presencia de partículas en suspensión. Cuantos más sólidos en suspensión haya en el agua, más sucia parecerá ésta y más alta será la turbidez. En potabilización del agua y tratamiento de aguas residuales, la turbidez es considerada como un buen parámetro para determinar la calidad del agua, a mayor turbidez menor calidad.
+
+La turbidez se mide en Unidades Nefelométricas de turbidez, o Nephelometric Turbidity Unit (NTU). Se utiliza para su medición un Nefelómetro o Turbidímetro, que mide la intensidad de la luz dispersada a 90 grados cuando un rayo de luz pasa a través de una muestra de agua.
+
+Las condiciones de turbidez en agua cruda dependen de condiciones climáticas y contaminantes que afecten a la fuente, registrándose valores entre 0 y 1000 NTU, sin embargo el valor máximo adecuado para la entrada a la planta de potabilización es de 50 NTU.
+
+Para disminuir la turbidez del agua se utiliza un coagulante que, en condiciones y dosis adecuadas, modifica el comportamiento de las partículas presentes en el agua, haciendo que se aglomeren y desciendan, de esta manera las unidades de NTU disminuyen. 
+
+				\subsubsection{pH}
+
+Coeficiente que indica el grado de acidez o basicidad de una solución acuosa. En general, un agua con un pH menor que 7 se considera ácido y con un pH mayor que 7 se considera básica o alcalina. La alcalinidad es una medida de la capacidad del agua para resistir un cambio de pH que tendería a hacerla más ácida. El rango normal de pH en agua superficial es de 6,5 a 9 y para las aguas subterráneas 6 ? 8.5. La medición de pH se realiza con un pHmetro.
+
+				\subsubsection{Cloro Residual}
+
+Es aquella porción de cloro que queda en el agua después de un período de contacto, que reacciona química y biológicamente como ácido hipocloroso e hipoclorito; siendo entonces el remanente de cloro en el agua después de que parte del añadido reaccione en el proceso de desinfección. El límite máximo permitido para el agua potable es de 2 mg/L.
+
+				\subsubsection{Color Aparente}
+				
+El color del agua dependerá tanto de las sustancias que se encuentren disueltas, como de las partículas que se encuentren en suspensión. Se clasifica como ?color verdadero? al que depende solamente el agua y sustancias disueltas, mientras el ?aparente? es el que incluye las partículas en suspensión (que a su vez generan turbidez). El color aparente es entonces el de la muestra tal como se obtiene en el sistema a estudiar.
+
+La medición de color se realiza por medio de un espectrofotómetro por medio del color Platino-Cobalto (Pt-Co) que es el color que se encuentra en aguas y aguas residuales. Varía de un aspecto amarillo claro hasta marrón, con un rango de 0-500 en Unidades de Platino - Cobalto (UPC).
+
+				\subsubsection{Temperatura}
+				
+Es un parametro utilizado para determinar el oxígeno disuelto en el agua, a mayor temperatura menor concentración de oxígeno disuelto; la disminución de oxígeno disuelto genera trastornos en el ambiente acuático. La temperatura aceptable para el consumo humano es de 15°C.
+
+				\subsubsection{Prueba de Jarras}
+				
+En la industria hidrológica es la Prueba de Jarras la que proporciona los rangos óptimos de la dosis de coagulante según el pH de agua a tratar, para llevar a cabo la coagulación; este ensayo de laboratorio simula las condiciones en que se realiza el proceso de coagulación, floculación y sedimentación en la planta, partiendo de varias muestras de agua cruda tomada de la fuente, con características de calidad conocidas, y añadiendo en cada muestra los productos químicos variando tipo y dosis. El tiempo de retención de las unidades del proceso también es determinado mediante la Prueba de Jarras, tiempo necesario para la mezcla rápida e inicio de formación del flóculo (grumo formado por adhesión de sólidos en suspensión). Las condiciones operacionales para las etapas que comprende el proceso de potabilización, se determinan con esta prueba.
+
+La metodología para realizar la prueba de Jarras consiste primero en tener conocimiento de turbidez, pH y color del agua cruda que está ingresando a la planta. Se toman entre 4 y 6 muestras de agua de igual cantidad en vasos de precipitado, y se les suministra distintas dosis de coagulante a cada muestra, según conocimiento previo. Cada muestra es sometida a una mezcla mecánica que emula el comportamiento de la planta real. La determinación óptima de coagulante resulta de aquella muestra en que se formen y desciendan mayor cantidad de sólidos aglomerados, disminuyendo así la turbidez presente en el agua. (véase figura \ref{fig-jarras})
+
+				\begin{figure}
+					\centering
+					\includegraphics[scale=0.6]{figures/3jarras}
+					\caption{Prueba de Jarras. [41]}
+					\label{fig-jarras}
+				\end{figure}
+					
 	\chapter{Implementación}
 	
 		\section{Epanet y MATLAB}
@@ -810,6 +898,28 @@ De la cadena de unidades en las hidrológicas, se tomará para el estudio el proce
 		\section{Simulación}
 		
 	\chapter{Conclusiones y Recomendaciones}
+	
+	\chapter{Anexos}
+	
+Para llevar a cabo las mediciones de calidad de agua se uilizan principalmente los instrumentos descritos en la tabla \ref{tabla-caract}.
+
+			\begin{table}[htbp]
+				\begin{center}
+					\resizebox{15cm}{!} {
+					\begin{tabular}{|p{5cm}|p{5cm}|p{5cm}|}
+						\hline
+						\textbf{Instrumento} & \textbf{Función} & \textbf{Funcionamiento} \\
+						\hline \hline
+						Turbidímetro (NTU) & Medición de turbidez en el agua. Determina la cantidad de sustancias en un líquido, se emplea en la medición de partículas en suspensión en un líquido o gas disuelto & Detección de las partículas con una fuente de haz lumínico y un detector de luz fijado a 90 grados del haz original. \\ \hline
+						pHmetro (pH) & Medición de la actividad del ion hidrógeno en soluciones acuosas, indicando su grado de acidez o alcalinidad expresada como pH. & Medición de la diferencia de potencial eléctrico entre un electrodo de pH y un electrodo de referencia. \\ \hline
+						Medidor de Cloro Amperométrico (mg/L) & Detección de la cantidad de cloro libre residual del agua tratada. & Medición amperométrica con potencial constante, hecho a través de dos electrodos, de metal y un electrodo de referencia. La corriente consume el contenido de cloro, por lo que se necesita un sistema de circulación. \\ \hline
+						Espectrofotómetro (UPC) & Detección del color mediante la medición de la cantidad de luz transmitida a través de la muestra. & Se produce un rango deseado de longitud de onda de luz que pasa a través de la muestra y, mediante un fotómetro, se detecta la cantidad de fotones absorbidos. \\ \hline
+					\end{tabular}
+					}
+					\caption{Desripción de instrumentos de medición.}
+					\label{tabla-caract}
+				\end{center}
+			\end{table}
 
 	
 	
