@@ -36,14 +36,15 @@
 \contentsline {subsection}{\numberline {3.7.1}Captaci\'on del agua}{36}{subsection.3.7.1}
 \contentsline {subsection}{\numberline {3.7.2}Determinaci\'on de las caracter\IeC {\'\i }sticas del agua cruda}{37}{subsection.3.7.2}
 \contentsline {subsubsection}{\numberline {3.7.2.1}Turbidez}{38}{subsubsection.3.7.2.1}
-\contentsline {subsubsection}{\numberline {3.7.2.2}pH}{38}{subsubsection.3.7.2.2}
-\contentsline {subsubsection}{\numberline {3.7.2.3}Cloro Residual}{38}{subsubsection.3.7.2.3}
+\contentsline {subsubsection}{\numberline {3.7.2.2}pH}{39}{subsubsection.3.7.2.2}
+\contentsline {subsubsection}{\numberline {3.7.2.3}Cloro Residual}{39}{subsubsection.3.7.2.3}
 \contentsline {subsubsection}{\numberline {3.7.2.4}Color Aparente}{39}{subsubsection.3.7.2.4}
 \contentsline {subsubsection}{\numberline {3.7.2.5}Temperatura}{39}{subsubsection.3.7.2.5}
-\contentsline {subsubsection}{\numberline {3.7.2.6}Prueba de Jarras}{39}{subsubsection.3.7.2.6}
-\contentsline {chapter}{\numberline {4}Implementaci\'on}{41}{chapter.4}
-\contentsline {section}{\numberline {4.1}Epanet y MATLAB}{41}{section.4.1}
-\contentsline {section}{\numberline {4.2}Simulaci\'on}{41}{section.4.2}
-\contentsline {chapter}{\numberline {5}Conclusiones y Recomendaciones}{42}{chapter.5}
-\contentsline {chapter}{\numberline {6}Anexos}{43}{chapter.6}
-\contentsline {chapter}{Bibliograf\'{\i }a}{45}{table.6.1}
+\contentsline {subsubsection}{\numberline {3.7.2.6}Prueba de Jarras}{40}{subsubsection.3.7.2.6}
+\contentsline {subsection}{\numberline {3.7.3}Unidad de Potabilizaci\'on}{40}{subsection.3.7.3}
+\contentsline {chapter}{\numberline {4}Implementaci\'on}{44}{chapter.4}
+\contentsline {section}{\numberline {4.1}Epanet y MATLAB}{44}{section.4.1}
+\contentsline {section}{\numberline {4.2}Simulaci\'on}{44}{section.4.2}
+\contentsline {chapter}{\numberline {5}Conclusiones y Recomendaciones}{45}{chapter.5}
+\contentsline {chapter}{\numberline {6}Anexos}{46}{chapter.6}
+\contentsline {chapter}{Bibliograf\'{\i }a}{48}{table.6.1}

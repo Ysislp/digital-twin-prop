@@ -807,7 +807,14 @@ Debido a la variedad posible en la configuración del proceso de potabilización, 
 
 		\section{Descripción del Proceso de Potabilización}
 		
-La Unidad de Operación comprende el conjunto de recursos y actividades necesarias para administrar y operar los sistemas de agua, sumado al mantenimiento de las instalaciones y equipos utilizados [35]; incluye las unidades fundamentales del proceso de producción: captación, potabilización y almacenamiento.
+La Unidad de Operación comprende el conjunto de recursos y actividades necesarias para administrar y operar los sistemas de agua, sumado al mantenimiento de las instalaciones y equipos utilizados [35]; incluye las unidades fundamentales del proceso de producción: captación, potabilización, almacenamiento y distribución. En la figura \ref{fig-potab} se presenta un modelo con las unidades correspondientes a Operación, con detalle de la entrada y salida del proceso de potabilización, transmisión de flujo e información referentes a tal proceso. 
+
+			\begin{figure}
+				\centering
+				\includegraphics[scale=0.6]{figures/3potab}
+				\caption{Entrada y salida de la unidad de Potabilización.}
+				\label{fig-potab}
+			\end{figure}
 
 			\subsection{Captación del agua}
 
@@ -888,6 +895,32 @@ La metodología para realizar la prueba de Jarras consiste primero en tener conoc
 					\includegraphics[scale=0.6]{figures/3jarras}
 					\caption{Prueba de Jarras. [41]}
 					\label{fig-jarras}
+				\end{figure}
+				
+			\subsection{Unidad de Potabilización}
+			
+La Unidad de Potabilización es la encargada de tomar el agua cruda con características particulares y convertirla en agua potable, tal como se muestra en el diagrama de la figura \ref{fig-potab}. Partiendo del modelo de negocio de la unidad de Operaciones, se desglosan las unidades funcionales de la Potabilización (véase figura \ref{fig-valuechainpotab}): Coagulación, floculación, sedimentación, filtración, desinfección.
+
+				\begin{figure}
+					\centering
+					\includegraphics[scale=0.7]{figures/3valuechainpotab}
+					\caption{Cadena de valor de la Unidad de Potabilización.}
+					\label{fig-valuechainpotab}
+				\end{figure}
+				
+Como se mencionó previamente, se toma como caso de estudio la Planta de Potabilización "Dr. Eduardo Jáuregui", ubicada en la Hoyada de Milla, municipio Milla del Estado Mérida, la cual tiene una producción de 300 L/s de agua potable, siendo este el caudal promedio que genera la fuente. Es importante mencionar que las plantas de potabilización se construyen luego de realizar estudios a la fuente de la que se surtirá, de modo que el caudal mínimo de entrada a la planta, usualmente en tiempo de sequía, mantenga la producción en niveles cercanos al flujo fijado de producción (los 300 L/s en este caso).
+
+La unidad de potabilización debe cuidar que el proceso, el flujo de producto y los recursos estén coordinados. El modelo del proceso comprende la información y buen funcionamiento de cada eslabón de la potabilización, incluyendo los modelos de mantenimiento en las unidades y de consumo de la población; en el caso de la planta Jáuregui no se tienen registros de consumo. Respecto al flujo de producto se debe cuidar que la calidad y cantidad de agua en la entrada y salida del proceso sean las adecuadas. El modelo de recursos que permite distribuir los químicos utilizados, como el sulfato de aluminio y el cloro, en las unidades que lo requieran.
+
+La unidad debe llevar un registro de rendimiento y fallas, de manera que se puedan tomar decisiones en pro de mejorías en la producción mientras se mantiene la continuidad del proceso.
+
+En la figura \ref{fig-pid} se presenta el diagrama P\&ID del proceso de potabilización generalizado, donde cada tanque representa una unidad del proceso. El detalle de cada unidad se detalla a continuación.
+
+				\begin{figure}
+					\centering
+					\includegraphics[scale=0.5, angle=90]{figures/3pid}
+					\caption{Diagrama P\&ID del proceso de Potabilización.}
+					\label{fig-pid}
 				\end{figure}
 					
 	\chapter{Implementación}
