@@ -42,9 +42,11 @@
 \BOOKMARK [3][-]{subsubsection.3.7.2.5}{Temperatura}{subsection.3.7.2}% 42
 \BOOKMARK [3][-]{subsubsection.3.7.2.6}{Prueba de Jarras}{subsection.3.7.2}% 43
 \BOOKMARK [2][-]{subsection.3.7.3}{Unidad de Potabilizaci\363n}{section.3.7}% 44
-\BOOKMARK [0][-]{chapter.4}{Implementaci\363n}{}% 45
-\BOOKMARK [1][-]{section.4.1}{Epanet y MATLAB}{chapter.4}% 46
-\BOOKMARK [1][-]{section.4.2}{Simulaci\363n}{chapter.4}% 47
-\BOOKMARK [0][-]{chapter.5}{Conclusiones y Recomendaciones}{}% 48
-\BOOKMARK [0][-]{chapter.6}{Anexos}{}% 49
-\BOOKMARK [0][-]{table.6.1}{Bibliograf\355a}{}% 50
+\BOOKMARK [3][-]{subsubsection.3.7.3.1}{Coagulaci\363n}{subsection.3.7.3}% 45
+\BOOKMARK [3][-]{subsubsection.3.7.3.2}{Floculaci\363n}{subsection.3.7.3}% 46
+\BOOKMARK [0][-]{chapter.4}{Implementaci\363n}{}% 47
+\BOOKMARK [1][-]{section.4.1}{Epanet y MATLAB}{chapter.4}% 48
+\BOOKMARK [1][-]{section.4.2}{Simulaci\363n}{chapter.4}% 49
+\BOOKMARK [0][-]{chapter.5}{Conclusiones y Recomendaciones}{}% 50
+\BOOKMARK [0][-]{chapter.6}{Anexos}{}% 51
+\BOOKMARK [0][-]{table.6.1}{Bibliograf\355a}{}% 52

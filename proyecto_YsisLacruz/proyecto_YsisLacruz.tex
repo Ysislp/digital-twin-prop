@@ -908,9 +908,9 @@ La Unidad de Potabilización es la encargada de tomar el agua cruda con caracterí
 					\label{fig-valuechainpotab}
 				\end{figure}
 				
-Como se mencionó previamente, se toma como caso de estudio la Planta de Potabilización "Dr. Eduardo Jáuregui", ubicada en la Hoyada de Milla, municipio Milla del Estado Mérida, la cual tiene una producción de 300 L/s de agua potable, siendo este el caudal promedio que genera la fuente. Es importante mencionar que las plantas de potabilización se construyen luego de realizar estudios a la fuente de la que se surtirá, de modo que el caudal mínimo de entrada a la planta, usualmente en tiempo de sequía, mantenga la producción en niveles cercanos al flujo fijado de producción (los 300 L/s en este caso).
+Como se mencionó previamente, se toma como caso de estudio la Planta de Potabilización "Dr. Eduardo Jáuregui", ubicada en la Hoyada de Milla, municipio Milla del Estado Mérida, la cual tiene una producción de 300 L/s de agua potable, siendo este el caudal promedio que genera la fuente. Es importante mencionar que el diseño estructural de las plantas de potabilización se realiza luego de aplicar estudios a la fuente que surtirá el proceso, de modo que en casos extremos, usualmente periodos de sequía, el caudal mínimo que entre a la planta logre en lo posible mantener la producción, sin afectar la distribución de agua a la población.
 
-La unidad de potabilización debe cuidar que el proceso, el flujo de producto y los recursos estén coordinados. El modelo del proceso comprende la información y buen funcionamiento de cada eslabón de la potabilización, incluyendo los modelos de mantenimiento en las unidades y de consumo de la población; en el caso de la planta Jáuregui no se tienen registros de consumo. Respecto al flujo de producto se debe cuidar que la calidad y cantidad de agua en la entrada y salida del proceso sean las adecuadas. El modelo de recursos que permite distribuir los químicos utilizados, como el sulfato de aluminio y el cloro, en las unidades que lo requieran.
+La unidad de potabilización debe cuidar que el proceso, el flujo de producto y los recursos estén coordinados. El modelo del proceso comprende la información y buen funcionamiento de cada eslabón de la potabilización, incluyendo los modelos de mantenimiento en las unidades y de consumo de la población; en el caso de la planta Jáuregui no se tienen registros de consumo. Respecto al flujo de producto se debe cuidar que la calidad y cantidad de agua en la entrada y salida del proceso sean las adecuadas. El modelo de recursos por su parte, permite distribuir los químicos utilizados, como el sulfato de aluminio y el cloro, en las unidades que lo requieran.
 
 La unidad debe llevar un registro de rendimiento y fallas, de manera que se puedan tomar decisiones en pro de mejorías en la producción mientras se mantiene la continuidad del proceso.
 
@@ -922,6 +922,118 @@ En la figura \ref{fig-pid} se presenta el diagrama P\&ID del proceso de potabili
 					\caption{Diagrama P\&ID del proceso de Potabilización.}
 					\label{fig-pid}
 				\end{figure}
+				
+				\subsubsection{Coagulación}
+				
+\textbf{Entrada}
+
+Agua cruda aceptada, proveniente de la captación. La aceptación del agua cruda depende de los valores obtenidos en las pruebas sobre la calidad del agua cruda: turbidez, color aparente, Ph, temperatura, así se recibe agua con caudal y calidad. La prueba de jarra indica las condiciones operacionales para el tipo de coagulante, cantidad y tiempo de residencia (en condiciones normales del flujo de agua este valor es fijo).
+
+\vspace{4mm}
+
+\textbf{Proceso}
+
+El proceso de coagulación consiste en quitar la turbidez del agua cruda proveniente de la fuente, producida por partículas de muy bajo diámetro y baja sedimentación, llamadas partículas coloidales. Los coloides son mezclas intermedias entre las soluciones y las suspensiones, que según la afinidad al medio dispersante, se clasifican en:
+
+					\begin{itemize}
+						\item  \textbf{Liofóbicos o liófobos:} Si las partículas dispersas tienen poca afinidad al medio dispersante. Algunos ejemplos son el aceite suspendido en el agua, óxidos metálicos, sulfuros.
+						\item  \textbf{Liofílicos:} Si las partículas tienen fuerte afinidad al medio de suspensión. Por ejemplo el jabón disperso en agua, gelatina en agua, proteínas, virus.
+					\end{itemize}
+					
+Para remover la turbidez se realiza un procedimiento de desestabilización química sobre el agua turbia, neutralizando las fuerzas que mantienen separadas las partículas coloidales mediante adición de coagulantes químicos, estos comúnmente son: Sulfato de aluminio, Sulfato Férrico o Polímeros catiónicos.
+
+Para que la desestabilización se realice de forma adecuada es necesaria la aplicación de energía por mezclado rápido (hidráulico o mecánico), que hace que el material en suspensión cargado eléctricamente al entrar en contacto con los elementos químicos (dispersados de forma rápida y homogénea), permitan la aglomeración de las partículas en suspensión, formando partículas de mayor tamaño llamadas flóculos. Los tiempos de retención varían entre 0,3 y 5 minutos [6] dependiendo del coagulante y el mecanismo de la mezcla, por ejemplo, los polímeros se distribuyen más lentamente que los iones metálicos debido a su mayor molécula, por lo tanto, requerirán mayor tiempo de residencia en la unidad que los coagulantes metálicos hidrolizantes. Esta desestabilización química que genera cargas iónicas permite eliminar el 95\% de las bacterias presentes en el agua cruda en los flóculos y el 90\% de las arcillas, partículas gramnegativas que quedan neutralizadas al añadir el químico.
+
+Para realizar el proceso de coagulación hay dos estructuras principales, la estructura mecánica consiste en un tanque con un agitador a motor, y la estructura hidráulica que trata de un canal de ingreso con desnivel, tal desnivel genera un resalto hidráulico óptimo para realizar la mezcla requerida con el coagulante.
+
+En ambos casos de manera general debe controlarse:
+
+					\begin{itemize}
+						\item[$-$]  Entrada del flujo a la unidad de coagulación, ya que se realiza una mezcla con el coagulante.
+						\item[$-$]  Fijar la cantidad adecuada de coagulante en los dosificadores y cuidar que se añada uniformemente en la zona de mayor agitación.
+					\end{itemize}
+					
+Para el agitador mecánico:
+
+					\begin{itemize}
+						\item[$-$]  El nivel de agua en el tanque de coagulación, manteniéndose en el rango de operación del equipo.
+						\item[$-$]  El funcionamiento del agitador para la mezcla rápida, con la velocidad óptima determinada en la prueba de jarras mediante el gradiente medio de velocidad: $\bar{G} = \sqrt{\frac{P}{V\alpha}}$, donde, $P$ es la potencia total disipada; $V$ es la unidad de volumen en una estructura hidráulica y $\alpha$ es la viscosidad absoluta del agua.
+						\item[$-$]  Fijar el tiempo de retención necesario para que los químicos entren en contacto con toda la masa de agua.
+						\item[$-$]  Monitorear la salida del flujo una vez cumplido el tiempo adecuado de coagulación.
+					\end{itemize}
+					
+Para el agitador hidráulico:
+					
+					\begin{itemize}
+						\item[$-$]  Controlar flujo de agua para un óptimo resalto hidráulico para la mezcla según especificaciones de coagulante.
+					\end{itemize}
+					
+El gradiente de velocidad hace referencia a las colisiones de partículas debido al movimiento del agua, inducido por una energía exterior. Cuanto mayor es el gradiente de velocidad, más rápida es la velocidad de aglomeración de las partículas. Sin embargo, con un gradiente elevado es posible que flóculos ya formados se dividan en partículas menores. Es necesario realizar la prueba de jarras y mantener un equilibrio en la unidad en cuanto a tiempos de retención y gradientes.
+
+Se debe cuidar también la dosis de coagulante aplicada, si se suministra menos que la cantidad requerida, las cargas no se neutralizan, por lo que la formación de flóculos será escasa y la turbidez se mantendrá elevada; si por el contrario, se añade en exceso el coagulante, las cargas de las partículas se invierten y se forman cantidades altas de microflóculos con velocidad de sedimentación muy baja, manteniendo igualmente elevada la turbidez del flujo. Al añadir cantidades adecuadas de coagulante, se evita también el aumento del costo del proceso para la empresa, ya que es la unidad que más pérdidas puede generar debido a los recursos químicos que intervienen.
+
+\vspace{4mm}
+
+\textbf{Salida}
+
+Flujo de agua con añadidura de químicos coagulantes, características de calidad y cantidad de agua.
+
+\vspace{4mm}
+
+El mantenimiento de la unidad se asocia al control de válvulas o compuertas (entrada, salida, desagüe), y a los equipos electromecánicos, si aplica.
+
+\vspace{4mm}
+
+En la planta Jáuregui el proceso de coagulación se realiza de forma hidráulica con un canal Parshall (véase figura \ref{fig-parshall}). La dosis de coagulante se añade justo en el resalto hidráulico que genera la mezcla rápida, en cuestión de segundos. El coagulante utilizado es el Sulfato de Aluminio ($Al_{2}(SO_{4})_{3} 18H_{2}O$), químico que debe aplicarse con un rango óptimo de pH entre 5 - 8, consideración que se cumple puesto que la fuente mantiene un pH de 7,1. De igual forma, la temperatura del agua es templada sin cambios bruscos, por tanto no afecta las reacciones químicas.
+
+					\begin{figure}
+						\centering
+						\includegraphics[scale=0.5]{figures/3parshall}
+						\caption{Canal Parshall, unidad de coagulación.[114]}
+						\label{fig-parshall}
+					\end{figure}
+					
+				\subsubsection{Floculación}
+				
+\textbf{Entrada}
+
+Agua cruda con coagulantes añadidos en la unidad anterior; valores de calidad y cantidad de flujo.
+
+\vspace{4mm}
+
+\textbf{Proceso}
+
+El objetivo principal de la floculación es reunir las partículas desestabilizadas en el proceso de coagulación, para formar aglomeraciones de mayor peso y tamaño que sedimenten con mayor eficiencia. La masa de agua es sometida a una mezcla lenta que permite la aglomeración de las partículas coloidales para disminuir la turbiedad existente.
+
+La unidad se compone de tanques de floculación con agitadores mecánicos o hidráulicos, de flujo vertical, horizontal, alabama o helicoidales. Con gradientes de velocidad decrecientes para garantizar el crecimiento progresivo de los flóculos. El tiempo de mezcla y el gradiente de la velocidad se obtienen mediante la prueba de Jarras detallada previamente, generalmente el gradiente (G) suele ubicarse entre $20s^{?1} ? 70s^{?1}$, y el tiempo de retención (T) entre 20 y 30 minutos. La agitación muy lenta o muy rápida del fluido, puede producir sedimentación o rompimiento de flóculos en la unidad, respectivamente.
+
+Los parámetros operacionales y procesos de control de la unidad de floculación son:
+
+					\begin{itemize}
+						\item[$-$]  Verificar que el caudal de entrada corresponda con el rango de operación de la unidad.
+						\item[$-$]  En caso tal de que el floculador utilizado sea tipo mecánico, se debe cuidar el buen funcionamiento de las aspas.
+						\item[$-$]  Verificar el cumplimiento del gradiente de velocidad (G) y el tiempo de retención (T); parámetros que optimizan el proceso de floculación.
+						\item[$-$]  Controlar el flujo de salida y realizar las mediciones necesarias de caudal, pH y turbiedad.
+					\end{itemize}
+					
+\textbf{Salida}
+
+Flujo de agua con flóculos listos para la sedimentación.
+
+\vspace{4mm}
+
+Para operación y mantenimiento de la unidad funcional, cada floculador cuenta con desagüe protegido que descarga en una línea común; el sistema debe incluir una válvula de compuerta. [8]
+
+\vspace{4mm}
+
+En la planta Jáuregui se cuentan con dos unidades de floculación; el flujo proveniente de coagulación es dividido hacia dos unidades de floculación mecánica de turbina (véase figura \ref{fig-flocculator}), de dos cámaras cada una. La segunda cámara de cada floculador se conecta a la unidad de sedimentación.
+
+					\begin{figure}
+						\centering
+						\includegraphics[scale=0.5]{figures/3flocculator}
+						\caption{Floculador mecánico de turbina.[115]}
+						\label{fig-flocculator}
+					\end{figure}
 					
 	\chapter{Implementación}
 	

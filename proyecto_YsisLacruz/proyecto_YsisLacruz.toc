@@ -1,4 +1,4 @@
-\contentsline {chapter}{\'Indice de Tablas}{v}{chapter*.1}
+\contentsline {chapter}{\'Indice de Tablas}{vi}{chapter*.1}
 \contentsline {chapter}{\numberline {1}Introducci\'on}{1}{chapter.1}
 \contentsline {section}{\numberline {1.1}Antecedentes}{2}{section.1.1}
 \contentsline {section}{\numberline {1.2}Planteamiento del problema}{4}{section.1.2}
@@ -42,9 +42,11 @@
 \contentsline {subsubsection}{\numberline {3.7.2.5}Temperatura}{39}{subsubsection.3.7.2.5}
 \contentsline {subsubsection}{\numberline {3.7.2.6}Prueba de Jarras}{40}{subsubsection.3.7.2.6}
 \contentsline {subsection}{\numberline {3.7.3}Unidad de Potabilizaci\'on}{40}{subsection.3.7.3}
-\contentsline {chapter}{\numberline {4}Implementaci\'on}{44}{chapter.4}
-\contentsline {section}{\numberline {4.1}Epanet y MATLAB}{44}{section.4.1}
-\contentsline {section}{\numberline {4.2}Simulaci\'on}{44}{section.4.2}
-\contentsline {chapter}{\numberline {5}Conclusiones y Recomendaciones}{45}{chapter.5}
-\contentsline {chapter}{\numberline {6}Anexos}{46}{chapter.6}
-\contentsline {chapter}{Bibliograf\'{\i }a}{48}{table.6.1}
+\contentsline {subsubsection}{\numberline {3.7.3.1}Coagulaci\'on}{42}{subsubsection.3.7.3.1}
+\contentsline {subsubsection}{\numberline {3.7.3.2}Floculaci\'on}{46}{subsubsection.3.7.3.2}
+\contentsline {chapter}{\numberline {4}Implementaci\'on}{49}{chapter.4}
+\contentsline {section}{\numberline {4.1}Epanet y MATLAB}{49}{section.4.1}
+\contentsline {section}{\numberline {4.2}Simulaci\'on}{49}{section.4.2}
+\contentsline {chapter}{\numberline {5}Conclusiones y Recomendaciones}{50}{chapter.5}
+\contentsline {chapter}{\numberline {6}Anexos}{51}{chapter.6}
+\contentsline {chapter}{Bibliograf\'{\i }a}{53}{table.6.1}
