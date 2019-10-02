@@ -47,9 +47,15 @@
 \BOOKMARK [3][-]{subsubsection.3.7.3.3}{Sedimentaci\363n}{subsection.3.7.3}% 47
 \BOOKMARK [3][-]{subsubsection.3.7.3.4}{Filtraci\363n}{subsection.3.7.3}% 48
 \BOOKMARK [3][-]{subsubsection.3.7.3.5}{Desinfecci\363n}{subsection.3.7.3}% 49
-\BOOKMARK [0][-]{chapter.4}{Implementaci\363n}{}% 50
-\BOOKMARK [1][-]{section.4.1}{Epanet y MATLAB}{chapter.4}% 51
-\BOOKMARK [1][-]{section.4.2}{Simulaci\363n}{chapter.4}% 52
-\BOOKMARK [0][-]{chapter.5}{Conclusiones y Recomendaciones}{}% 53
-\BOOKMARK [0][-]{chapter.6}{Anexos}{}% 54
-\BOOKMARK [0][-]{table.6.1}{Bibliograf\355a}{}% 55
+\BOOKMARK [1][-]{section.3.8}{Condiciones de Operaci\363n en Potabilizaci\363n}{chapter.3}% 50
+\BOOKMARK [2][-]{subsection.3.8.1}{Unidad de Coagulaci\363n}{section.3.8}% 51
+\BOOKMARK [2][-]{subsection.3.8.2}{Unidad de Floculaci\363n}{section.3.8}% 52
+\BOOKMARK [2][-]{subsection.3.8.3}{Unidad de Sedimentaci\363n}{section.3.8}% 53
+\BOOKMARK [2][-]{subsection.3.8.4}{Unidad de Filtraci\363n}{section.3.8}% 54
+\BOOKMARK [2][-]{subsection.3.8.5}{Unidad de Desinfecci\363n}{section.3.8}% 55
+\BOOKMARK [0][-]{chapter.4}{Implementaci\363n}{}% 56
+\BOOKMARK [1][-]{section.4.1}{Epanet y MATLAB}{chapter.4}% 57
+\BOOKMARK [1][-]{section.4.2}{Simulaci\363n}{chapter.4}% 58
+\BOOKMARK [0][-]{chapter.5}{Conclusiones y Recomendaciones}{}% 59
+\BOOKMARK [0][-]{chapter.6}{Anexos}{}% 60
+\BOOKMARK [0][-]{table.6.1}{Bibliograf\355a}{}% 61

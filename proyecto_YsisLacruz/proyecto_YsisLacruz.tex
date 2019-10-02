@@ -8,7 +8,6 @@
 
 \usepackage{pgfgantt}
 
-
 %*********************************
 %\usepackage[ansinew]{inputenc} % escribir acentos. Leer lo que sigue a continuación:
 
@@ -856,7 +855,7 @@ Las condiciones principales del flujo de salida de la unidad de potabilización, 
 					\end{center}
 				\end{table}
 
-				\subsubsection{Turbidez}
+			\subsubsection{Turbidez}
 				
 Es una medida del grado en el cual el agua pierde su transparencia debido a la presencia de partículas en suspensión. Cuantos más sólidos en suspensión haya en el agua, más sucia parecerá ésta y más alta será la turbidez. En potabilización del agua y tratamiento de aguas residuales, la turbidez es considerada como un buen parámetro para determinar la calidad del agua, a mayor turbidez menor calidad.
 
@@ -866,25 +865,25 @@ Las condiciones de turbidez en agua cruda dependen de condiciones climáticas y c
 
 Para disminuir la turbidez del agua se utiliza un coagulante que, en condiciones y dosis adecuadas, modifica el comportamiento de las partículas presentes en el agua, haciendo que se aglomeren y desciendan, de esta manera las unidades de NTU disminuyen. 
 
-				\subsubsection{pH}
+			\subsubsection{pH}
 
 Coeficiente que indica el grado de acidez o basicidad de una solución acuosa. En general, un agua con un pH menor que 7 se considera ácido y con un pH mayor que 7 se considera básica o alcalina. La alcalinidad es una medida de la capacidad del agua para resistir un cambio de pH que tendería a hacerla más ácida. El rango normal de pH en agua superficial es de 6,5 a 9 y para las aguas subterráneas 6 ? 8.5. La medición de pH se realiza con un pHmetro.
 
-				\subsubsection{Cloro Residual}
+			\subsubsection{Cloro Residual}
 
 Es aquella porción de cloro que queda en el agua después de un período de contacto, que reacciona química y biológicamente como ácido hipocloroso e hipoclorito; siendo entonces el remanente de cloro en el agua después de que parte del añadido reaccione en el proceso de desinfección. El límite máximo permitido para el agua potable es de 2 mg/L.
 
-				\subsubsection{Color Aparente}
+			\subsubsection{Color Aparente}
 				
 El color del agua dependerá tanto de las sustancias que se encuentren disueltas, como de las partículas que se encuentren en suspensión. Se clasifica como ?color verdadero? al que depende solamente el agua y sustancias disueltas, mientras el ?aparente? es el que incluye las partículas en suspensión (que a su vez generan turbidez). El color aparente es entonces el de la muestra tal como se obtiene en el sistema a estudiar.
 
 La medición de color se realiza por medio de un espectrofotómetro por medio del color Platino-Cobalto (Pt-Co) que es el color que se encuentra en aguas y aguas residuales. Varía de un aspecto amarillo claro hasta marrón, con un rango de 0-500 en Unidades de Platino - Cobalto (UPC).
 
-				\subsubsection{Temperatura}
+			\subsubsection{Temperatura}
 				
 Es un parametro utilizado para determinar el oxígeno disuelto en el agua, a mayor temperatura menor concentración de oxígeno disuelto; la disminución de oxígeno disuelto genera trastornos en el ambiente acuático. La temperatura aceptable para el consumo humano es de 15°C.
 
-				\subsubsection{Prueba de Jarras}
+			\subsubsection{Prueba de Jarras}
 				
 En la industria hidrológica es la Prueba de Jarras la que proporciona los rangos óptimos de la dosis de coagulante según el pH de agua a tratar, para llevar a cabo la coagulación; este ensayo de laboratorio simula las condiciones en que se realiza el proceso de coagulación, floculación y sedimentación en la planta, partiendo de varias muestras de agua cruda tomada de la fuente, con características de calidad conocidas, y añadiendo en cada muestra los productos químicos variando tipo y dosis. El tiempo de retención de las unidades del proceso también es determinado mediante la Prueba de Jarras, tiempo necesario para la mezcla rápida e inicio de formación del flóculo (grumo formado por adhesión de sólidos en suspensión). Las condiciones operacionales para las etapas que comprende el proceso de potabilización, se determinan con esta prueba.
 
@@ -914,7 +913,9 @@ La unidad de potabilización debe cuidar que el proceso, el flujo de producto y l
 
 La unidad debe llevar un registro de rendimiento y fallas, de manera que se puedan tomar decisiones en pro de mejorías en la producción mientras se mantiene la continuidad del proceso.
 
-En la figura \ref{fig-pid} se presenta el diagrama P\&ID del proceso de potabilización generalizado, donde cada tanque representa una unidad del proceso. El detalle de cada unidad se detalla a continuación.
+En la figura \ref{fig-pid} se presenta el diagrama P\&ID del proceso de potabilización generalizado, donde cada tanque representa una unidad del proceso, con los sensores que determinan la calidad del agua en la entrada y salida de cada una de ellas. En la práctica, la configuración y número de unidades varía segun el tamaño de la planta; de igual forma, puede que se omitan sensores del proceso, dependiendo de los datos que el personal requiera transmitir. La adición de los sensores se debe a que, si bien es un proceso continuo, al aplicar la visión holónica cada unidad debería poder comunicar el estado en el que se encuentra.
+
+La descripción de las unidades funcionales del proceso se presenta a continuación:
 
 				\begin{figure}
 					\centering
@@ -923,7 +924,7 @@ En la figura \ref{fig-pid} se presenta el diagrama P\&ID del proceso de potabili
 					\label{fig-pid}
 				\end{figure}
 				
-				\subsubsection{Coagulación}
+			\subsubsection{Coagulación}
 				
 \textbf{Entrada}
 
@@ -935,10 +936,10 @@ Agua cruda aceptada, proveniente de la captación. La aceptación del agua cruda d
 
 El proceso de coagulación consiste en quitar la turbidez del agua cruda proveniente de la fuente, producida por partículas de muy bajo diámetro y baja sedimentación, llamadas partículas coloidales. Los coloides son mezclas intermedias entre las soluciones y las suspensiones, que según la afinidad al medio dispersante, se clasifican en:
 
-					\begin{itemize}
-						\item  \textbf{Liofóbicos o liófobos:} Si las partículas dispersas tienen poca afinidad al medio dispersante. Algunos ejemplos son el aceite suspendido en el agua, óxidos metálicos, sulfuros.
-						\item  \textbf{Liofílicos:} Si las partículas tienen fuerte afinidad al medio de suspensión. Por ejemplo el jabón disperso en agua, gelatina en agua, proteínas, virus.
-					\end{itemize}
+				\begin{itemize}
+					\item  \textbf{Liofóbicos o liófobos:} Si las partículas dispersas tienen poca afinidad al medio dispersante. Algunos ejemplos son el aceite suspendido en el agua, óxidos metálicos, sulfuros.
+					\item  \textbf{Liofílicos:} Si las partículas tienen fuerte afinidad al medio de suspensión. Por ejemplo el jabón disperso en agua, gelatina en agua, proteínas, virus.
+				\end{itemize}
 					
 Para remover la turbidez se realiza un procedimiento de desestabilización química sobre el agua turbia, neutralizando las fuerzas que mantienen separadas las partículas coloidales mediante adición de coagulantes químicos, estos comúnmente son: Sulfato de aluminio, Sulfato Férrico o Polímeros catiónicos.
 
@@ -948,25 +949,25 @@ Para realizar el proceso de coagulación hay dos estructuras principales, la estr
 
 En ambos casos de manera general debe controlarse:
 
-					\begin{itemize}
-						\item[$-$]  Entrada del flujo a la unidad de coagulación, ya que se realiza una mezcla con el coagulante.
-						\item[$-$]  Fijar la cantidad adecuada de coagulante en los dosificadores y cuidar que se añada uniformemente en la zona de mayor agitación.
-					\end{itemize}
-					
+				\begin{itemize}
+					\item[$-$]  Entrada del flujo a la unidad de coagulación, ya que se realiza una mezcla con el coagulante.
+					\item[$-$]  Fijar la cantidad adecuada de coagulante en los dosificadores y cuidar que se añada uniformemente en la zona de mayor agitación.
+				\end{itemize}
+				
 Para el agitador mecánico:
 
-					\begin{itemize}
-						\item[$-$]  El nivel de agua en el tanque de coagulación, manteniéndose en el rango de operación del equipo.
-						\item[$-$]  El funcionamiento del agitador para la mezcla rápida, con la velocidad óptima determinada en la prueba de jarras mediante el gradiente medio de velocidad: $\bar{G} = \sqrt{\frac{P}{V\alpha}}$, donde, $P$ es la potencia total disipada; $V$ es la unidad de volumen en una estructura hidráulica y $\alpha$ es la viscosidad absoluta del agua.
-						\item[$-$]  Fijar el tiempo de retención necesario para que los químicos entren en contacto con toda la masa de agua.
-						\item[$-$]  Monitorear la salida del flujo una vez cumplido el tiempo adecuado de coagulación.
-					\end{itemize}
+				\begin{itemize}
+					\item[$-$]  El nivel de agua en el tanque de coagulación, manteniéndose en el rango de operación del equipo.
+					\item[$-$]  El funcionamiento del agitador para la mezcla rápida, con la velocidad óptima determinada en la prueba de jarras mediante el gradiente medio de velocidad: $\bar{G} = \sqrt{\frac{P}{V\alpha}}$, donde, $P$ es la potencia total disipada; $V$ es la unidad de volumen en una estructura hidráulica y $\alpha$ es la viscosidad absoluta del agua.
+					\item[$-$]  Fijar el tiempo de retención necesario para que los químicos entren en contacto con toda la masa de agua.
+					\item[$-$]  Monitorear la salida del flujo una vez cumplido el tiempo adecuado de coagulación.
+				\end{itemize}
 					
 Para el agitador hidráulico:
 					
-					\begin{itemize}
-						\item[$-$]  Controlar flujo de agua para un óptimo resalto hidráulico para la mezcla según especificaciones de coagulante.
-					\end{itemize}
+				\begin{itemize}
+					\item[$-$]  Controlar flujo de agua para un óptimo resalto hidráulico para la mezcla según especificaciones de coagulante.
+				\end{itemize}
 					
 El gradiente de velocidad hace referencia a las colisiones de partículas debido al movimiento del agua, inducido por una energía exterior. Cuanto mayor es el gradiente de velocidad, más rápida es la velocidad de aglomeración de las partículas. Sin embargo, con un gradiente elevado es posible que flóculos ya formados se dividan en partículas menores. Es necesario realizar la prueba de jarras y mantener un equilibrio en la unidad en cuanto a tiempos de retención y gradientes.
 
@@ -986,14 +987,16 @@ El mantenimiento de la unidad se asocia al control de válvulas o compuertas (ent
 
 En la planta Jáuregui el proceso de coagulación se realiza de forma hidráulica con un canal Parshall (véase figura \ref{fig-parshall}). La dosis de coagulante se añade justo en el resalto hidráulico que genera la mezcla rápida, en cuestión de segundos. El coagulante utilizado es el Sulfato de Aluminio ($Al_{2}(SO_{4})_{3} 18H_{2}O$), químico que debe aplicarse con un rango óptimo de pH entre 5 - 8, consideración que se cumple puesto que la fuente mantiene un pH de 7,1. De igual forma, la temperatura del agua es templada sin cambios bruscos, por tanto no afecta las reacciones químicas.
 
-					\begin{figure}
-						\centering
-						\includegraphics[scale=0.5]{figures/3parshall}
-						\caption{Canal Parshall, unidad de coagulación.[114]}
-						\label{fig-parshall}
-					\end{figure}
-					
-				\subsubsection{Floculación}
+En esta planta se condiciona la adición de coagulante, es decir, según el resultado de calidad de agua, si la turbidez se encuentra por debajo de 13 NTU, no se añade ninguna dosis de coagulante. La razón de esta decisión se debe a que el proceso disminuye la turbidez lo suficiente para asegurar agua con calidad aceptable al culminar la potabilización, por lo que se reserva el químico coagulante para cuando se generen cambios de turbidez bruscos en la entrada de la planta.
+
+				\begin{figure}
+					\centering
+					\includegraphics[scale=0.5]{figures/3parshall}
+					\caption{Canal Parshall, unidad de coagulación.[114]}
+					\label{fig-parshall}
+				\end{figure}
+				
+			\subsubsection{Floculación}
 				
 \textbf{Entrada}
 
@@ -1009,12 +1012,12 @@ La unidad se compone de tanques de floculación con agitadores mecánicos o hidráu
 
 Los parámetros operacionales y procesos de control de la unidad de floculación son:
 
-					\begin{itemize}
-						\item[$-$]  Verificar que el caudal de entrada corresponda con el rango de operación de la unidad.
-						\item[$-$]  En caso tal de que el floculador utilizado sea tipo mecánico, se debe cuidar el buen funcionamiento de las aspas.
-						\item[$-$]  Verificar el cumplimiento del gradiente de velocidad (G) y el tiempo de retención (T); parámetros que optimizan el proceso de floculación.
-						\item[$-$]  Controlar el flujo de salida y realizar las mediciones necesarias de caudal, pH y turbiedad.
-					\end{itemize}
+				\begin{itemize}
+					\item[$-$]  Verificar que el caudal de entrada corresponda con el rango de operación de la unidad.
+					\item[$-$]  En caso tal de que el floculador utilizado sea tipo mecánico, se debe cuidar el buen funcionamiento de las aspas.
+					\item[$-$]  Verificar el cumplimiento del gradiente de velocidad (G) y el tiempo de retención (T); parámetros que optimizan el proceso de floculación.
+					\item[$-$]  Controlar el flujo de salida y realizar las mediciones necesarias de caudal, pH y turbiedad.
+				\end{itemize}
 					
 \textbf{Salida}
 
@@ -1028,14 +1031,14 @@ Para operación y mantenimiento de la unidad funcional, cada floculador cuenta co
 
 En la planta Jáuregui se cuentan con dos unidades de floculación; el flujo proveniente de coagulación es dividido hacia dos unidades de floculación mecánica de turbina (véase figura \ref{fig-flocculator}), de dos cámaras cada una. La segunda cámara de cada floculador se conecta a la unidad de sedimentación.
 
-					\begin{figure}
-						\centering
-						\includegraphics[scale=0.5]{figures/3flocculator}
-						\caption{Floculador mecánico de turbina.[115]}
-						\label{fig-flocculator}
-					\end{figure}
-					
-				\subsubsection{Sedimentación}
+				\begin{figure}
+					\centering
+					\includegraphics[scale=0.5]{figures/3flocculator}
+					\caption{Floculador mecánico de turbina.[115]}
+					\label{fig-flocculator}
+				\end{figure}
+				
+			\subsubsection{Sedimentación}
 				
 \textbf{Entrada}
 
@@ -1053,15 +1056,15 @@ El diseño estructural de los sedimentadores puede ser de flujo vertical, horizon
 
 Los procesos que deben ser controlados en la unidad de sedimentación son:
 
-					\begin{itemize}
-						\item[$-$]  Caudal de entrada a la unidad conocido y controlado. La calidad de agua debe ser conocida.
-						\item[$-$]  Nivel del agua según la capacidad del tanque.
-						\item[$-$]  Tiempo de retención según los estudios previos, basados en la calidad del agua.
-						\item[$-$]  Salida de agua clarificada, caudal y calidad de agua como parámetros conocidos.
-						\item[$-$]  Verificación semanal de crecimiento de algas. 
-						\item[$-$]  Medición del nivel de lodos depositados, evitando que supere la zona de lodos según el diseño de la planta. Por lo general esta medición es indirecta asociada al nivel de agua en el tanque.
-						\item[$-$]  Remoción de lodos, incluye el manejo de las válvulas de descarga y los tiempos de acción. Se realiza por gravedad o con bombas de lodos hacia el desagüe de la planta.
-					\end{itemize}
+				\begin{itemize}
+					\item[$-$]  Caudal de entrada a la unidad conocido y controlado. La calidad de agua debe ser conocida.
+					\item[$-$]  Nivel del agua según la capacidad del tanque.
+					\item[$-$]  Tiempo de retención según los estudios previos, basados en la calidad del agua.
+					\item[$-$]  Salida de agua clarificada, caudal y calidad de agua como parámetros conocidos.
+					\item[$-$]  Verificación semanal de crecimiento de algas. 
+					\item[$-$]  Medición del nivel de lodos depositados, evitando que supere la zona de lodos según el diseño de la planta. Por lo general esta medición es indirecta asociada al nivel de agua en el tanque.
+					\item[$-$]  Remoción de lodos, incluye el manejo de las válvulas de descarga y los tiempos de acción. Se realiza por gravedad o con bombas de lodos hacia el desagüe de la planta.
+				\end{itemize}
 					
 \textbf{Salida}
 
@@ -1073,14 +1076,14 @@ El mantenimiento de la unidad gira en torno a la calidad del agua; de recibir ag
 
 En la planta Jáuregui se tienen dos unidades de sedimentación de tipo laminar (véase figura \ref{sediment}), cada una con dos canales de recolección, es decir, cuatro pasillos de tubos recolectores. El agua proveniente de la unidad de floculación entra por la parte inferior del tanque de sedimentación, de forma que los flóculos se asienten en las láminas y el agua clarificada se mantenga en la superficie. Los cuatro canales recolectores se unen en un canal común que se dirige a la unidad de filtración.
 
-					\begin{figure}
-						\centering
-						\includegraphics[scale=0.8]{figures/3sediment}
-						\caption{Sedimentador laminar.[116]}
-						\label{fig-sediment}
-					\end{figure}
+				\begin{figure}
+					\centering
+					\includegraphics[scale=0.8]{figures/3sediment}
+					\caption{Sedimentador laminar.[116]}
+					\label{fig-sediment}
+				\end{figure}
 
-				\subsubsection{Filtración}
+			\subsubsection{Filtración}
 				
 \textbf{Entrada}
 
@@ -1100,23 +1103,23 @@ En esta unidad se debe ejecutar un protocolo para limpieza de filtros una vez es
 
 La condición operacional sobre la colmatación de los filtros, es dada por el flujo de salida del filtro, si el flujo de salida es menor a la velocidad de filtración (rango asociado a la estructura del filtro, calidad del agua, etc.), considerando también el caudal de entrada, se debe proceder al lavado, sin embargo esta medición puede ser difícil de obtener dependiendo del diseño de la unidad, es por ello que se puede utilizar una medición indirecta de la colmatación de los filtros asociadas a la turbulencia y/o nivel en el tanque de filtración. Una unidad con poca turbulencia, o con nivel máximo de agua, debe pasar a retro lavado.
 
-					\begin{figure}
-						\centering
-						\includegraphics[scale=0.7]{figures/3filter}
-						\caption{Filtro rápido.[51]}
-						\label{fig-filter}
-					\end{figure}
+				\begin{figure}
+					\centering
+					\includegraphics[scale=0.7]{figures/3filter}
+					\caption{Filtro rápido.[51]}
+					\label{fig-filter}
+				\end{figure}
 
 Los procesos que deben mantenerse controlados en la unidad de filtración son:
 
-					\begin{itemize}
-						\item[$-$]  Entrada a la unidad, control de caudal y conocimiento de color y turbiedad.
-						\item[$-$]  Nivel del tanque de filtrado, debe estar en el rango de operación determinado por el diseño de la planta.
-						\item[$-$]  Operación de lavado del filtro, frecuencia y modalidad, dependiendo de la calidad del agua determinada en la prueba de jarras.
-						\item[$-$]  Tiempos para limpieza y acondicionamiento.
-						\item[$-$]  Salida de la unidad de filtración, conocimiento de caudal, color, turbiedad y pH. 
-						\item[$-$]  Determinación de la eficiencia de la unidad, empleando la siguiente expresión: $Eficiencia(\%)=\frac{Turbiedad(afluente)-Turbiedad(efluente)}{Turbiedad(afluente)}100$
-					\end{itemize}
+				\begin{itemize}
+					\item[$-$]  Entrada a la unidad, control de caudal y conocimiento de color y turbiedad.
+					\item[$-$]  Nivel del tanque de filtrado, debe estar en el rango de operación determinado por el diseño de la planta.
+					\item[$-$]  Operación de lavado del filtro, frecuencia y modalidad, dependiendo de la calidad del agua determinada en la prueba de jarras.
+					\item[$-$]  Tiempos para limpieza y acondicionamiento.
+					\item[$-$]  Salida de la unidad de filtración, conocimiento de caudal, color, turbiedad y pH. 
+					\item[$-$]  Determinación de la eficiencia de la unidad, empleando la siguiente expresión: $Eficiencia(\%)=\frac{Turbiedad(afluente)-Turbiedad(efluente)}{Turbiedad(afluente)}100$
+				\end{itemize}
 					
 \textbf{Salida}
 
@@ -1128,14 +1131,14 @@ En la planta Jáuregui la unidad de filtración consta de seis filtros rápidos ins
 
 Cuando un filtro sale de producción, los demás tienen la capacidad para recibir el caudal desviado de éste, lo que resalta la robustez del proceso y la redundancia estructural, de modo que no se pierda la continuidad en la producción.
 
-					\begin{figure}
-						\centering
-						\includegraphics[scale=0.1]{figures/3realfilter}
-						\caption{Lecho filtrante.}
-						\label{fig-realfilter}
-					\end{figure}
+				\begin{figure}
+					\centering
+					\includegraphics[scale=0.1]{figures/3realfilter}
+					\caption{Lecho filtrante.}
+					\label{fig-realfilter}
+				\end{figure}
 
-				\subsubsection{Desinfección}
+			\subsubsection{Desinfección}
 				
 \textbf{Entrada}
 
@@ -1149,18 +1152,129 @@ Desinfectar el agua significa eliminar de ella los microorganismos existentes ca
 
 Procesos que deben ser controlados en la unidad de desinfección:
 
-					\begin{itemize}
-						\item[$-$]  Entrada al tanque de desinfección, control de caudal y conocimiento de pH, color y turbiedad ($<$ 1 NTU).
-						\item[$-$]  Nivel del tanque dentro del rango de operación.
-						\item[$-$]  Dosificación de desinfectantes, según la cantidad determinada en estudios previos en el laboratorio.
-						\item[$-$]  El pH del agua debe ser menor a 7,5.
-						\item[$-$]  Mantener medición del cloro residual.
-						\item[$-$]  Salida de agua potable hacia la unidad de almacenamiento.
-					\end{itemize}
+				\begin{itemize}
+					\item[$-$]  Entrada al tanque de desinfección, control de caudal y conocimiento de pH, color y turbiedad ($<$ 1 NTU).
+					\item[$-$]  Nivel del tanque dentro del rango de operación.
+					\item[$-$]  Dosificación de desinfectantes, según la cantidad determinada en estudios previos en el laboratorio.
+					\item[$-$]  El pH del agua debe ser menor a 7,5.
+					\item[$-$]  Mantener medición del cloro residual.
+					\item[$-$]  Salida de agua potable hacia la unidad de almacenamiento.
+				\end{itemize}
 
 \textbf{Salida}
 
-Agua potabilizada.
+Agua potabilizada. Calidad y cantidad de flujo a distribuir.
+
+			\section{Condiciones de Operación en Potabilización}
+			
+El proceso de potabilización se compone de equipos/unidades cuyo flujo de producto es continuo, por lo que se requiere definir los modos de operación de la unidad. Así, se tiene que todo equipo/unidad inicia, opera y se detiene, asociado a estados de arranque, operación y parada. Con la salvedad que la parada puede efectuarse por parada condicionada, por finalización de producción o por falla y la operación puede ser normal o degradada. Una descripción más precisa de los modos de operación se puede definir como: Arranque (A), Vacío (V), Operando (O), Parada (P). Para cada modo se debe tener un modelo de comportamiento que puede estar dado en función de su desempeño como: Normal (N), Degradado (D), Fallo (F).
+
+Cada modelo debe ir relacionado a los estados que interactúan en el sistema, expresándolos según el flujo de producto, recursos y proceso; esto para cada unidad del proceso, de manera que se cumpla con la visión establecida de sistemas holónicos.
+
+			\subsection{Unidad de Coagulación}
+
+\begin{table}[H]
+	\begin{center}
+		\resizebox{15,5cm}{!} {
+			\begin{tabular}{|p{3cm}|p{3,7cm}|p{5,25cm}|p{5,25cm}|}
+				\hline
+				\multirow{2}{1cm}{\textbf{Condición}} & \multicolumn{3}{c|}{\textbf{Modelos de Conocimiento}} \\
+				\cline{2-4}
+				& \centering{\textbf{Flujo}} & \centering{\textbf{Proceso}} & \textbf{\centering{Recursos}} \\
+				\hline \hline
+				\textbf{Normal} & $Q_{i} \approx Q_{p} \approx Q_{o}$ \par $NTU < 50$ \par $6,5 < pH < 9$ & Químicos disponibles para adicionar. \par Sensores funcionales (recurso humano o tecnológico). \par Compuerta de salida abierta, en funcionamiento. \par Compuerta de entrada abierta, en funcionamiento. & Cantidad de coagulante adicionado adecuado, segun estudios previos. \\ \hline
+				\textbf{Degradado} & $Q_{i} \ll Q_{p}, Q_{i} \gg Q_{p}$ \par $Q_{o} \ll Q_{p}, Q_{o} \gg Q_{p}$ \par $NTU > 50$ \par $pH < 6,5 - pH > 9$ & Cantidad limitada o nula de químicos para adicionar. \par Sensores en falla (falta de personal, falla en dispositivos de medición). \par Compuertas con fallas mecánicas, sin interrupción total del flujo. & Mantenimiento de la unidad. \par Cantidad de coagulante añadido fuera del rango ideal. \\ \hline
+				\textbf{Falla} & $Q_{i} \approx 0$ & Compuerta de entrada en falla, interrupción total del flujo. \par Compuerta de salida cerrada en falla, imposibilidad de salida del flujo. & \\ \hline
+			\end{tabular}
+		}
+		\caption{Modo de Operación para Coagulación.}
+		\label{tabla-Ocoag}
+	\end{center}
+\end{table}
+
+			\subsection{Unidad de Floculación}
+
+\begin{table}[H]
+	\begin{center}
+		\resizebox{15,5cm}{!} {
+			\begin{tabular}{|p{3cm}|p{3,7cm}|p{5,25cm}|p{5,25cm}|}
+				\hline
+				\multirow{2}{1cm}{\textbf{Condición}} & \multicolumn{3}{c|}{\textbf{Modelos de Conocimiento}} \\
+				\cline{2-4}
+				& \centering{\textbf{Flujo}} & \centering{\textbf{Proceso}} & \textbf{\centering{Recursos}} \\
+				\hline \hline
+				\textbf{Normal} & $Q_{i} \approx Q_{p} \approx Q_{o}$ \par $NTU < 50$ \par $6,5 < pH < 9$ \par Nivel de agua dentro del rango de operación. & Sensores funcionales (recurso humano o tecnológico). \par Compuerta de salida abierta, en funcionamiento. \par Compuerta de entrada abierta, en funcionamiento. \par Compuerta de desagüe cerrada, en funcionamiento. \par Mezclador mecánico en funcionamiento. & Se visualizan flóculos en formación. \\ \hline
+				\textbf{Degradado} & $Q_{i} \ll Q_{p}, Q_{i} \gg Q_{p}$ \par $Q_{o} \ll Q_{p}, Q_{o} \gg Q_{p}$ \par $NTU > 50$ \par $pH < 6,5 - pH > 9$ \par Nivel de agua por encima del rango de operación. & Sensores en falla (falta de personal, falla en dispositivos). \par Compuertas con fallas mecánicas, sin interrupción total de flujo, o sin exceso de pérdidas en el caso del desagüe. & Mantenimiento de la unidad. \par Se visualiza poca formación de flóculos (denota falla en el cálculo de la frecuencia de aspas de mezclado, cantidad de coagulante añadido en la unidad anterior o falla en el diseño). \\ \hline
+				\textbf{Falla} & $Q_{i} \approx 0$ \par Nivel de agua por debajo del rango de operación. & Compuerta de entrada en falla, con interrupción total de flujo o muy por debajo del rango normal. \par Compuerta de salida, cerrada y en falla, interrupción total de flujo o muy por debajo del rango normal. Compuerta de desagüe en falla, pérdida de flujo. & \\ \hline
+			\end{tabular}
+		}
+		\caption{Modo de Operación para Floculación.}
+		\label{tabla-Ofloc}
+	\end{center}
+\end{table}
+
+			\subsection{Unidad de Sedimentación}
+				
+\begin{table}[H]
+	\begin{center}
+		\resizebox{15,5cm}{!} {
+			\begin{tabular}{|p{3cm}|p{3,7cm}|p{5,25cm}|p{5,25cm}|}
+				\hline
+				\multirow{2}{1cm}{\textbf{Condición}} & \multicolumn{3}{c|}{\textbf{Modelos de Conocimiento}} \\
+				\cline{2-4}
+				& \centering{\textbf{Flujo}} & \centering{\textbf{Proceso}} & \textbf{\centering{Recursos}} \\
+				\hline \hline
+				\textbf{Normal} & $Q_{i} \approx Q_{p} \approx Q_{o}$ \par $NTU < 10$ \par $6,5 < pH < 9$ \par Nivel de agua dentro del rango de operación. & Sensores funcionales (recurso humano o tecnológico). \par Compuerta de salida abierta, en funcionamiento. \par Compuerta de entrada abierta, en funcionamiento. \par Compuerta de desagüe cerrada, en funcionamiento. & Se visualiza disminución de flóculos. \\ \hline
+				\textbf{Degradado} & $Q_{i} \ll Q_{p}, Q_{i} \gg Q_{p}$ \par $Q_{o} \ll Q_{p}, Q_{o} \gg Q_{p}$ \par $NTU > 10$ \par $pH < 6,5 - pH > 9$ \par Nivel de agua por encima del rango de operación. & Sensores en falla (falta de personal, falla en dispositivos). \par Compuertas con fallas mecánicas, sin interrupción total de flujo, o sin exceso de pérdidas en el caso de la descarga de lodos. \par Problemas con la apertura de descarga de lodos. & Mantenimiento de la unidad. \par Se visualizan flóculos en el area de agua clarificada (denota falla en el cálculo de la frecuencia de aspas de mezclado en la unidad anterior, error en la cantidad de coagulante añadido, colmatación de lodos o falla en el diseño). \\ \hline
+				\textbf{Falla} & $Q_{i} \approx 0$ \par Nivel de agua por debajo del rango de operación. & Compuerta de entrada en falla, con interrupción total de flujo o muy por debajo del rango normal. \par Compuerta de salida, cerrada y en falla, interrupción total de flujo o muy por debajo del rango normal. \par Compuerta de descarga de lodos en falla, con pérdida considerable de flujo o imposibilidad de descargar lodos por un tiempo prolongado. & \\ \hline
+			\end{tabular}
+		}
+		\caption{Modo de Operación para Sedimentación.}
+		\label{tabla-Osediment}
+	\end{center}
+\end{table}
+
+			\subsection{Unidad de Filtración}
+
+\begin{table}[H]
+	\begin{center}
+		\resizebox{15,5cm}{!} {
+			\begin{tabular}{|p{3cm}|p{3,7cm}|p{5,25cm}|p{5,25cm}|}
+				\hline
+				\multirow{2}{1cm}{\textbf{Condición}} & \multicolumn{3}{c|}{\textbf{Modelos de Conocimiento}} \\
+				\cline{2-4}
+				& \centering{\textbf{Flujo}} & \centering{\textbf{Proceso}} & \textbf{\centering{Recursos}} \\
+				\hline \hline
+				\textbf{Normal} & $Q_{i} \approx Q_{p} \approx Q_{o}$ \par $NTU < 5$ \par $6,5 < pH < 9$ \par Nivel de agua dentro del rango de operación. & Sensores funcionales (recurso humano o tecnológico). \par Compuerta de salida abierta, en funcionamiento. \par Compuerta de entrada abierta, en funcionamiento. \par Compuerta de desagüe cerrada, en funcionamiento. & Lecho filtrante no colmatado. \\ \hline
+				\textbf{Degradado} & $Q_{i} \ll Q_{p}, Q_{i} \gg Q_{p}$ \par $Q_{o} \ll Q_{p}, Q_{o} \gg Q_{p}$ \par $NTU > 5$ \par $pH < 6,5 - pH > 9$ \par Nivel de agua por encima del rango de operación. & Sensores en falla (falta de personal, falla en dispositivos). \par Compuertas con fallas mecánicas, sin interrupción total de flujo, o sin exceso de pérdidas en el caso del desagüe. & Mantenimiento de la unidad. \par Filtros colmatados. \\ \hline
+				\textbf{Falla} & $Q_{i} \approx 0$ \par Nivel de agua por debajo del rango de operación. & Compuerta de entrada en falla, con interrupción total de flujo o muy por debajo del rango normal. \par Compuerta de salida, cerrada y en falla, interrupción total de flujo o muy por debajo del rango normal. \par Compuerta de desagüe en falla, con pérdida considerable de flujo. & \\ \hline
+			\end{tabular}
+		}
+		\caption{Modo de Operación para Filtración.}
+		\label{tabla-Ofilt}
+	\end{center}
+\end{table}
+
+			\subsection{Unidad de Desinfección}
+			
+\begin{table}[H]
+	\begin{center}
+		\resizebox{15,5cm}{!} {
+			\begin{tabular}{|p{3cm}|p{3,7cm}|p{5,25cm}|p{5,25cm}|}
+				\hline
+				\multirow{2}{1cm}{\textbf{Condición}} & \multicolumn{3}{c|}{\textbf{Modelos de Conocimiento}} \\
+				\cline{2-4}
+				& \centering{\textbf{Flujo}} & \centering{\textbf{Proceso}} & \textbf{\centering{Recursos}} \\
+				\hline \hline
+				\textbf{Normal} & $Q_{i} \approx Q_{p} \approx Q_{o}$ \par $NTU < 1$ \par $6,5 < pH < 7,5$ \par Nivel de agua dentro del rango de operación. & Sensores funcionales (recurso humano o tecnológico). \par Compuerta de salida abierta, en funcionamiento. \par Compuerta de entrada abierta, en funcionamiento. \par Compuerta de desagüe cerrada, en funcionamiento. \par Químicos de desinfección disponibles para adicionar. & Adición de la cantidad adecuada de químicos, según estudios del laboratorio. \\ \hline
+				\textbf{Degradado} & $Q_{i} \ll Q_{p}, Q_{i} \gg Q_{p}$ \par $Q_{o} \ll Q_{p}, Q_{o} \gg Q_{p}$ \par $NTU > 5$ \par $pH < 6,5 - pH > 7,5$ \par Nivel de agua por encima o por debajo del rango de operación. & Sensores en falla (falta de personal, falla en dispositivos). \par Compuertas con fallas mecánicas, sin interrupción total de flujo, o sin exceso de pérdidas en el caso del desagüe. & Mantenimiento de la unidad. \par Error en la dosis de químicos a añadir. \\ \hline
+				\textbf{Falla} & $Q_{i} \approx 0$ & Compuerta de entrada en falla, con interrupción total de flujo o muy por debajo del rango normal. \par Compuerta de salida, cerrada y en falla, interrupción total de flujo o muy por debajo del rango normal. \par Compuerta de desagüe en falla, con pérdida considerable de flujo. & \\ \hline
+			\end{tabular}
+		}
+		\caption{Modo de Operación para Desinfección.}
+		\label{tabla-Odesinf}
+	\end{center}
+\end{table}
 					
 	\chapter{Implementación}
 	
