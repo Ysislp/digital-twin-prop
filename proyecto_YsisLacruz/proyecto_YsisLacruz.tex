@@ -1172,6 +1172,25 @@ El proceso de potabilización se compone de equipos/unidades cuyo flujo de produc
 Cada modelo debe ir relacionado a los estados que interactúan en el sistema, expresándolos según el flujo de producto, recursos y proceso; esto para cada unidad del proceso, de manera que se cumpla con la visión establecida de sistemas holónicos.
 
 			\subsection{Unidad de Coagulación}
+			
+\begin{table}[H]
+	\begin{center}
+		\resizebox{15,5cm}{!} {
+			\begin{tabular}{|p{3cm}|p{3,7cm}|p{5,25cm}|p{5,25cm}|}
+				\hline
+				\multirow{2}{1cm}{\textbf{Condición}} & \multicolumn{3}{c|}{\textbf{Modelos de Conocimiento}} \\
+				\cline{2-4}
+				& \centering{\textbf{Flujo}} & \centering{\textbf{Proceso}} & \textbf{\centering{Recursos}} \\
+				\hline \hline
+				\textbf{Normal} & $Q_{i} \approx Q_{p} \approx Q_{o}$ \par Condiciones de calidad. & Compuertas operativas, sin fallas. \par Sensores calibrados, sin fallas. \par Químico coagulante disponible. \par Maquinaria para adición de coagulante sin fallas. & Pruebas de laboratorio realizadas. \par Correcta adición de coagulante ** \\ \hline
+				\textbf{Degradado} & $Q_{i} \ll Q_{p}$ \par $NTU > 50$ & Compuertas con obstrucciones, sin interrupción total del flujo. \par Falta de químico coagulante para añadir. \par Maquinaria para adición de coagulante con fallas. & Pruebas de laboratorio no realizadas. \par Exceso de coagulante al proceso debido a fugas. \\ \hline
+				\textbf{Falla} & $Q_{i} \approx 0$ & Compuertas bloqueadas, con interrupción considerable de flujo. & \\ \hline
+			\end{tabular}
+		}
+		\caption{Modo de Arranque para Coagulación.}
+		\label{tabla-Acoag}
+	\end{center}
+\end{table}
 
 \begin{table}[H]
 	\begin{center}
@@ -1193,6 +1212,25 @@ Cada modelo debe ir relacionado a los estados que interactúan en el sistema, exp
 \end{table}
 
 			\subsection{Unidad de Floculación}
+			
+\begin{table}[H]
+	\begin{center}
+		\resizebox{15,5cm}{!} {
+			\begin{tabular}{|p{3cm}|p{3,7cm}|p{5,25cm}|p{5,25cm}|}
+				\hline
+				\multirow{2}{1cm}{\textbf{Condición}} & \multicolumn{3}{c|}{\textbf{Modelos de Conocimiento}} \\
+				\cline{2-4}
+				& \centering{\textbf{Flujo}} & \centering{\textbf{Proceso}} & \textbf{\centering{Recursos}} \\
+				\hline \hline
+				\textbf{Normal} & Nivel de agua dentro del rango de operación, al menos $30 cm$ arriba de las paletas de mezclado. & Motor del agitador en condiciones. \par Compuertas funcionales. & Agitación de la masa de agua. ** \\ \hline
+				\textbf{Degradado} & $Q_{i} \ll Q_{p}$ \par Nivel de agua por encima del rango óptimo. & Falla en motor del agitador. \par Falla en compuertas, sin obstrucción total de flujo. & Agitación no adecuada para la formación de flóculos. \\ \hline
+				\textbf{Falla} & $Q_{i} \approx 0$ \par Nivel de agua por debajo del rango de operación. & Compuertas bloqueadas, impidiendo paso de agua. & \\ \hline
+			\end{tabular}
+		}
+		\caption{Modo de Arranque para Floculación.}
+		\label{tabla-Afloc}
+	\end{center}
+\end{table}
 
 \begin{table}[H]
 	\begin{center}
@@ -1214,6 +1252,25 @@ Cada modelo debe ir relacionado a los estados que interactúan en el sistema, exp
 \end{table}
 
 			\subsection{Unidad de Sedimentación}
+			
+\begin{table}[H]
+	\begin{center}
+		\resizebox{15,5cm}{!} {
+			\begin{tabular}{|p{3cm}|p{3,7cm}|p{5,25cm}|p{5,25cm}|}
+				\hline
+				\multirow{2}{1cm}{\textbf{Condición}} & \multicolumn{3}{c|}{\textbf{Modelos de Conocimiento}} \\
+				\cline{2-4}
+				& \centering{\textbf{Flujo}} & \centering{\textbf{Proceso}} & \textbf{\centering{Recursos}} \\
+				\hline \hline
+				\textbf{Normal} & $Q_{i} \approx Q_{p} \approx Q_{o}$ \par Nivel de agua dentro del rango de operación, sobre los recolectores. & Compuertas en funcionamiento. & Unidad limpia. \\ \hline
+				\textbf{Degradado} & $Q_{i} \ll Q_{p}$ & Compuertas con fallas, sin interrumpción total de flujo. \par Recolectores de agua clarificada obstruídos. & Manto de lodos sobre el nivel requerido. \par Disminución considerable de $Q_{o}$ en los canales de recolección. \\ \hline
+				\textbf{Falla} & $Q_{i} \approx 0$ \par Nivel de agua por debajo de las láminas de sedimentación. & Compuertas en falla, con obstrucción del flujo. &  \\ \hline
+			\end{tabular}
+		}
+		\caption{Modo de Arranque para Sedimentación.}
+		\label{tabla-Asediment}
+	\end{center}
+\end{table}
 				
 \begin{table}[H]
 	\begin{center}
@@ -1245,6 +1302,25 @@ Cada modelo debe ir relacionado a los estados que interactúan en el sistema, exp
 				\cline{2-4}
 				& \centering{\textbf{Flujo}} & \centering{\textbf{Proceso}} & \textbf{\centering{Recursos}} \\
 				\hline \hline
+				\textbf{Normal} & $Q_{i} \approx Q_{p} \approx Q_{o}$ \par Nivel de agua por encima del manto de filtros. & Manto filtrante en condiciones. \par Compuertas funcionales. \par Motor de retrolavado en condiciones. & Filtros sin bloqueos. \\ \hline
+				\textbf{Degradado} & $Q_{i} \ll Q_{p}$ & Daño en el manto filtrante. \par Compuertas con fallas, sin interrupción total del flujo. \par Bombas de retrolavado en falla. & Bloqueo de filtros. \\ \hline
+				\textbf{Falla} & $Q_{i} \approx 0$ & Bloqueo de compuertas, con interrupción de flujo. \par Imposibilidad para realizar el retrolavado, falla en el sistema de bombeo. & \\ \hline
+			\end{tabular}
+		}
+		\caption{Modo de Arranque para Filtración.}
+		\label{tabla-Afilt}
+	\end{center}
+\end{table}
+
+\begin{table}[H]
+	\begin{center}
+		\resizebox{15,5cm}{!} {
+			\begin{tabular}{|p{3cm}|p{3,7cm}|p{5,25cm}|p{5,25cm}|}
+				\hline
+				\multirow{2}{1cm}{\textbf{Condición}} & \multicolumn{3}{c|}{\textbf{Modelos de Conocimiento}} \\
+				\cline{2-4}
+				& \centering{\textbf{Flujo}} & \centering{\textbf{Proceso}} & \textbf{\centering{Recursos}} \\
+				\hline \hline
 				\textbf{Normal} & $Q_{i} \approx Q_{p} \approx Q_{o}$ \par $NTU < 5$ \par $6,5 < pH < 9$ \par Nivel de agua dentro del rango de operación. & Sensores funcionales (recurso humano o tecnológico). \par Compuerta de salida abierta, en funcionamiento. \par Compuerta de entrada abierta, en funcionamiento. \par Compuerta de desagüe cerrada, en funcionamiento. & Lecho filtrante no colmatado. \\ \hline
 				\textbf{Degradado} & $Q_{i} \ll Q_{p}, Q_{i} \gg Q_{p}$ \par $Q_{o} \ll Q_{p}, Q_{o} \gg Q_{p}$ \par $NTU > 5$ \par $pH < 6,5 - pH > 9$ \par Nivel de agua por encima del rango de operación. & Sensores en falla (falta de personal, falla en dispositivos). \par Compuertas con fallas mecánicas, sin interrupción total de flujo, o sin exceso de pérdidas en el caso del desagüe. & Mantenimiento de la unidad. \par Filtros colmatados. \\ \hline
 				\textbf{Falla} & $Q_{i} \approx 0$ \par Nivel de agua por debajo del rango de operación. & Compuerta de entrada en falla, con interrupción total de flujo o muy por debajo del rango normal. \par Compuerta de salida, cerrada y en falla, interrupción total de flujo o muy por debajo del rango normal. \par Compuerta de desagüe en falla, con pérdida considerable de flujo. & \\ \hline
@@ -1256,6 +1332,25 @@ Cada modelo debe ir relacionado a los estados que interactúan en el sistema, exp
 \end{table}
 
 			\subsection{Unidad de Desinfección}
+			
+\begin{table}[H]
+	\begin{center}
+		\resizebox{15,5cm}{!} {
+			\begin{tabular}{|p{3cm}|p{3,7cm}|p{5,25cm}|p{5,25cm}|}
+				\hline
+				\multirow{2}{1cm}{\textbf{Condición}} & \multicolumn{3}{c|}{\textbf{Modelos de Conocimiento}} \\
+				\cline{2-4}
+				& \centering{\textbf{Flujo}} & \centering{\textbf{Proceso}} & \textbf{\centering{Recursos}} \\
+				\hline \hline
+				\textbf{Normal} & $Q_{i} \approx Q_{p} \approx Q_{o}$ \par Nivel dentro del rango de operación. & Bombas en funcionamiento. \par Compuertas en funcionamiento. \par Químicos disponibles para la adición. & Pruebas de laboratorio realizadas. \\ \hline
+				\textbf{Degradado} & $Q_{i} \ll Q_{p}$ \par Nivel fuera del rango de operación. & Bomba de adición de químicos en falla. \par Compuertas bloqueadas sin interrupción total de flujo. \par Químicos no disponibles. & Desconocimiento de pruebas de laboratorio. \\ \hline
+				\textbf{Falla} & $Q_{i} \approx 0$ \par Nivel de agua por debajo del rango de operación. & Compuertas en falla, bloqueo del flujo de agua. & \\ \hline
+			\end{tabular}
+		}
+		\caption{Modo de Arranque para Desinfección.}
+		\label{tabla-Adesinf}
+	\end{center}
+\end{table}
 			
 \begin{table}[H]
 	\begin{center}

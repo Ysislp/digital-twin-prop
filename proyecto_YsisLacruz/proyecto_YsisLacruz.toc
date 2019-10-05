@@ -49,13 +49,13 @@
 \contentsline {subsubsection}{\numberline {3.7.3.5}Desinfecci\'on}{53}{subsubsection.3.7.3.5}
 \contentsline {section}{\numberline {3.8}Condiciones de Operaci\'on en Potabilizaci\'on}{54}{section.3.8}
 \contentsline {subsection}{\numberline {3.8.1}Unidad de Coagulaci\'on}{55}{subsection.3.8.1}
-\contentsline {subsection}{\numberline {3.8.2}Unidad de Floculaci\'on}{56}{subsection.3.8.2}
-\contentsline {subsection}{\numberline {3.8.3}Unidad de Sedimentaci\'on}{58}{subsection.3.8.3}
-\contentsline {subsection}{\numberline {3.8.4}Unidad de Filtraci\'on}{59}{subsection.3.8.4}
-\contentsline {subsection}{\numberline {3.8.5}Unidad de Desinfecci\'on}{60}{subsection.3.8.5}
-\contentsline {chapter}{\numberline {4}Implementaci\'on}{61}{chapter.4}
-\contentsline {section}{\numberline {4.1}Epanet y MATLAB}{61}{section.4.1}
-\contentsline {section}{\numberline {4.2}Simulaci\'on}{61}{section.4.2}
-\contentsline {chapter}{\numberline {5}Conclusiones y Recomendaciones}{62}{chapter.5}
-\contentsline {chapter}{\numberline {6}Anexos}{63}{chapter.6}
-\contentsline {chapter}{Bibliograf\'{\i }a}{65}{table.6.1}
+\contentsline {subsection}{\numberline {3.8.2}Unidad de Floculaci\'on}{57}{subsection.3.8.2}
+\contentsline {subsection}{\numberline {3.8.3}Unidad de Sedimentaci\'on}{59}{subsection.3.8.3}
+\contentsline {subsection}{\numberline {3.8.4}Unidad de Filtraci\'on}{61}{subsection.3.8.4}
+\contentsline {subsection}{\numberline {3.8.5}Unidad de Desinfecci\'on}{63}{subsection.3.8.5}
+\contentsline {chapter}{\numberline {4}Implementaci\'on}{65}{chapter.4}
+\contentsline {section}{\numberline {4.1}Epanet y MATLAB}{65}{section.4.1}
+\contentsline {section}{\numberline {4.2}Simulaci\'on}{65}{section.4.2}
+\contentsline {chapter}{\numberline {5}Conclusiones y Recomendaciones}{66}{chapter.5}
+\contentsline {chapter}{\numberline {6}Anexos}{67}{chapter.6}
+\contentsline {chapter}{Bibliograf\'{\i }a}{69}{table.6.1}
