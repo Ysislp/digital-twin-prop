@@ -1,61 +1,62 @@
 \BOOKMARK [0][-]{chapter*.1}{\315ndice de Tablas}{}% 1
-\BOOKMARK [0][-]{chapter.1}{Introducci\363n}{}% 2
-\BOOKMARK [1][-]{section.1.1}{Antecedentes}{chapter.1}% 3
-\BOOKMARK [1][-]{section.1.2}{Planteamiento del problema}{chapter.1}% 4
-\BOOKMARK [1][-]{section.1.3}{Objetivos}{chapter.1}% 5
-\BOOKMARK [2][-]{subsection.1.3.1}{Objetivo general}{section.1.3}% 6
-\BOOKMARK [2][-]{subsection.1.3.2}{Objetivos espec\355ficos}{section.1.3}% 7
-\BOOKMARK [1][-]{section.1.4}{Metodolog\355a}{chapter.1}% 8
-\BOOKMARK [0][-]{chapter.2}{Marco Te\363rico}{}% 9
-\BOOKMARK [1][-]{section.2.1}{Ciudades Inteligentes}{chapter.2}% 10
-\BOOKMARK [1][-]{section.2.2}{Industria 4.0}{chapter.2}% 11
-\BOOKMARK [2][-]{subsection.2.2.1}{Sistemas Ciber-F\355sicos}{section.2.2}% 12
-\BOOKMARK [2][-]{subsection.2.2.2}{Internet de las Cosas \(IoT\) e Internet Industrial de las Cosas \(IIoT\)}{section.2.2}% 13
-\BOOKMARK [2][-]{subsection.2.2.3}{Anal\355tica de Datos}{section.2.2}% 14
-\BOOKMARK [1][-]{section.2.3}{Gemelo Digital}{chapter.2}% 15
-\BOOKMARK [1][-]{section.2.4}{Modelo de Conocimiento}{chapter.2}% 16
-\BOOKMARK [1][-]{section.2.5}{Modelo H\355brido}{chapter.2}% 17
-\BOOKMARK [1][-]{section.2.6}{Sistemas Hol\363nicos}{chapter.2}% 18
-\BOOKMARK [1][-]{section.2.7}{Sistemas de suministro de agua potable, hacia la I4.0}{chapter.2}% 19
-\BOOKMARK [0][-]{chapter.3}{Caso de Estudio: Hidrol\363gicas}{}% 20
-\BOOKMARK [1][-]{section.3.1}{\301reas de Negocio}{chapter.3}% 21
-\BOOKMARK [2][-]{subsection.3.1.1}{Estudio de fuentes y caracterizaci\363n de la demanda}{section.3.1}% 22
-\BOOKMARK [2][-]{subsection.3.1.2}{Operaci\363n}{section.3.1}% 23
-\BOOKMARK [2][-]{subsection.3.1.3}{Comercializaci\363n}{section.3.1}% 24
-\BOOKMARK [2][-]{subsection.3.1.4}{\301reas de Soporte}{section.3.1}% 25
-\BOOKMARK [1][-]{section.3.2}{Cadena de Valor de cada \301rea de Negocio}{chapter.3}% 26
-\BOOKMARK [2][-]{subsection.3.2.1}{Fuentes y Estudio de la Demanda}{section.3.2}% 27
-\BOOKMARK [2][-]{subsection.3.2.2}{Operaciones}{section.3.2}% 28
-\BOOKMARK [2][-]{subsection.3.2.3}{Comercial}{section.3.2}% 29
-\BOOKMARK [2][-]{subsection.3.2.4}{Soporte}{section.3.2}% 30
-\BOOKMARK [1][-]{section.3.3}{Esquema Integral de Cadena de Valor para Hidrol\363gicas}{chapter.3}% 31
-\BOOKMARK [1][-]{section.3.4}{Planificaci\363n}{chapter.3}% 32
-\BOOKMARK [1][-]{section.3.5}{Modelo APS en Hidrol\363gicas}{chapter.3}% 33
-\BOOKMARK [1][-]{section.3.6}{Unidades Hol\363nicas en Hidrol\363gicas}{chapter.3}% 34
-\BOOKMARK [1][-]{section.3.7}{Descripci\363n del Proceso de Potabilizaci\363n}{chapter.3}% 35
-\BOOKMARK [2][-]{subsection.3.7.1}{Captaci\363n del agua}{section.3.7}% 36
-\BOOKMARK [2][-]{subsection.3.7.2}{Determinaci\363n de las caracter\355sticas del agua cruda}{section.3.7}% 37
-\BOOKMARK [3][-]{subsubsection.3.7.2.1}{Turbidez}{subsection.3.7.2}% 38
-\BOOKMARK [3][-]{subsubsection.3.7.2.2}{pH}{subsection.3.7.2}% 39
-\BOOKMARK [3][-]{subsubsection.3.7.2.3}{Cloro Residual}{subsection.3.7.2}% 40
-\BOOKMARK [3][-]{subsubsection.3.7.2.4}{Color Aparente}{subsection.3.7.2}% 41
-\BOOKMARK [3][-]{subsubsection.3.7.2.5}{Temperatura}{subsection.3.7.2}% 42
-\BOOKMARK [3][-]{subsubsection.3.7.2.6}{Prueba de Jarras}{subsection.3.7.2}% 43
-\BOOKMARK [2][-]{subsection.3.7.3}{Unidad de Potabilizaci\363n}{section.3.7}% 44
-\BOOKMARK [3][-]{subsubsection.3.7.3.1}{Coagulaci\363n}{subsection.3.7.3}% 45
-\BOOKMARK [3][-]{subsubsection.3.7.3.2}{Floculaci\363n}{subsection.3.7.3}% 46
-\BOOKMARK [3][-]{subsubsection.3.7.3.3}{Sedimentaci\363n}{subsection.3.7.3}% 47
-\BOOKMARK [3][-]{subsubsection.3.7.3.4}{Filtraci\363n}{subsection.3.7.3}% 48
-\BOOKMARK [3][-]{subsubsection.3.7.3.5}{Desinfecci\363n}{subsection.3.7.3}% 49
-\BOOKMARK [1][-]{section.3.8}{Condiciones de Operaci\363n en Potabilizaci\363n}{chapter.3}% 50
-\BOOKMARK [2][-]{subsection.3.8.1}{Unidad de Coagulaci\363n}{section.3.8}% 51
-\BOOKMARK [2][-]{subsection.3.8.2}{Unidad de Floculaci\363n}{section.3.8}% 52
-\BOOKMARK [2][-]{subsection.3.8.3}{Unidad de Sedimentaci\363n}{section.3.8}% 53
-\BOOKMARK [2][-]{subsection.3.8.4}{Unidad de Filtraci\363n}{section.3.8}% 54
-\BOOKMARK [2][-]{subsection.3.8.5}{Unidad de Desinfecci\363n}{section.3.8}% 55
-\BOOKMARK [0][-]{chapter.4}{Implementaci\363n}{}% 56
-\BOOKMARK [1][-]{section.4.1}{Epanet y MATLAB}{chapter.4}% 57
-\BOOKMARK [1][-]{section.4.2}{Simulaci\363n}{chapter.4}% 58
-\BOOKMARK [0][-]{chapter.5}{Conclusiones y Recomendaciones}{}% 59
-\BOOKMARK [0][-]{chapter.6}{Anexos}{}% 60
-\BOOKMARK [0][-]{table.6.1}{Bibliograf\355a}{}% 61
+\BOOKMARK [0][-]{chapter*.2}{\315ndice de Figuras}{}% 2
+\BOOKMARK [0][-]{chapter.1}{Introducci\363n}{}% 3
+\BOOKMARK [1][-]{section.1.1}{Antecedentes}{chapter.1}% 4
+\BOOKMARK [1][-]{section.1.2}{Planteamiento del problema}{chapter.1}% 5
+\BOOKMARK [1][-]{section.1.3}{Objetivos}{chapter.1}% 6
+\BOOKMARK [2][-]{subsection.1.3.1}{Objetivo general}{section.1.3}% 7
+\BOOKMARK [2][-]{subsection.1.3.2}{Objetivos espec\355ficos}{section.1.3}% 8
+\BOOKMARK [1][-]{section.1.4}{Metodolog\355a}{chapter.1}% 9
+\BOOKMARK [0][-]{chapter.2}{Marco Te\363rico}{}% 10
+\BOOKMARK [1][-]{section.2.1}{Ciudades Inteligentes}{chapter.2}% 11
+\BOOKMARK [1][-]{section.2.2}{Industria 4.0}{chapter.2}% 12
+\BOOKMARK [2][-]{subsection.2.2.1}{Sistemas Ciber-F\355sicos}{section.2.2}% 13
+\BOOKMARK [2][-]{subsection.2.2.2}{Internet de las Cosas \(IoT\) e Internet Industrial de las Cosas \(IIoT\)}{section.2.2}% 14
+\BOOKMARK [2][-]{subsection.2.2.3}{Anal\355tica de Datos}{section.2.2}% 15
+\BOOKMARK [1][-]{section.2.3}{Gemelo Digital}{chapter.2}% 16
+\BOOKMARK [1][-]{section.2.4}{Modelo de Conocimiento}{chapter.2}% 17
+\BOOKMARK [1][-]{section.2.5}{Modelo H\355brido}{chapter.2}% 18
+\BOOKMARK [1][-]{section.2.6}{Sistemas Hol\363nicos}{chapter.2}% 19
+\BOOKMARK [1][-]{section.2.7}{Sistemas de suministro de agua potable, hacia la I4.0}{chapter.2}% 20
+\BOOKMARK [0][-]{chapter.3}{Caso de Estudio: Hidrol\363gicas}{}% 21
+\BOOKMARK [1][-]{section.3.1}{\301reas de Negocio}{chapter.3}% 22
+\BOOKMARK [2][-]{subsection.3.1.1}{Estudio de fuentes y caracterizaci\363n de la demanda}{section.3.1}% 23
+\BOOKMARK [2][-]{subsection.3.1.2}{Operaci\363n}{section.3.1}% 24
+\BOOKMARK [2][-]{subsection.3.1.3}{Comercializaci\363n}{section.3.1}% 25
+\BOOKMARK [2][-]{subsection.3.1.4}{\301reas de Soporte}{section.3.1}% 26
+\BOOKMARK [1][-]{section.3.2}{Cadena de Valor de cada \301rea de Negocio}{chapter.3}% 27
+\BOOKMARK [2][-]{subsection.3.2.1}{Fuentes y Estudio de la Demanda}{section.3.2}% 28
+\BOOKMARK [2][-]{subsection.3.2.2}{Operaciones}{section.3.2}% 29
+\BOOKMARK [2][-]{subsection.3.2.3}{Comercial}{section.3.2}% 30
+\BOOKMARK [2][-]{subsection.3.2.4}{Soporte}{section.3.2}% 31
+\BOOKMARK [1][-]{section.3.3}{Esquema Integral de Cadena de Valor para Hidrol\363gicas}{chapter.3}% 32
+\BOOKMARK [1][-]{section.3.4}{Planificaci\363n}{chapter.3}% 33
+\BOOKMARK [1][-]{section.3.5}{Modelo APS en Hidrol\363gicas}{chapter.3}% 34
+\BOOKMARK [1][-]{section.3.6}{Unidades Hol\363nicas en Hidrol\363gicas}{chapter.3}% 35
+\BOOKMARK [1][-]{section.3.7}{Descripci\363n del Proceso de Potabilizaci\363n}{chapter.3}% 36
+\BOOKMARK [2][-]{subsection.3.7.1}{Captaci\363n del agua}{section.3.7}% 37
+\BOOKMARK [2][-]{subsection.3.7.2}{Determinaci\363n de las caracter\355sticas del agua cruda}{section.3.7}% 38
+\BOOKMARK [3][-]{subsubsection.3.7.2.1}{Turbidez}{subsection.3.7.2}% 39
+\BOOKMARK [3][-]{subsubsection.3.7.2.2}{pH}{subsection.3.7.2}% 40
+\BOOKMARK [3][-]{subsubsection.3.7.2.3}{Cloro Residual}{subsection.3.7.2}% 41
+\BOOKMARK [3][-]{subsubsection.3.7.2.4}{Color Aparente}{subsection.3.7.2}% 42
+\BOOKMARK [3][-]{subsubsection.3.7.2.5}{Temperatura}{subsection.3.7.2}% 43
+\BOOKMARK [3][-]{subsubsection.3.7.2.6}{Prueba de Jarras}{subsection.3.7.2}% 44
+\BOOKMARK [2][-]{subsection.3.7.3}{Unidad de Potabilizaci\363n}{section.3.7}% 45
+\BOOKMARK [3][-]{subsubsection.3.7.3.1}{Coagulaci\363n}{subsection.3.7.3}% 46
+\BOOKMARK [3][-]{subsubsection.3.7.3.2}{Floculaci\363n}{subsection.3.7.3}% 47
+\BOOKMARK [3][-]{subsubsection.3.7.3.3}{Sedimentaci\363n}{subsection.3.7.3}% 48
+\BOOKMARK [3][-]{subsubsection.3.7.3.4}{Filtraci\363n}{subsection.3.7.3}% 49
+\BOOKMARK [3][-]{subsubsection.3.7.3.5}{Desinfecci\363n}{subsection.3.7.3}% 50
+\BOOKMARK [1][-]{section.3.8}{Condiciones de Operaci\363n en Potabilizaci\363n}{chapter.3}% 51
+\BOOKMARK [2][-]{subsection.3.8.1}{Unidad de Coagulaci\363n}{section.3.8}% 52
+\BOOKMARK [2][-]{subsection.3.8.2}{Unidad de Floculaci\363n}{section.3.8}% 53
+\BOOKMARK [2][-]{subsection.3.8.3}{Unidad de Sedimentaci\363n}{section.3.8}% 54
+\BOOKMARK [2][-]{subsection.3.8.4}{Unidad de Filtraci\363n}{section.3.8}% 55
+\BOOKMARK [2][-]{subsection.3.8.5}{Unidad de Desinfecci\363n}{section.3.8}% 56
+\BOOKMARK [0][-]{chapter.4}{Implementaci\363n}{}% 57
+\BOOKMARK [1][-]{section.4.1}{Epanet y MATLAB}{chapter.4}% 58
+\BOOKMARK [1][-]{section.4.2}{Simulaci\363n}{chapter.4}% 59
+\BOOKMARK [0][-]{chapter.5}{Conclusiones y Recomendaciones}{}% 60
+\BOOKMARK [0][-]{chapter.6}{Anexos}{}% 61
+\BOOKMARK [0][-]{table.6.1}{Bibliograf\355a}{}% 62

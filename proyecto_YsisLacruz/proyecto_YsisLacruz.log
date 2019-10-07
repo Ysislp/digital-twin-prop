@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6800) (preloaded format=pdflatex 2018.9.30)  5 OCT 2019 03:25
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6800) (preloaded format=pdflatex 2018.9.30)  7 OCT 2019 03:36
 entering extended mode
 **./proyecto_YsisLacruz.tex
 (proyecto_YsisLacruz.tex
@@ -1027,11 +1027,7 @@ Package: natbib 2010/09/13 8.31b (PWD, AO)
 \bibsep=\skip82
 LaTeX Info: Redefining \cite on input line 694.
 \c@NAT@ctr=\count320
-) (proyecto_YsisLacruz.aux
-
-LaTeX Warning: Label `tabla-caract' multiply defined.
-
-)
+) (proyecto_YsisLacruz.aux)
 \openout1 = `proyecto_YsisLacruz.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 83.
@@ -1102,7 +1098,7 @@ LaTeX Info: Redefining \nameref on input line 83.
 
 Most over/underfulls in first few pages are the fault of this package.
 Ignore all them. If uncorrectable errors occur, notify staff.
-<ula.png, id=250, 100.375pt x 140.525pt>
+<ula.png, id=254, 100.375pt x 140.525pt>
 File: ula.png Graphic file (type png)
 <use ula.png>
 Package pdftex.def Info: ula.png  used on input line 232.
@@ -1122,12 +1118,12 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
 [2
 
 ] (proyecto_YsisLacruz.toc
-LaTeX Font Info:    Try loading font information for U+msa on input line 3.
+LaTeX Font Info:    Try loading font information for U+msa on input line 4.
 
 ("C:\Users\Ysis\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 3.
+LaTeX Font Info:    Try loading font information for U+msb on input line 4.
 
 ("C:\Users\Ysis\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -1144,7 +1140,14 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
  [6
 
-]
+] (proyecto_YsisLacruz.lof [7
+
+])
+\tf@lof=\write7
+\openout7 = `proyecto_YsisLacruz.lof'.
+
+
+[8]
 Proyecto ULA preface pages completed.
 Cap\'{\i }tulo 1.
 
@@ -1164,7 +1167,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [2]
-<figures/1industry40.png, id=376, 425.33907pt x 228.10219pt>
+<figures/1industry40.png, id=455, 425.33907pt x 228.10219pt>
 File: figures/1industry40.png Graphic file (type png)
 <use figures/1industry40.png>
 Package pdftex.def Info: figures/1industry40.png  used on input line 296.
@@ -1222,7 +1225,7 @@ Underfull \hbox (badness 1184) in paragraph at lines 346--347
 teligente es la fusion
  []
 
-<figures/2smartcities.png, id=397, 463.7325pt x 460.72125pt>
+<figures/2smartcities.png, id=476, 463.7325pt x 460.72125pt>
 File: figures/2smartcities.png Graphic file (type png)
 <use figures/2smartcities.png>
 Package pdftex.def Info: figures/2smartcities.png  used on input line 350.
@@ -1262,7 +1265,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [9]
-<figures/2cps.png, id=413, 443.40656pt x 301.125pt>
+<figures/2cps.png, id=490, 443.40656pt x 301.125pt>
 File: figures/2cps.png Graphic file (type png)
 <use figures/2cps.png>
 Package pdftex.def Info: figures/2cps.png  used on input line 384.
@@ -1300,7 +1303,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [12]
-<figures/2valuechain.png, id=428, 332.74312pt x 137.7647pt>
+<figures/2valuechain.png, id=505, 332.74312pt x 137.7647pt>
 File: figures/2valuechain.png Graphic file (type png)
 <use figures/2valuechain.png>
 Package pdftex.def Info: figures/2valuechain.png  used on input line 429.
@@ -1319,7 +1322,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
                                                   
 l.435 
        <./figures/2valuechain.png>]
-<figures/2nodesnet1.png, id=436, 479.7925pt x 336.25626pt>
+<figures/2nodesnet1.png, id=511, 479.7925pt x 336.25626pt>
 File: figures/2nodesnet1.png Graphic file (type png)
 <use figures/2nodesnet1.png>
 Package pdftex.def Info: figures/2nodesnet1.png  used on input line 452.
@@ -1332,7 +1335,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [14]
-<figures/2nodesnet2.png, id=443, 480.79625pt x 323.2075pt>
+<figures/2nodesnet2.png, id=517, 480.79625pt x 323.2075pt>
 File: figures/2nodesnet2.png Graphic file (type png)
 <use figures/2nodesnet2.png>
 Package pdftex.def Info: figures/2nodesnet2.png  used on input line 461.
@@ -1357,7 +1360,7 @@ l.467
                                                   
 l.467 
        <./figures/2nodesnet1.png> <./figures/2nodesnet2.png>]
-<figures/2nodesnet3.png, id=452, 483.8075pt x 322.20375pt>
+<figures/2nodesnet3.png, id=525, 483.8075pt x 322.20375pt>
 File: figures/2nodesnet3.png Graphic file (type png)
 <use figures/2nodesnet3.png>
 Package pdftex.def Info: figures/2nodesnet3.png  used on input line 470.
@@ -1377,7 +1380,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 l.481 U
        n modelo híbrido es la representación de las transiciones discretas y...
  <./figures/2nodesnet3.png>]
-<figures/2petrinet.png, id=460, 92.59593pt x 191.21437pt>
+<figures/2petrinet.png, id=532, 92.59593pt x 191.21437pt>
 File: figures/2petrinet.png Graphic file (type png)
 <use figures/2petrinet.png>
 Package pdftex.def Info: figures/2petrinet.png  used on input line 487.
@@ -1411,12 +1414,12 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [18]
-<figures/2holon.png, id=478, 489.83pt x 444.66125pt>
+<figures/2holon.png, id=550, 489.83pt x 444.66125pt>
 File: figures/2holon.png Graphic file (type png)
 <use figures/2holon.png>
 Package pdftex.def Info: figures/2holon.png  used on input line 534.
 (pdftex.def)             Requested size: 244.9144pt x 222.33008pt.
-<figures/2prosa.png, id=480, 456.70625pt x 315.1775pt>
+<figures/2prosa.png, id=552, 456.70625pt x 315.1775pt>
 File: figures/2prosa.png Graphic file (type png)
 <use figures/2prosa.png>
 Package pdftex.def Info: figures/2prosa.png  used on input line 543.
@@ -1436,7 +1439,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 l.553 				\item U
                  n holón de recurso contiene la parte física de un recurso n...
  <./figures/2holon.png>]
-<figures/2holonicunit.png, id=490, 730.73pt x 349.305pt>
+<figures/2holonicunit.png, id=559, 730.73pt x 349.305pt>
 File: figures/2holonicunit.png Graphic file (type png)
 <use figures/2holonicunit.png>
 Package pdftex.def Info: figures/2holonicunit.png  used on input line 560.
@@ -1468,7 +1471,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
                                                   
 l.573 			\end{itemize}
                        <./figures/2holonicunit.png>]
-<figures/2holoniccompany.png, id=505, 344.03531pt x 245.41687pt>
+<figures/2holoniccompany.png, id=572, 344.03531pt x 245.41687pt>
 File: figures/2holoniccompany.png Graphic file (type png)
 <use figures/2holoniccompany.png>
 Package pdftex.def Info: figures/2holoniccompany.png  used on input line 577.
@@ -1487,7 +1490,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
                                                   
 l.587 
        <./figures/2holoniccompany.png>]
-<figures/2wss.png, id=511, 425.33907pt x 418.56375pt>
+<figures/2wss.png, id=578, 425.33907pt x 418.56375pt>
 File: figures/2wss.png Graphic file (type png)
 <use figures/2wss.png>
 Package pdftex.def Info: figures/2wss.png  used on input line 594.
@@ -1528,12 +1531,12 @@ Underfull \hbox (badness 1248) in paragraph at lines 609--610
  es pro-por-cionar
  []
 
-<figures/3waterprocess.png, id=527, 1204.5pt x 579.66562pt>
+<figures/3waterprocess.png, id=593, 1204.5pt x 579.66562pt>
 File: figures/3waterprocess.png Graphic file (type png)
 <use figures/3waterprocess.png>
 Package pdftex.def Info: figures/3waterprocess.png  used on input line 613.
 (pdftex.def)             Requested size: 361.35278pt x 173.90102pt.
-<figures/3chainhydro.png, id=529, 231.11343pt x 70.01157pt>
+<figures/3chainhydro.png, id=595, 231.11343pt x 70.01157pt>
 File: figures/3chainhydro.png Graphic file (type png)
 <use figures/3chainhydro.png>
 Package pdftex.def Info: figures/3chainhydro.png  used on input line 630.
@@ -1589,17 +1592,17 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [30]
-<figures/3chainsource.png, id=555, 307.1475pt x 37.64063pt>
+<figures/3chainsource.png, id=619, 307.1475pt x 37.64063pt>
 File: figures/3chainsource.png Graphic file (type png)
 <use figures/3chainsource.png>
 Package pdftex.def Info: figures/3chainsource.png  used on input line 719.
 (pdftex.def)             Requested size: 307.14674pt x 37.64052pt.
-<figures/3chainop.png, id=557, 607.51968pt x 36.88782pt>
+<figures/3chainop.png, id=621, 607.51968pt x 36.88782pt>
 File: figures/3chainop.png Graphic file (type png)
 <use figures/3chainop.png>
 Package pdftex.def Info: figures/3chainop.png  used on input line 730.
 (pdftex.def)             Requested size: 425.26086pt x 25.82127pt.
-<figures/3chaincom.png, id=559, 288.3272pt x 36.88782pt>
+<figures/3chaincom.png, id=623, 288.3272pt x 36.88782pt>
 File: figures/3chaincom.png Graphic file (type png)
 <use figures/3chaincom.png>
 Package pdftex.def Info: figures/3chaincom.png  used on input line 743.
@@ -1629,12 +1632,12 @@ l.751
                                                   
 l.751 
        <./figures/3chainsource.png> <./figures/3chainop.png>]
-<figures/3support.png, id=568, 332.74312pt x 115.18031pt>
+<figures/3support.png, id=629, 332.74312pt x 115.18031pt>
 File: figures/3support.png Graphic file (type png)
 <use figures/3support.png>
 Package pdftex.def Info: figures/3support.png  used on input line 754.
 (pdftex.def)             Requested size: 332.7423pt x 115.18001pt.
-<figures/3valuechainhydro.png, id=570, 623.32875pt x 375.65344pt>
+<figures/3valuechainhydro.png, id=631, 623.32875pt x 375.65344pt>
 File: figures/3valuechainhydro.png Graphic file (type png)
 <use figures/3valuechainhydro.png>
 Package pdftex.def Info: figures/3valuechainhydro.png  used on input line 765.
@@ -1659,12 +1662,12 @@ l.773
                                                   
 l.773 
        <./figures/3chaincom.png> <./figures/3support.png>]
-<figures/3planning.png, id=578, 703.12688pt x 471.26062pt>
+<figures/3planning.png, id=637, 703.12688pt x 471.26062pt>
 File: figures/3planning.png Graphic file (type png)
 <use figures/3planning.png>
 Package pdftex.def Info: figures/3planning.png  used on input line 776.
 (pdftex.def)             Requested size: 351.56258pt x 235.62973pt.
-<figures/3aps.png, id=580, 373.833pt x 257.8725pt>
+<figures/3aps.png, id=639, 373.833pt x 257.8725pt>
 File: figures/3aps.png Graphic file (type png)
 <use figures/3aps.png>
 Package pdftex.def Info: figures/3aps.png  used on input line 787.
@@ -1707,7 +1710,7 @@ l.795
                                                   
 l.795 
        <./figures/3planning.png> <./figures/3aps.png>]
-<figures/3holonichydro.png, id=593, 572.1375pt x 414.79968pt>
+<figures/3holonichydro.png, id=650, 572.1375pt x 414.79968pt>
 File: figures/3holonichydro.png Graphic file (type png)
 <use figures/3holonichydro.png>
 Package pdftex.def Info: figures/3holonichydro.png  used on input line 798.
@@ -1726,12 +1729,12 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
                                                   
 l.810 
        <./figures/3holonichydro.png>]
-<figures/3potab.png, id=600, 718.93594pt x 221.32687pt>
+<figures/3potab.png, id=657, 718.93594pt x 221.32687pt>
 File: figures/3potab.png Graphic file (type png)
 <use figures/3potab.png>
 Package pdftex.def Info: figures/3potab.png  used on input line 813.
 (pdftex.def)             Requested size: 431.3649pt x 132.79713pt.
-<figures/3catchwater.png, id=602, 654.19406pt x 383.18156pt>
+<figures/3catchwater.png, id=659, 654.19406pt x 383.18156pt>
 File: figures/3catchwater.png Graphic file (type png)
 <use figures/3catchwater.png>
 Package pdftex.def Info: figures/3catchwater.png  used on input line 824.
@@ -1783,12 +1786,12 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [39]
-<figures/3jarras.png, id=624, 438.8897pt x 298.11375pt>
+<figures/3jarras.png, id=678, 438.8897pt x 298.11375pt>
 File: figures/3jarras.png Graphic file (type png)
 <use figures/3jarras.png>
 Package pdftex.def Info: figures/3jarras.png  used on input line 894.
 (pdftex.def)             Requested size: 263.33585pt x 178.86963pt.
-<figures/3valuechainpotab.png, id=627, 614.295pt x 114.4275pt>
+<figures/3valuechainpotab.png, id=681, 614.295pt x 114.4275pt>
 File: figures/3valuechainpotab.png Graphic file (type png)
 <use figures/3valuechainpotab.png>
 Package pdftex.def Info: figures/3valuechainpotab.png  used on input line 905.
@@ -1820,7 +1823,7 @@ l.911
                                                   
 l.911 
        <./figures/3jarras.png> <./figures/3valuechainpotab.png>]
-<figures/3pid.png, id=639, 1293.33188pt x 797.98125pt>
+<figures/3pid.png, id=692, 1293.33188pt x 797.98125pt>
 File: figures/3pid.png Graphic file (type png)
 <use figures/3pid.png>
 Package pdftex.def Info: figures/3pid.png  used on input line 922.
@@ -1868,7 +1871,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [45]
-<figures/3parshall.png, id=659, 793.46437pt x 380.92313pt>
+<figures/3parshall.png, id=710, 793.46437pt x 380.92313pt>
 File: figures/3parshall.png Graphic file (type png)
 <use figures/3parshall.png>
 Package pdftex.def Info: figures/3parshall.png  used on input line 994.
@@ -1892,10 +1895,10 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 \@EveryShipout@Output ...@Org@Shipout \box \@cclv 
                                                   
-l.1016 					\item[$-$]
-                        Verificar que el caudal de entrada corresponda con e...
+l.1016 					\item  V
+                    erificar que el caudal de entrada corresponda con el ran...
  <./figures/3parshall.png>]
-<figures/3flocculator.png, id=670, 487.8225pt x 380.92313pt>
+<figures/3flocculator.png, id=721, 487.8225pt x 380.92313pt>
 File: figures/3flocculator.png Graphic file (type png)
 <use figures/3flocculator.png>
 Package pdftex.def Info: figures/3flocculator.png  used on input line 1036.
@@ -1919,13 +1922,13 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 \@EveryShipout@Output ...@Org@Shipout \box \@cclv 
                                                   
-l.1066 					\item[$-$]
-                        Remoción de lodos, incluye el manejo de las válvulas...
+l.1066 					\item  R
+                    emoción de lodos, incluye el manejo de las válvulas de d...
  <./figures/3flocculator.png>]
 
 LaTeX Warning: Reference `sediment' on page 50 undefined on input line 1077.
 
-<figures/3sediment.png, id=681, 277.035pt x 199.947pt>
+<figures/3sediment.png, id=730, 277.035pt x 199.947pt>
 File: figures/3sediment.png Graphic file (type png)
 <use figures/3sediment.png>
 Package pdftex.def Info: figures/3sediment.png  used on input line 1081.
@@ -1953,7 +1956,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
                                                   
 l.1103 
         <./figures/3sediment.png>]
-<figures/3filter.png, id=692, 484.81125pt x 258.21469pt>
+<figures/3filter.png, id=740, 484.81125pt x 258.21469pt>
 File: figures/3filter.png Graphic file (type png)
 <use figures/3filter.png>
 Package pdftex.def Info: figures/3filter.png  used on input line 1108.
@@ -1970,13 +1973,13 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 \@EveryShipout@Output ...@Org@Shipout \box \@cclv 
                                                   
-l.1121 					\item[$-$]
-                        Determinación de la eficiencia de la unidad, emplean...
+l.1121 					\item  D
+                    eterminación de la eficiencia de la unidad, empleando la...
  <./figures/3filter.png>]
 
 LaTeX Warning: Reference `realfilter' on page 53 undefined on input line 1130.
 
-<figures/3realfilter.png, id=699, 1298.60156pt x 1762.33406pt>
+<figures/3realfilter.png, id=746, 1298.60156pt x 1762.33406pt>
 File: figures/3realfilter.png Graphic file (type png)
 <use figures/3realfilter.png>
 Package pdftex.def Info: figures/3realfilter.png  used on input line 1136.
@@ -2001,107 +2004,108 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [54]
-Overfull \hbox (30.79726pt too wide) in paragraph at lines 1189--1189
+Overfull \hbox (30.79726pt too wide) in paragraph at lines 1191--1191
 []|\OT1/cmr/bx/n/12 Condicion|  
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1189--1189
-[]\OT1/cmr/m/n/12 Condiciones de
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1189--1189
+Underfull \hbox (badness 10000) in paragraph at lines 1191--1191
 []\OT1/cmr/m/n/12 Sensores cal-i-bra-dos, sin
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1189--1189
+Underfull \hbox (badness 10000) in paragraph at lines 1191--1191
 []\OT1/cmr/m/n/12 Qumico co-ag-u-lante
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1189--1189
+Underfull \hbox (badness 10000) in paragraph at lines 1191--1191
 []|\OT1/cmr/m/n/12 Pruebas de lab-o-ra-to-rio
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1189--1189
+Underfull \hbox (badness 10000) in paragraph at lines 1191--1191
 []\OT1/cmr/m/n/12 Correcta adicion de
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1189--1189
+Underfull \hbox (badness 10000) in paragraph at lines 1191--1191
 []|\OT1/cmr/m/n/12 Compuertas con
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1189--1189
+Underfull \hbox (badness 10000) in paragraph at lines 1191--1191
 \OT1/cmr/m/n/12 ob-struc-ciones, sin
  []
 
 
-Underfull \hbox (badness 1888) in paragraph at lines 1189--1189
+Underfull \hbox (badness 1888) in paragraph at lines 1191--1191
 []|\OT1/cmr/m/n/12 Pruebas de lab-o-ra-to-rio no
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1189--1189
+Underfull \hbox (badness 10000) in paragraph at lines 1191--1191
 []\OT1/cmr/m/n/12 Exceso de co-ag-u-lante al
  []
 
 
-Overfull \hbox (30.79726pt too wide) in paragraph at lines 1208--1208
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[55]
+Overfull \hbox (30.79726pt too wide) in paragraph at lines 1214--1214
 []|\OT1/cmr/bx/n/12 Condicion|  
  []
 
 
-Underfull \hbox (badness 4940) in paragraph at lines 1208--1208
+Underfull \hbox (badness 4940) in paragraph at lines 1214--1214
 []|\OT1/cmr/m/n/12 Qumicos disponibles para
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1208--1208
+Underfull \hbox (badness 10000) in paragraph at lines 1214--1214
 []\OT1/cmr/m/n/12 Compuerta de en-trada
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1208--1208
+Underfull \hbox (badness 10000) in paragraph at lines 1214--1214
 []|\OT1/cmr/m/n/12 Cantidad de co-ag-u-lante
  []
 
 
-Underfull \hbox (badness 1092) in paragraph at lines 1208--1208
+Underfull \hbox (badness 1092) in paragraph at lines 1214--1214
 []\OT1/cmr/m/n/12 Sensores en falla (falta de
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1208--1208
+Underfull \hbox (badness 10000) in paragraph at lines 1214--1214
 []\OT1/cmr/m/n/12 Compuertas con fal-las
  []
 
 
-Underfull \hbox (badness 1014) in paragraph at lines 1208--1208
+Underfull \hbox (badness 1014) in paragraph at lines 1214--1214
 \OT1/cmr/m/n/12 mecanicas, sin in-ter-rupcion
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1208--1208
+Underfull \hbox (badness 10000) in paragraph at lines 1214--1214
 []\OT1/cmr/m/n/12 Cantidad de co-ag-u-lante
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1208--1208
+Underfull \hbox (badness 10000) in paragraph at lines 1214--1214
 \OT1/cmr/m/n/12 a~nadido fuera del rango
  []
 
 
-Underfull \hbox (badness 2799) in paragraph at lines 1208--1208
+Underfull \hbox (badness 2799) in paragraph at lines 1214--1214
 []|\OT1/cmr/m/n/12 Compuerta de en-trada en
  []
 
 
-Underfull \hbox (badness 3128) in paragraph at lines 1208--1208
+Underfull \hbox (badness 3128) in paragraph at lines 1214--1214
 \OT1/cmr/m/n/12 en falla, im-posi-bil-i-dad de
  []
 
@@ -2111,92 +2115,38 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[55pdfTeX warning (ext4): destination with the same identifier (name{table.3.2}
+[56pdfTeX warning (ext4): destination with the same identifier (name{table.3.2}
 ) has been already used, duplicate ignored
 
 \@EveryShipout@Output ...@Org@Shipout \box \@cclv 
                                                   
-l.1213 
+l.1219 
        ]
-Overfull \hbox (30.79726pt too wide) in paragraph at lines 1229--1229
-[]|\OT1/cmr/bx/n/12 Condicion|  
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1229--1229
-[]|\OT1/cmr/m/n/12 Nivel de agua
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1229--1229
-[]|\OT1/cmr/m/n/12 Motor del ag-i-ta-dor en
- []
-
-
-Underfull \hbox (badness 1320) in paragraph at lines 1229--1229
-[]\OT1/cmr/m/n/12 Nivel de agua por
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1229--1229
-\OT1/cmr/m/n/12 encima del rango
- []
-
-
-Underfull \hbox (badness 5622) in paragraph at lines 1229--1229
-[]\OT1/cmr/m/n/12 Falla en com-puer-tas, sin
- []
-
-
-Underfull \hbox (badness 1320) in paragraph at lines 1229--1229
-[]\OT1/cmr/m/n/12 Nivel de agua por
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1229--1229
-[]|\OT1/cmr/m/n/12 Compuertas blo-queadas,
- []
-
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[56pdfTeX warning (ext4): destination with the same identifier (name{table.3.3}
+[57pdfTeX warning (ext4): destination with the same identifier (name{table.3.3}
 ) has been already used, duplicate ignored
 
 \@EveryShipout@Output ...@Org@Shipout \box \@cclv 
                                                   
-l.1234 
-       ]
+l.1234 			
+          ]
 Overfull \hbox (30.79726pt too wide) in paragraph at lines 1248--1248
 []|\OT1/cmr/bx/n/12 Condicion|  
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 1248--1248
-[]\OT1/cmr/m/n/12 Nivel de agua
+[]|\OT1/cmr/m/n/12 Nivel de agua
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 1248--1248
-[]\OT1/cmr/m/n/12 Compuerta de en-trada
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1248--1248
-[]\OT1/cmr/m/n/12 Compuerta de de-sague
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1248--1248
-[]\OT1/cmr/m/n/12 Mezclador mecanico en
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1248--1248
-[]|\OT1/cmr/m/n/12 Se vi-su-al-izan floculos en
+[]|\OT1/cmr/m/n/12 Motor del ag-i-ta-dor en
  []
 
 
@@ -2206,22 +2156,12 @@ Underfull \hbox (badness 1320) in paragraph at lines 1248--1248
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 1248--1248
-[]|\OT1/cmr/m/n/12 Sensores en falla (falta
+\OT1/cmr/m/n/12 encima del rango
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1248--1248
-\OT1/cmr/m/n/12 de per-sonal, falla en
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1248--1248
-[]\OT1/cmr/m/n/12 Compuertas con fal-las
- []
-
-
-Underfull \hbox (badness 1014) in paragraph at lines 1248--1248
-\OT1/cmr/m/n/12 mecanicas, sin in-ter-rupcion
+Underfull \hbox (badness 5622) in paragraph at lines 1248--1248
+[]\OT1/cmr/m/n/12 Falla en com-puer-tas, sin
  []
 
 
@@ -2230,23 +2170,11 @@ Underfull \hbox (badness 1320) in paragraph at lines 1248--1248
  []
 
 
-Underfull \hbox (badness 2799) in paragraph at lines 1248--1248
-[]|\OT1/cmr/m/n/12 Compuerta de en-trada en
+Underfull \hbox (badness 10000) in paragraph at lines 1248--1248
+[]|\OT1/cmr/m/n/12 Compuertas blo-queadas,
  []
 
 
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 14.49998pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[57pdfTeX warning (ext4): destination with the same identifier (name{table.3.4}
-) has been already used, duplicate ignored
-
-\@EveryShipout@Output ...@Org@Shipout \box \@cclv 
-                                                  
-l.1253 
-       ]
 Overfull \hbox (30.79726pt too wide) in paragraph at lines 1269--1269
 []|\OT1/cmr/bx/n/12 Condicion|  
  []
@@ -2258,41 +2186,138 @@ Underfull \hbox (badness 10000) in paragraph at lines 1269--1269
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 1269--1269
-[]|\OT1/cmr/m/n/12 Compuertas en
+[]\OT1/cmr/m/n/12 Compuerta de en-trada
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 1269--1269
-[]\OT1/cmr/m/n/12 Recolectores de agua
+[]\OT1/cmr/m/n/12 Compuerta de drenaje
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 1269--1269
-[]\OT1/cmr/m/n/12 Disminucion con-sid-er-able
- []
-
-
-Underfull \hbox (badness 2941) in paragraph at lines 1269--1269
-\OT1/cmr/m/n/12 de $\OML/cmm/m/it/12 Q[]$ \OT1/cmr/m/n/12 en los canales de
+[]\OT1/cmr/m/n/12 Mezclador mecanico en
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 1269--1269
+[]|\OT1/cmr/m/n/12 Se vi-su-al-izan floculos en
+ []
+
+
+Underfull \hbox (badness 1320) in paragraph at lines 1269--1269
+[]\OT1/cmr/m/n/12 Nivel de agua por
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1269--1269
+[]|\OT1/cmr/m/n/12 Sensores en falla (falta
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1269--1269
+\OT1/cmr/m/n/12 de per-sonal, falla en
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1269--1269
+[]\OT1/cmr/m/n/12 Compuertas con fal-las
+ []
+
+
+Underfull \hbox (badness 1014) in paragraph at lines 1269--1269
+\OT1/cmr/m/n/12 mecanicas, sin in-ter-rupcion
+ []
+
+
+Underfull \hbox (badness 1320) in paragraph at lines 1269--1269
+[]\OT1/cmr/m/n/12 Nivel de agua por
+ []
+
+
+Underfull \hbox (badness 2799) in paragraph at lines 1269--1269
+[]|\OT1/cmr/m/n/12 Compuerta de en-trada en
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[58pdfTeX warning (ext4): destination with the same identifier (name{table.3.4}
+) has been already used, duplicate ignored
+
+\@EveryShipout@Output ...@Org@Shipout \box \@cclv 
+                                                  
+l.1274 
+       ]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[59pdfTeX warning (ext4): destination with the same identifier (name{table.3.5}
+) has been already used, duplicate ignored
+
+\@EveryShipout@Output ...@Org@Shipout \box \@cclv 
+                                                  
+l.1280 					\item  C
+                    audal de entrada cercano a cero, afectando eventualmente...
+]
+Underfull \hbox (badness 1824) in paragraph at lines 1294--1295
+[]\OT1/cmr/m/n/12 Con nivel del agua bajo los recolec-tores, la unidad no puede
+ ini-ciar su
+ []
+
+
+Overfull \hbox (30.79726pt too wide) in paragraph at lines 1311--1311
+[]|\OT1/cmr/bx/n/12 Condicion|  
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1311--1311
 []\OT1/cmr/m/n/12 Nivel de agua
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1269--1269
+Underfull \hbox (badness 10000) in paragraph at lines 1311--1311
+[]|\OT1/cmr/m/n/12 Compuertas en
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1311--1311
+[]\OT1/cmr/m/n/12 Recolectores de agua
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1311--1311
+[]\OT1/cmr/m/n/12 Disminucion con-sid-er-able
+ []
+
+
+Underfull \hbox (badness 2941) in paragraph at lines 1311--1311
+\OT1/cmr/m/n/12 de $\OML/cmm/m/it/12 Q[]$ \OT1/cmr/m/n/12 en los canales de
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1311--1311
+[]\OT1/cmr/m/n/12 Nivel de agua
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1311--1311
 \OT1/cmr/m/n/12 por de-bajo de
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1269--1269
+Underfull \hbox (badness 10000) in paragraph at lines 1311--1311
 \OT1/cmr/m/n/12 las laminas de
  []
 
 
-Underfull \hbox (badness 3601) in paragraph at lines 1269--1269
+Underfull \hbox (badness 3601) in paragraph at lines 1311--1311
 []|\OT1/cmr/m/n/12 Compuertas en falla, con
  []
 
@@ -2302,114 +2327,121 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[58pdfTeX warning (ext4): destination with the same identifier (name{table.3.5}
+[60]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[61pdfTeX warning (ext4): destination with the same identifier (name{table.3.6}
 ) has been already used, duplicate ignored
 
 \@EveryShipout@Output ...@Org@Shipout \box \@cclv 
                                                   
-l.1274 				
-           ]
-Overfull \hbox (30.79726pt too wide) in paragraph at lines 1288--1288
+l.1324 
+       ]
+Overfull \hbox (30.79726pt too wide) in paragraph at lines 1350--1350
 []|\OT1/cmr/bx/n/12 Condicion|  
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1288--1288
+Underfull \hbox (badness 10000) in paragraph at lines 1350--1350
 []\OT1/cmr/m/n/12 Nivel de agua
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1288--1288
+Underfull \hbox (badness 10000) in paragraph at lines 1350--1350
 []\OT1/cmr/m/n/12 Compuerta de en-trada
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1288--1288
-[]\OT1/cmr/m/n/12 Compuerta de de-sague
+Underfull \hbox (badness 10000) in paragraph at lines 1350--1350
+[]\OT1/cmr/m/n/12 Compuerta de drenaje
  []
 
 
-Underfull \hbox (badness 1320) in paragraph at lines 1288--1288
+Underfull \hbox (badness 1320) in paragraph at lines 1350--1350
 []\OT1/cmr/m/n/12 Nivel de agua por
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1288--1288
+Underfull \hbox (badness 10000) in paragraph at lines 1350--1350
 []|\OT1/cmr/m/n/12 Sensores en falla (falta
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1288--1288
+Underfull \hbox (badness 10000) in paragraph at lines 1350--1350
 \OT1/cmr/m/n/12 de per-sonal, falla en
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1288--1288
+Underfull \hbox (badness 10000) in paragraph at lines 1350--1350
 []\OT1/cmr/m/n/12 Compuertas con fal-las
  []
 
 
-Underfull \hbox (badness 1014) in paragraph at lines 1288--1288
+Underfull \hbox (badness 1014) in paragraph at lines 1350--1350
 \OT1/cmr/m/n/12 mecanicas, sin in-ter-rupcion
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1288--1288
+Underfull \hbox (badness 10000) in paragraph at lines 1350--1350
 []\OT1/cmr/m/n/12 Se vi-su-al-izan floculos en
  []
 
 
-Underfull \hbox (badness 1052) in paragraph at lines 1288--1288
+Underfull \hbox (badness 1052) in paragraph at lines 1350--1350
 \OT1/cmr/m/n/12 (de-nota falla en el calculo
  []
 
 
-Underfull \hbox (badness 2293) in paragraph at lines 1288--1288
+Underfull \hbox (badness 2293) in paragraph at lines 1350--1350
 \OT1/cmr/m/n/12 de la fre-cuen-cia de as-pas
  []
 
 
-Underfull \hbox (badness 1383) in paragraph at lines 1288--1288
+Underfull \hbox (badness 1383) in paragraph at lines 1350--1350
 \OT1/cmr/m/n/12 de mez-clado en la unidad
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1288--1288
+Underfull \hbox (badness 10000) in paragraph at lines 1350--1350
 \OT1/cmr/m/n/12 de co-ag-u-lante a~nadido,
  []
 
 
-Underfull \hbox (badness 1320) in paragraph at lines 1288--1288
+Underfull \hbox (badness 1320) in paragraph at lines 1350--1350
 []\OT1/cmr/m/n/12 Nivel de agua por
  []
 
 
-Underfull \hbox (badness 2799) in paragraph at lines 1288--1288
+Underfull \hbox (badness 2799) in paragraph at lines 1350--1350
 []|\OT1/cmr/m/n/12 Compuerta de en-trada en
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1288--1288
+Underfull \hbox (badness 10000) in paragraph at lines 1350--1350
 []\OT1/cmr/m/n/12 Compuerta de descarga
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1288--1288
+Underfull \hbox (badness 10000) in paragraph at lines 1350--1350
 \OT1/cmr/m/n/12 de lo-dos en falla, con
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1288--1288
+Underfull \hbox (badness 10000) in paragraph at lines 1350--1350
 \OT1/cmr/m/n/12 perdida con-sid-er-able de
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1288--1288
+Underfull \hbox (badness 10000) in paragraph at lines 1350--1350
 \OT1/cmr/m/n/12 flujo o im-posi-bil-i-dad de
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1288--1288
+Underfull \hbox (badness 10000) in paragraph at lines 1350--1350
 \OT1/cmr/m/n/12 descar-gar lo-dos por un
  []
 
@@ -2419,44 +2451,51 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[59pdfTeX warning (ext4): destination with the same identifier (name{table.3.6}
+[62]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[63pdfTeX warning (ext4): destination with the same identifier (name{table.3.7}
 ) has been already used, duplicate ignored
 
 \@EveryShipout@Output ...@Org@Shipout \box \@cclv 
                                                   
-l.1293 
-       ]
-Overfull \hbox (30.79726pt too wide) in paragraph at lines 1309--1309
+l.1359 					\item  N
+                    ivel de agua bajo el rango de operación.]
+Overfull \hbox (30.79726pt too wide) in paragraph at lines 1390--1390
 []|\OT1/cmr/bx/n/12 Condicion|  
  []
 
 
-Underfull \hbox (badness 1320) in paragraph at lines 1309--1309
+Underfull \hbox (badness 1320) in paragraph at lines 1390--1390
 []\OT1/cmr/m/n/12 Nivel de agua por
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1309--1309
+Underfull \hbox (badness 10000) in paragraph at lines 1390--1390
 []|\OT1/cmr/m/n/12 Manto fil-trante en
  []
 
 
-Underfull \hbox (badness 7722) in paragraph at lines 1309--1309
+Underfull \hbox (badness 7722) in paragraph at lines 1390--1390
 []\OT1/cmr/m/n/12 Motor de retrolavado en
  []
 
 
-Underfull \hbox (badness 2012) in paragraph at lines 1309--1309
+Underfull \hbox (badness 2012) in paragraph at lines 1390--1390
 []\OT1/cmr/m/n/12 Bombas de retrolavado en
  []
 
 
-Underfull \hbox (badness 2165) in paragraph at lines 1309--1309
+Underfull \hbox (badness 2165) in paragraph at lines 1390--1390
 []\OT1/cmr/m/n/12 Imposibilidad para re-alizar
  []
 
 
-Underfull \hbox (badness 1946) in paragraph at lines 1309--1309
+Underfull \hbox (badness 1946) in paragraph at lines 1390--1390
 \OT1/cmr/m/n/12 el retrolavado, falla en el
  []
 
@@ -2466,74 +2505,81 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[60pdfTeX warning (ext4): destination with the same identifier (name{table.3.7}
+[64]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[65pdfTeX warning (ext4): destination with the same identifier (name{table.3.8}
 ) has been already used, duplicate ignored
 
 \@EveryShipout@Output ...@Org@Shipout \box \@cclv 
                                                   
-l.1314 
-       ]
-Overfull \hbox (30.79726pt too wide) in paragraph at lines 1328--1328
+l.1405 					\item  C
+                    errar la válvula del agua de lavado.]
+Overfull \hbox (30.79726pt too wide) in paragraph at lines 1426--1426
 []|\OT1/cmr/bx/n/12 Condicion|  
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1328--1328
+Underfull \hbox (badness 10000) in paragraph at lines 1426--1426
 []\OT1/cmr/m/n/12 Nivel de agua
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1328--1328
+Underfull \hbox (badness 10000) in paragraph at lines 1426--1426
 []\OT1/cmr/m/n/12 Compuerta de en-trada
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1328--1328
-[]\OT1/cmr/m/n/12 Compuerta de de-sague
+Underfull \hbox (badness 10000) in paragraph at lines 1426--1426
+[]\OT1/cmr/m/n/12 Compuerta de drenaje
  []
 
 
-Underfull \hbox (badness 1320) in paragraph at lines 1328--1328
+Underfull \hbox (badness 1320) in paragraph at lines 1426--1426
 []\OT1/cmr/m/n/12 Nivel de agua por
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1328--1328
+Underfull \hbox (badness 10000) in paragraph at lines 1426--1426
 []|\OT1/cmr/m/n/12 Sensores en falla (falta
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1328--1328
+Underfull \hbox (badness 10000) in paragraph at lines 1426--1426
 \OT1/cmr/m/n/12 de per-sonal, falla en
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1328--1328
+Underfull \hbox (badness 10000) in paragraph at lines 1426--1426
 []\OT1/cmr/m/n/12 Compuertas con fal-las
  []
 
 
-Underfull \hbox (badness 1014) in paragraph at lines 1328--1328
+Underfull \hbox (badness 1014) in paragraph at lines 1426--1426
 \OT1/cmr/m/n/12 mecanicas, sin in-ter-rupcion
  []
 
 
-Underfull \hbox (badness 1320) in paragraph at lines 1328--1328
+Underfull \hbox (badness 1320) in paragraph at lines 1426--1426
 []\OT1/cmr/m/n/12 Nivel de agua por
  []
 
 
-Underfull \hbox (badness 2799) in paragraph at lines 1328--1328
+Underfull \hbox (badness 2799) in paragraph at lines 1426--1426
 []|\OT1/cmr/m/n/12 Compuerta de en-trada en
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1328--1328
-[]\OT1/cmr/m/n/12 Compuerta de de-sague
+Underfull \hbox (badness 10000) in paragraph at lines 1426--1426
+[]\OT1/cmr/m/n/12 Compuerta de drenaje
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1328--1328
+Underfull \hbox (badness 10000) in paragraph at lines 1426--1426
 \OT1/cmr/m/n/12 en falla, con perdida
  []
 
@@ -2543,126 +2589,121 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[61pdfTeX warning (ext4): destination with the same identifier (name{table.3.8}
+[66]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[67pdfTeX warning (ext4): destination with the same identifier (name{table.3.9}
 ) has been already used, duplicate ignored
 
 \@EveryShipout@Output ...@Org@Shipout \box \@cclv 
                                                   
-l.1333 
-       ]
-Overfull \hbox (30.79726pt too wide) in paragraph at lines 1349--1349
+l.1438 				\end{itemize}
+                        ]
+Overfull \hbox (30.79726pt too wide) in paragraph at lines 1459--1459
 []|\OT1/cmr/bx/n/12 Condicion|  
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1349--1349
+Underfull \hbox (badness 10000) in paragraph at lines 1459--1459
 []\OT1/cmr/m/n/12 Nivel den-tro del
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1349--1349
+Underfull \hbox (badness 10000) in paragraph at lines 1459--1459
 []\OT1/cmr/m/n/12 Compuertas en
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1349--1349
+Underfull \hbox (badness 10000) in paragraph at lines 1459--1459
 []|\OT1/cmr/m/n/12 Pruebas de lab-o-ra-to-rio
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1349--1349
+Underfull \hbox (badness 10000) in paragraph at lines 1459--1459
 []|\OT1/cmr/m/n/12 Bomba de adicion de
  []
 
 
-Underfull \hbox (badness 1320) in paragraph at lines 1349--1349
+Underfull \hbox (badness 1320) in paragraph at lines 1459--1459
 []\OT1/cmr/m/n/12 Nivel de agua por
  []
 
 
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 14.49998pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[62pdfTeX warning (ext4): destination with the same identifier (name{table.3.9}
-) has been already used, duplicate ignored
-
-\@EveryShipout@Output ...@Org@Shipout \box \@cclv 
-                                                  
-l.1354 			
-          ]
-Overfull \hbox (30.79726pt too wide) in paragraph at lines 1368--1368
+Overfull \hbox (30.79726pt too wide) in paragraph at lines 1480--1480
 []|\OT1/cmr/bx/n/12 Condicion|  
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1368--1368
+Underfull \hbox (badness 10000) in paragraph at lines 1480--1480
 []\OT1/cmr/m/n/12 Nivel de agua
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1368--1368
+Underfull \hbox (badness 10000) in paragraph at lines 1480--1480
 []\OT1/cmr/m/n/12 Compuerta de en-trada
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1368--1368
-[]\OT1/cmr/m/n/12 Compuerta de de-sague
+Underfull \hbox (badness 10000) in paragraph at lines 1480--1480
+[]\OT1/cmr/m/n/12 Compuerta de drenaje
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1368--1368
+Underfull \hbox (badness 10000) in paragraph at lines 1480--1480
 []\OT1/cmr/m/n/12 Qumicos de desin-feccion
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1368--1368
+Underfull \hbox (badness 10000) in paragraph at lines 1480--1480
 []|\OT1/cmr/m/n/12 Adicion de la can-ti-dad
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1368--1368
+Underfull \hbox (badness 10000) in paragraph at lines 1480--1480
 []\OT1/cmr/m/n/12 Nivel de agua
  []
 
 
-Underfull \hbox (badness 2486) in paragraph at lines 1368--1368
+Underfull \hbox (badness 2486) in paragraph at lines 1480--1480
 \OT1/cmr/m/n/12 por encima o por
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1368--1368
+Underfull \hbox (badness 10000) in paragraph at lines 1480--1480
 []|\OT1/cmr/m/n/12 Sensores en falla (falta
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1368--1368
+Underfull \hbox (badness 10000) in paragraph at lines 1480--1480
 \OT1/cmr/m/n/12 de per-sonal, falla en
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1368--1368
+Underfull \hbox (badness 10000) in paragraph at lines 1480--1480
 []\OT1/cmr/m/n/12 Compuertas con fal-las
  []
 
 
-Underfull \hbox (badness 1014) in paragraph at lines 1368--1368
+Underfull \hbox (badness 1014) in paragraph at lines 1480--1480
 \OT1/cmr/m/n/12 mecanicas, sin in-ter-rupcion
  []
 
 
-Underfull \hbox (badness 2799) in paragraph at lines 1368--1368
+Underfull \hbox (badness 2799) in paragraph at lines 1480--1480
 []|\OT1/cmr/m/n/12 Compuerta de en-trada en
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1368--1368
-[]\OT1/cmr/m/n/12 Compuerta de de-sague
+Underfull \hbox (badness 10000) in paragraph at lines 1480--1480
+[]\OT1/cmr/m/n/12 Compuerta de drenaje
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1368--1368
+Underfull \hbox (badness 10000) in paragraph at lines 1480--1480
 \OT1/cmr/m/n/12 en falla, con perdida
  []
 
@@ -2672,26 +2713,33 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[63pdfTeX warning (ext4): destination with the same identifier (name{table.3.10
+[68pdfTeX warning (ext4): destination with the same identifier (name{table.3.10
 }) has been already used, duplicate ignored
 
 \@EveryShipout@Output ...@Org@Shipout \box \@cclv 
                                                   
-l.1373 					
-            ]
+l.1485 
+       ]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[64pdfTeX warning (ext4): destination with the same identifier (name{table.3.11
+[69pdfTeX warning (ext4): destination with the same identifier (name{table.3.11
 }) has been already used, duplicate ignored
 
 \@EveryShipout@Output ...@Org@Shipout \box \@cclv 
                                                   
-l.1374 	\chapter
-                {Implementación}]
+l.1491 					\item  H
+                    ay daños en la estructura de la unidad.]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[70]
 Cap\'{\i }tulo 4.
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2699,7 +2747,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[65
+[71
 
 ]
 Cap\'{\i }tulo 5.
@@ -2709,102 +2757,102 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[66
+[72
 
 ]
 Cap\'{\i }tulo 6.
 
-Underfull \hbox (badness 2828) in paragraph at lines 1399--1399
+Underfull \hbox (badness 2828) in paragraph at lines 1521--1521
 []|\OT1/cmr/m/n/12 Medicion de tur-bidez en
  []
 
 
-Underfull \hbox (badness 2913) in paragraph at lines 1399--1399
+Underfull \hbox (badness 2913) in paragraph at lines 1521--1521
 \OT1/cmr/m/n/12 el agua. De-ter-mina la
  []
 
 
-Underfull \hbox (badness 5245) in paragraph at lines 1399--1399
+Underfull \hbox (badness 5245) in paragraph at lines 1521--1521
 \OT1/cmr/m/n/12 con una fuente de haz
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1399--1399
+Underfull \hbox (badness 10000) in paragraph at lines 1521--1521
 \OT1/cmr/m/n/12 de acidez o al-calin-idad
  []
 
 
-Underfull \hbox (badness 1259) in paragraph at lines 1399--1399
+Underfull \hbox (badness 1259) in paragraph at lines 1521--1521
 []|\OT1/cmr/m/n/12 Medicion de la difer-en-cia
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1399--1399
+Underfull \hbox (badness 10000) in paragraph at lines 1521--1521
 []|\OT1/cmr/m/n/12 Medidor de Cloro
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1399--1399
+Underfull \hbox (badness 10000) in paragraph at lines 1521--1521
 []|\OT1/cmr/m/n/12 Medicion am-perometrica
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1399--1399
+Underfull \hbox (badness 10000) in paragraph at lines 1521--1521
 \OT1/cmr/m/n/12 con po-ten-cial con-stante,
  []
 
 
-Underfull \hbox (badness 6893) in paragraph at lines 1399--1399
+Underfull \hbox (badness 6893) in paragraph at lines 1521--1521
 \OT1/cmr/m/n/12 he-cho a traves de dos
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1399--1399
+Underfull \hbox (badness 10000) in paragraph at lines 1521--1521
 \OT1/cmr/m/n/12 elec-trodo de ref-er-en-cia.
  []
 
 
-Underfull \hbox (badness 4120) in paragraph at lines 1399--1399
+Underfull \hbox (badness 4120) in paragraph at lines 1521--1521
 \OT1/cmr/m/n/12 La cor-ri-ente con-sume el
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1399--1399
+Underfull \hbox (badness 10000) in paragraph at lines 1521--1521
 []|\OT1/cmr/m/n/12 Deteccion del color
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1399--1399
+Underfull \hbox (badness 10000) in paragraph at lines 1521--1521
 \OT1/cmr/m/n/12 me-di-ante la medicion
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1399--1399
+Underfull \hbox (badness 10000) in paragraph at lines 1521--1521
 \OT1/cmr/m/n/12 de la can-ti-dad de luz
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1399--1399
+Underfull \hbox (badness 10000) in paragraph at lines 1521--1521
 []|\OT1/cmr/m/n/12 Se pro-duce un rango
  []
 
 
-Underfull \hbox (badness 7415) in paragraph at lines 1399--1399
+Underfull \hbox (badness 7415) in paragraph at lines 1521--1521
 \OT1/cmr/m/n/12 de-seado de lon-gi-tud de
  []
 
 
-Underfull \hbox (badness 1540) in paragraph at lines 1399--1399
+Underfull \hbox (badness 1540) in paragraph at lines 1521--1521
 \OT1/cmr/m/n/12 onda de luz que pasa a
  []
 
 
-Underfull \hbox (badness 3492) in paragraph at lines 1399--1399
+Underfull \hbox (badness 3492) in paragraph at lines 1521--1521
 \OT1/cmr/m/n/12 traves de la mues-tra y,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1399--1399
+Underfull \hbox (badness 10000) in paragraph at lines 1521--1521
 \OT1/cmr/m/n/12 me-di-ante un fotometro,
  []
 
@@ -2814,7 +2862,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[67
+[73
 
 ]
 
@@ -2823,12 +2871,12 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[68pdfTeX warning (ext4): destination with the same identifier (name{table.6.1}
+[74pdfTeX warning (ext4): destination with the same identifier (name{table.6.1}
 ) has been already used, duplicate ignored
 
 \@EveryShipout@Output ...@Org@Shipout \box \@cclv 
                                                   
-l.1418 	\bibliography{Bibliog}
+l.1540 	\bibliography{Bibliog}
                               ] (proyecto_YsisLacruz.bbl)
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2836,34 +2884,31 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[69
+[75
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1425.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1425.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1547.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1547.
  (proyecto_YsisLacruz.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1425.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1425.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1547.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1547.
 
 Package rerunfilecheck Info: File `proyecto_YsisLacruz.out' has not changed.
-(rerunfilecheck)             Checksum: E455E7F78283D609F5B4A8450E972BFC;4547.
+(rerunfilecheck)             Checksum: C5D341A4F67C7AEC3AFC5088D3B87E40;4605.
 
 
 LaTeX Warning: There were undefined references.
 
-
-LaTeX Warning: There were multiply-defined labels.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1425.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1547.
  ) 
 Here is how much of TeX's memory you used:
- 28733 strings out of 492973
- 553480 string characters out of 3127135
- 604125 words of memory out of 3000000
- 31985 multiletter control sequences out of 15000+200000
+ 28760 strings out of 492973
+ 553762 string characters out of 3127135
+ 604158 words of memory out of 3000000
+ 31987 multiletter control sequences out of 15000+200000
  540357 words of font info for 53 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 62i,14n,65p,1923b,389s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 62i,14n,65p,1923b,403s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Users/Ysis/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/
 cm/cmbx12.pfb><C:/Users/Ysis/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/publ
 ic/amsfonts/cm/cmcsc10.pfb><C:/Users/Ysis/AppData/Local/Programs/MiKTeX 2.9/fon
@@ -2876,9 +2921,9 @@ pfb><C:/Users/Ysis/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfont
 s/cm/cmsy10.pfb><C:/Users/Ysis/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pu
 blic/amsfonts/cm/cmsy8.pfb><C:/Users/Ysis/AppData/Local/Programs/MiKTeX 2.9/fon
 ts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on proyecto_YsisLacruz.pdf (75 pages, 9845183 bytes).
+Output written on proyecto_YsisLacruz.pdf (83 pages, 9871403 bytes).
 PDF statistics:
- 861 PDF objects out of 1000 (max. 8388607)
- 193 named destinations out of 1000 (max. 500000)
- 671 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 958 PDF objects out of 1000 (max. 8388607)
+ 215 named destinations out of 1000 (max. 500000)
+ 679 words of extra memory for PDF output out of 10000 (max. 10000000)
 
