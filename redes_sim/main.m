@@ -4,7 +4,7 @@ close('all');
 % Init Epanet
 start_toolkit;
 
-% Load data (24 h data default)
+% Load data
 load('TestWorkspace.mat');
 
 % Variables to set
@@ -15,12 +15,41 @@ dosisArray = [];
 
 % Sedimentation
 s = epanet('Net00-new.inp');
-hours = 27; % h
-s_NTUi = 9;
-s_qi1 = 75; % LPS
-s_qi2 = 75; % LPS
-s_h1 = 1;
-s_h2 = 1;
+hours = length(Ti); % h
+qi1 = 150; % LPS
+qi2 = 150; % LPS
+h1 = 1;
+h2 = 1;
+
+% Initial q change
+
+% Sediment 1
+% qin
+% valveID = '2'; 
+% valveIndex = s.getLinkIndex(valveID);
+% s.setLinkInitialSetting(valveIndex, qi1);
+% qout
+% valveID = '12';
+% valveIndex = s.getLinkIndex(valveID);
+% s.setLinkInitialSetting(valveIndex, qi2);
+
+% Sediment 2
+% qin
+% valveID = '13';
+% valveIndex = s.getLinkIndex(valveID);
+% s.setLinkInitialSetting(valveIndex, s_qi);
+% qout
+% valveID = '14';
+% valveIndex = s.getLinkIndex(valveID);
+% s.setLinkInitialSetting(valveIndex, s_qi);
+
+% Link to graph
+link_names = {'12'};
+link_indices = s.getLinkIndex(link_names);
+
+% Node to graph (Tank)
+node_names = {'3'};
+node_indices = s.getNodeIndex(node_names);
 
 % Hydraulic analysis using ENepanet binary file
 s.setTimeSimulationDuration(hours*3600);
@@ -29,16 +58,11 @@ hyd_res = s.getComputedTimeSeries;
 % Change time-stamps from seconds to hours
 hrs_time = hyd_res.Time/3600;
 
+% Initialize hydraulic analysis
 s.openHydraulicAnalysis;
 s.initializeHydraulicAnalysis;
-tstep=1; F=[]; t=[]; V=[];
-h = 0;
 
-link_names = {'12'};
-link_indices = s.getLinkIndex(link_names);
-
-node_names = {'3'};
-node_indices = s.getNodeIndex(node_names);
+tstep=1; F=[]; t=[]; V=[]; h = 0;
 
 for x = 1:i
     
@@ -48,8 +72,8 @@ for x = 1:i
     %pause(1)
     
     % Tank level status
-        % if (level >= max) then (open washing valve)
-        % if (level <= min) then (close washing valve)
+        % if (level >= max) then (open sludge discharge valve)
+        % if (level <= min) then (close sludge discharge valve)
     for y = (1+h):(60+h)
         
         % Hydraulic Analysis - step by step (step = 1sec)
@@ -60,11 +84,13 @@ for x = 1:i
         F = [F; s.getLinkFlows];
         % Volume matrix
         V = [V; s.getNodeTankVolume];
-        % Epanet tstep
+        % Epanet next tstep
         tstep = s.nextHydraulicAnalysisStep;
         
-            % Flow to the next unity
             figure (1);
+            
+            % Flow
+            subplot(2,1,1);
             plot((t/3600), F(:,link_indices));
             drawnow;
             title(['Flow for the link id "', s.getLinkNameID{link_indices},'"']);
@@ -72,7 +98,7 @@ for x = 1:i
             ylabel(['Flow (', s.LinkFlowUnits,')']);
             
             % Tank Volume
-            figure (2);
+            subplot(2,1,2);
             plot((t/3600), V(:,node_indices));
             drawnow;
             title(['Flow for the node id "', s.getNodeNameID{node_indices},'"']);
@@ -83,3 +109,4 @@ for x = 1:i
     % Next hour
     h = h + 60;
 end
+

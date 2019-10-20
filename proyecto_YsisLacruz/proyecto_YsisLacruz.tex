@@ -1486,20 +1486,186 @@ La operación en desinfección debe mantenerse informada de las cualidades química
 La unidad de desinfección detenerse si:
 
 			\begin{itemize}
-					\item  Ausencia de caudal de entrada.
-					\item  Las condiciones físico químicas del agua están fuera del rango aceptable (table \ref{table-caract}).
-					\item  Hay daños en la estructura de la unidad.
-				\end{itemize}
+				\item  Ausencia de caudal de entrada.
+				\item  Las condiciones físico químicas del agua están fuera del rango aceptable (table \ref{table-caract}).
+				\item  Hay daños en la estructura de la unidad.
+			\end{itemize}
 				
 Para llevar a cabo la parada de la unidad se debe cerrar la compuerta de entrada e informar las razones para la detención, de modo que el almacenamiento y la distribución estén al tanto de la situación.
 					
 	\chapter{Implementación}
 	
-		\section{Epanet y MATLAB}
-			¿Cómo realizar la simulación híbrida?
+Partiendo de la idea de generar una propuesta de gemelo digital, y basada la estructura de producción en unidades holónicas, se procede a caracterizar y simular las unidades de potabilización por separado, de modo que cumplan con las condiciones individuales de funcionamiento, transmitiendo la información y estado de funcionamiento a un programa matriz en el que se efectuará la interconexión.
+
+Para llevar a cabo la prueba de concepto se tomaron dos de las unidades funcionales del proceso de potabilización, la unidad de Coagulación y la unidad de Sedimentación. En la unidad de Coagulación se utilizó un modelo matemático para aproximar la relación de dependencia entre la dosis de coagulante a adicionar y las condiciones físico químicas del flujo entrante. Para el caso de la unidad de Sedimentación se utilizó un programa de análisis y simulación de sistemas de distribución de agua potable llamado Epanet, esto con el fin de hacer uso de herramientas conocidas en el ámbito hidrológico, que incluyen algoritmos de cálculo matemático especializado en el área.
+	
+		\section{Simulación de la Unidad de Coagulación}
 		
-		\section{Simulación}
+La adición de coagulante representa uno de los procedimientos primordiales en una planta de tratamiento de agua, ya que conlleva a que el flujo de salida se encuentre dentro de los límites permisibles para el consumo humano. La efectividad del proceso de coagulación se verá afectada por la dosis de coagulante añadido.
+
+Para obtener la dosis óptima se realiza la prueba de jarras cada vez que se observa un cambio en la turbidez del flujo, sin embargo, es posible realizar un modelo que arroje la cantidad de Sulfato de Aluminio a adicionar, de manera que el procedimiento se realice con mayor rapidez y confiabilidad.
+
+Debido a la naturaleza aleatoria del agua bruta que ingresa a la planta, es razonable utilizar un modelo de predicción estadístico, partiendo de un enfoque de regresión, para determinar la dosis de coagulante apropiada en cada caso. [112] Los parámetros que se toman en cuenta al generar un modelo son las características fisicoquímicas del agua, tales como: Turbidez, pH, color, temperatura, alcalinidad, conductividad.
+
+Para generar un modelo que se adapte a las condiciones hidrológicas del estado Mérida, se utilizaron datos suministrados por el personal de la planta de potabilización, cuyo formato incluye:
+
+			\begin{itemize}
+				\item  \textbf{Características del flujo:} pH, turbidez ($NTU$), color ($UC$), alcalinidad ($\frac{mg}{L}$), cloro residual ($\frac{mg}{L}$).
+				\item  \textbf{Dosis de químicos adicionadas:} Gas cloro ($\frac{kg}{h}$), sulfato de aluminio ($\frac{kg}{h}$), cal hidratada ($\frac{kg}{h}$).
+			\end{itemize}
+
+El tiempo de muestreo en los datos es de 1 hora.
+
+El desarrollo del modelo se realizó mediante regresión polinomial, utilizado para predecir una variable dependiente $Y$ con base en múltiples variables predictoras $X = (x_{1}, x_{2}, ..., x_{k})$; puede ser expresado como:
+
+			\begin{equation}
+				\label{eq-polyregress}
+				Y = a_{0} + a_{1}x + a_{2}x^{2} + ... + a_{n}x^{n}
+			\end{equation}
+
+Para efectos de determinar la dosis de coagulante ideal, se utilizaron como descriptores las condiciones iniciales del flujo: Turbidez, pH, color y alcalinidad (tabla \ref{table-variables}), tomando en cuenta aquellas muestras a las cuales se le adicionó una cantidad adecuada de coagulante, esto evidenciado en los valores de salida:
+
+			\begin{table}[H]
+					\begin{tabular}{p{3cm}}
+						$NTU \leq 5$  \\
+						$Color \leq 20$ \\
+						$pH \approx 7$ \\
+					\end{tabular}
+			\end{table}
+			
+			\begin{table}[H]
+				\begin{center}
+					\resizebox{13cm}{!} {
+					\begin{tabular}{|p{6cm}|p{3cm}|p{3cm}|}
+						\hline
+						\textbf{Datos} & \textbf{Valor mínimo} & \textbf{Valor máximo} \\
+						\hline \hline
+						Dosis Sulfato de Aluminio ($DSA$) &  &  \\ \hline
+						Turbidez ($T$) & $12$ $NTU$ & $1500$ $NTU$ \\ \hline
+						Color ($C$) & $50$ $UC$ & $9000$ $UC$ \\ \hline
+						pH ($Ph$) & $6,9$ & $7,2$ \\ \hline
+						Alcalinidad ($A$) & $22$ $mg/L$ & $27$ $mg/L$ \\ \hline
+					\end{tabular}
+					}
+					\caption{Variables del conjunto de datos.}
+					\label{table-variables}
+				\end{center}
+			\end{table}
+
+Siguiendo estudios  enfocados en la optimización de la dosis de coagulante (CITAR), se probaron varios modelos desarrollados en Matlab, combinando las variables descriptivas obtenidas en planta, mediante el uso de las funciones $polyfit(.)$, $regress(.)$ y $fitlm(.)$. Los modelos que mejor se ajustaron al comportamiento real se describen en la tabla \ref{table-validation}.
+
+			\begin{table}[H]
+				\begin{center}
+					\resizebox{15,5cm}{!} {
+					\begin{tabular}{|p{4cm}|p{4cm}|p{4cm}|p{4cm}|p{4cm}|}
+						\hline
+						\textbf{Modelo} & \textbf{Variables} & \textbf{RMSE-Modelo} & \textbf{$R^{2}$} & \textbf{RMSE-Validación} \\
+						\hline \hline
+						Md7 & T, C & 4,9999 & 0,9855 &  \\ \hline
+						Md2 & T, C & 5,2719 & 0,9839 &  \\ \hline
+						Md6 & T, C & 5,4767 & 0,9826 &  \\ \hline
+						Md1 & T & 10,8130 & 0,9322 &  \\ \hline
+						Md5 & T, C, Ph, A & 12,3296 & 0,9119 &  \\ \hline
+						Md3 & T, C, Ph & 12,6699 & 0,9070 &  \\ \hline
+						Md4 & T, C & 12,8805 & 0,9038 & \\ \hline
+					\end{tabular}
+					}
+					\caption{Pruebas y validación de modelos.}
+					\label{table-validation}
+				\end{center}
+			\end{table}
+
+El modelo md7 es resultante del promedio de los dos modelos con menor RMSE luego de ser ajustados en Matlab (Md2 y Md6). En la figura \ref{fig-coagulantmodel} se presenta la comparación entre los datos reales y el modelo md7 ajustado.
+
+			\begin{figure}
+				\centering
+				\includegraphics[scale=0.5]{figures/4coagulantmodel}
+				\caption{Dosis de coagulante real vs Dosis calculada.}
+				\label{fig-coagulantmodel}
+			\end{figure}
+
+		\section{Simulación de la Unidad de Sedimentación}
 		
+Para modelar la unidad de sedimentación se utilizó el programa de redes hidráulicas Epanet, programa orientado al análisis de los procesos de distribución de agua y el seguimiento de calidad, donde se conjugan algoritmos de cálculos e interfaz gráfica que permite plasmar los componentes de una red hidráulica (tuberías, tanques, bombas, válvulas, reservorios) y las condiciones de los mismos, para generar simulaciones en periodos prolongados.
+
+Epanet realiza un seguimiento de la evolución de caudales en tuberías, presión en los nodos, nivel en tanques, estado de bombas y válvulas, a lo largo del periodo de simulación, realizando un equilibrio hidráulico mediante cálculos iterativos. Los algoritmos de cálculo se encuentran en el manual del programa, apéndice D. [123]. Para el cálculo de las pérdidas de carga se utiliza como base la ecuación \ref{eq-hl}.
+
+			\begin{equation}
+				\label{eq-hl}
+				h_{L} = Aq^{B}
+			\end{equation}
+			
+Donde, \\
+$h_{L}$ pérdida de carga en unidades de longitud, \\
+$q$ caudal, \\
+$A$ coeficiente de resistencia, \\
+$B$ exponente del caudal. \\
+
+Según Darcy-Weisbach, los valores de $A$ y $B$ se determinan como:
+
+			\begin{equation}
+				\begin{array}{l}
+					\label{eq-darcy}
+					A = 0,0826 f(\epsilon,d,q)d^{-5}L \\
+					B = 2
+				\end{array}
+			\end{equation}
+			
+Donde, \\
+$\epsilon$ es coeficiente de rugosidad de Darcy-Weisbach (m), \\
+$f$ factor de fricción (que depende de $\epsilon$, $d$ y $q$), \\
+$d$ diámetro de tubería (m), \\
+$L$ longitud de la tubería (m), \\
+$q$ caudal ($m^{3}/s$)
+
+Para llevar a cabo la simulación en Epanet, se utilizaron longitudes reales de los tanques y tuberías presentes en la planta, según el plano de diseño suministrado. La unidad consta de dos sedimentadores con una entrada de agua floculada, una salida de agua decantada y una descarga de lodos para cada uno. (figura \ref{fig-sedimentsimu})
+
+			\begin{figure}
+				\centering
+				\includegraphics{figures/4sedimentsimu}
+				\caption{Estructura de la unidad de Sedimentación en Epanet.}
+				\label{fig-sedimentsimu}
+			\end{figure}
+
+En la simulación se añaden válvulas de Control de Caudal (VCQ o FCV por sus siglas en inglés), para asignar el caudal según la información obtenida de la unidad anterior; en un principio se fija el caudal de operación ideal (caudal de diseño, $150 L/s$ para cada sedimentador). Se configuran también dos reglas simples de control de tanque para su mantenimiento, que consisten en la apertura y cierre de compuertas de lodos según los niveles de operación, los cuales se describen en la tabla \ref{table-sedimentlevelsop}.
+
+			\begin{table}[H]
+				\begin{center}
+					\resizebox{12cm}{!} {
+					\begin{tabular}{|p{2,5cm}|p{2,5cm}|p{6cm}|}
+						\hline
+						\textbf{Nivel} & \textbf{Altura (m)} & \textbf{Operación} \\
+						\hline \hline
+						max-max & 3,65 & Apertura de compuerta de lodos \\ \hline
+						max & 3,40 & \\ \hline
+						min & 3,16 & \\ \hline
+						min-min & 2,65 & Cierre de compuerta de lodos \\ \hline
+					\end{tabular}
+					}
+					\caption{Condición de mantenimiento de la unidad de sedimentación.}
+					\label{table-sedimentlevelsop}
+				\end{center}
+			\end{table}
+			
+El nivel max-max indica una acumulación en el fondo de lodos, por lo que se apertura la compuerta de vaciado. Entre los niveles min y max se maneja una operación normal, con flujo enviado hacia la unidad de filtración. El nivel min-min indica el nivel mínimo de vaciado del tanque, por lo que se debe cerrar la compuerta de lodos y, en caso de no haber flujo de entrada, anunciar la parada de la unidad. Las condiciones específicas del tanque se describen en la tabla \ref{sedimentcond}.
+
+			\begin{table}[H]
+				\begin{center}
+					\resizebox{8cm}{!} {
+					\begin{tabular}{|p{3cm}|p{4cm}|}
+						\hline
+						\textbf{Condición} & \textbf{Altura (m)} \\
+						\hline \hline
+						Normal & $3,40 < h < 3,65$ \\ \hline
+						Degradado & $h > 3,65, h < 3,40$ \\ \hline
+						Falla & $h < 3,40 y q \approx 0$ \\ \hline
+					\end{tabular}
+					}
+					\caption{Condición de operación de la unidad de sedimentación según el flujo.}
+					\label{table-sedimentcond}
+				\end{center}
+			\end{table}
+
 	\chapter{Conclusiones y Recomendaciones}
 	
 	\chapter{Anexos}

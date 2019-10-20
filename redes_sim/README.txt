@@ -12,5 +12,6 @@ coagulantFunc.m : Función que calcula la dosis de coagulante.
 
 Net00-new: Archivo Epanet, que representa la estructura de 2 sedimentadores, con la
 	   relación de medidas de la planta real. Los caudales se operan desde Matlab.
+	   De igual forma el archivo es cargado automáticamente.
 
 El Toolkit de Epanet debe estar cargado para realizar la simulación, o estar en la misma carpeta.
