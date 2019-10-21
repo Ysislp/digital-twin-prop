@@ -56,7 +56,7 @@
 \contentsline {subsection}{\numberline {3.8.5}Unidad de Desinfecci\'on}{68}{subsection.3.8.5}
 \contentsline {chapter}{\numberline {4}Implementaci\'on}{71}{chapter.4}
 \contentsline {section}{\numberline {4.1}Simulaci\'on de la Unidad de Coagulaci\'on}{71}{section.4.1}
-\contentsline {section}{\numberline {4.2}Simulaci\'on de la Unidad de Sedimentaci\'on}{73}{section.4.2}
+\contentsline {section}{\numberline {4.2}Simulaci\'on de la Unidad de Sedimentaci\'on}{74}{section.4.2}
 \contentsline {chapter}{\numberline {5}Conclusiones y Recomendaciones}{77}{chapter.5}
 \contentsline {chapter}{\numberline {6}Anexos}{78}{chapter.6}
 \contentsline {chapter}{Bibliograf\'{\i }a}{80}{table.6.1}

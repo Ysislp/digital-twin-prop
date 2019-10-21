@@ -4,6 +4,7 @@ clc;
 
 % Datos
 load('TestWorkspace.mat');
+load('ValWorkspace.mat');
 
 figure(1)
 plot(Ti,DSA,'*');
@@ -28,6 +29,14 @@ figure (2)
 plot(md1)
 hold on;
 plot(DSA)
+
+md1_val = a*(T_val).^3 + b*(T_val).^2 + c*(T_val) + d;
+RMSE1_val = sqrt(mean((DSA_val - md1_val).^2));
+
+figure (9)
+plot(md1_val, 'r')
+hold on;
+plot(DSA_val)
 
 % **** 2 ****
 
@@ -64,6 +73,16 @@ plot(md2, 'c')
 hold on;
 plot(DSA)
 
+md2_val = 76.44 - 0.08533.*T_val - 0.003054.*C_val + 0.004229.*(T_val).^2 -  ...
+      0.002185.*T_val.*C_val + 0.0002715.*(C_val).^2 - 3.174e-06.*(T_val).^2.*C_val ...
+      + 1.423e-06.*T_val.*(C_val).^2 - 1.513e-07.*(C_val).^3;
+RMSE2_val = sqrt(mean((DSA_val - md2_val).^2));
+
+figure (10)
+plot(md2_val, 'r')
+hold on;
+plot(DSA_val)
+
 % **** 3 ****
 
 % Regress
@@ -83,6 +102,9 @@ plot(md3, 'k')
 hold on;
 plot(DSA)
 
+md3_val = 396.7713 + 0.0421.*T_val - 45.3508.*Ph_val + 0.0150.*C_val;
+RMSE3_val = sqrt(mean((DSA_val - md3_val).^2));
+
 % corrcoef([DSA Ti Ci Phi Ai]) Ph correlación baja
 
 % **** 4 ****
@@ -101,22 +123,35 @@ plot(md4, 'r')
 hold on;
 plot(DSA)
 
+md4_val = 75 + 0.02937.*T_val + 0.017344.*C_val;
+RMSE4_val = sqrt(mean((DSA_val - md4_val).^2));
+
 % **** 5 ****
 
 % Fitlm T, C, Ph, Ai
 
 Xaux = [Ti, Ci, Phi, Ai];
 mdl2 = fitlm(Xaux, DSA);
-md5 = 426.44 + 0.0035805.*Ti + 0.020846.*Ci - 56.528.*Phi + 2.1107.*Ai;
+md5 = 425.0 + 0.045635.*Ti + 0.01423.*Ci - 56.60.*Phi + 2.12700.*Ai;
 % 426.44 + 0.0035805.*Ti + 0.020846.*Ci - 56.528.*Phi + 2.1107.*Ai
-
+% 12,3296  .56.525*ph
 RMSE5 = sqrt(mean((DSA - md5).^2));
 Rsq5 = fR2(DSA,md5);
 
 figure (6)
-plot(md5, 'c')
+plot(md5, 'r')
 hold on;
 plot(DSA)
+
+md5_val = 425.0 + 0.045635.*T_val + 0.01423.*C_val - 56.60.*Ph_val + 2.12700.*A_val;
+RMSE5_val = sqrt(mean((DSA_val - md5_val).^2));
+% 11,5470
+% 425.0 + 0.045635.*T_val + 0.01423.*C_val - 56.60.*Ph_val + 2.12700.*A_val;
+
+figure (13)
+plot(md5_val, 'r')
+hold on;
+plot(DSA_val)
 
 % **** 6 ****
 
@@ -171,13 +206,26 @@ hold on;
 plot(DSA)
 xlim([0 26])
 
+x = T_val;
+y = C_val;
+p12 =  -2.532e-05;
+p30 =  -0.0004819;
+md6_val = p00 + p10.*x + p01.*y + p20.*x.^2 + p11.*x.*y + p02.*y.^2 + p30.*x.^3 ... 
+      + p21.*x.^2.*y + p12.*x.*y.^2 + p40.*x.^4 + p31.*x.^3.*y + p22.*x.^2.*y.^2;
+RMSE6_val = sqrt(mean((DSA_val - md6_val).^2));
+
+figure (14)
+plot(md6_val, 'r')
+hold on;
+plot(DSA_val)
+
 % **** 7 ****
 
 % Media
 
-md7 = (md2 + md6)./2;
-RMSE7 = sqrt(mean((DSA - md7).^2));
-Rsq7 = fR2(DSA,md7);
+md7 = (md2 + md5)./2;
+RMSE7 = sqrt(mean((DSA - md7).^2));%8,1013 %7,2029
+Rsq7 = fR2(DSA,md7);%0,9620 %0,9699
 
 figure (8)
 plot(md7,'r')
@@ -188,6 +236,23 @@ xlabel('Muestra');
 ylabel(['Sulfato de Aluminio (Kg/h)']);
 grid on;
 legend('Modelo md7','Dosis medida');
+
+md7_val = (md2_val + md5_val)./2;
+RMSE7_val = sqrt(mean((DSA_val - md7_val).^2));%7,9741 %7,6543
+
+figure (15)
+plot(md7_val,'r')
+hold on;
+plot(DSA_val)
+title(['Dosificación de Coagulante']);
+xlabel('Muestra');
+ylabel(['Sulfato de Aluminio (Kg/h)']);
+grid on;
+legend('Modelo md7','Dosis medida');
+
+% 2 y 1 7,6543
+
+% 2 y 5 8,9138
 
 % Comparación de modelos
 

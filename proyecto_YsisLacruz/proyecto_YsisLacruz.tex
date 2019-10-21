@@ -1495,7 +1495,7 @@ Para llevar a cabo la parada de la unidad se debe cerrar la compuerta de entrada
 					
 	\chapter{Implementación}
 	
-Partiendo de la idea de generar una propuesta de gemelo digital, y basada la estructura de producción en unidades holónicas, se procede a caracterizar y simular las unidades de potabilización por separado, de modo que cumplan con las condiciones individuales de funcionamiento, transmitiendo la información y estado de funcionamiento a un programa matriz en el que se efectuará la interconexión.
+Partiendo de la idea de generar una propuesta de gemelo digital, y basada la estructura de producción en unidades holónicas, se procede a caracterizar y simular las unidades de potabilización por separado, de modo que cumplan con las condiciones individuales de funcionamiento, transmitiendo la información y estado del proceso a un programa matriz en el que se efectuará la interconexión.
 
 Para llevar a cabo la prueba de concepto se tomaron dos de las unidades funcionales del proceso de potabilización, la unidad de Coagulación y la unidad de Sedimentación. En la unidad de Coagulación se utilizó un modelo matemático para aproximar la relación de dependencia entre la dosis de coagulante a adicionar y las condiciones físico químicas del flujo entrante. Para el caso de la unidad de Sedimentación se utilizó un programa de análisis y simulación de sistemas de distribución de agua potable llamado Epanet, esto con el fin de hacer uso de herramientas conocidas en el ámbito hidrológico, que incluyen algoritmos de cálculo matemático especializado en el área.
 	
@@ -1510,11 +1510,11 @@ Debido a la naturaleza aleatoria del agua bruta que ingresa a la planta, es razo
 Para generar un modelo que se adapte a las condiciones hidrológicas del estado Mérida, se utilizaron datos suministrados por el personal de la planta de potabilización, cuyo formato incluye:
 
 			\begin{itemize}
-				\item  \textbf{Características del flujo:} pH, turbidez ($NTU$), color ($UC$), alcalinidad ($\frac{mg}{L}$), cloro residual ($\frac{mg}{L}$).
-				\item  \textbf{Dosis de químicos adicionadas:} Gas cloro ($\frac{kg}{h}$), sulfato de aluminio ($\frac{kg}{h}$), cal hidratada ($\frac{kg}{h}$).
+				\item  \textbf{Características del flujo:} pH, turbidez ($NTU$), color ($UC$), alcalinidad ($mg/L$), cloro residual ($mg/L$).
+				\item  \textbf{Dosis de químicos adicionadas:} Gas cloro ($kg/h$), sulfato de aluminio ($kg/h$), cal hidratada ($kg/h$).
 			\end{itemize}
 
-El tiempo de muestreo en los datos es de 1 hora.
+El tiempo de muestreo de los datos es de 1 hora.
 
 El desarrollo del modelo se realizó mediante regresión polinomial, utilizado para predecir una variable dependiente $Y$ con base en múltiples variables predictoras $X = (x_{1}, x_{2}, ..., x_{k})$; puede ser expresado como:
 
@@ -1540,7 +1540,7 @@ Para efectos de determinar la dosis de coagulante ideal, se utilizaron como desc
 						\hline
 						\textbf{Datos} & \textbf{Valor mínimo} & \textbf{Valor máximo} \\
 						\hline \hline
-						Dosis Sulfato de Aluminio ($DSA$) &  &  \\ \hline
+						Dosis Sulfato de Aluminio ($DSA$) & $63$ $kg/h$ & $252$ $kg/h$ \\ \hline
 						Turbidez ($T$) & $12$ $NTU$ & $1500$ $NTU$ \\ \hline
 						Color ($C$) & $50$ $UC$ & $9000$ $UC$ \\ \hline
 						pH ($Ph$) & $6,9$ & $7,2$ \\ \hline
@@ -1557,17 +1557,16 @@ Siguiendo estudios  enfocados en la optimización de la dosis de coagulante (CITA
 			\begin{table}[H]
 				\begin{center}
 					\resizebox{15,5cm}{!} {
-					\begin{tabular}{|p{4cm}|p{4cm}|p{4cm}|p{4cm}|p{4cm}|}
+					\begin{tabular}{|p{3cm}|p{3cm}|p{3cm}|p{4cm}|p{4cm}|}
 						\hline
-						\textbf{Modelo} & \textbf{Variables} & \textbf{RMSE-Modelo} & \textbf{$R^{2}$} & \textbf{RMSE-Validación} \\
+						\textbf{Modelo} & \textbf{Variables} & \textbf{$R^{2}$} & \textbf{RMSE-Modelo} & \textbf{RMSE-Validación} \\
 						\hline \hline
-						Md7 & T, C & 4,9999 & 0,9855 &  \\ \hline
-						Md2 & T, C & 5,2719 & 0,9839 &  \\ \hline
-						Md6 & T, C & 5,4767 & 0,9826 &  \\ \hline
-						Md1 & T & 10,8130 & 0,9322 &  \\ \hline
-						Md5 & T, C, Ph, A & 12,3296 & 0,9119 &  \\ \hline
-						Md3 & T, C, Ph & 12,6699 & 0,9070 &  \\ \hline
-						Md4 & T, C & 12,8805 & 0,9038 & \\ \hline
+						Md2 & T, C & 0,9839 & 5,2719 & 7,2295 \\ \hline
+						Md6 & T, C & 0,9826 & 5,4767 & 50,1042 \\ \hline
+						Md1 & T & 0,9322 & 10,8130 & 10,1283 \\ \hline
+						Md5 & T, C, Ph, A & 0,9076 & 12,6241 & 11,5470 \\ \hline
+						Md3 & T, C, Ph & 0,9070 & 12,6699 & 12,0967 \\ \hline
+						Md4 & T, C & 0,9038 & 12,8805 & 12,0229 \\ \hline
 					\end{tabular}
 					}
 					\caption{Pruebas y validación de modelos.}
@@ -1575,7 +1574,13 @@ Siguiendo estudios  enfocados en la optimización de la dosis de coagulante (CITA
 				\end{center}
 			\end{table}
 
-El modelo md7 es resultante del promedio de los dos modelos con menor RMSE luego de ser ajustados en Matlab (Md2 y Md6). En la figura \ref{fig-coagulantmodel} se presenta la comparación entre los datos reales y el modelo md7 ajustado.
+En pro de obtener un modelo cuyo comportamiento se asemeje al proceso real y a su vez considere los cambios en las variables medidas en planta, se optó por promediar los modelos Md2 y Md5, con lo que se obtiene un RMSE en los datos de validación de $7,9741$. Los modelos seleccionados son los siguientes:
+
+Md2:
+			\begin{equation}
+				\label{eq-md2}
+				md2 = 76,44 - 0,08533T - 0,003054C + 0,004229(T)^{2} - 0,002185TC + 0,0002715(C)^{2}\\ - 3,174e-06(T)^{2}C + 1,423e^{-6}T(C)^{2} - 1,513e^{-7}(C)^{3};
+			\end{equation}
 
 			\begin{figure}
 				\centering
@@ -1588,7 +1593,7 @@ El modelo md7 es resultante del promedio de los dos modelos con menor RMSE luego
 		
 Para modelar la unidad de sedimentación se utilizó el programa de redes hidráulicas Epanet, programa orientado al análisis de los procesos de distribución de agua y el seguimiento de calidad, donde se conjugan algoritmos de cálculos e interfaz gráfica que permite plasmar los componentes de una red hidráulica (tuberías, tanques, bombas, válvulas, reservorios) y las condiciones de los mismos, para generar simulaciones en periodos prolongados.
 
-Epanet realiza un seguimiento de la evolución de caudales en tuberías, presión en los nodos, nivel en tanques, estado de bombas y válvulas, a lo largo del periodo de simulación, realizando un equilibrio hidráulico mediante cálculos iterativos. Los algoritmos de cálculo se encuentran en el manual del programa, apéndice D. [123]. Para el cálculo de las pérdidas de carga se utiliza como base la ecuación \ref{eq-hl}.
+Epanet realiza un seguimiento de la evolución de caudales en tuberías, presión en los nodos, nivel en tanques, estado de bombas y válvulas, a lo largo del periodo de simulación, realizando un equilibrio hidráulico mediante cálculos iterativos. Los algoritmos de cálculo se encuentran en el manual del programa, apéndice D. [123]. El cálculo principal que efectúa Epanet es el de pérdidas de carga, con la ecuación \ref{eq-hl}.
 
 			\begin{equation}
 				\label{eq-hl}
@@ -1647,7 +1652,7 @@ En la simulación se añaden válvulas de Control de Caudal (VCQ o FCV por sus sigl
 				\end{center}
 			\end{table}
 			
-El nivel max-max indica una acumulación en el fondo de lodos, por lo que se apertura la compuerta de vaciado. Entre los niveles min y max se maneja una operación normal, con flujo enviado hacia la unidad de filtración. El nivel min-min indica el nivel mínimo de vaciado del tanque, por lo que se debe cerrar la compuerta de lodos y, en caso de no haber flujo de entrada, anunciar la parada de la unidad. Las condiciones específicas del tanque se describen en la tabla \ref{sedimentcond}.
+El nivel max-max indica una acumulación en el fondo de lodos, por lo que se apertura la compuerta de vaciado. Entre los niveles min y max se maneja una operación normal, con flujo enviado hacia la unidad de filtración. El nivel min-min indica el nivel mínimo de vaciado del tanque, por lo que se debe cerrar la compuerta de lodos y, en caso de no haber flujo de entrada, anunciar la parada de la unidad. Las condiciones de operación específicas según el flujo presente en el tanque se describen en la tabla \ref{sedimentcond}.
 
 			\begin{table}[H]
 				\begin{center}
@@ -1658,13 +1663,15 @@ El nivel max-max indica una acumulación en el fondo de lodos, por lo que se aper
 						\hline \hline
 						Normal & $3,40 < h < 3,65$ \\ \hline
 						Degradado & $h > 3,65, h < 3,40$ \\ \hline
-						Falla & $h < 3,40 y q \approx 0$ \\ \hline
+						Falla & $h < 3,40$ y $q \approx 0$ \\ \hline
 					\end{tabular}
 					}
 					\caption{Condición de operación de la unidad de sedimentación según el flujo.}
 					\label{table-sedimentcond}
 				\end{center}
 			\end{table}
+			
+
 
 	\chapter{Conclusiones y Recomendaciones}
 	

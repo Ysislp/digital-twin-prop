@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6800) (preloaded format=pdflatex 2018.9.30)  20 OCT 2019 04:28
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6800) (preloaded format=pdflatex 2018.9.30)  21 OCT 2019 05:58
 entering extended mode
 **./proyecto_YsisLacruz.tex
 (proyecto_YsisLacruz.tex
@@ -2762,11 +2762,29 @@ Underfull \hbox (badness 1028) in paragraph at lines 1555--1556
 m-bi-nando las vari-ables
  []
 
-<figures/4coagulantmodel.png, id=871, 868.74562pt x 464.4853pt>
+
+Overfull \hbox (249.1792pt too wide) detected at line 1583
+[]\OML/cmm/m/it/12 md\OT1/cmr/m/n/12 2 = 76\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 4
+4 \OMS/cmsy/m/n/12   \OT1/cmr/m/n/12 0\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 08533\
+OML/cmm/m/it/12 T \OMS/cmsy/m/n/12   \OT1/cmr/m/n/12 0\OML/cmm/m/it/12 ; \OT1/c
+mr/m/n/12 003054\OML/cmm/m/it/12 C \OT1/cmr/m/n/12 + 0\OML/cmm/m/it/12 ; \OT1/c
+mr/m/n/12 004229(\OML/cmm/m/it/12 T\OT1/cmr/m/n/12 )[] \OMS/cmsy/m/n/12   \OT1/
+cmr/m/n/12 0\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 002185\OML/cmm/m/it/12 TC \OT1/c
+mr/m/n/12 + 0\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 0002715(\OML/cmm/m/it/12 C\OT1/
+cmr/m/n/12 )[][]  \OMS/cmsy/m/n/12   \OT1/cmr/m/n/12 3\OML/cmm/m/it/12 ; \OT1/c
+mr/m/n/12 174\OML/cmm/m/it/12 e \OMS/cmsy/m/n/12   \OT1/cmr/m/n/12 06(\OML/cmm/
+m/it/12 T\OT1/cmr/m/n/12 )[]\OML/cmm/m/it/12 C \OT1/cmr/m/n/12 + 1\OML/cmm/m/it
+/12 ; \OT1/cmr/m/n/12 423\OML/cmm/m/it/12 e[]T\OT1/cmr/m/n/12 (\OML/cmm/m/it/12
+ C\OT1/cmr/m/n/12 )[] \OMS/cmsy/m/n/12   \OT1/cmr/m/n/12 1\OML/cmm/m/it/12 ; \O
+T1/cmr/m/n/12 513\OML/cmm/m/it/12 e[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 C\OT1/cm
+r/m/n/12 )[];
+ []
+
+<figures/4coagulantmodel.png, id=870, 864.22874pt x 470.50781pt>
 File: figures/4coagulantmodel.png Graphic file (type png)
 <use figures/4coagulantmodel.png>
-Package pdftex.def Info: figures/4coagulantmodel.png  used on input line 1582.
-(pdftex.def)             Requested size: 434.37175pt x 232.24208pt.
+Package pdftex.def Info: figures/4coagulantmodel.png  used on input line 1587.
+(pdftex.def)             Requested size: 432.11331pt x 235.25333pt.
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
@@ -2778,15 +2796,15 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 \@EveryShipout@Output ...@Org@Shipout \box \@cclv 
                                                   
-l.1590 
+l.1595 
        pdfTeX warning (ext4): destination with the same identifier (name{table.
 4.2}) has been already used, duplicate ignored
 
 \@EveryShipout@Output ...@Org@Shipout \box \@cclv 
                                                   
-l.1590 
+l.1595 
        ]
-Underfull \hbox (badness 10000) in paragraph at lines 1598--1603
+Underfull \hbox (badness 10000) in paragraph at lines 1603--1608
 
  []
 
@@ -2801,29 +2819,16 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 \@EveryShipout@Output ...@Org@Shipout \box \@cclv 
                                                   
-l.1606 			\begin{equation}
-                           <./figures/4coagulantmodel.png>]
-<figures/4sedimentsimu.png, id=883, 411.03563pt x 255.95625pt>
+l.1608 
+        <./figures/4coagulantmodel.png>]
+<figures/4sedimentsimu.png, id=884, 411.03563pt x 255.95625pt>
 File: figures/4sedimentsimu.png Graphic file (type png)
 <use figures/4sedimentsimu.png>
-Package pdftex.def Info: figures/4sedimentsimu.png  used on input line 1625.
+Package pdftex.def Info: figures/4sedimentsimu.png  used on input line 1630.
 (pdftex.def)             Requested size: 411.03462pt x 255.95561pt.
 
 
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 14.49998pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[75pdfTeX warning (ext4): destination with the same identifier (name{figure.4.2
-}) has been already used, duplicate ignored
-
-\@EveryShipout@Output ...@Org@Shipout \box \@cclv 
-                                                  
-l.1631 
-        <./figures/4sedimentsimu.png>]
-
-LaTeX Warning: Reference `sedimentcond' on page 76 undefined on input line 1650
+LaTeX Warning: Reference `sedimentcond' on page 75 undefined on input line 1655
 .
 
 
@@ -2832,20 +2837,33 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[76pdfTeX warning (ext4): destination with the same identifier (name{table.4.3}
+[75pdfTeX warning (ext4): destination with the same identifier (name{table.4.3}
 ) has been already used, duplicate ignored
 
 \@EveryShipout@Output ...@Org@Shipout \box \@cclv 
                                                   
-l.1669 	\chapter
+l.1656 
+       ]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[76pdfTeX warning (ext4): destination with the same identifier (name{figure.4.2
+}) has been already used, duplicate ignored
+
+\@EveryShipout@Output ...@Org@Shipout \box \@cclv 
+                                                  
+l.1676 	\chapter
                 {Conclusiones y Recomendaciones}pdfTeX warning (ext4): destinat
 ion with the same identifier (name{table.4.4}) has been already used, duplicate
  ignored
 
 \@EveryShipout@Output ...@Org@Shipout \box \@cclv 
                                                   
-l.1669 	\chapter
-                {Conclusiones y Recomendaciones}]
+l.1676 	\chapter
+                {Conclusiones y Recomendaciones} <./figures/4sedimentsimu.png>]
 Cap\'{\i }tulo 5.
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2858,97 +2876,97 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 ]
 Cap\'{\i }tulo 6.
 
-Underfull \hbox (badness 2828) in paragraph at lines 1687--1687
+Underfull \hbox (badness 2828) in paragraph at lines 1694--1694
 []|\OT1/cmr/m/n/12 Medicion de tur-bidez en
  []
 
 
-Underfull \hbox (badness 2913) in paragraph at lines 1687--1687
+Underfull \hbox (badness 2913) in paragraph at lines 1694--1694
 \OT1/cmr/m/n/12 el agua. De-ter-mina la
  []
 
 
-Underfull \hbox (badness 5245) in paragraph at lines 1687--1687
+Underfull \hbox (badness 5245) in paragraph at lines 1694--1694
 \OT1/cmr/m/n/12 con una fuente de haz
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1687--1687
+Underfull \hbox (badness 10000) in paragraph at lines 1694--1694
 \OT1/cmr/m/n/12 de acidez o al-calin-idad
  []
 
 
-Underfull \hbox (badness 1259) in paragraph at lines 1687--1687
+Underfull \hbox (badness 1259) in paragraph at lines 1694--1694
 []|\OT1/cmr/m/n/12 Medicion de la difer-en-cia
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1687--1687
+Underfull \hbox (badness 10000) in paragraph at lines 1694--1694
 []|\OT1/cmr/m/n/12 Medidor de Cloro
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1687--1687
+Underfull \hbox (badness 10000) in paragraph at lines 1694--1694
 []|\OT1/cmr/m/n/12 Medicion am-perometrica
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1687--1687
+Underfull \hbox (badness 10000) in paragraph at lines 1694--1694
 \OT1/cmr/m/n/12 con po-ten-cial con-stante,
  []
 
 
-Underfull \hbox (badness 6893) in paragraph at lines 1687--1687
+Underfull \hbox (badness 6893) in paragraph at lines 1694--1694
 \OT1/cmr/m/n/12 he-cho a traves de dos
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1687--1687
+Underfull \hbox (badness 10000) in paragraph at lines 1694--1694
 \OT1/cmr/m/n/12 elec-trodo de ref-er-en-cia.
  []
 
 
-Underfull \hbox (badness 4120) in paragraph at lines 1687--1687
+Underfull \hbox (badness 4120) in paragraph at lines 1694--1694
 \OT1/cmr/m/n/12 La cor-ri-ente con-sume el
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1687--1687
+Underfull \hbox (badness 10000) in paragraph at lines 1694--1694
 []|\OT1/cmr/m/n/12 Deteccion del color
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1687--1687
+Underfull \hbox (badness 10000) in paragraph at lines 1694--1694
 \OT1/cmr/m/n/12 me-di-ante la medicion
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1687--1687
+Underfull \hbox (badness 10000) in paragraph at lines 1694--1694
 \OT1/cmr/m/n/12 de la can-ti-dad de luz
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1687--1687
+Underfull \hbox (badness 10000) in paragraph at lines 1694--1694
 []|\OT1/cmr/m/n/12 Se pro-duce un rango
  []
 
 
-Underfull \hbox (badness 7415) in paragraph at lines 1687--1687
+Underfull \hbox (badness 7415) in paragraph at lines 1694--1694
 \OT1/cmr/m/n/12 de-seado de lon-gi-tud de
  []
 
 
-Underfull \hbox (badness 1540) in paragraph at lines 1687--1687
+Underfull \hbox (badness 1540) in paragraph at lines 1694--1694
 \OT1/cmr/m/n/12 onda de luz que pasa a
  []
 
 
-Underfull \hbox (badness 3492) in paragraph at lines 1687--1687
+Underfull \hbox (badness 3492) in paragraph at lines 1694--1694
 \OT1/cmr/m/n/12 traves de la mues-tra y,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1687--1687
+Underfull \hbox (badness 10000) in paragraph at lines 1694--1694
 \OT1/cmr/m/n/12 me-di-ante un fotometro,
  []
 
@@ -2972,7 +2990,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 \@EveryShipout@Output ...@Org@Shipout \box \@cclv 
                                                   
-l.1706 	\bibliography{Bibliog}
+l.1713 	\bibliography{Bibliog}
                               ] (proyecto_YsisLacruz.bbl)
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2983,11 +3001,11 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 [80
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1713.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1713.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1720.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1720.
  (proyecto_YsisLacruz.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1713.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1713.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1720.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1720.
 
 Package rerunfilecheck Info: File `proyecto_YsisLacruz.out' has not changed.
 (rerunfilecheck)             Checksum: E6BEF66B4C5A34DD958C8B1F0B5F579C;4667.
@@ -2995,31 +3013,37 @@ Package rerunfilecheck Info: File `proyecto_YsisLacruz.out' has not changed.
 
 LaTeX Warning: There were undefined references.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1713.
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1720.
  ) 
 Here is how much of TeX's memory you used:
- 28794 strings out of 492973
- 554341 string characters out of 3127135
- 604805 words of memory out of 3000000
- 32005 multiletter control sequences out of 15000+200000
+ 28797 strings out of 492973
+ 554377 string characters out of 3127135
+ 604869 words of memory out of 3000000
+ 32006 multiletter control sequences out of 15000+200000
  540357 words of font info for 53 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  62i,14n,65p,1923b,403s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Users/Ysis/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/
-cm/cmbx12.pfb><C:/Users/Ysis/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/publ
-ic/amsfonts/cm/cmcsc10.pfb><C:/Users/Ysis/AppData/Local/Programs/MiKTeX 2.9/fon
-ts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/Ysis/AppData/Local/Programs/Mi
-KTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/Ysis/AppData/Local
-/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/Ysis/Ap
-pData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Us
-ers/Ysis/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.
-pfb><C:/Users/Ysis/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfont
-s/cm/cmsy10.pfb><C:/Users/Ysis/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pu
-blic/amsfonts/cm/cmsy8.pfb><C:/Users/Ysis/AppData/Local/Programs/MiKTeX 2.9/fon
-ts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on proyecto_YsisLacruz.pdf (88 pages, 9911538 bytes).
+pdfTeX warning (dest): name{equation.4.2.2} has been referenced but does not 
+exist, replaced by a fixed one
+
+<C:/Users/Ysis/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm
+/cmbx12.pfb><C:/Users/Ysis/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public
+/amsfonts/cm/cmcsc10.pfb><C:/Users/Ysis/AppData/Local/Programs/MiKTeX 2.9/fonts
+/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/Ysis/AppData/Local/Programs/MiKT
+eX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/Ysis/AppData/Local/P
+rograms/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/Ysis/AppD
+ata/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/User
+s/Ysis/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pf
+b><C:/Users/Ysis/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/
+cm/cmsy10.pfb><C:/Users/Ysis/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/publ
+ic/amsfonts/cm/cmsy8.pfb><C:/Users/Ysis/AppData/Local/Programs/MiKTeX 2.9/fonts
+/type1/public/amsfonts/cm/cmti12.pfb>
+Output written on proyecto_YsisLacruz.pdf (88 pages, 9910922 bytes).
 PDF statistics:
- 1008 PDF objects out of 1200 (max. 8388607)
- 229 named destinations out of 1000 (max. 500000)
+ 1009 PDF objects out of 1200 (max. 8388607)
+ 231 named destinations out of 1000 (max. 500000)
  689 words of extra memory for PDF output out of 10000 (max. 10000000)
 
