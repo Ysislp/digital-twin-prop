@@ -581,6 +581,65 @@ En el modelo referido de la figura \ref{fig-holoniccompany} [108], se propone qu
 
 Los atributos claves de un sistema holónico: autonomía, cooperación, proactividad y reactividad, hacen de ellos una solución eficiente para la ejecución del plan de producción, adaptándose a los requerimientos no programados del proceso, como solicitudes de urgencia, cambios en ordenes, fallas de recursos y demás inconvenientes que puedan afectar el buen funcionamiento de la planta.
 
+
+			\subsubsection{Descripción del conocimiento de la UHP}
+
+			\subsubsection{Dinámica del proceso físico y su supervisión}
+
+Los procesos físicos que ocurren dentro de una unidad pueden ser continuos, discontinuos o discretos. La capacidad de construir modelos que describan su comportamiento permite tener mecanismos de control que garanticen los objetivos establecidos para una unidad. El comportamiento del proceso depende de las capacidades y la condición del equipo, la materia prima, la energía, etc. Se espera que los procesos continuos sean "estacionarios", pero tienen varios modos de operación que resultan de cambios en las entradas o salidas, o cambios en la condición del equipo. Los sistemas híbridos son técnicas formales que permiten describir el comportamiento de ese tipo de procesos  (citep {Antsaklis1998, Antsaklis2003, Branicky1998, Lemmon1999, VanDerSchaft2000}). Del mismo modo, un proceso por lotes se caracteriza por secuencias de modos de operación que permiten realizar una tarea de producción \ citep {Alvarez1999, Lennartson1994, Lennartson2016, Mendez2006, Tittus1999a}. 
+
+Entonces, un sistema de producción tiene dos tipos de dinámica: \emph{dinámica continua} que describe las reglas mecánicas, químicas o biológicas y un conjunto de reglas lógicas; \emph{dinámica discreta}, que conmuta la dinámica continua y se activa por eventos. La dinámica continua está representada por un conjunto de ecuaciones diferenciales y las discretas por sistemas a eventos discretos \ citep {Cassandras2009}. 
+
+Un sistema dinámico híbrido (HDS) se define de varias maneras: como un sistema de transición de fase \ citep {Manna1993}, como un autómata híbrido \ citep {Alur2000, Branicky1998, Henzinger2000, Lygeros2012}, por medio de redes Petri \ citep {DAVID2001, David2005}. \ cite {Lygeros2012} da una descripción de conceptos como \emph{Trayectoria híbrida, ejecución, estado alcanzable, componibilidad} que permite la construcción de mecanismos de control y supervisión para el HDS a partir de un automata en conjunción con la dinámica continua.
+
+En el caso estudiado, la sincronización (cooperación entre unidades) procede físicamente por los flujos de salida que son entradas a otras unidades, por lo que se realiza una extensión de la dinámica híbrida definida por Lygeros.
+
+Como muestra la figura \ref{fig-uphmodel}, los mecanismos de toma de decisiones de la UPH son los controladores, el supervisor, y el programador, su síntesis está sujeta de manera clásica a los modelos de procesos físicos y tangencialmente al escrutinio de los equipos dado por mantenimiento. Desde la visión de I4.0, la unidad de producción debe ser cognitiva, para ello se requiere del modelo de conocimiento y del modelo de gestión de la unidad. El modelo de conocimiento (modelo físico) es derivado de los modelos de comportamiento de los elementos que conforman la unidad, a saber, los recursos, el proceso físico, su infraestructura y su equipamiento. El modelo físico proporciona el estado interno de la unidad, y está descrito desde la óptica de sistemas dinámicos. El modelo de gestión contiene la capacidad, habilidades/competencias, estado de la unidad, y tiene la propiedad de dialogar con otras unidades o con un coordinador para negociar su producción, mostrar la evolución de la producción y su condición para la programación. El modelo de gestión de la unidad suple información  al coordinador (supervisor sintetizado del modelo de gestión de rutas del producto) para garantizar objetivos de producción, esto es, la planificación determina la ruta de producción por medio del modelo de gestión de cada unidad, la programación determina el supervisor con el fin de seguir, evaluar y reconfigurar, de ser necesario y si es posible lo establecido según la planificación acordada. Compatibilizar el modelo de gestión y el modelo físico en el gemelo digital conlleva a establecer un modelo de Sistemas a Eventos Discretos que proporciona una imagen del comportamiento físico de la unidad que no es más que la imagen de los componentes de la unidad.
+
+El modelo cognitivo anterior corresponde a una dinámica híbrida de una unidad holónica de producción y está matemáticamente dado por un autómata híbrido $ H $ como una colección $H~=~(Q,~X,~U,~\Gamma,~Y,~f,~h_e,~h_i,~y_e,~g, ~Init,~Dom,~E,~G,~R)$ donde: 
+\\
+\\
+ $Q \in Z^k, \{q_i\}, i=1, \cdots,k $ es el conjunto de \emph{estados discretos}, \\
+ $X \in\Re^n, \{x_i\}, i=1, \cdots,n$ es el conjunto de \emph{variables de estado continuos}, \\
+ $U \in\Re^{m+l}, \{u_{c_i}\}, i=1, \cdots,m$ es el conjunto de \emph{entradas de control}, \\
+ $\{u_{f_i}\}, i=1, \cdots,l$ es el conjunto de \emph{entradas físicas}, \\  
+ $\Gamma \in\Re^p, \{\Gamma\}, i=1, \cdots,p$ es el conjunto de \emph{parametros}, \\
+ $Y \in\Re^{s+r}, \{y_{in_i}\}, i=1, \cdots,s$  es el conjunto de \emph{salidas de proceso}, \\
+ $\{y_{e_i}\}, i=1, \cdots,r$ es el conjunto de \emph{salidas de gestión}, \\ 
+ $f(\cdotp ,\cdotp): Q\times X \times U \mapsto \Re^n$ es el \emph{campo vectorial}, \\ 
+ $g(\cdotp): \Re^s \mapsto \Re^m$ es la \emph{función del control}, \\
+ $y_{e-1} \in\Re^l$ son las \emph{entradas físicas}, \\
+ $h_e(\cdotp): X\mapsto \Re^r$ son las \emph{salidas del proceso}, \\
+ $h_in(\cdotp): X\mapsto \Re^s$ es la \emph{función de salida para la gestión}, \\
+ $Init\subseteq Q \times X$ es el conjunto de \emph{estados iniciales}, \\
+ $Dom(\cdotp)~:~ Q \mapsto 2^X$ es el \emph{dominio}, \\
+ $E \subseteq Q \times Q$ es el conjunto  de \emph{aristas}, \\ 
+ $G(\cdotp)~:~ E \mapsto 2^X$ son las \emph{condiciones de guarda}, \\ 
+ $R(\cdotp ,\cdotp)~:~E \times X \mapsto 2^X$ es el \emph{mapa de reinicio}. \\
+
+En la Figura \ref{fig-uphmodel} se muestra la arquitectura de modelos requeridos para conformar el gemelo digital de una UHP, solo considerando el proceso físico 
+
+			\begin{figure}
+				\centering
+				\includegraphics[scale=0.5]{figures/2uphmodel}
+				\caption{Arquitectura de modelo para ge1melo digital de HPU, comportamiento físico.}
+				\label{fig-uphmodel}
+			\end{figure}
+
+La definición dada en \ citep {Lygeros2012} para un sistema dinámico híbrido general controlado.
+
+Un autómata híbrido $H$ es un conjunto $H~=~(Q,~X,~f,~Init,~Dom,~E,~G,~R)$ donde: 
+\\
+\\
+ $Q~=~\{q_1,q_2,q_3.\ldots\}$ es el conjunto de \emph{estados discretos}, \\ 
+ $X~=~\Re^n$ es el conjunto de \emph{variables continuas}, \\  
+ $f(\cdotp ,\cdotp): Q\times X\mapsto \Re^n$ es el \emph{campo vectorial}, \\  
+ $Init\subseteq Q \times X$ es el conjunto de \emph{estados iniciales}, \\  
+ $Dom(\cdotp)~:~ Q \mapsto 2^X$ es el \emph{dominio}, \\
+ $E \subseteq Q \times Q$ es un conjunto de \emph{aristas}, \\  
+ $G(\cdotp)~:~ E \mapsto 2^X$ son las \emph{condiciones de guarda}, \\
+ $R(\cdotp ,\cdotp)~:~E \times X \mapsto 2^X$ es un \emph{mapa de reinicio}. \\
+
 		\section{Sistemas de suministro de agua potable, hacia la I4.0}
 		
 Los Sistemas de Suministro de Agua Potable, WSS por sus siglas en inglés, son sistemas encargados de proveer agua potable en una comunidad mediante amplias redes de distribución.[70] Según el Foro Económico Mundial, la crisis alrededor del agua se sitúa dentro de los diez principales riesgos sociales en el mundo, siendo todo un reto para la industria hidrológica el cumplir sus objetivos de forma eficiente, manteniendo una buena coordinación entre los eslabones que conforman el proceso y asegurando un mínimo de pérdidas del recurso. Aun con la prioridad de mantener un buen funcionamiento, el Banco Mundial calcula que la producción de agua pierde entre un 25\% y 30\% de flujo debido a fallas. [87]
@@ -1552,7 +1611,7 @@ Para efectos de determinar la dosis de coagulante ideal, se utilizaron como desc
 				\end{center}
 			\end{table}
 
-Siguiendo estudios  enfocados en la optimización de la dosis de coagulante (CITAR), se probaron varios modelos desarrollados en Matlab, combinando las variables descriptivas obtenidas en planta, mediante el uso de las funciones $polyfit(.)$, $regress(.)$ y $fitlm(.)$. Los modelos que mejor se ajustaron al comportamiento real se describen en la tabla \ref{table-validation}.
+Siguiendo estudios  enfocados en la optimización de la dosis de coagulante ([83, 124, 125, 126]), se realizaron pruebas con modelos desarrollados en Matlab; los modelos se hallaron mediante el uso de las funciones $polyfit(.)$, $regress(.)$, $fitlm(.)$, y la combinación de los valores medidos en planta, considerando la turbidez como variable clave para el cálculo de coagulante a añadir. Los seis modelos que mejor se ajustaron al comportamiento real se presentan en la tabla \ref{table-validation}.
 
 			\begin{table}[H]
 				\begin{center}
@@ -1574,13 +1633,34 @@ Siguiendo estudios  enfocados en la optimización de la dosis de coagulante (CITA
 				\end{center}
 			\end{table}
 
-En pro de obtener un modelo cuyo comportamiento se asemeje al proceso real y a su vez considere los cambios en las variables medidas en planta, se optó por promediar los modelos Md2 y Md5, con lo que se obtiene un RMSE en los datos de validación de $7,9741$. Los modelos seleccionados son los siguientes:
+En pro de obtener un modelo cuyo comportamiento se asemeje al proceso real y a su vez se ajuste al comportamiento aleatorio que presentan los valores en campo, se optó por promediar los modelos Md2 y Md5, con lo que se obtuvo un RMSE en los datos de validación de $7,9741$ y la inclusión de las variables conocidas para determinar la calidad del flujo. Los modelos promediados son los siguientes:
 
-Md2:
-			\begin{equation}
+			\begin{multline}
 				\label{eq-md2}
-				md2 = 76,44 - 0,08533T - 0,003054C + 0,004229(T)^{2} - 0,002185TC + 0,0002715(C)^{2}\\ - 3,174e-06(T)^{2}C + 1,423e^{-6}T(C)^{2} - 1,513e^{-7}(C)^{3};
+				md2 = 76,44 - 0,08533T - 0,003054C + 0,004229(T)^{2} - 0,002185TC + \\
+				  0,0002715(C)^{2} - 3,174e-06(T)^{2}C + 1,423e^{-6}T(C)^{2} - 1,513e^{-7}(C)^{3}
+			\end{multline}
+			
+			\begin{equation}
+				\label{eq-md5}
+				md5 = 425,0 + 0,045635T + 0,01423C - 56,60Ph + 2,127A
 			\end{equation}
+			
+			\begin{equation}
+				\label{eq-md7}
+				md7 = \dfrac{md2 + md5}{2}
+			\end{equation}
+			
+			\begin{table}[H]
+					\begin{tabular}{p{15cm}}
+						\textbf{Variables involucradas:} $T, C, Ph, A$  \\
+						\textbf{$R^{2}$:} $0,9620$ \\
+						\textbf{RMSE-Modelo:} $8,1013$ \\
+						\textbf{RMSE-Validación:} $7,9741$
+					\end{tabular}
+			\end{table}
+
+En la figura \ref{fig-coagulantmodel} se presenta la cantidad de coagulante a dosificar según las condiciones iniciales de calidad de agua ingresadas al modelo. Se debe destacar que en el caso de las plantas de potabilización de la ciudad de Mérida, se suministra coagulante solo cuando la turbidez del agua cruda supera los 12 NTU.
 
 			\begin{figure}
 				\centering
@@ -1593,7 +1673,7 @@ Md2:
 		
 Para modelar la unidad de sedimentación se utilizó el programa de redes hidráulicas Epanet, programa orientado al análisis de los procesos de distribución de agua y el seguimiento de calidad, donde se conjugan algoritmos de cálculos e interfaz gráfica que permite plasmar los componentes de una red hidráulica (tuberías, tanques, bombas, válvulas, reservorios) y las condiciones de los mismos, para generar simulaciones en periodos prolongados.
 
-Epanet realiza un seguimiento de la evolución de caudales en tuberías, presión en los nodos, nivel en tanques, estado de bombas y válvulas, a lo largo del periodo de simulación, realizando un equilibrio hidráulico mediante cálculos iterativos. Los algoritmos de cálculo se encuentran en el manual del programa, apéndice D. [123]. El cálculo principal que efectúa Epanet es el de pérdidas de carga, con la ecuación \ref{eq-hl}.
+Epanet realiza un seguimiento de la evolución de caudales en tuberías, presión en los nodos, nivel en tanques, estado de bombas y válvulas, a lo largo del periodo de simulación, realizando un equilibrio hidráulico mediante cálculos iterativos. Los algoritmos de cálculo se encuentran en el manual del programa, apéndice D. [123]. El cálculo principal que efectúa Epanet es el de pérdidas de carga, usando como base la ecuación \ref{eq-hl}.
 
 			\begin{equation}
 				\label{eq-hl}
@@ -1621,7 +1701,7 @@ $\epsilon$ es coeficiente de rugosidad de Darcy-Weisbach (m), \\
 $f$ factor de fricción (que depende de $\epsilon$, $d$ y $q$), \\
 $d$ diámetro de tubería (m), \\
 $L$ longitud de la tubería (m), \\
-$q$ caudal ($m^{3}/s$)
+$q$ caudal ($m^{3}/s$). \\
 
 Para llevar a cabo la simulación en Epanet, se utilizaron longitudes reales de los tanques y tuberías presentes en la planta, según el plano de diseño suministrado. La unidad consta de dos sedimentadores con una entrada de agua floculada, una salida de agua decantada y una descarga de lodos para cada uno. (figura \ref{fig-sedimentsimu})
 
@@ -1632,7 +1712,7 @@ Para llevar a cabo la simulación en Epanet, se utilizaron longitudes reales de l
 				\label{fig-sedimentsimu}
 			\end{figure}
 
-En la simulación se añaden válvulas de Control de Caudal (VCQ o FCV por sus siglas en inglés), para asignar el caudal según la información obtenida de la unidad anterior; en un principio se fija el caudal de operación ideal (caudal de diseño, $150 L/s$ para cada sedimentador). Se configuran también dos reglas simples de control de tanque para su mantenimiento, que consisten en la apertura y cierre de compuertas de lodos según los niveles de operación, los cuales se describen en la tabla \ref{table-sedimentlevelsop}.
+En la simulación se añaden válvulas de Control de Caudal (VCQ o FCV por sus siglas en inglés), para asignar el caudal según la información obtenida de la unidad anterior o las mediciones propias de la unidad; en un principio se fija el caudal de operación ideal (caudal de diseño, $150 L/s$ para cada sedimentador). Se configuran también dos reglas simples de control de tanque para su mantenimiento, que consisten en la apertura y cierre de compuertas de lodos según los niveles de operación, los cuales se describen en la tabla \ref{table-sedimentlevelsop}.
 
 			\begin{table}[H]
 				\begin{center}
@@ -1652,7 +1732,7 @@ En la simulación se añaden válvulas de Control de Caudal (VCQ o FCV por sus sigl
 				\end{center}
 			\end{table}
 			
-El nivel max-max indica una acumulación en el fondo de lodos, por lo que se apertura la compuerta de vaciado. Entre los niveles min y max se maneja una operación normal, con flujo enviado hacia la unidad de filtración. El nivel min-min indica el nivel mínimo de vaciado del tanque, por lo que se debe cerrar la compuerta de lodos y, en caso de no haber flujo de entrada, anunciar la parada de la unidad. Las condiciones de operación específicas según el flujo presente en el tanque se describen en la tabla \ref{sedimentcond}.
+El nivel max-max indica una acumulación en el fondo de lodos, por lo que se apertura la compuerta de vaciado. Entre los niveles min y max se maneja una operación normal, con flujo saliente hacia la unidad de filtración. El nivel min-min indica el nivel mínimo de vaciado del tanque, por lo que se debe cerrar la compuerta de lodos y, en caso de no haber flujo de entrada, anunciar la parada de la unidad. Las condiciones de operación específicas según el flujo presente en el tanque se describen en la tabla \ref{sedimentcond}.
 
 			\begin{table}[H]
 				\begin{center}
@@ -1670,8 +1750,30 @@ El nivel max-max indica una acumulación en el fondo de lodos, por lo que se aper
 					\label{table-sedimentcond}
 				\end{center}
 			\end{table}
-			
 
+		\section{Interconexión de Unidades}
+		
+Una vez condicionado el comportamiento de cada unidad, se realizó un programa matriz donde se simula el funcionamiento de las unidades en simultáneo. Usando el programa MATLAB y la herramienta Epanet Matlab Toolkit, se aplicaron las condiciones de interconexión y el seguimiento de datos resultantes para la toma de decisiones simples.
+
+Para llevar a cabo la conexión se debe cargar el archivo MATLAB que contiene la función de cálculo de la dosis de coagulante, el Toolkit de Epanet con las funciones de manejo de redes hidráulicas y el archivo de Epanet para la unidad de sedimentación, cuya estructura será replicada por MATLAB, permitiendo la modificación de variables desde el entorno de simulación (figura \ref{fig-sedimentmatlab}).
+
+			\begin{figure}
+				\centering
+				\includegraphics[scale=0.7]{figures/4sedimentmatlab}
+				\caption{Replica de la unidad de sedimentación realizada en Epanet, desde Matlab.}
+				\label{fig-sedimentmatlab}
+			\end{figure}
+			
+Se establecen los parámetros iniciales de caudal y se selecciona el conjunto de datos de turbidez del agua cruda a utilizar, de modo que el programa realice los cálculos necesarios de dosis y nivel para dar a conocer el estado de operación del sistema y la información vital para tomas de decisiones.
+
+En la figura \ref{fig-mainmatlab} se presenta el comportamiento de las unidades seleccionadas, coagulación y sedimentación, la adición de coagulante y el tiempo de mantenimiento de los tanques.
+
+			\begin{figure}
+				\centering
+				\includegraphics[scale=0.5]{figures/4mainMatlab}
+				\caption{Unidad de sedimentación en operación.}
+				\label{fig-mainmatlab}
+			\end{figure}
 
 	\chapter{Conclusiones y Recomendaciones}
 	
