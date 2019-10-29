@@ -300,6 +300,16 @@ En una empresa hidrológica, la cadena de valor asociada a producción esta genéri
 	
 	\section{Antecedentes}
 	
+En busca de cubrir la demanda básica de obtención de agua en la sociedad, se han creado a lo largo del tiempo estructuras que permiten el almacenamiento y distribución del líquido. De ahí que el diseño inicial de tanques y acueductos ha sido modificado a medida que la comunidad aumenta en número y necesidades. En un principio el tratamiento de agua para su potabilización era pobre, si bien existen rastros de clarificación de agua en la época antigua, la prioridad se mantuvo en el traslado del flujo hacia los centros urbanos. [130] Investigaciones tempranas (previas al año 1600) se acercaron a lo que hoy se conoce como el proceso de potabilización, centrando su esfuerzo en ofrecer agua de mejor calidad para evitar la propagación de enfermedades. No es sino hasta inicios de 1800 que se inauguró la primera planta de tratamiento con filtros de arena para purificación, y alrededor del año 1850 que se utilizó cloro para la desinfección del agua. En 1924 el tratamiento moderno inició, con la aprobación del mecanismo de filtrado con carbón activado. [128]
+	
+A mediados del siglo XX, con la tercera revolución industrial, se marca el inicio de una etapa de desarrollo tecnológico en procesos de producción, sistemas de control y técnicas de computación. La llegada de los computadores industriales y las válvulas controladas eléctricamente hizo posible el monitoreo y control de las unidades del proceso, avanzando vertiginosamente desde entonces. [131]
+
+Es así como proyectos de control y automatización se desarrollan en el ámbito hidrológico industrial; se realizan instalaciones de sensores, computadores para estar al tanto del proceso en planta y se desarrollan algunos modelos de comportamiento de modo que los autómatas puedan seguir instrucciones. En [132] se describe un modelo de las unidades de potabilización de agua, orientado a sistemas de control supervisorio. Es realizado todo un procedimiento metodológico en pro de conocer las bases de funcionamiento de la planta de tratamiento para luego generar diagramas de actividades de los procesos que desean automatizar. En este caso la automatización no abarca todo el flujo de producto, sino procedimientos puntuales del tratamiento, sirviendo como base para futuras investigaciones.
+
+Con el avance de la tecnología ya no solo es posible el monitoreo y accionamiento de válvulas de forma automática, sino que se busca interconexión y traslado de información de forma rápida y eficiente entre unidades en planta. En [86] hacen referencia a una nueva era de digitalización y la preparación de la empresa para enfrentar los cambios. La visión de la cuarta revolución industrial, con el desarrollo de gemelos digitales de los procesos, utilizados para planificar, simular previa implementación y hacer seguimiento del desempeño una vez instalados los cambios, todo gracias a la sistematización e interconexión de máquinas, datos y modelos.
+
+La industria hidrológica como sistema crítico debe ajustarse a los cambios en la era digital, mejorar los procesos y adoptar nuevas tecnologías para hacer una empresa reconfigurable y adaptable a las exigencias de la sociedad. En [87] se hace referencia a la revolución inteligente del agua, asumiéndolo como un reto social de la actualidad y cuantificando las pérdidas que se generan en el tratamiento. Esto es la mayor afectación a la industria, las perdidas en tuberías y procesos, ausencia en recolección de datos, respuesta poco eficientes ante cambios en las solicitudes de la comunidad; por ello se busca mejorar el proceso haciendo uso de las herramientas tecnológicas disponibles como análisis de datos, algoritmos basados en inteligencia artificial, gemelos digitales.
+	
 %Siguiendo la tendencia mundial, en la que se proyecta a la industria en una nueva etapa de crecimiento e innovación, existen muchas tecnologías emergentes que comienzan a impulsar y sustentar este fenómeno conocido como industria 4.0. Esta se asume como la cuarta revolución industrial, que nace como la evolución natural de la tercera revolución industrial centrada en el uso de dispositivos electrónicos y computacionales. Así I4.0 se convierte en el esquema industrial centrado en la interconectividad de sistemas ciber-físicos.
 	
 	
@@ -1554,6 +1564,30 @@ Para llevar a cabo la parada de la unidad se debe cerrar la compuerta de entrada
 					
 	\chapter{Implementación}
 	
+Según los diseños observados en el montaje físico de plantas de tratamiento, se deduce que su estructura general consta de demultiplexores y multiplexores (figura \ref{fig-multiplex1}), es decir, la entrada es dividida al finalizar el paso por las unidades para generar varias líneas de producción compuestas por floculación - sedimentación, disminuyendo la velocidad del flujo circulante. El efluente de cada sedimentador se recolecta en un canal único, la velocidad y caudal aumentan para dirigir la masa de agua hacia la unidad de filtración, donde se divide nuevamente y por última vez (figura \ref{fig-multiplex2}). Las mediciones mínimas para obtener un gemelo digital de la planta se ubican en el diagrama adjunto.
+
+		\begin{figure}
+			\centering
+			\includegraphics[scale=0.5]{figures/4multiplex1}
+			\caption{Planta de tratamiento plano superior.}
+			\label{fig-multiplex1}
+		\end{figure}
+		
+		\begin{figure}
+			\centering
+			\includegraphics[scale=0.5]{figures/4multiplex2}
+			\caption{Planta de tratamiento plano superior.}
+			\label{fig-multiplex2}
+		\end{figure}
+		
+		\begin{figure}
+			\centering
+			\includegraphics[scale=0.5]{figures/4multiplexlegend}
+			\label{fig-multiplexlegend}
+		\end{figure}
+	
+		\section{Prueba de Concepto}
+	
 Partiendo de la idea de generar una propuesta de gemelo digital, y basada la estructura de producción en unidades holónicas, se procede a caracterizar y simular las unidades de potabilización por separado, de modo que cumplan con las condiciones individuales de funcionamiento, transmitiendo la información y estado del proceso a un programa matriz en el que se efectuará la interconexión.
 
 Para llevar a cabo la prueba de concepto se tomaron dos de las unidades funcionales del proceso de potabilización, la unidad de Coagulación y la unidad de Sedimentación. En la unidad de Coagulación se utilizó un modelo matemático para aproximar la relación de dependencia entre la dosis de coagulante a adicionar y las condiciones físico químicas del flujo entrante. Para el caso de la unidad de Sedimentación se utilizó un programa de análisis y simulación de sistemas de distribución de agua potable llamado Epanet, esto con el fin de hacer uso de herramientas conocidas en el ámbito hidrológico, que incluyen algoritmos de cálculo matemático especializado en el área.
@@ -1633,22 +1667,11 @@ Siguiendo estudios  enfocados en la optimización de la dosis de coagulante ([83,
 				\end{center}
 			\end{table}
 
-En pro de obtener un modelo cuyo comportamiento se asemeje al proceso real y a su vez se ajuste al comportamiento aleatorio que presentan los valores en campo, se optó por promediar los modelos Md2 y Md5, con lo que se obtuvo un RMSE en los datos de validación de $7,9741$ y la inclusión de las variables conocidas para determinar la calidad del flujo. Los modelos promediados son los siguientes:
+En pro de obtener un modelo cuyo comportamiento se asemeje al proceso real y a su vez se ajuste al comportamiento aleatorio que presentan los valores en campo, se optó por un modelo promedial, con lo que se obtuvo un RMSE en los datos de validación de $7,9741$ y la inclusión de las variables conocidas para determinar la calidad del flujo. El modelo queda de la forma:
 
-			\begin{multline}
+			\begin{equation}
 				\label{eq-md2}
-				md2 = 76,44 - 0,08533T - 0,003054C + 0,004229(T)^{2} - 0,002185TC + \\
-				  0,0002715(C)^{2} - 3,174e-06(T)^{2}C + 1,423e^{-6}T(C)^{2} - 1,513e^{-7}(C)^{3}
-			\end{multline}
-			
-			\begin{equation}
-				\label{eq-md5}
-				md5 = 425,0 + 0,045635T + 0,01423C - 56,60Ph + 2,127A
-			\end{equation}
-			
-			\begin{equation}
-				\label{eq-md7}
-				md7 = \dfrac{md2 + md5}{2}
+				md7 = a_{0} + a_{1}T + a_{2}C + a_{3}T^{2} + a_{4}TC + a_{5}C^{2} + a_{6}T^{2}C + a_{7}TC^{2} + a_{8}C^{3}
 			\end{equation}
 			
 			\begin{table}[H]
@@ -1753,7 +1776,7 @@ El nivel max-max indica una acumulación en el fondo de lodos, por lo que se aper
 
 		\section{Interconexión de Unidades}
 		
-Una vez condicionado el comportamiento de cada unidad, se realizó un programa matriz donde se simula el funcionamiento de las unidades en simultáneo. Usando el programa MATLAB y la herramienta Epanet Matlab Toolkit, se aplicaron las condiciones de interconexión y el seguimiento de datos resultantes para la toma de decisiones simples.
+Una vez condicionado el comportamiento de cada unidad, se realizó un programa matriz donde se simula el funcionamiento de las unidades en simultáneo. El programa Epanet y el cálculo de la respuesta del modelo se comportan como el bloque de simulación junto a los datos que deben ser medidos en planta (SCADA, manuales) y se utiliza Matlab como un motor de sistemas a eventos discretos para detectar eventos y evolucionar la RdP, haciendo el seguimiento de datos resultantes para la toma de decisiones simples. Para realizar la interconexión de archivos se utiliza la herramienta Epanet Matlab Toolkit. 
 
 Para llevar a cabo la conexión se debe cargar el archivo MATLAB que contiene la función de cálculo de la dosis de coagulante, el Toolkit de Epanet con las funciones de manejo de redes hidráulicas y el archivo de Epanet para la unidad de sedimentación, cuya estructura será replicada por MATLAB, permitiendo la modificación de variables desde el entorno de simulación (figura \ref{fig-sedimentmatlab}).
 

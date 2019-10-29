@@ -1,65 +1,66 @@
 \contentsline {chapter}{\'Indice de Tablas}{vi}{chapter*.1}
 \contentsline {chapter}{\'Indice de Figuras}{vii}{chapter*.2}
 \contentsline {chapter}{\numberline {1}Introducci\'on}{1}{chapter.1}
-\contentsline {section}{\numberline {1.1}Antecedentes}{3}{section.1.1}
-\contentsline {section}{\numberline {1.2}Planteamiento del problema}{4}{section.1.2}
-\contentsline {section}{\numberline {1.3}Objetivos}{4}{section.1.3}
-\contentsline {subsection}{\numberline {1.3.1}Objetivo general}{4}{subsection.1.3.1}
-\contentsline {subsection}{\numberline {1.3.2}Objetivos espec\IeC {\'\i }ficos}{5}{subsection.1.3.2}
-\contentsline {section}{\numberline {1.4}Metodolog\IeC {\'\i }a}{5}{section.1.4}
-\contentsline {chapter}{\numberline {2}Marco Te\'orico}{6}{chapter.2}
-\contentsline {section}{\numberline {2.1}Ciudades Inteligentes}{6}{section.2.1}
-\contentsline {section}{\numberline {2.2}Industria 4.0}{7}{section.2.2}
-\contentsline {subsection}{\numberline {2.2.1}Sistemas Ciber-F\IeC {\'\i }sicos}{8}{subsection.2.2.1}
-\contentsline {subsection}{\numberline {2.2.2}Internet de las Cosas (IoT) e Internet Industrial de las Cosas (IIoT)}{10}{subsection.2.2.2}
-\contentsline {subsection}{\numberline {2.2.3}Anal\IeC {\'\i }tica de Datos}{10}{subsection.2.2.3}
-\contentsline {section}{\numberline {2.3}Gemelo Digital}{10}{section.2.3}
-\contentsline {section}{\numberline {2.4}Modelo de Conocimiento}{12}{section.2.4}
-\contentsline {section}{\numberline {2.5}Modelo H\IeC {\'\i }brido}{15}{section.2.5}
-\contentsline {section}{\numberline {2.6}Sistemas Hol\'onicos}{17}{section.2.6}
-\contentsline {subsubsection}{\numberline {2.6.0.1}Descripci\'on del conocimiento de la UHP}{21}{subsubsection.2.6.0.1}
-\contentsline {subsubsection}{\numberline {2.6.0.2}Din\'amica del proceso f\IeC {\'\i }sico y su supervisi\'on}{21}{subsubsection.2.6.0.2}
-\contentsline {section}{\numberline {2.7}Sistemas de suministro de agua potable, hacia la I4.0}{25}{section.2.7}
-\contentsline {chapter}{\numberline {3}Caso de Estudio: Hidrol\'ogicas}{28}{chapter.3}
-\contentsline {section}{\numberline {3.1}\'Areas de Negocio}{28}{section.3.1}
-\contentsline {subsection}{\numberline {3.1.1}Estudio de fuentes y caracterizaci\'on de la demanda}{28}{subsection.3.1.1}
-\contentsline {subsection}{\numberline {3.1.2}Operaci\'on}{30}{subsection.3.1.2}
-\contentsline {subsection}{\numberline {3.1.3}Comercializaci\'on}{31}{subsection.3.1.3}
-\contentsline {subsection}{\numberline {3.1.4}\'Areas de Soporte}{31}{subsection.3.1.4}
-\contentsline {section}{\numberline {3.2}Cadena de Valor de cada \'Area de Negocio}{32}{section.3.2}
-\contentsline {subsection}{\numberline {3.2.1}Fuentes y Estudio de la Demanda}{32}{subsection.3.2.1}
-\contentsline {subsection}{\numberline {3.2.2}Operaciones}{33}{subsection.3.2.2}
-\contentsline {subsection}{\numberline {3.2.3}Comercial}{33}{subsection.3.2.3}
-\contentsline {subsection}{\numberline {3.2.4}Soporte}{34}{subsection.3.2.4}
-\contentsline {section}{\numberline {3.3}Esquema Integral de Cadena de Valor para Hidrol\'ogicas}{34}{section.3.3}
-\contentsline {section}{\numberline {3.4}Planificaci\'on}{34}{section.3.4}
-\contentsline {section}{\numberline {3.5}Modelo APS en Hidrol\'ogicas}{35}{section.3.5}
-\contentsline {section}{\numberline {3.6}Unidades Hol\'onicas en Hidrol\'ogicas}{35}{section.3.6}
-\contentsline {section}{\numberline {3.7}Descripci\'on del Proceso de Potabilizaci\'on}{37}{section.3.7}
-\contentsline {subsection}{\numberline {3.7.1}Captaci\'on del agua}{38}{subsection.3.7.1}
-\contentsline {subsection}{\numberline {3.7.2}Determinaci\'on de las caracter\IeC {\'\i }sticas del agua cruda}{39}{subsection.3.7.2}
-\contentsline {subsubsection}{\numberline {3.7.2.1}Turbidez}{40}{subsubsection.3.7.2.1}
-\contentsline {subsubsection}{\numberline {3.7.2.2}pH}{41}{subsubsection.3.7.2.2}
-\contentsline {subsubsection}{\numberline {3.7.2.3}Cloro Residual}{41}{subsubsection.3.7.2.3}
-\contentsline {subsubsection}{\numberline {3.7.2.4}Color Aparente}{41}{subsubsection.3.7.2.4}
-\contentsline {subsubsection}{\numberline {3.7.2.5}Temperatura}{41}{subsubsection.3.7.2.5}
-\contentsline {subsubsection}{\numberline {3.7.2.6}Prueba de Jarras}{42}{subsubsection.3.7.2.6}
-\contentsline {subsection}{\numberline {3.7.3}Unidad de Potabilizaci\'on}{42}{subsection.3.7.3}
-\contentsline {subsubsection}{\numberline {3.7.3.1}Coagulaci\'on}{44}{subsubsection.3.7.3.1}
-\contentsline {subsubsection}{\numberline {3.7.3.2}Floculaci\'on}{49}{subsubsection.3.7.3.2}
-\contentsline {subsubsection}{\numberline {3.7.3.3}Sedimentaci\'on}{50}{subsubsection.3.7.3.3}
-\contentsline {subsubsection}{\numberline {3.7.3.4}Filtraci\'on}{52}{subsubsection.3.7.3.4}
-\contentsline {subsubsection}{\numberline {3.7.3.5}Desinfecci\'on}{55}{subsubsection.3.7.3.5}
-\contentsline {section}{\numberline {3.8}Condiciones de Operaci\'on en Potabilizaci\'on}{56}{section.3.8}
-\contentsline {subsection}{\numberline {3.8.1}Unidad de Coagulaci\'on}{57}{subsection.3.8.1}
-\contentsline {subsection}{\numberline {3.8.2}Unidad de Floculaci\'on}{60}{subsection.3.8.2}
-\contentsline {subsection}{\numberline {3.8.3}Unidad de Sedimentaci\'on}{62}{subsection.3.8.3}
-\contentsline {subsection}{\numberline {3.8.4}Unidad de Filtraci\'on}{66}{subsection.3.8.4}
-\contentsline {subsection}{\numberline {3.8.5}Unidad de Desinfecci\'on}{70}{subsection.3.8.5}
-\contentsline {chapter}{\numberline {4}Implementaci\'on}{73}{chapter.4}
-\contentsline {section}{\numberline {4.1}Simulaci\'on de la Unidad de Coagulaci\'on}{73}{section.4.1}
-\contentsline {section}{\numberline {4.2}Simulaci\'on de la Unidad de Sedimentaci\'on}{76}{section.4.2}
-\contentsline {section}{\numberline {4.3}Interconexi\'on de Unidades}{79}{section.4.3}
-\contentsline {chapter}{\numberline {5}Conclusiones y Recomendaciones}{82}{chapter.5}
-\contentsline {chapter}{\numberline {6}Anexos}{83}{chapter.6}
-\contentsline {chapter}{Bibliograf\'{\i }a}{85}{table.6.1}
+\contentsline {section}{\numberline {1.1}Antecedentes}{4}{section.1.1}
+\contentsline {section}{\numberline {1.2}Planteamiento del problema}{5}{section.1.2}
+\contentsline {section}{\numberline {1.3}Objetivos}{6}{section.1.3}
+\contentsline {subsection}{\numberline {1.3.1}Objetivo general}{6}{subsection.1.3.1}
+\contentsline {subsection}{\numberline {1.3.2}Objetivos espec\IeC {\'\i }ficos}{6}{subsection.1.3.2}
+\contentsline {section}{\numberline {1.4}Metodolog\IeC {\'\i }a}{6}{section.1.4}
+\contentsline {chapter}{\numberline {2}Marco Te\'orico}{8}{chapter.2}
+\contentsline {section}{\numberline {2.1}Ciudades Inteligentes}{8}{section.2.1}
+\contentsline {section}{\numberline {2.2}Industria 4.0}{9}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}Sistemas Ciber-F\IeC {\'\i }sicos}{10}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {2.2.2}Internet de las Cosas (IoT) e Internet Industrial de las Cosas (IIoT)}{12}{subsection.2.2.2}
+\contentsline {subsection}{\numberline {2.2.3}Anal\IeC {\'\i }tica de Datos}{12}{subsection.2.2.3}
+\contentsline {section}{\numberline {2.3}Gemelo Digital}{12}{section.2.3}
+\contentsline {section}{\numberline {2.4}Modelo de Conocimiento}{14}{section.2.4}
+\contentsline {section}{\numberline {2.5}Modelo H\IeC {\'\i }brido}{17}{section.2.5}
+\contentsline {section}{\numberline {2.6}Sistemas Hol\'onicos}{19}{section.2.6}
+\contentsline {subsubsection}{\numberline {2.6.0.1}Descripci\'on del conocimiento de la UHP}{23}{subsubsection.2.6.0.1}
+\contentsline {subsubsection}{\numberline {2.6.0.2}Din\'amica del proceso f\IeC {\'\i }sico y su supervisi\'on}{23}{subsubsection.2.6.0.2}
+\contentsline {section}{\numberline {2.7}Sistemas de suministro de agua potable, hacia la I4.0}{27}{section.2.7}
+\contentsline {chapter}{\numberline {3}Caso de Estudio: Hidrol\'ogicas}{30}{chapter.3}
+\contentsline {section}{\numberline {3.1}\'Areas de Negocio}{30}{section.3.1}
+\contentsline {subsection}{\numberline {3.1.1}Estudio de fuentes y caracterizaci\'on de la demanda}{30}{subsection.3.1.1}
+\contentsline {subsection}{\numberline {3.1.2}Operaci\'on}{32}{subsection.3.1.2}
+\contentsline {subsection}{\numberline {3.1.3}Comercializaci\'on}{33}{subsection.3.1.3}
+\contentsline {subsection}{\numberline {3.1.4}\'Areas de Soporte}{33}{subsection.3.1.4}
+\contentsline {section}{\numberline {3.2}Cadena de Valor de cada \'Area de Negocio}{34}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Fuentes y Estudio de la Demanda}{34}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}Operaciones}{35}{subsection.3.2.2}
+\contentsline {subsection}{\numberline {3.2.3}Comercial}{35}{subsection.3.2.3}
+\contentsline {subsection}{\numberline {3.2.4}Soporte}{36}{subsection.3.2.4}
+\contentsline {section}{\numberline {3.3}Esquema Integral de Cadena de Valor para Hidrol\'ogicas}{36}{section.3.3}
+\contentsline {section}{\numberline {3.4}Planificaci\'on}{36}{section.3.4}
+\contentsline {section}{\numberline {3.5}Modelo APS en Hidrol\'ogicas}{37}{section.3.5}
+\contentsline {section}{\numberline {3.6}Unidades Hol\'onicas en Hidrol\'ogicas}{37}{section.3.6}
+\contentsline {section}{\numberline {3.7}Descripci\'on del Proceso de Potabilizaci\'on}{39}{section.3.7}
+\contentsline {subsection}{\numberline {3.7.1}Captaci\'on del agua}{40}{subsection.3.7.1}
+\contentsline {subsection}{\numberline {3.7.2}Determinaci\'on de las caracter\IeC {\'\i }sticas del agua cruda}{41}{subsection.3.7.2}
+\contentsline {subsubsection}{\numberline {3.7.2.1}Turbidez}{42}{subsubsection.3.7.2.1}
+\contentsline {subsubsection}{\numberline {3.7.2.2}pH}{43}{subsubsection.3.7.2.2}
+\contentsline {subsubsection}{\numberline {3.7.2.3}Cloro Residual}{43}{subsubsection.3.7.2.3}
+\contentsline {subsubsection}{\numberline {3.7.2.4}Color Aparente}{43}{subsubsection.3.7.2.4}
+\contentsline {subsubsection}{\numberline {3.7.2.5}Temperatura}{43}{subsubsection.3.7.2.5}
+\contentsline {subsubsection}{\numberline {3.7.2.6}Prueba de Jarras}{44}{subsubsection.3.7.2.6}
+\contentsline {subsection}{\numberline {3.7.3}Unidad de Potabilizaci\'on}{44}{subsection.3.7.3}
+\contentsline {subsubsection}{\numberline {3.7.3.1}Coagulaci\'on}{46}{subsubsection.3.7.3.1}
+\contentsline {subsubsection}{\numberline {3.7.3.2}Floculaci\'on}{51}{subsubsection.3.7.3.2}
+\contentsline {subsubsection}{\numberline {3.7.3.3}Sedimentaci\'on}{52}{subsubsection.3.7.3.3}
+\contentsline {subsubsection}{\numberline {3.7.3.4}Filtraci\'on}{54}{subsubsection.3.7.3.4}
+\contentsline {subsubsection}{\numberline {3.7.3.5}Desinfecci\'on}{57}{subsubsection.3.7.3.5}
+\contentsline {section}{\numberline {3.8}Condiciones de Operaci\'on en Potabilizaci\'on}{58}{section.3.8}
+\contentsline {subsection}{\numberline {3.8.1}Unidad de Coagulaci\'on}{59}{subsection.3.8.1}
+\contentsline {subsection}{\numberline {3.8.2}Unidad de Floculaci\'on}{62}{subsection.3.8.2}
+\contentsline {subsection}{\numberline {3.8.3}Unidad de Sedimentaci\'on}{64}{subsection.3.8.3}
+\contentsline {subsection}{\numberline {3.8.4}Unidad de Filtraci\'on}{68}{subsection.3.8.4}
+\contentsline {subsection}{\numberline {3.8.5}Unidad de Desinfecci\'on}{72}{subsection.3.8.5}
+\contentsline {chapter}{\numberline {4}Implementaci\'on}{75}{chapter.4}
+\contentsline {section}{\numberline {4.1}Prueba de Concepto}{75}{section.4.1}
+\contentsline {section}{\numberline {4.2}Simulaci\'on de la Unidad de Coagulaci\'on}{77}{section.4.2}
+\contentsline {section}{\numberline {4.3}Simulaci\'on de la Unidad de Sedimentaci\'on}{79}{section.4.3}
+\contentsline {section}{\numberline {4.4}Interconexi\'on de Unidades}{83}{section.4.4}
+\contentsline {chapter}{\numberline {5}Conclusiones y Recomendaciones}{85}{chapter.5}
+\contentsline {chapter}{\numberline {6}Anexos}{86}{chapter.6}
+\contentsline {chapter}{Bibliograf\'{\i }a}{88}{table.6.1}
