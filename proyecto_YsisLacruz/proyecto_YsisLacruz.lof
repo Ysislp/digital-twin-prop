@@ -39,8 +39,10 @@
 \contentsline {figure}{\numberline {4.1}{\ignorespaces Planta de tratamiento plano superior.}}{76}{figure.4.1}
 \contentsline {figure}{\numberline {4.2}{\ignorespaces Planta de tratamiento plano superior.}}{76}{figure.4.2}
 \contentsline {figure}{\numberline {4.3}{\ignorespaces Dosis de coagulante real vs Dosis calculada.}}{80}{figure.4.3}
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Estructura de la unidad de Sedimentaci\'on en Epanet.}}{82}{figure.4.4}
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Replica de la unidad de sedimentaci\'on realizada en Epanet, desde Matlab.}}{83}{figure.4.5}
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Unidad de sedimentaci\'on en operaci\'on.}}{84}{figure.4.6}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Estado de la unidad de coagulaci\'on.}}{81}{figure.4.4}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Estructura de la unidad de Sedimentaci\'on en Epanet.}}{83}{figure.4.5}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Estados de la unidad de sedimentaci\'on.}}{85}{figure.4.6}
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Replica de la unidad de sedimentaci\'on realizada en Epanet, desde Matlab.}}{86}{figure.4.7}
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Unidad de sedimentaci\'on en operaci\'on.}}{86}{figure.4.8}
 \addvspace {10\p@ }
 \addvspace {10\p@ }

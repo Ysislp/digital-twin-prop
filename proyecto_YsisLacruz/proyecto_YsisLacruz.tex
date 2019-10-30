@@ -1564,7 +1564,7 @@ Para llevar a cabo la parada de la unidad se debe cerrar la compuerta de entrada
 					
 	\chapter{Implementación}
 	
-Según los diseños observados en el montaje físico de plantas de tratamiento, se deduce que su estructura general consta de demultiplexores y multiplexores (figura \ref{fig-multiplex1}), es decir, la entrada es dividida al finalizar el paso por las unidades para generar varias líneas de producción compuestas por floculación - sedimentación, disminuyendo la velocidad del flujo circulante. El efluente de cada sedimentador se recolecta en un canal único, la velocidad y caudal aumentan para dirigir la masa de agua hacia la unidad de filtración, donde se divide nuevamente y por última vez (figura \ref{fig-multiplex2}). Las mediciones mínimas para obtener un gemelo digital de la planta se ubican en el diagrama adjunto.
+Según los diseños observados en el montaje físico de plantas de tratamiento, se deduce que su estructura general consta de demultiplexores y multiplexores (figura \ref{fig-multiplex1}), es decir, la entrada es dividida al finalizar el paso por las unidades para generar varias líneas de producción compuestas por floculación - sedimentación, disminuyendo la velocidad del flujo circulante. El efluente de cada sedimentador se recolecta en un canal único, la velocidad y caudal aumentan para dirigir la masa de agua hacia la unidad de filtración, donde se divide nuevamente y por última vez (figura \ref{fig-multiplex2}), ya que el canal de recolección de agua filtrada dirige el flujo hacia desinfección, sin ninguna desviación. Los instrumentos mínimos para obtener un gemelo digital adecuado de la planta se ubican en el diagrama adjunto, consta de herramientas de medición de caudal, pH, turbidez, color para las características del flujo, y de nivel de agua en los tanques.
 
 		\begin{figure}
 			\centering
@@ -1671,7 +1671,7 @@ En pro de obtener un modelo cuyo comportamiento se asemeje al proceso real y a s
 
 			\begin{equation}
 				\label{eq-md2}
-				md7 = a_{0} + a_{1}T + a_{2}C + a_{3}T^{2} + a_{4}TC + a_{5}C^{2} + a_{6}T^{2}C + a_{7}TC^{2} + a_{8}C^{3}
+				md7 = a_{0} + a_{1}A + a_{2}Ph + a_{3}T + a_{4}C + a_{5}T^{2} + a_{6}TC + a_{7}C^{2} + a_{8}T^{2}C + a_{9}TC^{2} + a_{10}C^{3}
 			\end{equation}
 			
 			\begin{table}[H]
@@ -1690,6 +1690,33 @@ En la figura \ref{fig-coagulantmodel} se presenta la cantidad de coagulante a do
 				\includegraphics[scale=0.5]{figures/4coagulantmodel}
 				\caption{Dosis de coagulante real vs Dosis calculada.}
 				\label{fig-coagulantmodel}
+			\end{figure}
+			
+El modelo discreto a utilizar, en este caso (figura \ref{fig-coagulantrdp}), describe las condiciones de NTU de entrada a la planta y según este valor se realiza o no el cálculo de la dosis de coagulante a adicionar; esto debido a que en la planta de potabilización tomada como caso de estudio, se añade sulfato de aluminio al proceso solo cuando la turbidez del agua cruda supera los 12 NTU.
+			
+			\begin{table}[]
+				\begin{center}
+					\begin{tabular}{|l|l|}
+					\hline
+					\multicolumn{2}{|l|}{\textbf{Estados}}      \\ \hline
+					$L_{0}$  & Unidad sin dosificar             \\ \hline
+					$L_{1}$  & Unidad con dosificación          \\ \hline
+					$L_{d}$  & Unidad dosificando, en degradado \\ \hline
+					\multicolumn{2}{|l|}{\textbf{Eventos}}      \\ \hline
+					$T_{n0}$ & $NTU < 12$                       \\ \hline
+					$T_{n1}$ & $12 \leq NTU \geq 50$              \\ \hline
+					$T_{n2}$ & $NTU > 50$                       \\ \hline
+					\end{tabular}
+					\caption{Estados y eventos de la unidad de coagulación.}
+					\label{table-coagulantrdp}
+				\end{center}
+			\end{table}
+
+			\begin{figure}
+				\centering
+				\includegraphics{figures/4coagulantrdp}
+				\caption{Estado de la unidad de coagulación.}
+				\label{fig-coagulantrdp}
 			\end{figure}
 
 		\section{Simulación de la Unidad de Sedimentación}
@@ -1773,6 +1800,40 @@ El nivel max-max indica una acumulación en el fondo de lodos, por lo que se aper
 					\label{table-sedimentcond}
 				\end{center}
 			\end{table}
+			
+El modelo discreto utilizado para simular la unidad de sedimentación (figura \ref{fig-sedimentrdp}), cuida que las condiciones de nivel del tanque se cumplan, mediante la apertura o cierre de la compuerta de lodos. En este caso se añade un subproceso encargado de maniobrar la compuerta.
+
+		\begin{table}[]
+			\begin{center}
+				\begin{tabular}{|l|l|}
+				\hline
+				\multicolumn{2}{|l|}{\textbf{Estados}}        \\ \hline
+				$L_{p}$    & Unidad detenida                  \\ \hline
+				$L_{mm}$   & Unidad en nivel mín-mín          \\ \hline
+				$L_{l}$    & Unidad en llenado                \\ \hline
+				$L_{x}$    & Unidad e nivel max-max           \\ \hline
+				$L_{v}$    & Unidad vaciándose                \\ \hline
+				$L_{m}$    & Unidad en nivel min              \\ \hline
+				\multicolumn{2}{|l|}{\textbf{Eventos}}        \\ \hline
+				$T_{nq}$   & Sin caudal de entrada            \\ \hline
+				$T_{q}$    & Con caudal de entrada            \\ \hline
+				$T_{x}$    & Nivel del tanque en max-max      \\ \hline
+				$T_{m}$    & Nivel del tanque en mín          \\ \hline
+				$T_{mm}$   & Nivel del tanque en mín-mín      \\ \hline
+				Abrir\_Vo  & Subproceso para abrir compuerta  \\ \hline
+				Cerrar\_Vo & Subproceso para cerrar compuerta \\ \hline
+				\end{tabular}
+				\caption{Estados y eventos de la unidad de sedimentación.}
+				\label{table-sedimentcond}
+			\end{center}
+		\end{table}
+		
+		\begin{figure}
+			\centering
+			\includegraphics[scale=0.7]{figures/4sedimentrdp}
+			\caption{Estados de la unidad de sedimentación.}
+			\label{fig-sedimentsimu}
+		\end{figure}
 
 		\section{Interconexión de Unidades}
 		
