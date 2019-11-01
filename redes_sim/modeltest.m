@@ -105,7 +105,7 @@ plot(DSA)
 md3_val = 396.7713 + 0.0421.*T_val - 45.3508.*Ph_val + 0.0150.*C_val;
 RMSE3_val = sqrt(mean((DSA_val - md3_val).^2));
 
-% corrcoef([DSA Ti Ci Phi Ai]) Ph correlación baja
+corr = corrcoef([DSA Ti Ci Phi Ai]) %Ph correlación baja
 
 % **** 4 ****
 
@@ -223,7 +223,7 @@ plot(DSA_val)
 
 % Media
 
-md7 = (md2 + md5)./2;
+md7 = (md2 + md1)./2;
 RMSE7 = sqrt(mean((DSA - md7).^2));%8,1013 %7,2029
 Rsq7 = fR2(DSA,md7);%0,9620 %0,9699
 
@@ -237,7 +237,7 @@ ylabel(['Sulfato de Aluminio (Kg/h)']);
 grid on;
 legend('Modelo md7','Dosis medida');
 
-md7_val = (md2_val + md5_val)./2;
+md7_val = (md2_val + md1_val)./2;
 RMSE7_val = sqrt(mean((DSA_val - md7_val).^2));%7,9741 %7,6543
 
 figure (15)

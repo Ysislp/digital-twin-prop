@@ -5,7 +5,11 @@ close('all');
 start_toolkit;
 
 % Load data
-load('TestWorkspace.mat');
+%load('TestWorkspace.mat');
+load('sep0915.mat');
+
+Ti = sep0915_Ti;
+Ci = sep0915_Ci;
 
 % Variables to set
 
@@ -17,7 +21,9 @@ dosisArray = [];
 s = epanet('Net00-new.inp');
 hours = length(Ti); % h
 qi1 = 150; % LPS
+qo1 = qi1-0.5;
 qi2 = 150; % LPS
+qo2 = qi2;
 h1 = 1;
 h2 = 1;
 
@@ -25,23 +31,23 @@ h2 = 1;
 
 % Sediment 1
 % qin
-% valveID = '2'; 
-% valveIndex = s.getLinkIndex(valveID);
-% s.setLinkInitialSetting(valveIndex, qi1);
+valveID = '2'; 
+valveIndex = s.getLinkIndex(valveID);
+s.setLinkInitialSetting(valveIndex, qi1);
 % qout
-% valveID = '12';
-% valveIndex = s.getLinkIndex(valveID);
-% s.setLinkInitialSetting(valveIndex, qi2);
+valveID = '12';
+valveIndex = s.getLinkIndex(valveID);
+s.setLinkInitialSetting(valveIndex, qo1);
 
 % Sediment 2
 % qin
 % valveID = '13';
 % valveIndex = s.getLinkIndex(valveID);
-% s.setLinkInitialSetting(valveIndex, s_qi);
+% s.setLinkInitialSetting(valveIndex, qi2);
 % qout
 % valveID = '14';
 % valveIndex = s.getLinkIndex(valveID);
-% s.setLinkInitialSetting(valveIndex, s_qi);
+% s.setLinkInitialSetting(valveIndex, qo2);
 
 % Link to graph
 link_names = {'12'};
@@ -62,12 +68,12 @@ hrs_time = hyd_res.Time/3600;
 s.openHydraulicAnalysis;
 s.initializeHydraulicAnalysis;
 
-tstep=1; F=[]; t=[]; V=[]; h = 0;
+tstep=1; F=[]; t=[]; V=[]; h = 0; status = 'Normal';
 
 for x = 1:i
     
     % Coagulant dosis
-    dosis = coagulantFunc(Ti(x), Ci(x))
+    [dosis, status] = coagulantFunc(Ti(x), Ci(x))
     dosisArray(x) = dosis;
     %pause(1)
     
