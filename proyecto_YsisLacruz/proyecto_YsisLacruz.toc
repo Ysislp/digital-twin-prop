@@ -1,5 +1,5 @@
 \contentsline {chapter}{\'Indice de Tablas}{vi}{chapter*.1}
-\contentsline {chapter}{\'Indice de Figuras}{vii}{chapter*.2}
+\contentsline {chapter}{\'Indice de Figuras}{viii}{chapter*.2}
 \contentsline {chapter}{\numberline {1}Introducci\'on}{1}{chapter.1}
 \contentsline {section}{\numberline {1.1}Antecedentes}{3}{section.1.1}
 \contentsline {section}{\numberline {1.2}Planteamiento del problema}{5}{section.1.2}
@@ -8,6 +8,7 @@
 \contentsline {subsection}{\numberline {1.4.1}Objetivo general}{6}{subsection.1.4.1}
 \contentsline {subsection}{\numberline {1.4.2}Objetivos espec\IeC {\'\i }ficos}{6}{subsection.1.4.2}
 \contentsline {section}{\numberline {1.5}Metodolog\IeC {\'\i }a}{6}{section.1.5}
+\contentsline {section}{\numberline {1.6}Estructura del Documento}{7}{section.1.6}
 \contentsline {chapter}{\numberline {2}Marco Te\'orico}{8}{chapter.2}
 \contentsline {section}{\numberline {2.1}Sistemas de suministro de agua potable, hacia la I4.0}{8}{section.2.1}
 \contentsline {section}{\numberline {2.2}Industria 4.0}{11}{section.2.2}
@@ -61,9 +62,18 @@
 \contentsline {subsection}{\numberline {3.1.5}Unidad de Desinfecci\'on}{68}{subsection.3.1.5}
 \contentsline {chapter}{\numberline {4}Implementaci\'on}{71}{chapter.4}
 \contentsline {section}{\numberline {4.1}Generaci\'on de la Propuesta de Gemelo Digital}{71}{section.4.1}
-\contentsline {section}{\numberline {4.2}Modelo de la Unidad de Coagulaci\'on}{73}{section.4.2}
-\contentsline {section}{\numberline {4.3}Modelo de la Unidad de Sedimentaci\'on}{78}{section.4.3}
-\contentsline {section}{\numberline {4.4}Emulaci\'on del Gemelo Digital}{79}{section.4.4}
-\contentsline {chapter}{\numberline {5}Conclusiones y Recomendaciones}{83}{chapter.5}
-\contentsline {chapter}{\numberline {6}Anexos}{84}{chapter.6}
-\contentsline {chapter}{Bibliograf\'{\i }a}{86}{table.6.1}
+\contentsline {subsection}{\numberline {4.1.1}Modelo de la Unidad de Coagulaci\'on}{73}{subsection.4.1.1}
+\contentsline {subsection}{\numberline {4.1.2}Modelo de la Unidad de Sedimentaci\'on}{78}{subsection.4.1.2}
+\contentsline {paragraph}{Estado del caudal de entrada:}{79}{section*.4}
+\contentsline {paragraph}{Estado de la altura del agua:}{79}{section*.5}
+\contentsline {paragraph}{Estado de la compuerta de lodos:}{79}{section*.6}
+\contentsline {paragraph}{Estado del tanque:}{82}{section*.7}
+\contentsline {section}{\numberline {4.2}Emulaci\'on del Gemelo Digital}{83}{section.4.2}
+\contentsline {paragraph}{Escenario 1:}{84}{section*.8}
+\contentsline {paragraph}{Escenario 2:}{84}{section*.9}
+\contentsline {paragraph}{Escenario 3:}{87}{section*.10}
+\contentsline {paragraph}{Escenario 4:}{87}{section*.11}
+\contentsline {paragraph}{Escenario 5:}{88}{section*.12}
+\contentsline {chapter}{\numberline {5}Conclusiones y Recomendaciones}{91}{chapter.5}
+\contentsline {chapter}{\numberline {6}Anexos}{92}{chapter.6}
+\contentsline {chapter}{Bibliograf\'{\i }a}{94}{table.6.1}

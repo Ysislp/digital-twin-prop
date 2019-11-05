@@ -2,6 +2,8 @@ function [dosis, status] = coagulantFunc (Ti, Ci)
 
     if (Ti < 12)
         dosis = 0;
+    elseif (Ti >= 97)   %falla cierre compuerta
+        dosis = 0;
     else
 
         dosis1 = 76.44 - 0.08533.*Ti - 0.003054.*Ci + 0.004229.*(Ti).^2 ...

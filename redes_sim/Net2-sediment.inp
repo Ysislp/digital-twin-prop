@@ -7,10 +7,10 @@
  6               	17          	0           	                	;
  7               	18          	0           	                	;
  8               	18          	0           	                	;
- 9               	19.90       	0           	                	;
- 10              	20.12       	0           	                	;
- 12              	19.90       	0           	                	;
- 13              	20.12       	0           	                	;
+ 9               	20.15       	0           	                	;
+ 10              	20.13       	0           	                	;
+ 12              	20.35       	0           	                	;
+ 13              	20.13       	0           	                	;
  15              	17          	0           	                	;
  16              	17          	0           	                	;
 
@@ -40,8 +40,8 @@
 
 [VALVES]
 ;ID              	Node1           	Node2           	Diameter    	Type	Setting     	MinorLoss   
- 2               	7               	5               	1500        	FCV 	150         	0           	;
- 12              	9               	10              	300         	FCV 	149.5       	0           	;
+ 2               	7               	5               	1500        	FCV 	150.4       	0           	;
+ 12              	9               	10              	300         	FCV 	150         	0           	;
  13              	8               	6               	1500        	FCV 	150         	0           	;
  14              	12              	13              	300         	FCV 	150         	0           	;
 
@@ -60,7 +60,8 @@
 ;ID              	X-Value     	Y-Value
 
 [CONTROLS]
-
+LINK 10 OPEN IF NODE 3 ABOVE 3.45
+LINK 10 CLOSED IF NODE 3 BELOW 2.65
 
 [RULES]
 RULE 1
@@ -161,6 +162,17 @@ THEN PIPE 10 STATUS IS CLOSED
 
 [LABELS]
 ;X-Coord           Y-Coord          Label & Anchor Node
+ -54.55           5272.73          "Agua proveniente de Floculación"                 
+ 2546.06          6314.91          "VCQ1_in"                 
+ 6054.55          8181.82          "VCQ1_out"                 
+ 6054.55          5200.00          "VCQ2_out"                 
+ 2545.45          3309.09          "VCQ2_in"                 
+ 4909.09          6272.73          "Sedimentador 1"                 
+ 4909.09          3254.55          "Sedimentador 2"                 
+ 7818.18          7672.73          "q1_out"                 
+ 7872.73          4636.36          "q2_out"                 
+ 7290.91          3672.73          "Descarga de lodos"                 
+ 7290.91          6672.73          "Descarga de lodos"                 
 
 [BACKDROP]
  DIMENSIONS     	0.00            	0.00            	10000.00        	10000.00        

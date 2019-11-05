@@ -351,6 +351,17 @@ El hecho de proponer un Gemelo Digital en el proceso de potabilización en la ind
 		\item Para el desarrollo de las simulaciones en el computador, se utilizarán redes de Petri, debido a la imposibilidad de implantarlo en el proceso real.
 	\end{itemize}
 	
+	\section{Estructura del Documento}
+	
+El documento está organizado de la siguiente manera:
+
+		\begin{itemize}
+			\item[$-$]  Capítulo 1: Introducción y propuesta.
+			\item[$-$]  Capítulo 2: Marco teórico.
+			\item[$-$]  Capítulo 3: Modelos del Gemelo Digital, basados en condición, para cada unidad funcional del proceso de potabilización.
+			\item[$-$]  Capítulo 4: Implementación mediante emulación del proceso.
+			\item[$-$]  Capítulo 5: Conclusiones y recomendaciones.
+		\end{itemize}
 	
 	\chapter{Marco Teórico}
 	
@@ -1562,29 +1573,36 @@ Según los diseños observados en las plantas de tratamiento, se deduce que su est
 
 		\begin{figure}
 			\centering
-			\includegraphics[scale=0.5]{figures/4multiplex1}
+			\includegraphics[scale=0.5]{figures/4multiplex}
 			\caption{Planta de tratamiento plano superior.}
 			\label{fig-multiplex1}
 		\end{figure}
-		
-		\begin{figure}
-			\centering
-			\includegraphics[scale=0.5]{figures/4multiplex2}
-			\caption{Planta de tratamiento plano superior.}
-			\label{fig-multiplex2}
-		\end{figure}
-		
-		\begin{figure}
-			\centering
-			\includegraphics[scale=0.5]{figures/4multiplexlegend}
-			\label{fig-multiplexlegend}
-		\end{figure}
+
+%		\begin{figure}
+%			\centering
+%			\includegraphics[scale=0.5]{figures/4multiplex1}
+%			\caption{Planta de tratamiento plano superior.}
+%			\label{fig-multiplex1}
+%		\end{figure}
+%		
+%		\begin{figure}
+%			\centering
+%			\includegraphics[scale=0.5]{figures/4multiplex2}
+%			\caption{Planta de tratamiento plano superior.}
+%			\label{fig-multiplex2}
+%		\end{figure}
+%		
+%		\begin{figure}
+%			\centering
+%			\includegraphics[scale=0.5]{figures/4multiplexlegend}
+%			\label{fig-multiplexlegend}
+%		\end{figure}
 	
 		\section{Generación de la Propuesta de Gemelo Digital}
 	
 Según lo descrito en \ref{sec-uph}, la implementación del gemelo digital requiere de datos del proceso y de modelos de comportamiento de la unidad. Para llevar a cabo la prueba de concepto se tomaron dos de las unidades funcionales del proceso de potabilización, la unidad de Coagulación y la unidad de Sedimentación. En la unidad de Coagulación se utilizó un modelo matemático para aproximar la relación de dependencia entre la dosis de coagulante a adicionar y las condiciones físico químicas del flujo entrante. Para el caso de la unidad de Sedimentación se utilizó un programa de análisis y simulación de sistemas de distribución de agua potable llamado Epanet, esto con el fin de hacer uso de herramientas conocidas en el ámbito hidrológico, que incluyen algoritmos de cálculo matemático especializado en el área.
 	
-		\section{Modelo de la Unidad de Coagulación}
+		\subsection{Modelo de la Unidad de Coagulación}
 		
 La adición de coagulante representa uno de los procedimientos primordiales en una planta de tratamiento de agua, ya que conlleva a que el flujo de salida se encuentre dentro de los límites permisibles para el consumo humano. La efectividad del proceso de coagulación se verá afectada por la dosis de coagulante añadido.
 
@@ -1702,7 +1720,34 @@ En la figura \ref{fig-coagulantmodel} se presenta la cantidad de coagulante a do
 				\label{fig-coagulantmodel}
 			\end{figure}
 			
-El modelo discreto a utilizar, en este caso (figura \ref{fig-coagulantrdp}), describe las condiciones de NTU de entrada a la planta y según este valor se realiza o no el cálculo de la dosis de coagulante a adicionar; esto debido a que en la planta de potabilización tomada como caso de estudio, se añade sulfato de aluminio al proceso solo cuando la turbidez del agua cruda supera los 12 NTU.
+Los modelos discretos que se utilizaron para la unidad de coagulación describen la evolución posible en la turbidez de agua cruda (\ref{fig-nturdp}) y la decisión de dosificación de coagulante dependiente de dicha turbidez (\ref{fig-coagulantrdp}); la composición de ambos modelos arroja el estado de la unidad según el flujo de producto. Se toman en cuenta las condiciones operativas descritas en TAL LADO.
+
+Se debe resaltar que en las plantas de tratamiento del estado Mérida, se adiciona sulfato de aluminio al proceso solo cuando la turbidez supera los 12 NTU.
+
+			\begin{table}[]
+				\begin{center}
+					\begin{tabular}{|l|l|}
+					\hline
+					\multicolumn{2}{|l|}{\textbf{Estados}} \\ \hline
+					$L_{a}$     & Turbidez baja            \\ \hline
+					$L_{b}$     & Turbidez media           \\ \hline
+					$L_{c}$     & Turbidez alta            \\ \hline
+					\multicolumn{2}{|l|}{\textbf{Eventos}} \\ \hline
+					$T_{a}$     & $T < 12$                 \\ \hline
+					$T_{b}$     & $12 \leq T \leq 100$     \\ \hline
+					$T_{c}$     & $T > 100$                \\ \hline
+					\end{tabular}
+					\caption{Estados y eventos de la turbidez medida.}
+					\label{table-nturdp}
+				\end{center}
+			\end{table}
+			
+			\begin{figure}
+				\centering
+				\includegraphics{figures/4NTUrdp}
+				\caption{Estado de la turbidez en coagulación.}
+				\label{fig-nturdp}
+			\end{figure}
 			
 			\begin{table}[]
 				\begin{center}
@@ -1729,9 +1774,9 @@ El modelo discreto a utilizar, en este caso (figura \ref{fig-coagulantrdp}), des
 				\label{fig-coagulantrdp}
 			\end{figure}
 
-		\section{Modelo de la Unidad de Sedimentación}
+		\subsection{Modelo de la Unidad de Sedimentación}
 		
-En la unidad de sedimentación se hizo uso del programa de redes hidráulicas Epanet. Para llevar a cabo la emulación, se utilizaron longitudes reales de los tanques y tuberías presentes en la planta, según el plano de diseño suministrado. La unidad consta de dos sedimentadores con una entrada de agua floculada, una salida de agua decantada y una descarga de lodos para cada uno. (figura \ref{fig-sedimentsimu})
+En el caso de la unidad de sedimentación se hizo uso del programa de redes hidráulicas Epanet. Para llevar a cabo la emulación, se utilizaron longitudes reales de los tanques y tuberías presentes en la planta, según el plano de diseño suministrado. La unidad consta de dos sedimentadores con una entrada de agua floculada, una salida de agua decantada y una descarga de lodos para cada uno. (figura \ref{fig-sedimentsimu})
 
 			\begin{figure}
 				\centering
@@ -1749,9 +1794,9 @@ En la simulación se añaden válvulas de Control de Caudal (VCQ o FCV por sus sigl
 						\hline
 						\textbf{Nivel} & \textbf{Altura (m)} & \textbf{Operación} \\
 						\hline \hline
-						max-max & 3,65 & Apertura de compuerta de lodos \\ \hline
-						max & 3,40 & \\ \hline
-						min & 3,16 & \\ \hline
+						max-max & 3,65 & Desborde \\ \hline
+						max & 3,45 & Apertura de compuerta de lodos\\ \hline
+						min & 3,16 & Mínimo de operación\\ \hline
 						min-min & 2,65 & Cierre de compuerta de lodos \\ \hline
 					\end{tabular}
 					}
@@ -1762,39 +1807,130 @@ En la simulación se añaden válvulas de Control de Caudal (VCQ o FCV por sus sigl
 			
 El nivel max-max indica una acumulación en el fondo de lodos, por lo que se apertura la compuerta de vaciado. Entre los niveles min y max se maneja una operación normal, con flujo saliente hacia la unidad de filtración. El nivel min-min indica el nivel mínimo de vaciado del tanque, por lo que se debe cerrar la compuerta de lodos y, en caso de no haber flujo de entrada, anunciar la parada de la unidad.
 			
-El modelo discreto utilizado para simular la unidad de sedimentación (figura \ref{fig-sedimentrdp}), cuida que las condiciones de nivel del tanque se cumplan, mediante la apertura o cierre de la compuerta de lodos. En este caso se añade un subproceso encargado de maniobrar la compuerta.
+Los modelos discretos utilizados para simular la unidad de sedimentación describen:
 
-		\begin{table}[]
-			\begin{center}
-				\begin{tabular}{|l|l|}
-				\hline
-				\multicolumn{2}{|l|}{\textbf{Estados}}        \\ \hline
-				$L_{p}$    & Unidad detenida                  \\ \hline
-				$L_{mm}$   & Unidad en nivel mín-mín          \\ \hline
-				$L_{l}$    & Unidad en llenado                \\ \hline
-				$L_{x}$    & Unidad e nivel max-max           \\ \hline
-				$L_{v}$    & Unidad vaciándose                \\ \hline
-				$L_{m}$    & Unidad en nivel min              \\ \hline
-				\multicolumn{2}{|l|}{\textbf{Eventos}}        \\ \hline
-				$T_{nq}$   & Sin caudal de entrada            \\ \hline
-				$T_{q}$    & Con caudal de entrada            \\ \hline
-				$T_{x}$    & Nivel del tanque en max-max      \\ \hline
-				$T_{m}$    & Nivel del tanque en mín          \\ \hline
-				$T_{mm}$   & Nivel del tanque en mín-mín      \\ \hline
-				Abrir\_Vo  & Subproceso para abrir compuerta  \\ \hline
-				Cerrar\_Vo & Subproceso para cerrar compuerta \\ \hline
-				\end{tabular}
-				\caption{Estados y eventos de la unidad de sedimentación.}
-				\label{table-sedimentcond}
-			\end{center}
-		\end{table}
-		
-		\begin{figure}
-			\centering
-			\includegraphics[scale=0.7]{figures/4sedimentrdp}
-			\caption{Estados de la unidad de sedimentación.}
-			\label{fig-sedimentsimu}
-		\end{figure}
+			\paragraph{Estado del caudal de entrada:} Asumiendo medición en campo con un valor normal de $300 LPS$. Figura \ref{fig-qirdp}.
+			
+			\begin{table}[]
+				\begin{center}
+					\begin{tabular}{|l|l|}
+					\hline
+					\multicolumn{2}{|l|}{\textbf{Estados}}     \\ \hline
+					$L_{a}$ & Caudal de operación              \\ \hline
+					$L_{b}$ & Caudal en degradado              \\ \hline
+					$L_{c}$ & Caudal en falla                  \\ \hline
+					\multicolumn{2}{|l|}{\textbf{Eventos}}     \\ \hline
+					$T_{a}$ & $270 \leq q_{i} \leq 300$ aprox. \\ \hline
+					$T_{b}$ & $q_{i} \leq 270$                 \\ \hline
+					$T_{c}$ & $q_{i} \approx 0$                \\ \hline
+					\end{tabular}
+					\caption{Estados y eventos del caudal de entrada.}
+					\label{table-qirdp}
+				\end{center}
+			\end{table}
+	
+			\begin{figure}
+				\centering
+				\includegraphics[scale=0.7]{figures/4qirdp}
+				\caption{Estado del caudal de entrada a sedimentación.}
+				\label{fig-qirdp}
+			\end{figure}
+			
+			\paragraph{Estado de la altura del agua:} Describe los niveles de agua en los que la unidad puede operar, junto con saturación, vacío y nivel mínimo, depende de las mediciones de altura $h$ en el sedimentador. Figura \ref{fig-hrdp}.
+			
+			\begin{table}[]
+				\begin{center}
+					\begin{tabular}{|l|l|}
+					\hline
+					\multicolumn{2}{|l|}{\textbf{Estados}} \\ \hline
+					$L_{x}$  & Altura máxima               \\ \hline
+					$L_{o}$  & Altura de operación         \\ \hline
+					$L_{v}$  & Altura en vacío             \\ \hline
+					$L_{m}$  & Altura mínima               \\ \hline
+					\multicolumn{2}{|l|}{\textbf{Eventos}} \\ \hline
+					$T_{x}$  & $h > 3,40 m$                \\ \hline
+					$T_{o}$  & $3,20 m \leq h \leq 3,40 m$ \\ \hline
+					$T_{v}$  & $2,65 m < h < 3,40 m$       \\ \hline
+					$T_{m}$  & $h \leq 2,65 m$                 \\ \hline
+					\end{tabular}
+					\caption{Estados y eventos de la altura en el tanque.}
+					\label{table-hrdp}
+				\end{center}
+			\end{table}
+			
+			\begin{figure}
+				\centering
+				\includegraphics[scale=0.7]{figures/4hrdp}
+				\caption{Estado de la altura del agua en el tanque.}
+				\label{fig-hrdp}
+			\end{figure}
+			
+			\paragraph{Estado de la compuerta de lodos:} Abierta o cerrada según condición de nivel del agua en el tanque. Figura \ref{fig-valverdp}.
+			
+			\begin{table}[]
+				\begin{center}
+					\begin{tabular}{|l|l|}
+					\hline
+					\multicolumn{2}{|l|}{\textbf{Estados}} \\ \hline
+					$L_{a}$       & Compuerta abierta      \\ \hline
+					$L_{c}$       & Compuerta cerrada      \\ \hline
+					\multicolumn{2}{|l|}{\textbf{Eventos}} \\ \hline
+					$T_{a}$       & Abrir compuerta        \\ \hline
+					$T_{fa}$      & Falla en apertura      \\ \hline
+					$T_{c}$       & Cerrar compuerta       \\ \hline
+					$T_{fc}$      & Falla en cierre        \\ \hline
+					\end{tabular}
+					\caption{Estados y eventos de la compuerta de lodos.}
+					\label{table-vavlerdp}
+				\end{center}
+			\end{table}
+			
+			\begin{figure}
+				\centering
+				\includegraphics[scale=0.7]{figures/4valverdp}
+				\caption{Estado de la compuerta de lodos.}
+				\label{fig-valerdp}
+			\end{figure}
+			
+			\paragraph{Estado del tanque:} Según el estado de altura del agua y la compuerta de lodos, se determina si el tanque está operando, en máximo o mínimo, llenando o vaciandose. Figura \ref{fig-tankrdp}.
+			
+			\begin{table}[]
+				\begin{center}
+					\begin{tabular}{|l|l|}
+					\hline
+					\multicolumn{2}{|l|}{\textbf{Estados}}        \\ \hline
+					$L_{o}$          & Tanque en operación        \\ \hline
+					$L_{x}$          & Tanque saturado            \\ \hline
+					$L_{v}$          & Tanque en ciclo de vacío   \\ \hline
+					$L_{m}$          & Tanque en mínimo           \\ \hline
+					$L_{l}$          & Tanque en ciclo de llenado \\ \hline
+					\textbf{Eventos} &                            \\ \hline
+					$T_{o}$          & Condiciones de operación   \\ \hline
+					$T_{x}$          & Condiciones de saturación  \\ \hline
+					$T_{v}$          & Condiciones para vaciar    \\ \hline
+					$T_{m}$          & Condiciones de mínimo      \\ \hline
+					$T_{l}$          & Condiciones para llenar    \\ \hline
+					\end{tabular}
+					\caption{Estados y eventos del tanque de sedimentación.}
+					\label{table-tankrdp}
+				\end{center}
+			\end{table}
+
+			\begin{figure}
+				\centering
+				\includegraphics[scale=0.7]{figures/4tankrdp}
+				\caption{Estado del tanque de sedimentación.}
+				\label{fig-valerdp}
+			\end{figure}
+			
+Así, con la composición de estos modelos se conoce el comportamiento de la unidad. Utilizando epanet con condiciones ideales, se puede apreciar un ciclo de carga y descarga del tanque luego de aproximadamente 4 días de simulación en periodo extendido (figura \ref{fig-htankepanet}).
+
+			\begin{figure}
+				\centering
+				\includegraphics[scale=0.5]{figures/4htankepanet}
+				\caption{Comportamiento de la unidad de sedimentación en condiciones ideales.}
+				\label{fig-htankepanet}
+			\end{figure}
 
 		\section{Emulación del Gemelo Digital}
 		
@@ -1809,18 +1945,93 @@ La metodología consiste en cargar el archivo MATLAB que contiene el modelo de do
 				\label{fig-sedimentmatlab}
 			\end{figure}
 			
-Se establecen los parámetros iniciales de caudal y se selecciona el conjunto de datos de turbidez del agua cruda a utilizar, de modo que el programa realice los cálculos necesarios de dosis y nivel para dar a conocer el estado de operación del sistema y la información vital para tomas de decisiones.
+Se establecen los parámetros iniciales de caudal y se selecciona el conjunto de datos de turbidez del agua cruda a utilizar, de modo que el programa realice los cálculos necesarios de dosis y nivel para dar a conocer el estado de operación del sistema. Los datos iniciales son tomados de la planta real, agrupados en conjuntos de 24 horas, con tiempo de muestreo de una hora.
 
-En la figura \ref{fig-mainmatlab} se presenta el comportamiento de las unidades seleccionadas, coagulación y sedimentación, la adición de coagulante y el tiempo de mantenimiento de los tanques.
-
+			\paragraph{Escenario 1:}
+			
+			En primera instancia se propone un escenario ideal, es decir que presente rangos bajos de turbidez, de modo que en el sedimentador se mantengan los lodos por debajo del nivel de mantenimiento durante más tiempo (tabla \ref{table-sedimentlevelsop}). Es utilizado uno de los conjuntos de datos cuya turbidez inicial máxima es de $5.5 NTU$, este conjunto se replica durante cinco días ya que es el único que ofrece las características deseadas.
+			El resultado se presenta en la figura \ref{fig-idealscen}, donde la descarga de lodos ocurre a las $102,2$ horas, cerca de 4 días y 11 horas de funcionamiento continuo, coincidiendo con lo descrito por los operadores en planta (descarga de lodos cada cuatro días). Como se mencionó anteriormente, debido a los bajos niveles de turbidez no hay adición de coagulante.
+			
 			\begin{figure}
 				\centering
-				\includegraphics[scale=0.5]{figures/4mainMatlab}
-				\caption{Unidad de sedimentación en operación.}
-				\label{fig-mainmatlab}
+				\includegraphics[scale=0.5]{figures/4idealscen}
+				\caption{Escenario 1: Bajo nivel de turbidez y color inicial.}
+				\label{fig-idealscen}
+			\end{figure}
+			
+			\paragraph{Escenario 2:}
+			
+			Siguiendo los modelos de la unidad de coagulación descritos previamente, se propone un escenario donde la turbidez cubra un rango entre $1 NTU$ y $99 NTU$, de manera que se añada coagulante al proceso y los sedimentadores se colmaten más rapidamente (figura \ref{fig-degscen}).
+			En este caso el nivel máximo de turbidez se ubica en $53 NTU$ con un color de $120 UC$, con la inclusión de algunos valores de turbidez por debajo de $12 NTU$, el sedimentador se colmata a las $64,92$ horas, aproximadamente 3 días y 14 horas de funcionamiento.
+			
+			\begin{figure}
+				\centering
+				\includegraphics[scale=0.5]{figures/4degscen}
+				\caption{Escenario 2: Nivel bajo/medio de turbidez y color inicial.}
+				\label{fig-degscen}
+			\end{figure}
+			
+			\paragraph{Escenario 3:}
+			
+			Para el tercer escenario se supuso la entrada de agua con turbidez alta durante todo un día, esto para corroborar que en un caso dado el sedimentador cumpla con la descarga de lodos. Se utilizaron los datos superiores a $95 NTU$ de la planta real, tomados de los conjuntos de datos iniciales, debido a que ninguno de ellos que cumpla con las características de baja calidad de agua entrante durante un periodo prolongado. (\ref{fig-4deg2scen})
+			Con un nivel máximo de turbidez de $1500 NTU$ y $9000 UC$, la dosis de coagulante suministrada es de $252,8 kg/h$ en la primera unidad, alcanzando que el sedimentador se colmate a las $24,38$ horas, aproximadamente 1 día y 10 horas.
+			
+			\begin{figure}
+				\centering
+				\includegraphics[scale=0.5]{figures/4deg2scen}
+				\caption{Escenario 3: Nivel alto de turbidez y color inicial.}
+				\label{fig-deg2scen}
+			\end{figure}
+			
+			\paragraph{Escenario 4:}
+			
+			El cuarto escenario consiste en mostrar las dos opciones operativas desencadenadas por un nivel alto de turbidez en el agua entrante, considerando un rango alto a partir de $100 NTU$ para la simulación. Este caso incluye el aumento de la dosis de coagulante como se observa en el escenario 3 o el cierre del flujo entrante, que eventualmente interrumpe la salida hacia los filtros. El actuar ante estas opciones depende exclusivamente de los lineamientos de la planta y la decisión del operador.
+			Se utilizaron dos de los conjuntos de datos que contienen los rangos más altos de color y turbidez inicial; así en caso de mantener la compuerta de entrada a la planta abierta, se observa el aumento de coagulante que se debe añadir al proceso (\ref{fig-failscen}), razón por la que coagulación se considera la unidad que mayor gasto puede generar en el tratamiento de agua.
+			
+			\begin{figure}
+				\centering
+				\includegraphics[scale=0.5]{figures/4failscen}
+				\caption{Escenario 4: Niveles altos de turbidez y color, con aumento de coagulante.}
+				\label{fig-failscen}
+			\end{figure}
+			
+			Si, por el contrario, al obtener valores altos de turbidez en la entrada la compuerta se cierra (\ref{fig-fail2scen}), el sedimentador mantendrá el nivel justo debajo del canal recolector ($3,16 m$) y se deberá avisar a la siguiente unidad para que active la parada.
+			
+			\begin{figure}
+				\centering
+				\includegraphics[scale=0.5]{figures/4fail2scen}
+				\caption{Escenario 4: Niveles altos de turbidez y color, con cierre de compuerta.}
+				\label{fig-failscen}
+			\end{figure}
+			
+			\paragraph{Escenario 5:}
+			
+			Una vez descritos los escenarios predeterminados para un comportamiento ideal, en degradado y en falla, se toman aleatoriamente cuatro de los conjuntos de datos y se corre el programa para observar el comportamiento durante esos cuatro días.
+			
+			\begin{figure}
+				\centering
+				\includegraphics[scale=0.5]{figures/4tank4124scen}
+				\caption{Escenario 5: Simulación de datos de entrada reales durante 4 días.}
+				\label{fig-tank4124scen}
 			\end{figure}
 
 	\chapter{Conclusiones y Recomendaciones}
+	
+	Se determinaron los modelos de comportamiento de la unidad de potabilización.
+	
+	Se establecieron condiciones de unión de los modelos obtenidos desde el punto de vista de eventos discretos.
+	
+	Se generó un modelo de comportamiento general desde la visión de sistemas híbridos.
+	
+	Se realizó la implementación de los modelos obtenidos para dos unidades del proceso, en un ambiente de simulación.
+	
+	Se establecieron condiciones generales para desarrollar un gemelo digital del proceso e incorporarlas al ambiente de simulación. Esto incluye la propuesta de mejoría en la infraestructura de automatización (sensores, actuadores, mediante PLC, SCADA), requerida  para obtener y hacer seguimiento del comportamiento en planta para el ajuste de los modelos.
+	
+	Se debe destacar la relevancia de los modelos al momento de proponer un gemelo digital; es en ellos donde se almacena todo el conocimiento del proceso, lo que da pie a que se tomen decisiones basadas en condiciones, en pro de la eficiencia de la producción.
+	
+	La implementación de un gemelo digital permite la planificación de modificaciones en la unidad, el seguimiento del comportamiento y gestón en la misma, y el uso de los datos obtenidos para programación y evaluación. 
+	
+	Hay gemelos de la unidad, de gestion, y usas los datos para hacer planificación, programación, seguimiento, evaluación
 	
 	\chapter{Anexos}
 	
