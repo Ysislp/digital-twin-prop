@@ -34,46 +34,46 @@
 \contentsline {subsection}{\numberline {2.6.4}Planificaci\'on}{25}{subsection.2.6.4}
 \contentsline {subsection}{\numberline {2.6.5}Modelo APS en Hidrol\'ogicas}{27}{subsection.2.6.5}
 \contentsline {section}{\numberline {2.7}Descripci\'on del Proceso de Potabilizaci\'on}{27}{section.2.7}
-\contentsline {subsection}{\numberline {2.7.1}Captaci\'on del agua}{27}{subsection.2.7.1}
-\contentsline {subsection}{\numberline {2.7.2}Determinaci\'on de las caracter\IeC {\'\i }sticas del agua cruda}{28}{subsection.2.7.2}
-\contentsline {subsubsection}{\numberline {2.7.2.1}Turbidez}{29}{subsubsection.2.7.2.1}
-\contentsline {subsubsection}{\numberline {2.7.2.2}pH}{30}{subsubsection.2.7.2.2}
+\contentsline {subsection}{\numberline {2.7.1}Captaci\'on del agua}{28}{subsection.2.7.1}
+\contentsline {subsection}{\numberline {2.7.2}Determinaci\'on de las caracter\IeC {\'\i }sticas del agua cruda}{29}{subsection.2.7.2}
+\contentsline {subsubsection}{\numberline {2.7.2.1}Turbidez}{30}{subsubsection.2.7.2.1}
+\contentsline {subsubsection}{\numberline {2.7.2.2}pH}{31}{subsubsection.2.7.2.2}
 \contentsline {subsubsection}{\numberline {2.7.2.3}Cloro Residual}{31}{subsubsection.2.7.2.3}
 \contentsline {subsubsection}{\numberline {2.7.2.4}Color Aparente}{31}{subsubsection.2.7.2.4}
 \contentsline {subsubsection}{\numberline {2.7.2.5}Temperatura}{31}{subsubsection.2.7.2.5}
-\contentsline {subsubsection}{\numberline {2.7.2.6}Prueba de Jarras}{31}{subsubsection.2.7.2.6}
+\contentsline {subsubsection}{\numberline {2.7.2.6}Prueba de Jarras}{32}{subsubsection.2.7.2.6}
 \contentsline {subsection}{\numberline {2.7.3}Unidad de Potabilizaci\'on}{32}{subsection.2.7.3}
 \contentsline {subsubsection}{\numberline {2.7.3.1}Coagulaci\'on}{34}{subsubsection.2.7.3.1}
-\contentsline {subsubsection}{\numberline {2.7.3.2}Floculaci\'on}{38}{subsubsection.2.7.3.2}
+\contentsline {subsubsection}{\numberline {2.7.3.2}Floculaci\'on}{39}{subsubsection.2.7.3.2}
 \contentsline {subsubsection}{\numberline {2.7.3.3}Sedimentaci\'on}{40}{subsubsection.2.7.3.3}
 \contentsline {subsubsection}{\numberline {2.7.3.4}Filtraci\'on}{42}{subsubsection.2.7.3.4}
-\contentsline {subsubsection}{\numberline {2.7.3.5}Desinfecci\'on}{44}{subsubsection.2.7.3.5}
+\contentsline {subsubsection}{\numberline {2.7.3.5}Desinfecci\'on}{45}{subsubsection.2.7.3.5}
 \contentsline {section}{\numberline {2.8}Sistemas Hol\'onicos}{46}{section.2.8}
 \contentsline {subsection}{\numberline {2.8.1}Descripci\'on del conocimiento de la UPH}{46}{subsection.2.8.1}
 \contentsline {subsection}{\numberline {2.8.2}Din\'amica del proceso f\IeC {\'\i }sico y su supervisi\'on}{46}{subsection.2.8.2}
 \contentsline {section}{\numberline {2.9}Unidades Hol\'onicas en Hidrol\'ogicas}{50}{section.2.9}
 \contentsline {section}{\numberline {2.10}Epanet}{51}{section.2.10}
-\contentsline {chapter}{\numberline {3}Modelos del Gemelo Digital para Unidad de Potabilizaci\'on}{53}{chapter.3}
-\contentsline {section}{\numberline {3.1}Condiciones de Operaci\'on en Potabilizaci\'on}{53}{section.3.1}
-\contentsline {subsection}{\numberline {3.1.1}Unidad de Coagulaci\'on}{55}{subsection.3.1.1}
-\contentsline {subsection}{\numberline {3.1.2}Unidad de Floculaci\'on}{58}{subsection.3.1.2}
-\contentsline {subsection}{\numberline {3.1.3}Unidad de Sedimentaci\'on}{60}{subsection.3.1.3}
-\contentsline {subsection}{\numberline {3.1.4}Unidad de Filtraci\'on}{64}{subsection.3.1.4}
-\contentsline {subsection}{\numberline {3.1.5}Unidad de Desinfecci\'on}{68}{subsection.3.1.5}
-\contentsline {chapter}{\numberline {4}Implementaci\'on}{71}{chapter.4}
-\contentsline {section}{\numberline {4.1}Generaci\'on de la Propuesta de Gemelo Digital}{71}{section.4.1}
-\contentsline {subsection}{\numberline {4.1.1}Modelo de la Unidad de Coagulaci\'on}{73}{subsection.4.1.1}
-\contentsline {subsection}{\numberline {4.1.2}Modelo de la Unidad de Sedimentaci\'on}{78}{subsection.4.1.2}
-\contentsline {paragraph}{Estado del caudal de entrada:}{79}{section*.4}
-\contentsline {paragraph}{Estado de la altura del agua:}{79}{section*.5}
-\contentsline {paragraph}{Estado de la compuerta de lodos:}{79}{section*.6}
-\contentsline {paragraph}{Estado del tanque:}{82}{section*.7}
-\contentsline {section}{\numberline {4.2}Emulaci\'on del Gemelo Digital}{83}{section.4.2}
-\contentsline {paragraph}{Escenario 1:}{84}{section*.8}
-\contentsline {paragraph}{Escenario 2:}{84}{section*.9}
-\contentsline {paragraph}{Escenario 3:}{87}{section*.10}
-\contentsline {paragraph}{Escenario 4:}{87}{section*.11}
-\contentsline {paragraph}{Escenario 5:}{88}{section*.12}
-\contentsline {chapter}{\numberline {5}Conclusiones y Recomendaciones}{91}{chapter.5}
-\contentsline {chapter}{\numberline {6}Anexos}{92}{chapter.6}
-\contentsline {chapter}{Bibliograf\'{\i }a}{94}{table.6.1}
+\contentsline {chapter}{\numberline {3}Modelos del Gemelo Digital para Unidad de Potabilizaci\'on}{54}{chapter.3}
+\contentsline {section}{\numberline {3.1}Condiciones de Operaci\'on en Potabilizaci\'on}{54}{section.3.1}
+\contentsline {subsection}{\numberline {3.1.1}Unidad de Coagulaci\'on}{56}{subsection.3.1.1}
+\contentsline {subsection}{\numberline {3.1.2}Unidad de Floculaci\'on}{59}{subsection.3.1.2}
+\contentsline {subsection}{\numberline {3.1.3}Unidad de Sedimentaci\'on}{61}{subsection.3.1.3}
+\contentsline {subsection}{\numberline {3.1.4}Unidad de Filtraci\'on}{65}{subsection.3.1.4}
+\contentsline {subsection}{\numberline {3.1.5}Unidad de Desinfecci\'on}{69}{subsection.3.1.5}
+\contentsline {chapter}{\numberline {4}Implementaci\'on}{72}{chapter.4}
+\contentsline {section}{\numberline {4.1}Generaci\'on de la Propuesta de Gemelo Digital}{72}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}Modelo de la Unidad de Coagulaci\'on}{74}{subsection.4.1.1}
+\contentsline {subsection}{\numberline {4.1.2}Modelo de la Unidad de Sedimentaci\'on}{79}{subsection.4.1.2}
+\contentsline {paragraph}{Estado del caudal de entrada:}{80}{section*.4}
+\contentsline {paragraph}{Estado de la altura del agua:}{80}{section*.5}
+\contentsline {paragraph}{Estado de la compuerta de lodos:}{80}{section*.6}
+\contentsline {paragraph}{Estado del tanque:}{83}{section*.7}
+\contentsline {section}{\numberline {4.2}Emulaci\'on del Gemelo Digital}{84}{section.4.2}
+\contentsline {paragraph}{Escenario 1:}{85}{section*.8}
+\contentsline {paragraph}{Escenario 2:}{85}{section*.9}
+\contentsline {paragraph}{Escenario 3:}{88}{section*.10}
+\contentsline {paragraph}{Escenario 4:}{88}{section*.11}
+\contentsline {paragraph}{Escenario 5:}{89}{section*.12}
+\contentsline {chapter}{\numberline {5}Conclusiones y Recomendaciones}{92}{chapter.5}
+\contentsline {chapter}{\numberline {6}Anexos}{93}{chapter.6}
+\contentsline {chapter}{Bibliograf\'{\i }a}{95}{table.6.1}
