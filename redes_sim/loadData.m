@@ -19,7 +19,7 @@ function [Ti, Ci, DSA, To, Co] = loadData()
         %degradado y falla
         %r = rr(i);
         
-        %falla
+%         %falla
 %         Ti = x.Ti;
 %         Ci = x.Ci;
 %         DSA = x.DSA;

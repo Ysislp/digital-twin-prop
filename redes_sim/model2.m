@@ -2,10 +2,11 @@ clear;
 close('all');
 
 load('TestWorkspace.mat');
+load('ValWorkspace.mat');
 
 T1=[];T2=[];i=1;j=1;k=1;
 
-while i < length(Ti)
+while i <= length(Ti)
     if (Ti(i) < 97)
         T1(j)=Ti(i);
         C1(j)=Ci(i);
@@ -41,6 +42,9 @@ plot(DSA1)
 X = [ones(length(DSA2),1), T2, C2];
 [B,BINT,R,RINT,STATS] = regress(DSA2, X);
 md12 = 66.1549 + 0.0508.*T2 + 0.0300.*C2; %B
+md122 = 93.3434 - 0.0274*T2 + 0.01438*C2;
+
+md12 = (md12+md122)/2;
 
 RMSE12 = sqrt(mean((DSA2 - md12).^2));
 Rsq12 = fR2(DSA2,md12);
@@ -114,9 +118,11 @@ p21 =     0.00865;
 p40 =  -0.0001926 ;
 p31 =  -8.122e-05 ;
 
-x=T1;y=C1;
+ x=T1;y=C1;
 
 md31 = p00 + p10.*x + p01.*y + p20.*x.^2 + p11.*x.*y + p30.*x.^3 + p21.*x.^2.*y + p40.*x.^4 + p31.*x.^3.*y;
+
+       
        
 RMSE31 = sqrt(mean((DSA1 - md31).^2));
 Rsq31 = fR2(DSA1,md31);
@@ -128,7 +134,7 @@ plot(DSA1)
        
 % Media
 
-md = (md11 + md21)./2;
+md = (md11 + md31)./2;
 RMSE = sqrt(mean((DSA1 - md).^2));
 Rsq = fR2(DSA1,md);
 
@@ -154,3 +160,28 @@ hold on
 plot(md5, 'm')
 hold on
 plot(DSA, '*')
+
+x = load('falla');
+
+i = 1; arrayDosis=[];
+while i<=length(Ti)
+    [dosis, status] = coagulantFunc(Ti(i), Ci(i));
+    arrayDosis(i) = dosis;
+    i = i+1;
+end
+
+
+
+RMSE = sqrt(mean((DSA - arrayDosis').^2));
+Rsq = fR2(DSA,arrayDosis');
+
+figure (1)
+plot(arrayDosis, 'r')
+hold on
+plot(DSA)
+title(['Dosificación de Coagulante']);
+xlabel('Muestra');
+ylabel(['Sulfato de Aluminio (Kg/h)']);
+grid on;
+legend('Modelo','Dosis real');
+xlim([0 25])

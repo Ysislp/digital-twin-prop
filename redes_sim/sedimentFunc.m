@@ -9,8 +9,8 @@ function sedimentFunc (qi1, T, Tprev)
         s.setLinkSettings(valveIndex1, q);
         
     elseif (T>=97) % && Tprev<100)
-        %q = qi1 + 0.503;
-        q = 0;
+        q = qi1 + 0.503;
+        %q = 0;
         s.setLinkSettings(valveIndex1, q);
         
     else %&& (Tprev<12 || Tprev>=100))

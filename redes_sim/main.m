@@ -65,7 +65,7 @@ hrs_time = hyd_res.Time/3600;
 s.openHydraulicAnalysis;
 s.initializeHydraulicAnalysis;
 
-tstep=1; F=[]; t=[]; V=[]; h = 0; status = 'Normal'; valveset=[]; dosisArray=[]; TiArray=[];
+tstep=1; F=[]; t=[]; V=[]; h = 0; status = 'Normal'; valveset=[]; dosisArray=[]; TiArray=[]; DSAArray=[];
 
 for x = 1:i
     
@@ -81,6 +81,7 @@ for x = 1:i
         dosisArray(y) = dosis;
         TiArray(y) = Ti(x);
         CiArray(y) = Ci(x);
+        DSAArray(y) = DSA(x);
         
         if (x > 1)
             sedimentFunc(qi1, Ti(x), Ti(x-1));
@@ -102,12 +103,60 @@ for x = 1:i
         % Epanet next tstep
         tstep = s.nextHydraulicAnalysisStep;
         
-            figure (1);
+%             figure (1);
+%             
+%             % Turbidity
+%             subplot(4,1,1);
+%             [haxes, hline1, hline2] = plotyy((t/3600), TiArray, (t/3600), CiArray);
+%             drawnow;
+%             title(['Turbidez']);
+%             ylabel(haxes(1), 'NTU');
+%             ylabel(haxes(2), 'UC');
+%             xlabel(haxes(2), 'Tiempo (h)');
+% %             xlim([0 96])
+%             
+%             % Dosage
+%             subplot(4,1,2);
+%             plot((t/3600), dosisArray, 'r');
+%             drawnow;
+%             title(['Dosis de Sulfato de Aluminio']);
+%             xlabel('Tiempo (h)'); 
+%             ylabel(['kg/h']);
+%             hold on
+%             plot((t/3600), DSAArray);
+% %             xlim([0 96])
+%             
+%             % Flow
+%             subplot(4,1,3);
+%             plot((t/3600), F(:,link_indices));
+%             drawnow;
+%             title(['Flujo de salida sedimentador 1 "', s.getLinkNameID{link_indices},'"']);
+%             xlabel('Tiempo (h)'); 
+%             ylabel(['Flujo (', s.LinkFlowUnits,')']);
+% %           xlim([0 96])
+%             
+%             % Tank Volume
+%             subplot(4,1,4);
+%             plot((t/3600), V(:,node_indices));
+%             drawnow;
+%             title(['Volumen en el sedimentador 1 "', s.getNodeNameID{node_indices},'"']);
+%             xlabel('Tiempo (h)'); 
+%             ylabel(['Volumen (', s.NodeTankVolumeUnits,')']);
+% %             xlim([0 96])
+% %             ylim([0 510])
+    end
+    
+    % Next hour
+    h = h + 60;
+end
+
+
+figure (1);
             
             % Turbidity
             subplot(4,1,1);
             [haxes, hline1, hline2] = plotyy((t/3600), TiArray, (t/3600), CiArray);
-            drawnow;
+            %drawnow;
             title(['Turbidez']);
             ylabel(haxes(1), 'NTU');
             ylabel(haxes(2), 'UC');
@@ -117,16 +166,18 @@ for x = 1:i
             % Dosage
             subplot(4,1,2);
             plot((t/3600), dosisArray, 'r');
-            drawnow;
+           % drawnow;
             title(['Dosis de Sulfato de Aluminio']);
             xlabel('Tiempo (h)'); 
             ylabel(['kg/h']);
+            hold on
+            plot((t/3600), DSAArray);
 %             xlim([0 96])
             
             % Flow
             subplot(4,1,3);
             plot((t/3600), F(:,link_indices));
-            drawnow;
+           % drawnow;
             title(['Flujo de salida sedimentador 1 "', s.getLinkNameID{link_indices},'"']);
             xlabel('Tiempo (h)'); 
             ylabel(['Flujo (', s.LinkFlowUnits,')']);
@@ -135,15 +186,9 @@ for x = 1:i
             % Tank Volume
             subplot(4,1,4);
             plot((t/3600), V(:,node_indices));
-            drawnow;
+           % drawnow;
             title(['Volumen en el sedimentador 1 "', s.getNodeNameID{node_indices},'"']);
             xlabel('Tiempo (h)'); 
             ylabel(['Volumen (', s.NodeTankVolumeUnits,')']);
 %             xlim([0 96])
 %             ylim([0 510])
-    end
-    
-    % Next hour
-    h = h + 60;
-end
-

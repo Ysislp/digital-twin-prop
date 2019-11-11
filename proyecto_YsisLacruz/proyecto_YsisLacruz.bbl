@@ -1,50 +1,313 @@
 \begin{thebibliography}{}
 
-\bibitem[\protect\astroncite{Daneels and Salter}{1999}]{daneels1999scada}
-Daneels, A. and Salter, W. (1999).
-\newblock What is scada?
-\newblock {\em Inductive Automation}.
+\bibitem[\protect\astroncite{Alarc{\'o}n
+  et~al.}{2018}]{alarcon2018digitalizacion}
+Alarc{\'o}n, A., Malag{\'o}n, E., and Snyder, V. (2018).
+\newblock Digitalizaci{\'o}n: una revoluci{\'o}n para el sector
+  hidroel{\'e}ctrico.
+\newblock Disponible en: {https://blogs.iadb.org/energia/es/3262/}.
 
-\bibitem[\protect\astroncite{del Val~Rom{\'a}n}{2016}]{del2016industria}
-del Val~Rom{\'a}n, J.~L. (2016).
+\bibitem[\protect\astroncite{Antsaklis et~al.}{1998}]{Antsaklis1998}
+Antsaklis, P., Koutsoukos, X., and Zaytoon, J. (1998).
+\newblock On hybrid control of complex systems: A survey.
+\newblock {\em Journal europ{\'e}en des syst{\`e}mes automatis{\'e}s},
+  32(9--10):1023--1045.
+
+\bibitem[\protect\astroncite{Antsaklis and Koutsoukos}{2003}]{Antsaklis2003}
+Antsaklis, P.~J. and Koutsoukos, X.~D. (2003).
+\newblock Hybrid systems: Review and recent progress.
+\newblock {\em Software-Enabled Control: Information Technology for Dynamical
+  Systems}, pages 273--298.
+
+\bibitem[\protect\astroncite{Apostol et~al.}{2011}]{apostol2011optimization}
+Apostol, G., Kouachi, R., and Constantinescu, I. (2011).
+\newblock Optimization of coagulation-flocculation process with aluminum
+  sulfate based on response surface methodology.
+\newblock {\em UPB Scientific Bulletin, Series B: Chemistry and Materials
+  Science}, 73.
+
+\bibitem[\protect\astroncite{Bazer-Bachi et~al.}{1990}]{bazer1990model}
+Bazer-Bachi, A., Puech-Coste, E., Ben~Aim, R., and Probst, J. (1990).
+\newblock Mod{\'e}lisation math{\'e}matique du taux de coagulant dans une
+  station de traitement d'eau.
+\newblock {\em Rev. Sci. Eau}.
+
+\bibitem[\protect\astroncite{Boyes et~al.}{2018}]{boyes2018the}
+Boyes, H., Hallaq, B., Cunningham, J., and Watson, T. (2018).
+\newblock The industrial internet of things (iiot): An analysis framework.
+\newblock {\em Computers in Industry}, 101:1--12.
+
+\bibitem[\protect\astroncite{Branicky et~al.}{1998}]{Branicky1998}
+Branicky, M., Borkar, V., and Mitter, S. (1998).
+\newblock A unified framework for hybrid control: model and optimal control
+  theory.
+\newblock {\em IEEE Trans. on Automatic Control}, 43:31--45.
+
+\bibitem[\protect\astroncite{Cabello et~al.}{2016}]{cabello2016analisis}
+Cabello, F., Vallejos, O., Guevara, E., and Ayros, E. (2016).
+\newblock An{\'a}lisis comparativo de los par{\'a}metros de diseno de una toma
+  tipo tirolesa y una convencional.
+\newblock XXVII Congreso Latinoamericano de Hidr{\'a}ulica, Lima, Per{\'u}.
+
+\bibitem[\protect\astroncite{Cassandras and Lafortune}{2009}]{Cassandras2009}
+Cassandras, C.~G. and Lafortune, S. (2009).
+\newblock {\em Introduction to discrete event systems}.
+\newblock Springer Science \& Business Media.
+
+\bibitem[\protect\astroncite{Chac{\'o}n et~al.}{2012}]{chacon2012online}
+Chac{\'o}n, E., Cardillo, J., Chac{\'o}n, R., and Zapata, G. (2012).
+\newblock {\em Online Production Scheduling and Re-Scheduling in Autonomous,
+  Intelligent Distributed Environments}.
+
+\bibitem[\protect\astroncite{Chac{\'o}n et~al.}{2018}]{chacon2018the}
+Chac{\'o}n, E., Cardillo, J., and Cruz, L. (2018).
+\newblock The control of water distribution systems as an holonic system.
+
+\bibitem[\protect\astroncite{Chac{\'o}n et~al.}{2019}]{chacon2019a}
+Chac{\'o}n, E., Cruz, L., Jim{\'e}nez, J., and Cardillo, J. (2019).
+\newblock A control architecture for continuous production processes based on i
+  4.0: Application to water supply systems.
+
+\bibitem[\protect\astroncite{Cooper}{2001}]{cooper2001historical}
+Cooper (2001).
+\newblock Historical aspects of wastewater treatment.
+\newblock {\em Decentralised Sanitation and Reuse}.
+
+\bibitem[\protect\astroncite{Correa~Uribe et~al.}{2009}]{correa2009diseno}
+Correa~Uribe, G., Rosero, S., and Segura, H. (2009).
+\newblock Diseno de un modelo de gesti{\'o}n del conocimiento para la escuela
+  interamericana de bibliotecolog{\'\i}a.
+\newblock {\em Revista Interamericana de Bibliotecolog{\'\i}a}, 31(1):85--108.
+
+\bibitem[\protect\astroncite{Cruz~Jimenez and
+  Lara~Caballero}{2007}]{cruz2007control}
+Cruz~Jimenez, B. and Lara~Caballero, E. (2007).
+\newblock Control h{\'\i}brido de un sistema electromec{\'a}nico de llenado de
+  botellas.
+\newblock Congreso Nacional de Control Automático A.M.C.A.
+
+\bibitem[\protect\astroncite{Del Val~Rom{\'a}n}{2016}]{del2016industria}
+Del Val~Rom{\'a}n, J.~L. (2016).
 \newblock Industria 4.0: la transformaci{\'o}n digital de la industria.
-\newblock {\em Facultad de Ingenier{\'\i}a de la Universidad de Deusto
-  (CODDII)}.
+\newblock In {\em Valencia: Conferencia de Directores y Decanos de
+  Ingenier{\'\i}a Inform{\'a}tica, Informes CODDII}.
 
-\bibitem[\protect\astroncite{F{\'u}quene~Retamoso
-  et~al.}{2007}]{fuquene2007evolucion}
-F{\'u}quene~Retamoso, C.~E., Aguirre~Mayorga, S., and C{\'o}rdoba~Pinz{\'o}n,
-  N.~B. (2007).
-\newblock Evoluci{\'o}n de un sistema de manufactura flexible (fms) a un
-  sistema de manufactura integrada por computador (cim).
-\newblock {\em Ingenier{\'\i}a y universidad}, 11(1).
+\bibitem[\protect\astroncite{Eliades et~al.}{2016}]{eliades2016epanet}
+Eliades, D.~G., Kyriakou, M., Vrachimis, S., and Polycarpou, M.~M. (2016).
+\newblock Epanet-matlab toolkit: An open-source software for interfacing epanet
+  with matlab.
+\newblock In {\em Proc. 14th International Conference on Computing and Control
+  for the Water Industry (CCWI)}, page~8, The Netherlands.
 
-\bibitem[\protect\astroncite{Klaus-Dieter~Thoben}{2017}]{klaus2017industrie}
-Klaus-Dieter~Thoben, Stefan~Wiesner, T.~W. (2017).
-\newblock Industrie 4.0, and smart manufacturing a review of research issues
+\bibitem[\protect\astroncite{Farhaoui et~al.}{2016}]{farhaoui2016optimization}
+Farhaoui, M., Hasnaoui, L., and Derraz, M. (2016).
+\newblock Optimization of drinking water treatment process by modeling the
+  aluminum sulfate dose.
+\newblock {\em British Journal of Applied Science and Technology}, 17:1--14.
+
+\bibitem[\protect\astroncite{Gonzalez}{2016}]{gonzalez2016teoria}
+Gonzalez, M. (2016).
+\newblock Teor{\'\i}a de sedimentaci{\'o}n ii (sedimentadores lamelares).
+\newblock Disponible en:
+  http://www.tratamientodelagua.com.mx/sedimentadores-lamelares/.
+\newblock ENEXIO 2H Water Technologies GmbH.
+
+\bibitem[\protect\astroncite{Hermann et~al.}{2015}]{hermann2015design}
+Hermann, M., Pentek, T., and Otto, B. (2015).
+\newblock Design principles for industrie 4.0 scenarios: A literature review.
+\newblock Disponible en: http://rgdoi.net/10.13140/RG.2.2.29269.22248.
+
+\bibitem[\protect\astroncite{Hitachi}{}]{hitachiNAwater}
+Hitachi.
+\newblock {\em Water Supply Operation System}.
+
+\bibitem[\protect\astroncite{Hudson}{1997}]{hudson1997medicion}
+Hudson, N. (1997).
+\newblock {\em Medici{\'o}n sobre el terreno de la erosi{\'o}n del suelo y de
+  la escorrent{\'\i}a}, volume~68, chapter~4.
+\newblock Food \& Agriculture Org.
+
+\bibitem[\protect\astroncite{Indriago}{2008}]{indriago2008modelo}
+Indriago, M. (2008).
+\newblock Modelo y simulaci{\'o}n de sistemas h{\'\i}bridos en procesos
+  industriales.
+
+\bibitem[\protect\astroncite{Jaramillo}{2014}]{jaramillo2014documentacion}
+Jaramillo, D. C.~P. (2014).
+\newblock {\em Documentaci{\'o}n de los procesos operativos para la
+  potabilizaci{\'o}n de agua en la planta de tratamiento de Villasantana bajo
+  la norma NTC-GP 1000: 2009}.
+\newblock PhD thesis, Universidad Tecnol{\'o}gica de Pereira. Facultad de
+  Tecnolog{\'\i}as. Qu{\'\i}mica Industrial.
+
+\bibitem[\protect\astroncite{Lemmon et~al.}{1999}]{Lemmon1999}
+Lemmon, M., He, K., and Markovsky, I. (1999).
+\newblock Supervisory hybrid systems.
+\newblock {\em Control Systems, IEEE}, 19(4):42--55.
+
+\bibitem[\protect\astroncite{Lennartson et~al.}{1994}]{Lennartson1994}
+Lennartson, B., Egardt, B., and Tittus, M. (1994).
+\newblock Hybrid systems in process control.
+\newblock In {\em Decision and Control, 1994., Proceedings of the 33rd IEEE
+  Conference on}, volume~4, pages 3587--3592. IEEE.
+
+\bibitem[\protect\astroncite{Le{\'o}n-Luque
+  et~al.}{2016}]{leon2016determination}
+Le{\'o}n-Luque, A., Barajas, C., and Pe{\~n}a-Guzm{\'a}n, C. (2016).
+\newblock Determination of the optimal dosage of aluminum sulfate in the
+  coagulation-flocculation process using an artificial neural network.
+\newblock {\em International Journal of Environmental Science and Development},
+  7(5):346.
+
+\bibitem[\protect\astroncite{Li et~al.}{2018}]{li2018smart}
+Li, Q., Tang, Q., Chan, I., Wei, H., Pu, Y., Jiang, H., Li, J., and Zhou, J.
+  (2018).
+\newblock Smart manufacturing standardization: Architectures, reference models
+  and standards framework.
+\newblock {\em Computers in Industry}, 101:91--106.
+
+\bibitem[\protect\astroncite{Lietha}{2018}]{lietha2018la}
+Lietha, V. (2018).
+\newblock La revoluci{\'o}n inteligente del agua.
+\newblock {\em ABB Review}.
+
+\bibitem[\protect\astroncite{Lofrano and Brown}{2010}]{lofrano2010wastewater}
+Lofrano, G. and Brown, J. (2010).
+\newblock Wastewater management through the ages: A history of mankind.
+\newblock {\em The Science of the total environment}, 408:5254--64.
+
+\bibitem[\protect\astroncite{Lygeros et~al.}{2012}]{Lygeros2012}
+Lygeros, J., Sastry, S., and Tomlin, C. (2012).
+\newblock Hybrid systems: Foundations, advanced topics and applications.
+\newblock {\em under copyright to be published by Springer Verlag}.
+
+\bibitem[\protect\astroncite{Mahla}{2004}]{mahla2004sistemas}
+Mahla, I. (2004).
+\newblock Sistemas h{\'\i}bridos.
+\newblock Disponible en:
+  {http://www.emb.cl/electroindustria/articulo.mvc?xid=158}.
+
+\bibitem[\protect\astroncite{Manna and Pnueli}{1993}]{Manna1993}
+Manna, Z. and Pnueli, A. (1993).
+\newblock Verifying hybrid systems.
+\newblock In Grossman, R., A., N., Ravn, A., and Rischel, H., editors, {\em
+  Hybrid Systems}, pages 4--35. Springer.
+
+\bibitem[\protect\astroncite{Marr}{2019}]{marr2019amazing}
+Marr, B. (2019).
+\newblock 7 amazing examples of digital twin technology in practice.
+\newblock Disponible en:
+  {https://www.forbes.com/sites/bernardmarr/2019/04/23/7-amazing-examples-of-digital-twin-technology-in-practice}.
+
+\bibitem[\protect\astroncite{MathWorks}{}]{mathworksNA}
+MathWorks.
+\newblock Matlab.
+\newblock Disponible en: https://la.mathworks.com.
+
+\bibitem[\protect\astroncite{M\'endez et~al.}{2006}]{Mendez2006}
+M\'endez, C.~A., Cerd\'ab, J., Grossmann, I.~E., Harjunkoskic, I., and Fahlc,
+  M. (2006).
+\newblock State-of-the-art review of optimization methods for short-term
+  scheduling of batch processes.
+\newblock {\em Computers\ \& Chemical Engineering}, 30(6--7):913--946.
+
+\bibitem[\protect\astroncite{Monostori et~al.}{2016}]{monostori2016cyber}
+Monostori, L., Kadar, B., Bauernhansl, T., Kondoh, S., Kumara, S., Reinhart,
+  G., Sauer, O., Schuh, G., Sihn, W., and Ueda, K. (2016).
+\newblock Cyber-physical systems in manufacturing.
+\newblock {\em CIRP Annals - Manufacturing Technology}, 65:621--641.
+
+\bibitem[\protect\astroncite{Moteff and Parfomak}{2004}]{moteff2004critical}
+Moteff, J. and Parfomak, P. (2004).
+\newblock Critical infrastructure and key assets: definition and
+  identification.
+\newblock LIBRARY OF CONGRESS WASHINGTON DC CONGRESSIONAL RESEARCH SERVICE.
+
+\bibitem[\protect\astroncite{Mrosik}{2018}]{mrosik2018era}
+Mrosik, J. (2018).
+\newblock Era digital, la visi{\'o}n de un ceo global.
+\newblock {\em AADECA}.
+
+\bibitem[\protect\astroncite{Perez}{2015}]{perez2015implementacion}
+Perez, A. (2015).
+\newblock Implementaci{\'o}n de un controlador autom{\'a}tico programable,
+  basado en unidad de producci{\'o}n hol{\'o}nica, utilizando tecnolog{\'\i}a
+  no industrial.
+
+\bibitem[\protect\astroncite{P{\'e}rez et~al.}{2015}]{perez2015a}
+P{\'e}rez, F., Irisarri, E., Orive, D., Marga, M., and Estevez, E. (2015).
+\newblock A cpps architecture approach for industry 4.0.
+\newblock {\em 2015 IEEE 20th Conference on Emerging Technologies and Factory
+  Automation (ETFA)}, pages 1--4.
+
+\bibitem[\protect\astroncite{Perez and Urrea}{}]{perezNAabastecimiento}
+Perez, F. and Urrea, M.
+\newblock Abastecimiento de aguas.
+\newblock Universidad Politécnica de Cartagena.
+
+\bibitem[\protect\astroncite{Pinos~Guill{\'e}n}{2016}]{pinos2016analisis}
+Pinos~Guill{\'e}n, G.~M. (2016).
+\newblock An{\'a}lisis de confiabilidad, disponibilidad y mantenibilidad a los
+  equipos cr{\'\i}ticos de la planta de tratamiento de agua potable sustag de
+  etapa ep.
+\newblock Master's thesis, Universidad del Azuay.
+
+\bibitem[\protect\astroncite{Rojas~Coronel}{2015}]{rojas2015modelamiento}
+Rojas~Coronel, J.~E. (2015).
+\newblock Modelamiento de los sistemas de potabilizaci{\'o}n de agua, orientado
+  al dise{\~n}o de los sistemas de control supervisorio, caso emapal
+  ep-azogues.
+\newblock Master's thesis.
+
+\bibitem[\protect\astroncite{Rossman}{2001}]{rossman2001epanet}
+Rossman, L. (2001).
+\newblock {\em EPANET 2 Manual de Usuario}.
+\newblock Water Supply and Water Resources Division.
+
+\bibitem[\protect\astroncite{Rouse}{2012}]{rouse2012analisis}
+Rouse, M. (2012).
+\newblock An{\'a}lisis de datos.
+\newblock Disponible en:
+  {https://searchdatacenter.techtarget.com/es/definicion/Analisis-de-Datos}.
+
+\bibitem[\protect\astroncite{Schroeder et~al.}{2016}]{schroeder2016digital}
+Schroeder, G.~N., Steinmetz, C., Pereira, C.~E., and Espindola, D.~B. (2016).
+\newblock Digital twin data modeling with automationml and a communication
+  methodology for data exchange.
+\newblock {\em IFAC-PapersOnLine}, 49(30):12--17.
+
+\bibitem[\protect\astroncite{SENA}{1999}]{sena1999operacion}
+SENA (1999).
+\newblock {\em Operaci{\'o}n y Mantenimiento de Plantas de Potabilizaci{\'o}n
+  de Agua}.
+\newblock Servicio Nacional de Aprendizaje - SENA.
+
+\bibitem[\protect\astroncite{Symons}{2006}]{symons2006water}
+Symons, G.~E. (2006).
+\newblock Water treatment through the ages.
+\newblock {\em Journal - AWWA}, 98(3):87--98.
+
+\bibitem[\protect\astroncite{Thoben et~al.}{2017}]{thoben2017industrie}
+Thoben, K.-D., Wiesner, S., and Wuest, T. (2017).
+\newblock Industrie 4.0 and smart manufacturing - a review of research issues
   and application examples.
-\newblock {\em Int. J. Autom. Technol}, (11).
+\newblock {\em International Journal of Automation Technology}, 11:4--19.
 
-\bibitem[\protect\astroncite{Morales-Rodr{\'\i}guez}{2018}]{morales2018uso}
-Morales-Rodr{\'\i}guez, N. (2018).
-\newblock Uso de nuevas tecnolog{\'\i}as para la competitividad del pa{\'\i}s.
-\newblock {\em Investiga. TEC}, (33):3.
+\bibitem[\protect\astroncite{Tittus and Lennartson}{1999}]{Tittus1999a}
+Tittus, M. and Lennartson, B. (1999).
+\newblock Hierarchical supervisory control for batch processes.
+\newblock {\em Control Systems Technology, IEEE Transactions on},
+  7(5):542--554.
 
-\bibitem[\protect\astroncite{national academyc~of Science
-  Egineering~Medicine}{2016}]{academyc2016a}
-national academyc~of Science Egineering~Medicine, T. (2016).
-\newblock A 21st century cyber-physical systems education.
-\newblock {\em International Standard Book}, (13).
+\bibitem[\protect\astroncite{Van Der~Schaft and
+  Schumacher}{2000}]{VanDerSchaft2000}
+Van Der~Schaft, A.~J. and Schumacher, J.~M. (2000).
+\newblock {\em An Introduction to Hybrid Dynamical Systems}, volume 251.
+\newblock Springer London.
 
-\bibitem[\protect\astroncite{Olivier~Cardin}{2018}]{cardin2018evolution}
-Olivier~Cardin, William~Derigent, D.~T. (2018).
-\newblock Evolution of holonic control architectures towards industry 4.0, a
-  short overview.
-\newblock {\em IFAC PapersOnLine}, (1243).
-
-\bibitem[\protect\astroncite{P{\'e}rez and Guerra}{2017}]{perez2017internet}
-P{\'e}rez, F. A.~F. and Guerra, J. L.~G. (2017).
-\newblock Internet de las cosas.
-\newblock {\em Perspectiv@ s}, 10(11):45--49.
+\bibitem[\protect\astroncite{WEF}{2018}]{world2018harnessing}
+WEF (2018).
+\newblock Harnessing the fourth industrial revolution for water.
+\newblock Technical report, World Economic Forum.
 
 \end{thebibliography}

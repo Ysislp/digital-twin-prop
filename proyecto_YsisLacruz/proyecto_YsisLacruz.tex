@@ -8,6 +8,9 @@
 
 \usepackage{pgfgantt}
 
+\usepackage{multicol}
+\usepackage{subfigure}
+
 %*********************************
 %\usepackage[ansinew]{inputenc} % escribir acentos. Leer lo que sigue a continuación:
 
@@ -283,34 +286,25 @@ Los acontecimientos más destacados en la historia de la industria se ubican en l
 			\label{fig-i40}
 		\end{figure}
 
-Es así como la evolución tecnológica, a pasos agigantados, ha permitido la automatización de algunas industrias: desde el triángulo de automatización en la década de los 80, la manufactura integrada por computador y los SCADA para control supervisorio. Sin embargo, en pro del aprovechamiento de recursos y mejoras en los procesos industriales, se busca implantar un nuevo enfoque basado en la Industria 4.0. Este enfoque se fundamenta en el paradigma de digitalización de la empresa o transformación digital de la empresa, para ello hace uso del Internet de las Cosas (IoT), en particular del Internet Industrial de las cosas (IIoT), sistemas ciberfísicos, empresa inteligente y big data [12].
+Es así como la evolución tecnológica, a pasos agigantados, ha permitido la automatización de algunas industrias: desde la pirámide de automatización en la década de los 80, la manufactura integrada por computador y los SCADA para control supervisorio. Sin embargo, en pro del aprovechamiento de recursos y mejoras en los procesos industriales, se busca implantar un nuevo enfoque basado en la Industria 4.0. Este enfoque se fundamenta en el paradigma de digitalización de la empresa o transformación digital de la empresa, para ello hace uso del Internet de las Cosas (IoT), en particular del Internet Industrial de las cosas (IIoT), sistemas ciberfísicos, empresa inteligente y big data \citep{del2016industria}. Uno de los conceptos manejados con este nuevo enfoque es el de Gemelo Digital, que no solo incluye la representación digital de un sistema en el mundo real, sino que su diferencia fundamental con respecto a las descripciones actuales es que éste maneja el modelo de proceso clásico, y añade el modelo del flujo de producto y de los recursos, permitiendo utilizar mecanismos como Analítica y Big Data para establecer elementos de ayuda a la toma de decisiones.
 
-**
+Este enfoque de Industria 4.0 ofrece nuevos métodos para encarar los procesos complejos de sistemas críticos, aquellos sistemas clave en el desarrollo humano e industrial como son la electricidad, el agua, la salud, el transporte, y demás sistemas de sistemas que mantienen interrelación entre sí.
 
-Uno de los conceptos que se manejan con este nuevo enfoque es el de Gemelo Digital, que no solo incluye la representación digital de un sistema en el mundo real, su diferencia fundamental con respecto a las descripciones actuales es que este maneja el modelo de proceso clásico, y añade el modelo del flujo de producto y de los recursos, permitiendo utilizar mecanismos como Analítica y Big Data para establecer elementos de ayuda a la toma de decisiones.
+El agua, siendo un recurso limitado, es necesario en todos los ámbitos; el funcionamiento eficiente de la industria hidrológica es uno de los retos a asumir para dar forma a ciudades inteligentes. Durante siete años consecutivos el agua ha estado entre los cinco primeros factores de riesgo más importantes según el informe anual del Foro Económico Mundial sobre Riesgos Globales; en \cite{world2018harnessing}, se detalla que de los problemas de mayor impacto en la próxima década, todos menos uno podrían estar relacionados con el agua, refiriéndose como un problema no solo a la disponibilidad y gasto desmesurado de agua, también a la crisis de calidad que está enfrentando, con solo el 20\% del agua tratada adecuadamente.
 
-**
-
-El enfoque de la Industria 4.0 ofrece nuevos métodos para encarar los procesos complejos de sistemas críticos, aquellos sistemas clave en el desarrollo humano e industrial como son la electricidad, el agua, la salud, el transporte, y demás sistemas de sistemas que mantienen interrelación entre sí.
-
-El agua, siendo un recurso limitado, es un eslabón necesario en todos los ámbitos; el funcionamiento eficiente de la industria hidrológica es uno de los retos a asumir para dar forma a ciudades inteligentes. Durante siete años consecutivos el agua ha estado entre los cinco primeros factores de riesgo más importantes según el informe anual del Foro Económico Mundial sobre Riesgos Globales; en [65], se detalla que de los problemas de mayor impacto en la próxima década, todos menos uno podrían estar relacionados con el agua, refiriéndose como un problema no solo a la disponibilidad y gasto desmesurado de agua, también a la crisis de calidad que está enfrentando, con solo el 20\% del agua tratada adecuadamente.
-
-Así, la evolución de la I4.0 podría ofrecer nuevos enfoques que permitan enfrentar el reto del manejo de agua de forma eficiente, aportando nuevas herramientas de análisis de datos e integración entre las áreas relacionadas al proceso.
+Así, la evolución de la I4.0 podría ofrecer una vía que permita enfrentar el reto del manejo de agua de forma eficiente, aportando nuevas herramientas de análisis de datos e integración entre las áreas relacionadas al proceso.
 	
 	\section{Antecedentes}
 	
-En busca de cubrir la demanda básica de agua en la sociedad, se han creado a lo largo del tiempo estructuras que permiten el almacenamiento y distribución del líquido. De ahí que el diseño inicial de tanques y acueductos ha sido modificado a medida que la comunidad aumenta en número y necesidades. En un principio el tratamiento de agua para su potabilización era pobre, si bien existen rastros de clarificación de agua en la época antigua, la prioridad se mantuvo en el traslado del flujo hacia los centros urbanos. [130] Investigaciones tempranas (previas al año 1600) se acercaron a lo que hoy se conoce como el proceso de potabilización, centrando su esfuerzo en ofrecer agua de mejor calidad para evitar la propagación de enfermedades. No es sino hasta inicios de 1800 que se inauguró la primera planta de tratamiento con filtros de arena para purificación, y alrededor del año 1850 que se utilizó cloro para la desinfección del agua. En 1924 el tratamiento moderno inició, con la aprobación del mecanismo de filtrado con carbón activado. [128]
+En busca de cubrir la demanda básica de agua en la sociedad, se han creado a lo largo del tiempo estructuras que permiten el almacenamiento y distribución del líquido. De ahí que el diseño inicial de tanques y acueductos ha sido modificado a medida que la comunidad aumenta en número y necesidades. En un principio el tratamiento de agua para su potabilización era pobre, si bien existen rastros de clarificación de agua en la época antigua, la prioridad se mantuvo en el traslado del flujo hacia los centros urbanos \citep{lofrano2010wastewater}. Investigaciones tempranas (previas al año 1600) se acercaron a lo que hoy se conoce como el proceso de potabilización, centrando su esfuerzo en ofrecer agua de mejor calidad para evitar la propagación de enfermedades. No es sino hasta inicios de 1800 que se inauguró la primera planta de tratamiento con filtros de arena para purificación, y alrededor del año 1850 que se utilizó cloro para la desinfección del agua. En 1924 el tratamiento moderno inició, con la aprobación del mecanismo de filtrado con carbón activado \citep{symons2006water}.
 	
-A mediados del siglo XX, con la tercera revolución industrial, se marca el inicio de una etapa de desarrollo tecnológico en procesos de producción, sistemas de control y técnicas de computación. La llegada de los computadores industriales y las válvulas controladas eléctricamente hizo posible el monitoreo y control de las unidades del proceso, avanzando vertiginosamente desde entonces. [131]
+A mediados del siglo XX, con la tercera revolución industrial, se marca el inicio de una etapa de desarrollo tecnológico en procesos de producción, sistemas de control y técnicas de computación. La llegada de los computadores industriales y las válvulas controladas eléctricamente hizo posible el monitoreo y control de las unidades del proceso, avanzando vertiginosamente desde entonces \citep{cooper2001historical}.
 
-Es así como proyectos de control y automatización se desarrollan en el ámbito hidrológico industrial; se realizan instalaciones de sensores, computadores para estar al tanto del proceso en planta y se desarrollan algunos modelos de comportamiento de modo que los autómatas puedan seguir instrucciones. En [132] se describe un modelo de las unidades de potabilización de agua, orientado a sistemas de control supervisorio. Es realizado todo un procedimiento metodológico en pro de conocer las bases de funcionamiento de la planta de tratamiento para luego generar diagramas de actividades de los procesos que desean automatizar. En este caso la automatización no abarca todo el flujo de producto, sino procedimientos puntuales del tratamiento, sirviendo como base para futuras investigaciones.
+Es así como proyectos de control y automatización se desarrollan en el ámbito hidrológico industrial; se realizan instalaciones de sensores, computadores para estar al tanto del proceso en planta y se desarrollan algunos modelos de comportamiento de modo que los autómatas puedan seguir instrucciones. En \cite{rojas2015modelamiento} se describe un modelo de las unidades de potabilización de agua, orientado a sistemas de control supervisorio. Es realizado todo un procedimiento metodológico en pro de conocer las bases de funcionamiento de la planta de tratamiento para luego generar diagramas de actividades de los procesos que desean automatizar. En este caso la automatización no abarca todo el flujo de producto, sino procedimientos puntuales del tratamiento, sirviendo como base para futuras investigaciones.
 
-Con el avance de la tecnología ya no solo es posible el monitoreo y accionamiento de válvulas de forma automática, sino que se busca interconexión y traslado de información de forma rápida y eficiente entre unidades en planta. En [86] hacen referencia a una nueva era de digitalización y la preparación de la empresa para enfrentar los cambios. La visión de la cuarta revolución industrial, con el desarrollo de gemelos digitales de los procesos, utilizados para planificar, simular previa implementación y hacer seguimiento del desempeño una vez instalados los cambios, todo gracias a la sistematización e interconexión de máquinas, datos y modelos.
+Con el avance de la tecnología ya no solo es posible el monitoreo y accionamiento de válvulas de forma automática, sino que se busca interconexión y traslado de información de forma rápida y eficiente entre unidades en planta. En \cite{mrosik2018era} hacen referencia a una nueva era de digitalización y la preparación de la empresa para enfrentar los cambios. La visión de la cuarta revolución industrial, con el desarrollo de gemelos digitales de los procesos, utilizados para planificar, simular previa implementación y hacer seguimiento del desempeño una vez instalados los cambios, todo gracias a la sistematización e interconexión de máquinas, datos y modelos.
 
-La industria hidrológica como sistema crítico debe ajustarse a los cambios en la era digital, mejorar los procesos y adoptar nuevas tecnologías para hacer una empresa reconfigurable y adaptable a las exigencias de la sociedad. En [87] se hace referencia a la revolución inteligente del agua, asumiéndolo como un reto social de la actualidad y cuantificando las pérdidas que se generan en el tratamiento. Esto es la mayor afectación a la industria, las perdidas en tuberías y procesos, ausencia en recolección de datos, respuesta poco eficientes ante cambios en las solicitudes de la comunidad; por ello se busca mejorar el proceso haciendo uso de las herramientas tecnológicas disponibles como análisis de datos, algoritmos basados en inteligencia artificial, gemelos digitales.
-	
-%Siguiendo la tendencia mundial, en la que se proyecta a la industria en una nueva etapa de crecimiento e innovación, existen muchas tecnologías emergentes que comienzan a impulsar y sustentar este fenómeno conocido como industria 4.0. Esta se asume como la cuarta revolución industrial, que nace como la evolución natural de la tercera revolución industrial centrada en el uso de dispositivos electrónicos y computacionales. Así I4.0 se convierte en el esquema industrial centrado en la interconectividad de sistemas ciber-físicos.
-	
+La industria hidrológica como sistema crítico debe ajustarse a los cambios en la era digital, mejorar los procesos y adoptar nuevas tecnologías para hacer una empresa reconfigurable y adaptable a las exigencias de la sociedad. En \cite{lietha2018la} se hace referencia a la revolución inteligente del agua, asumiéndolo como un reto social de la actualidad y cuantificando las pérdidas que se generan en el tratamiento. Esto es la mayor afectación a la industria, las perdidas en tuberías y procesos, ausencia en recolección de datos, respuesta poco eficientes ante cambios en las solicitudes de la comunidad; por ello se busca mejorar el proceso haciendo uso de las herramientas tecnológicas disponibles como análisis de datos, algoritmos basados en inteligencia artificial, gemelos digitales.	
 	
 	\section{Planteamiento del problema}
 	
@@ -320,9 +314,10 @@ Dada la importancia del proceso de potabilización como el generador del flujo a 
 
 Siguiendo la tendencia mundial, en la que se proyecta a la industria en una nueva etapa de crecimiento e innovación, existen numerosas tecnologías emergentes que comienzan a impulsar y sustentar este fenómeno conocido como Industria 4.0; el avance tecnológico dentro de la industria podría permitir una mejora en el proceso de tratamiento de agua.
 
-En una empresa hidrológica, la cadena de valor asociada a producción esta genéricamente representada por 6 eslabones a saber: Fuente, Captación, Potabilización, Distribución, Recuperación, y Retorno; para el eslabón de Distribución las empresas hidrológicas tienen rigurosos estudios sobre redes que incluyendo aplicaciones (WaterCAD, EPANET, etc) permiten mostrar el comportamiento de flujo en la red, sin embargo en los eslabones anteriores los modelos de comportamiento no han tenido prioridad debido al grado de robustez de las instalaciones y la naturaleza de los procesos, por lo que generar un gemelo digital es más complicado y aunque necesario, es menos desarrollado en las industrias.
+En una empresa hidrológica, la cadena de valor asociada a producción está genéricamente representada por 6 eslabones, a saber: Fuente, Captación, Potabilización, Distribución, Recuperación, y Retorno. Para el eslabón de Distribución las empresas hidrológicas tienen rigurosos estudios sobre redes que, incluyendo aplicaciones (WaterCAD, EPANET, etc), permiten mostrar el comportamiento de flujo en la red. Sin embargo, en los eslabones anteriores los modelos de comportamiento no han tenido prioridad debido al grado de robustez de las instalaciones y la naturaleza de los procesos. Dadas estas condiciones, generar un gemelo digital pareciera no necesario. Esta perspectiva podría ser errada si se consideran las condiciones actuales de la industria hidrológica, la cual precisa de un mecanismo que evite pérdidas de flujo y recursos.
 
-El hecho de proponer un Gemelo Digital en el proceso de potabilización en la industria hidrológica, se debe a que la interrelación del proceso es necesaria para evitar mayores pérdidas de flujo y recursos.
+El hecho de proponer un Gemelo Digital en el proceso de potabilización, es tener garantía de la calidad del agua, dado que, debido al cambio climático, los periodos estacionales tienen variaciones que afectan las características físco químicas del agua cruda. Por ello, se requiere de un mecanismo flexible para la toma de decisiones durante el proceso de potabilización.
+
 		
 	\section{Objetivos}
 	\subsection{Objetivo general}
@@ -358,8 +353,8 @@ El documento está organizado de la siguiente manera:
 		\begin{itemize}
 			\item[$-$]  Capítulo 1: Introducción y propuesta.
 			\item[$-$]  Capítulo 2: Marco teórico.
-			\item[$-$]  Capítulo 3: Modelos del Gemelo Digital, basados en condición, para cada unidad funcional del proceso de potabilización.
-			\item[$-$]  Capítulo 4: Implementación mediante emulación del proceso.
+			\item[$-$]  Capítulo 3: Consideraciones operativas para las UHP en producción.
+			\item[$-$]  Capítulo 4: Caso de uso, inclusión de modelos y escenarios de prueba.
 			\item[$-$]  Capítulo 5: Conclusiones y recomendaciones.
 		\end{itemize}
 	
@@ -367,54 +362,54 @@ El documento está organizado de la siguiente manera:
 	
 		\section{Sistemas de suministro de agua potable, hacia la I4.0}
 		
-Los Sistemas de Suministro de Agua Potable, WSS por sus siglas en inglés, son sistemas encargados de proveer agua potable en una comunidad mediante amplias redes de distribución.[70] Según el Foro Económico Mundial, la crisis alrededor del agua se sitúa dentro de los diez principales riesgos sociales en el mundo, siendo todo un reto para la industria hidrológica el cumplir sus objetivos de forma eficiente, manteniendo una buena coordinación entre los eslabones que conforman el proceso y asegurando un mínimo de pérdidas del recurso. Aun con la prioridad de mantener un buen funcionamiento, el Banco Mundial calcula que la producción de agua pierde entre un 25\% y 30\% de flujo debido a fallas. [87]
+Los Sistemas de Suministro de Agua Potable, WSS por sus siglas en inglés, son sistemas encargados de proveer agua potable en una comunidad mediante amplias redes de distribución \citep{chacon2018the}. Según el Foro Económico Mundial, la crisis alrededor del agua se sitúa dentro de los diez principales riesgos sociales en el mundo, siendo todo un reto para la industria hidrológica el cumplir sus objetivos de forma eficiente, manteniendo una buena coordinación entre los eslabones que conforman el proceso y asegurando un mínimo de pérdidas del recurso. Aun con la prioridad de mantener un buen funcionamiento, el Banco Mundial calcula que la producción de agua pierde entre un 25\% y 30\% de flujo debido a fallas \citep{lietha2018la}.
 
-Los WSS hacen parte de la clasificación de sistemas críticos debido a la importancia que gira en torno a la industria hidrológica, un proceso clave para el bienestar común y la persistencia de otros sistemas, considerando también que dependen de un recurso limitado y vulnerable como lo es el agua. [70]
+Los WSS hacen parte de la clasificación de sistemas críticos debido a la importancia que gira en torno a la industria hidrológica, un proceso clave para el bienestar común y la persistencia de otros sistemas, considerando también que dependen de un recurso limitado y vulnerable como lo es el agua \citep{chacon2018the}.
 
-Los sistemas críticos mantienen una interdependencia entre ellos (electricidad, agua, salud, entre otros), son sistemas vitales para el buen funcionamiento de la sociedad y demás procesos tecnológicos. La falta de un sistema crítico tendría un impacto directo en el bienestar de la población, afectando también la seguridad y defensa de los gobiernos. [64] En el mapa publicado por el Foro Económico Mundial (véase figura \ref{fig-wss}) se permite explorar los problemas interconectados en torno al agua, donde el enfoque de la I4.0 y sus componentes, pueden ofrecer soluciones basadas en un seguimiento del proceso, junto a recolección y análisis de datos que aporten a la toma de decisiones. [70]
+Los sistemas críticos mantienen una interdependencia entre ellos (electricidad, agua, salud, entre otros), son sistemas vitales para el buen funcionamiento de la sociedad y demás procesos tecnológicos. La falta de un sistema crítico tendría un impacto directo en el bienestar de la población, afectando también la seguridad y defensa de los gobiernos \citep{moteff2004critical}. En el mapa publicado por el Foro Económico Mundial (véase figura \ref{fig-wss}) se permite explorar los problemas interconectados en torno al agua, donde el enfoque de la I4.0 y sus componentes, pueden ofrecer soluciones basadas en un seguimiento del proceso, junto a recolección y análisis de datos que aporten a la toma de decisiones \citep{chacon2018the}.
 
 			\begin{figure}
 				\centering
-				\includegraphics{figures/2wss}
+				\includegraphics[scale=0.8]{figures/2wss}
 				\caption{Mapa general de problemas y soluciones interconectados en torno al agua.}
 				\label{fig-wss}
 			\end{figure}
 			
-Los Sistemas Ciber-Físicos, como componente base de la I4.0, ofrecen una nueva forma de plantearse el diseño del sistema, combinando una representación virtual  del proceso en tiempo real, mientras se interactúa con el proceso físico; los datos obtenidos de planta son almacenados en la nube, de modo de conocer el estado del proceso en cualquier momento. Se debe generar una integración entre las nuevas tecnologías y las instalaciones de los WSS. [99?]
+Los Sistemas Ciber-Físicos, como componente base de la I4.0, ofrecen una nueva forma de plantearse el diseño del sistema, combinando una representación virtual  del proceso en tiempo real, mientras se interactúa con el proceso físico; los datos obtenidos de planta son almacenados en la nube, de modo de conocer el estado del proceso en cualquier momento. Se debe generar una integración entre las nuevas tecnologías y las instalaciones de los WSS \citep{mrosik2018era,lietha2018la}.
 
 Dirigir los WSS hacia la visión de la I4.0 implica descentralizar el sistema de control e integrar el concepto de Sistemas Ciber-Físicos; la creación de módulos autónomos con funciones específicas, la habilidad de reconfiguración del proceso, la automatización de las unidades y su interacción facilitan el manejo adecuado de los WSS. Para ello es necesaria también la integración hombre - máquina y una debida formación para desarrollar los modelos que emulen el comportamiento de cada unidad.
 
-Un esquema que proporciona un sistema autónomo modular es el holónico; la idea de trabajar el proceso hidrológico mediante unidades de producción Holónicas, siguiendo la visión de la I4.0, permite la resolución de problemas complejos a través de paradigmas elementales. En [99] se describe la combinación de los conceptos mencionados, con el fin de controlar un sistema de abastecimiento de agua como un sistema holónico de producción.
+Un esquema que proporciona un sistema autónomo modular es el holónico; la idea de trabajar el proceso hidrológico mediante unidades de producción Holónicas, siguiendo la visión de la I4.0, permite la resolución de problemas complejos a través de paradigmas elementales. En \cite{chacon2018the} se describe la combinación de los conceptos mencionados, con el fin de controlar un sistema de abastecimiento de agua como un sistema holónico de producción.
 
 Partiendo de estas ideas es posible generar una propuesta de los modelos de unidades autónomas en el proceso de potabilización de agua, bajo un esquema holónico, en pro de automatizar e integrar los módulos correspondientes al sistema, teniendo como base de diseño los componentes de la I4.0.
 	
 		\section{Industria 4.0}
 		
-Referida como I4.0, se trata de un proceso de transformación digital en la industria, ocasionado por el avance vertiginoso en el ámbito tecnológico y los cambios que esto generó en la sociedad. La I4.0 busca aplicar las tecnologías de información para modificar la metodología de organización de la cadena de valor y gestión. Se basa en el uso de Sistemas Ciber-Físicos para monitorear los procesos, virtualizarlos, y hacer uso del Internet de las Cosas para generar comunicación y cooperación hombre-máquina y máquina-máquina en tiempo real. [12][97]
+Referida como I4.0, se trata de un proceso de transformación digital en la industria, ocasionado por el avance vertiginoso en el ámbito tecnológico y los cambios que esto generó en la sociedad. La I4.0 busca aplicar las tecnologías de información para modificar la metodología de organización de la cadena de valor y gestión. Se basa en el uso de Sistemas Ciber-Físicos para monitorear los procesos, virtualizarlos, y hacer uso del Internet de las Cosas para generar comunicación y cooperación hombre-máquina y máquina-máquina en tiempo real \citep{del2016industria, hermann2015design}.
 
-En [97] se presenta una investigación para establecer principios de diseño que permitan la implementación de escenarios basados en la I4.0; esto debido a que, si bien actualmente es una prioridad para las empresas estar al día en tecnología, no existe una definición general aceptada por la comunidad industrial para la puesta en práctica de los conceptos de la I4.0. Los principios de diseño identificados se presentan a continuación:
+En \cite{hermann2015design} se presenta una investigación para establecer principios de diseño que permitan la implementación de escenarios basados en la I4.0; esto debido a que, si bien actualmente es una prioridad para las empresas estar al día en tecnología, no existe una definición general aceptada por la comunidad industrial para la puesta en práctica de los conceptos de la I4.0. Los principios de diseño identificados se presentan a continuación:
 
 			\begin{itemize}
 				\item  \textbf{Interoperabilidad:} Es la habilidad para conectar y habilitar una comunicación entre máquinas y personas, haciendo uso del Internet de las Cosas.
-				\item  \textbf{Virtualización:} Se refiere a un vínculo entre los sistemas físicos instalados y modelos de la planta, permitiendo la virtualización desde su monitoreo y simulación.
+				\item  \textbf{Virtualización:} Equivalente al Gemelo Digital. Se refiere a un vínculo entre los sistemas físicos instalados y modelos de la planta, permitiendo la virtualización desde su monitoreo y simulación.
 				\item  \textbf{Descentralización:} Característica del proceso asociada a la autonomía de entidades en una empresa; en este caso es la autonomía de las unidades de producción asociadas a la cadena de valor. Consiste en la capacidad de los sistemas físicos de tomar decisiones por sí mismos, siguiendo un modelo de comportamiento. Dependiendo del nivel de autonomía de la unidad en caso de un evento de falla o fallo, la unidad se reajusta a su nuevo estado emitiendo eventos al sistema de gestión (coordinador) para que este reconfigure el proceso.
 				\item  \textbf{Capacidad en Tiempo Real:} Recopilación de datos al instante, ya sea para almacenarlos o analizarlos y tomar decisiones de acuerdo a lo obtenido. La obtención del estado de la planta en tiempo real permite reaccionar ante fallos en el proceso.
 				\item  \textbf{Orientación al Servicio:} Definida como una forma de gestión en donde la empresa presta el servicio de producción y por ende las unidades, con sus habilidades y competencias, prestan un servicio asociado a una etapa en el proceso de fabricación. La planificación de la producción es asociar a cada etapa de la ruta de producto una unidad con la competencia requerida, usando criterios de optimización.
 				\item  \textbf{Modularidad:} Capacidad de adaptarse en un mercado cambiante, buscando industrias reconfigurables. Con sistemas modulares se hace fácil el ajuste en caso de fluctuaciones en las solicitudes del mercado, mediante adición, ampliación o sustitución de módulos individuales. Permite determinar unidades autónomas.
 			\end{itemize}
 
-Esta nueva revolución industrial busca ir más allá de modelos computacionales y sistemas de SCADA aislados, la colaboración es la clave para optimizar los procesos industriales; es partiendo de esa premisa que se adoptan los componentes de la I4.0, algunos de ellos se detallan a continuación: [97][88]
+Esta nueva revolución industrial busca ir más allá de modelos computacionales y sistemas de SCADA aislados, la colaboración es la clave para optimizar los procesos industriales; es partiendo de esa premisa que se adoptan los componentes de la I4.0, algunos de ellos se detallan a continuación \citep{hermann2015design, alarcon2018digitalizacion}:
 			
 			\subsection{Sistemas Ciber-Físicos}
 				
-Los Sistemas Ciber-Físicos (en adelante CPS, por sus siglas en inglés) son sistemas que integran componentes físicos con componentes computacionales, guardando relación con un proceso en curso. Estos sistemas están dedicados a realizar funciones específicas en tiempo real, siendo capaces de recibir y tratar información, monitorear y actuar sobre elementos físicos del proceso asociado. [63]
+Los Sistemas Ciber-Físicos (en adelante CPS, por sus siglas en inglés) son sistemas que integran componentes físicos con componentes computacionales, guardando relación con un proceso en curso. Estos sistemas están dedicados a realizar funciones específicas en tiempo real, siendo capaces de recibir y tratar información, monitorear y actuar sobre elementos físicos del proceso asociado \citep{monostori2016cyber}.
 				
-En Lee Monostori et al [136] se hace referencia a un gráfico del modelo de madurez de un CPS (véase figura \ref{fig-cps}), donde en un primer nivel se generan las condiciones para la implementación y conexiones físicas, mientras que los niveles superiores representan la evolución en el procesamiento de la información y procesos de cooperación.
+En \cite{monostori2016cyber} se hace referencia al modelo asociado a la madurez de un CPS (véase figura \ref{fig-cps}), donde en un primer nivel se generan las condiciones para la implementación y conexiones físicas, mientras que los niveles superiores representan la evolución en el procesamiento de la información y procesos de cooperación.
 				
 				\begin{figure}[H]
 					\centering
-					\includegraphics[scale=0.7]{figures/2cps}
-					\caption{Modelo de madurez de un CPS. [136]}
+					\includegraphics[scale=0.6]{figures/2cps}
+					\caption{Modelo de madurez de un CPS \citep{monostori2016cyber}}
 					\label{fig-cps}
 				\end{figure}
 
@@ -422,118 +417,89 @@ Los CPS hacen uso del Internet de las Cosas, red de sensores, almacenamiento de 
 			
 			\subsection{Internet de las Cosas (IoT) e Internet Industrial de las Cosas (IIoT)}
 			
-Son tecnologías emergentes, un conjunto de dispositivos interconectados que permiten la recopilación y acceso a datos compartidos, monitoreo y comunicación en tiempo real, con plataformas amigables para el usuario. [65]
+Son tecnologías emergentes, un conjunto de dispositivos interconectados que permiten la recopilación y acceso a datos compartidos, monitoreo y comunicación en tiempo real, con plataformas amigables para el usuario \citep{world2018harnessing}.
 				
-Al aplicar el concepto en el entorno industrial, se pueden obtener datos acerca del estado del proceso o el producto, dispositivos inteligentes y autónomos que optimizan el proceso de producción, lo que incluye la eficiencia en entrega del servicio, mayor productividad, reducción de costos y recopilación de datos de interés. [67]
+Al aplicar el concepto en el entorno industrial, se pueden obtener datos acerca del estado del proceso o el producto, dispositivos inteligentes y autónomos que optimizan el proceso de producción, lo que incluye la eficiencia en entrega del servicio, mayor productividad, reducción de costos y recopilación de datos de interés \citep{boyes2018the}.
 				
-La adopción del IIoT permite la aplicación de la tecnología a nivel de planta [Wallace Riddick], dando paso a lo que se denomina Smart Factory; siendo ésta una convergencia del proceso industrial de manufactura con tecnologías de información para mejorar y acelerar el proceso de producción. [68].
+La adopción del IIoT permite la aplicación de la tecnología a nivel de planta \citep{thoben2017industrie}, dando paso a lo que se denomina Smart Factory; siendo ésta una convergencia del proceso industrial de manufactura con tecnologías de información para mejorar y acelerar el proceso de producción \citep{li2018smart}.
 
 			\subsection{Analítica de Datos}
 
-Es una técnica que consiste en extraer datos de distintas fuentes y analizarlos para obtener información útil, necesaria para tomar mejores decisiones corporativas y plantear estrategias. El análisis de datos emplea grandes cantidades de información, descrita como Big Data, inmensos paquetes que requieren de software especial para su almacenamiento y tratamiento.[69]
+Es una técnica que consiste en extraer datos de distintas fuentes y analizarlos para obtener información útil, necesaria para tomar mejores decisiones corporativas y plantear estrategias. El análisis de datos emplea grandes cantidades de información, descrita como Big Data, inmensos paquetes que requieren de software especial para su almacenamiento y tratamiento \citep{rouse2012analisis}.
 
 			\subsection{Empresa Inteligente}
 			
-En [97] se basan en los conceptos de CPS e IoT para definir la empresa inteligente o Smart Factory como una fábrica donde los CPS se comunican a través del IoT, colaborando con los demás componentes y operadores en la ejecución de las tareas.
+En \cite{hermann2015design} se basan en los conceptos de CPS e IoT para definir la empresa inteligente o Smart Factory como una fábrica donde los CPS se comunican a través del IoT, colaborando con los demás componentes y operadores en la ejecución de las tareas.
 
 		\section{Gemelo Digital}
 		
-Previamente se describe que los CPS interactúan con un sistema virtual a través de redes de comunicación, en ese sentido cada módulo físico tendrá una representación digital de sí mismo, permitiendo la interconexión de procesos en un dispositivo que pueda monitorear y controlar la unidad física, el término es conocido como Gemelo Digital. [101]
+Previamente se describe que los CPS interactúan con un sistema virtual a través de redes de comunicación, en ese sentido cada módulo físico tendrá una representación digital de sí mismo, permitiendo la interconexión de procesos en un dispositivo que pueda monitorear y controlar la unidad física, el término es conocido como Gemelo Digital \citep{schroeder2016digital}.
 
-El Gemelo Digital ofrece la posibilidad de crear una planta virtual haciendo uso de modelos matemáticos, modelos de comportamiento, medición de parámetros en campo, historial de datos y análisis, para visualizar posibles acciones a tomar según el estado real del proceso; estas acciones son accesibles gracias al IoT, debido a que facilita de forma eficiente la conexión entre el comportamiento real y el Gemelo Digital. [91][101]
+El Gemelo Digital ofrece la posibilidad de crear una planta virtual haciendo uso de modelos matemáticos, modelos de comportamiento, medición de parámetros en campo, historial de datos y análisis, para visualizar posibles acciones a tomar según el estado real del proceso; estas acciones son accesibles gracias al IoT, debido a que facilita de forma eficiente la conexión entre el comportamiento real y el Gemelo Digital \citep{schroeder2016digital,marr2019amazing}.
 
-La aplicación de la tecnología de gemelos digitales ayuda a comprender las operaciones de la planta, visualizar mejorías y detectar problemas físicos en fases tempranas, de esta manera es posible cumplir las expectativas cada vez mayores de los clientes. [87]
+La aplicación de la tecnología de gemelos digitales ayuda a comprender las operaciones de la planta, visualizar mejorías y detectar problemas físicos en fases tempranas, de esta manera es posible cumplir las expectativas cada vez mayores de los clientes \citep{lietha2018la}.
 
-Para lograr la digitalización de una planta, es necesario en primera instancia conocer a fondo cómo opera y realizar la documentación necesaria, de manera que los detalles del proceso estén disponibles. Se deben implementar soluciones digitales a medida que se vayan recreando los modelos físicos en un ambiente virtual, mientras se hace revisión de las estrategias de control y producción, de modo que la colaboración entre virtualización y trabajadores resulte en mejoras de estrategias de gestión. [86]
+Para lograr la digitalización de una planta, es necesario en primera instancia conocer a fondo cómo opera y realizar la documentación necesaria, de manera que los detalles del proceso estén disponibles. Se deben implementar soluciones digitales a medida que se vayan recreando los modelos físicos en un ambiente virtual, mientras se hace revisión de las estrategias de control y producción, de modo que la colaboración entre virtualización y trabajadores resulte en mejoras de estrategias de gestión \citep{mrosik2018era}.
 
-Entre los beneficios que esta tecnología ofrece, está la posibilidad de obtener un gemelo digital del producto, diseñar, planificar y optimizar, para luego generar simulaciones de la producción previas a la implementación física, de esta forma se pueden visualizar escenarios de riesgo sin necesidad de realizar inversiones en pruebas reales. Una vez que el sistema físico esté instalado, transmitirá datos al gemelo digital que actuará como monitor de desempeño, evaluando el proceso de producción y el producto resultante. Los datos obtenidos de planta deben ser analizados según el contexto para asegurar eficiencia en el sistema. [86]
+Entre los beneficios que esta tecnología ofrece, está la posibilidad de obtener un gemelo digital del producto, diseñar, planificar y optimizar, para luego generar simulaciones de la producción previas a la implementación física, de esta forma se pueden visualizar escenarios de riesgo sin necesidad de realizar inversiones en pruebas reales. Una vez que el sistema físico esté instalado, transmitirá datos al gemelo digital que actuará como monitor de desempeño, evaluando el proceso de producción y el producto resultante. Los datos obtenidos de planta deben ser analizados según el contexto para asegurar eficiencia en el sistema \citep{mrosik2018era}.
 
 Si bien la implementación de un gemelo digital no es tarea sencilla, es una herramienta clave en la visión de la I4.0, permitiendo hacer gestión, coordinación, supervisión y seguimiento. En colaboración con los demás componentes da paso a industrias reconfigurables, aptas para generar respuestas eficientes de producción ya sea ante fluctuaciones en la demanda o ante situaciones adversas dentro del proceso mismo.
 
 		\section{Modelo de Conocimiento}
 		
-El conocimiento, desde una visión organizacional, es considerado como la información que posee valor para la misma organización, tal información es necesaria para alcanzar objetivos, generar acciones y satisfacer necesidades de mercado. Desde el punto de vista de procesos, el conocimiento es el resultado de la utilización de la información partiendo de un contexto, información generada a partir de datos. [102]
+El conocimiento, desde una visión organizacional, es considerado como la información que posee valor para la misma organización, tal información es necesaria para alcanzar objetivos, generar acciones y satisfacer necesidades de mercado. Desde el punto de vista de procesos, el conocimiento es el resultado de la utilización de la información partiendo de un contexto, información generada a partir de datos \citep{correa2009diseno}.
 
 Un modelo, por su parte, es una representación en un lenguaje entendible que expresa el comportamiento de un fenómeno. Así se convierten en abstracciones particulares en función del interés del modelador.
 
-El modelo de procesos industriales está basado en el modelo del negocio y el modelo de producción. La interacción (sinergia) entre ellos determina la integración en la empresa y constituye la base fundamental para obtener el gemelo digital. El modelo de negocio parte de establecer la cadena de valor de la empresa, sus áreas de apoyo (contabilidad, administración, compras, ventas, etc) y sus interacciones. . (véase figura \ref{fig-valuechain})
+El modelo de procesos industriales está basado en el modelo del negocio y el modelo de producción \citep{chacon2012online}. La interacción (sinergia) entre ellos determina la integración en la empresa y constituye la base fundamental para obtener el gemelo digital. El modelo de negocio parte de establecer la cadena de valor de la empresa, sus áreas de apoyo (contabilidad, administración, compras, ventas, etc) y sus interacciones (véase figura \ref{fig-valuechain}).
 
 			\begin{figure}[hbp]
 				\centering
 				\includegraphics{figures/2valuechain}
-				\caption{Cadena de Valor en producción. Basada en [108]}
+				\caption{Cadena de Valor en producción. Basada en \citep{chacon2012online}}
 				\label{fig-valuechain}
 			\end{figure}
 
 Cada eslabón de la cadena de valor es visto como una unidad de producción, la tipificación de cada una depende de la manera cómo evoluciona el recurso en ella, a saber: Continua, Lotes, Manufactura, Híbrida, etc. Además, cada unidad de producción realiza una acción específica, basada en un objetivo preestablecido.
 
-El modelo de conocimiento abarca las caracterizaciones del proceso, el flujo de producto y los recursos necesarios para la transformación de tal producto: [104]
+El modelo de conocimiento abarca las caracterizaciones del proceso, el flujo de producto y los recursos necesarios para la transformación de tal producto \citep{perez2015implementacion}:
 
 			\begin{itemize}
 				\item El modelo del proceso determina cómo llevarlo a cabo, incluyendo información acerca de los parámetros necesarios para la elaboración de un producto o acción específica.
 				\item El modelo del producto describe la calidad y cantidad del flujo de producto, estructuras de datos y métodos para acceder a la información recabada.
-				\item El modelo de recursos por su parte, mantiene la información de los equipos usados por el proceso, estado de funcionamiento, disponibilidad.
+				\item El modelo de recursos por su parte, mantiene la información de los equipos usados por el proceso, estado de funcionamiento y disponibilidad, las condiciones y capacidad de la infraestructura y la calidad del material de la producción.
 			\end{itemize}
 			
-La elaboración de productos está sujeta a la receta, esto genera un modelo para la fabricación del producto y un modelo del producto. La receta especifica las diferentes etapas donde la materia prima/producto intermedio pasa a través de ellos y se convierte en un producto intermedio /terminado. Este modelo de producto es proyectado sobre el proceso físico del proceso de producción, el cual determina una configuración que permite seguir el producto de acuerdo a la receta. En la red de la figura \ref{fig-nodesnet2} se representa el modelo físico y sus interacciones.
-
-			\begin{figure}
-				\centering
-				\includegraphics[scale=0.5]{figures/2nodesnet2}
-				\caption{Representación de la planta física. [108]}
-				\label{fig-nodesnet2}
-			\end{figure}
+La elaboración de productos está sujeta a la receta, esto genera un modelo para la fabricación del producto y un modelo del producto. La receta especifica las diferentes etapas donde la materia prima/producto intermedio pasa a través de ellos y se convierte en un producto intermedio /terminado. Este modelo de producto es proyectado sobre el proceso físico del proceso de producción, el cual determina una configuración que permite seguir el producto de acuerdo a la receta.
 			
 Es posible, en algunos casos, que cuando el flujo de producto se coloca sobre el proceso físico, genere más de una configuración aceptable, y de éstas, se selecciona una de acuerdo a un criterio, estableciéndose como un patrón en la fabricación del producto.
 		
 		\section{Modelo Híbrido}
 		
-Un sistema híbrido consta de varios modos de operación de dinámicas continuas en el tiempo, y transiciones entre dichos modos, las cuales ocurren bajo ciertas condiciones. Tales condiciones son descritas mediante modelos de tipo discreto. Por tanto, los sistemas híbridos son una interacción de dinámicas continuas y discretas. [84]
+Un sistema híbrido consta de varios modos de operación de dinámicas continuas en el tiempo, y transiciones entre dichos modos, las cuales ocurren bajo ciertas condiciones. Tales condiciones son descritas mediante modelos de tipo discreto. Por tanto, los sistemas híbridos son una interacción de dinámicas continuas y discretas \citep{mahla2004sistemas}.
 
-Un modelo híbrido es la representación de las transiciones discretas y la evolución de las dinámicas continuas, afectadas por los eventos discretos. Al momento de modelar se debe cuidar tanto la precisión de los resultados como la simplicidad del modelo, incorporando correctamente las entradas, demás componentes del proceso y la interrelación entre ellos. [106] Para el desarrollo de los modelos híbridos se utilizan herramientas como ecuaciones diferenciales para dinámicas continuas del proceso y redes de Petri para los eventos discretos. [105]
+Un modelo híbrido es la representación de las transiciones discretas y la evolución de las dinámicas continuas, afectadas por los eventos discretos. Al momento de modelar se debe cuidar tanto la precisión de los resultados como la simplicidad del modelo, incorporando correctamente las entradas, demás componentes del proceso y la interrelación entre ellos \citep{cruz2007control}.
 
-En [107] se definen las rede de Petri como una herramienta matemática que permite la representación gráfica de un modelo, facilitando el análisis y modificaciones del mismo. Están representadas por un diagrama compuesto de cuatro bloques: Lugares, transiciones, arcos y marcas o tokens; los lugares simbolizan los posibles estados del sistema, las transiciones representan los eventos que causan cambios en los estados, permitiendo la relación entre dos lugares, los arcos son la unión entre lugares y/o transiciones, armando la red e indicando el sentido del flujo y las marcas, que se ubican en los lugares, representan unidades de materia prima, productos en proceso o productos terminados. (véase figura \ref{fig-petrinet})
-
-			\begin{figure}
-				\centering
-				\includegraphics[scale=0.5]{figures/2petrinet}
-				\caption{Ejemplo: componentes de una red de Petri.}
-				\label{fig-petrinet}
-			\end{figure}
-			
-Formalmente las redes de Petri se denotan mediante una quíntupla: [105]
-		
-			\begin{equation}
-				\label{eq-petridef}
-				RdP = (P, T, D^{+}, D^{-}, \mu_{0})
-			\end{equation}
-			
-donde,\\
-$P = \{p_{1}, p_{2}, ..., p_{n},\}$ es un conjunto finito de lugares, \\
-$T = \{t_{1}, t_{2}, ..., t_{m},\}$ es un conjunto finito de transiciones, \\
-$D^{+} \in Z^{n \times m}$ es la matriz de los lugares de salida, \\
-$D^{-} \in Z^{n \times m}$ es la matriz de los lugares de entrada, \\
-$D = D^{+} - D^{-}$ es la matriz de incidencia, \\
-$\mu_{0}: P \rightarrow \{\mu_{1}, \mu_{2}, \mu_{3}, ..., \mu_{n}\}$ es el vector marcación inicial con dimensión $n \times 1$, donde $\mu_{i}$ es la marcación inicial de cada lugar $p_{i}$,
-$P \cap T = \emptyset$ y $P \cup T \neq \emptyset$.\\
-Cada elemento de la matriz $D^{+}$, es el peso del arco del lugar de salida ${i}$ desde la transición ${j}$, y cada elemento de la matriz $D^{-}$, es el peso del arco desde el lugar de entrada ${i}$ hacia la transición ${j}$.
+Un autómata híbrido $ H $ está definido como una colección $H~=~(Q,~X,~U,~\Gamma,~Y,~f,~h_e,~h_i,~y_e,~g, ~Init,~Dom,~E,~G,~R)$ donde: 
 \\
-
-Por otro lado, un sistema continuo representa el cambio de estado en función del tiempo, mediante una ecuación diferencial de la forma:
-
-			\begin{equation}
-				\label{eq-contmodel}
-				\dot{x}(t) = f\Big(x(t), u(t), t\Big)
-			\end{equation}
-
-donde,\\
-$f$ es la función de transición de estado, \\
-$x(t)$ es el vector de variables de estado, \\
-$u(t)$ es el vector de entradas, \\
-$t$ es el tiempo,
 \\
-
-Con la integración de estos dos métodos, redes de Petri y ecuaciones diferenciales, es posible generar un modelo híbrido, el cual reduce la complejidad del orden al modelar algún sistema.
+ $Q \in Z^k, \{q_i\}, i=1, \cdots,k $ es el conjunto de \emph{estados discretos}, \\
+ $X \in\Re^n, \{x_i\}, i=1, \cdots,n$ es el conjunto de \emph{variables de estado continuos}, \\
+ $U \in\Re^{m+l}, \{u_{c_i}\}, i=1, \cdots,m$ es el conjunto de \emph{entradas de control}, \\
+ $\{u_{f_i}\}, i=1, \cdots,l$ es el conjunto de \emph{entradas físicas}, \\  
+ $\Gamma \in\Re^p, \{\Gamma\}, i=1, \cdots,p$ es el conjunto de \emph{parametros}, \\
+ $Y \in\Re^{s+r}, \{y_{in_i}\}, i=1, \cdots,s$  es el conjunto de \emph{salidas de proceso}, \\
+ $\{y_{e_i}\}, i=1, \cdots,r$ es el conjunto de \emph{salidas de gestión}, \\ 
+ $f(\cdotp ,\cdotp): Q\times X \times U \mapsto \Re^n$ es el \emph{campo vectorial}, \\ 
+ $g(\cdotp): \Re^s \mapsto \Re^m$ es la \emph{función del control}, \\
+ $y_{e-1} \in\Re^l$ son las \emph{entradas físicas}, \\
+ $h_e(\cdotp): X\mapsto \Re^r$ son las \emph{salidas del proceso}, \\
+ $h_in(\cdotp): X\mapsto \Re^s$ es la \emph{función de salida para la gestión}, \\
+ $Init\subseteq Q \times X$ es el conjunto de \emph{estados iniciales}, \\
+ $Dom(\cdotp)~:~ Q \mapsto 2^X$ es el \emph{dominio}, \\
+ $E \subseteq Q \times Q$ es el conjunto  de \emph{aristas}, \\ 
+ $G(\cdotp)~:~ E \mapsto 2^X$ son las \emph{condiciones de guarda}, \\ 
+ $R(\cdotp ,\cdotp)~:~E \times X \mapsto 2^X$ es el \emph{mapa de reinicio}. \\
 
 		\section{Hidrológicas}
 		
@@ -541,14 +507,14 @@ Las hidrológicas son una empresa de servicio cuya misión es proporcionar agua po
 
 		\begin{figure}
 			\centering
-			\includegraphics[scale=0.5]{figures/2waterprocess}
-			\caption{Estructura física clásica de las hidrológicas. Basado en [137]}
+			\includegraphics[scale=0.4]{figures/2waterprocess}
+			\caption{Estructura física de las hidrológicas \citep{hitachiNAwater}.}
 			\label{fig-waterprocess}
 		\end{figure}
 	
 		\subsection{Áreas de Negocio}
 
-Los principales procesos que definen las áreas de negocio básicas en una hidrológica (véase figura \ref{fig-chainhydro}) están dados por:
+Los principales procesos que definen las áreas de negocio básicas en una hidrológica (véase figura \ref{fig-valuechainhydro}) están dados por:
 
 			\begin{itemize}
 				\item Estudio de las fuentes para una determinada población.
@@ -556,11 +522,11 @@ Los principales procesos que definen las áreas de negocio básicas en una hidroló
 				\item La comercialización del producto.
 			\end{itemize}
 
-			\begin{figure}[H]
+			\begin{figure}
 				\centering
-				\includegraphics{figures/3chainhydro}
-				\caption{Areas de Negocio en Hidrológicas.}
-				\label{fig-chainhydro}
+				\includegraphics[scale=0.6]{figures/3valuechainhydro}
+				\caption{Cadena de Valor de áreas de negocio en Hidrológicas.}
+				\label{fig-valuechainhydro}
 			\end{figure}
 			
 			\subsubsection{Estudio de fuentes y caracterización de la demanda}
@@ -638,19 +604,19 @@ Adicionalmente, es necesario realizar la coordinación y manejo de todos los proc
 			
 Se expande en cuatro eslabones (véase figura \ref{fig-chainsource}), con el fin de obtener la red que debe soportar el consumo de una población dada, considerando las fuentes y su calidad. Estos cuatro procesos son:
 			
+				\begin{figure}[H]
+					\centering
+					\includegraphics{figures/3chainsource}
+					\caption{Cadena de Valor Área fuente y estudio de la demanda.}
+					\label{fig-chainsource}
+				\end{figure}			
+			
 				\begin{itemize}
 					\item  \textbf{Estudio de la Población:} Para esto, se deben conocer los estudios de crecimiento poblacional para cada región.
 					\item  \textbf{Estimación del Consumo:} Con el estudio poblacional y caracterizando los hábitos de consumo se determinar el volumen de agua necesario para cada región.
 					\item  \textbf{Planificación de la Red:} Este proceso necesita de la estimación de consumo, evaluación de las fuentes hídricas para determinar las zonas de captación de agua junto con los recursos necesarios para realizar esta labor, el dimensionamiento, diseño, establecimiento de planes de construcción para el transporte del agua desde las zonas de captación hasta los centros de potabilización y el costo esperado para la construcción de la infraestructura, su mantenimiento y operación hasta los centros poblados.
 					\item \textbf{Determinación de Costos:} se determina cual es el costo final del agua, como este será trasladado a los usuarios.
 				\end{itemize}
-			
-				\begin{figure}
-					\centering
-					\includegraphics{figures/3chainsource}
-					\caption{Cadena de Valor Área fuente y estudio de la demanda.}
-					\label{fig-chainsource}
-				\end{figure}
 				
 			\subsubsection{Operaciones}
 			
@@ -669,7 +635,7 @@ Asociada a esta cadena debe existir un sistema de logística que asegure los recu
 			
 En esta área se establecen los requerimientos de servicio que implican un análisis de los nuevos clientes y de la capacidad de distribución en el sitio, así como las estrategias de prestación de servicio de conexión, con el fin de generar la orden de conexión, luego se procede a la conexión física del usuario a la red, incluyendo un mecanismo de medición (fiable) y estableciendo los mecanismos de cobranza por el servicio. Así, el área de comercial se expande en cuatro eslabones: Requerimiento de Servicio, Conexión, Medición, Cobro. (véase figura \ref{fig-chaincom})
 
-				\begin{figure}
+				\begin{figure}[H]
 					\centering
 					\includegraphics{figures/3chaincom}
 					\caption{Cadena de Valor Área de comercialización.}
@@ -686,43 +652,41 @@ El área de soporte está conformada por: Finanzas, Contabilidad, Recursos Humanos
 					\caption{Área de soporte.}
 					\label{fig-support}
 				\end{figure}
-		
-		\subsection{Esquema Integral de Cadena de Valor para Hidrológicas}
-		
-El esquema integrado de las diferentes cadenas de valores, sin tomar en cuenta la actividad de planificación, coordinación y control de la gestión es el mostrado en la figura \ref{fig-valuechainhydro}.
-
-			\begin{figure}
-				\centering
-				\includegraphics[scale=0.6]{figures/3valuechainhydro}
-				\caption{Cadena de Valor de áreas de negocio en Hidrológicas.}
-				\label{fig-valuechainhydro}
-			\end{figure}
 			
-		\subsection{Planificación}
+		\subsection{Esquema de Interacciones para las Hidrológicas}
 		
-En el diagrama de planificación se observa que existe un eje vertical encargado de la toma de decisiones asociadas a la gestión de la empresa, definición de las metas, control y seguimiento de las mismas dentro de una autonomía operativa. Un esquema de interacción entre las áreas de soporte, operaciones, comercial con el eje de toma de decisiones. Es detallado en la figura \ref{fig-planning}.
+El diagrama de la figura \ref{fig-planning} muestra tres ejes de interacción entre la toma de decisiones (planificación), procesos (producción y negocio) y sistemas de apoyo.
 
 			\begin{figure}
 				\centering
 				\includegraphics[scale=0.5]{figures/3planning}
-				\caption{Esquema de interacciones.}
+				\caption{Esquema de Interacciones.}
 				\label{fig-planning}
 			\end{figure}
 			
 		\subsection{Modelo APS en Hidrológicas}
 
-Se presenta el modelo APS (Advanced Planning \& Scheduling) para las hidrológicas (véase figura \ref{fig-aps}), asociado al modelo de tres ejes de manufactura colaborativa para I4.0 adaptado en industria de procesos. Un APS asigna recursos y capacidad de producción de forma óptima para equilibrar la demanda y la capacidad de la planta.
+El modelo APS (Advanced Planning \& Schedulling), define la interrelación entre proveedores y clientes con una empresa a través de sus tres princpales actividades: desarrollo de productos, planificación y programación de la producción y el proceso de producción, ver figura \ref{fig-aps2d}.
+
+			\begin{figure}[H]
+				\centering
+				\includegraphics[scale=0.7]{figures/2aps2d}
+				\caption{Modelo APS.}
+				\label{fig-aps2d}
+			\end{figure}
+
+ Un APS asigna recursos y capacidad de producción de forma óptima para equilibrar la demanda y la capacidad de la planta. La figura \ref{fig-aps} es una extensión en 3D del modelo APS para hidrológicas. Contiene los procesos estratégicos (planificación, investigación y desarrollo), los procesos medulares (producción) y los procesos de apoyo (administrativos) basados en el eje de toma de decisiones respecto al manejo de los proveedores y clientes.
 
 			\begin{figure}
 				\centering
 				\includegraphics[scale=0.4]{figures/2aps}
-				\caption{Esquema de interacciones.}
+				\caption{Modelo APS 3D.}
 				\label{fig-aps}
 			\end{figure}
 			
-		\section{Descripción del Proceso de Potabilización}
+		\section{Proceso de Potabilización}
 		
-La Unidad de Operación comprende el conjunto de recursos y actividades necesarias para administrar y operar los sistemas de agua, sumado al mantenimiento de las instalaciones y equipos utilizados [35]; incluye las unidades fundamentales del proceso de producción: captación, potabilización, almacenamiento y distribución. En la figura \ref{fig-potab} se presenta un modelo con las unidades correspondientes a Operación, con detalle de la entrada y salida del proceso de potabilización, transmisión de flujo e información referentes a tal proceso. 
+El proceso de potabilización comprende el conjunto de recursos y actividades necesarias para administrar y operar los sistemas de agua, sumado al mantenimiento de las instalaciones y equipos utilizados; incluye las unidades fundamentales del proceso de producción: captación, potabilización, almacenamiento y distribución. En la figura \ref{fig-potab} se presentan las unidades correspondientes a Potabilización. 
 
 			\begin{figure}
 				\centering
@@ -733,40 +697,75 @@ La Unidad de Operación comprende el conjunto de recursos y actividades necesaria
 
 			\subsection{Captación del agua}
 
-La captación de agua cruda, en el caso de las plantas del Estado Mérida, se realiza mediante una estructura construida adyacente al cauce de la fuente (véase figura \ref{fig-catchwater}), de forma que el flujo se desvíe e ingrese al sistema mediante la rejilla de captación; el flujo es trasladado hacia un desripiador, donde se evacúa el material sólido de tamaño considerable que ha ingresado, y posteriormente hacia el desarenador, encargado de separar el agua cruda de la arena y partículas en suspensión de tamaño superior a 0,2 mm; luego el flujo ingresa a la planta de potabilización, cuyas unidades funcionales corresponden a: Coagulación - Floculación - Sedimentación - Filtración - Desinfección.[8]
+La captación de agua cruda, en el caso de las plantas del Estado Mérida, se realiza mediante una estructura construida adyacente al cauce de la fuente (véase figura \ref{fig-catchwater}), de forma que el flujo se desvíe e ingrese al sistema mediante la rejilla de captación; el flujo es trasladado hacia un desripiador, donde se evacúa el material sólido de tamaño considerable que ha ingresado, y posteriormente hacia el desarenador, encargado de separar el agua cruda de la arena y partículas en suspensión de tamaño superior a 0,2 mm; luego el flujo ingresa a la planta de potabilización, cuyas unidades funcionales corresponden a: Coagulación - Floculación - Sedimentación - Filtración - Desinfección \citep{pinos2016analisis}.
 
-				\begin{figure}
+				\begin{figure}[H]
 					\centering
-					\includegraphics[scale=0.6]{figures/3catchwater}
-					\caption{Proceso de captación del agua cruda. [33]}
+					\includegraphics[scale=0.5]{figures/3catchwater}
+					\caption{Proceso de captación del agua cruda \citep{cabello2016analisis}}
 					\label{fig-catchwater}
 				\end{figure}
 				
-Las acciones operativas sobre el caudal dependen de la capacidad máxima de la planta, en caso de ser superado este nivel máximo o por el contrario, no contar con una fuente óptima, el agua como producto final no será adecuada para el consumo humano, por ello es necesario el conocimiento y regulación del flujo mediante operación de compuertas para cumplir con los requerimientos de la planta, tomando en cuenta el plan de consumo, calidad de la fuente y periodo climático de la localidad. [37]
-			
-			\subsection{Determinación de las características del agua cruda}
-			
-Para establecer la secuencia operacional de la unidad de potabilización se consideran dos condiciones principales, la calidad del flujo de entrada, que comprende la turbiedad, el caudal, el color, la temperatura, el cloro residual, oxígeno disuelto y el pH de la fuente proveniente de la unidad de captación, incluyendo valores de caudal, y la capacidad máxima de la planta de potabilización (en L/s o m3/s), en condiciones reales de funcionamiento.
+Las acciones operativas sobre el caudal dependen de la capacidad máxima de la planta, en caso de ser superado este nivel máximo o por el contrario, no contar con una fuente óptima, el agua como producto final no será adecuada para el consumo humano, por ello es necesario el conocimiento y regulación del flujo mediante operación de compuertas para cumplir con los requerimientos de la planta, tomando en cuenta el plan de consumo, calidad de la fuente y periodo climático de la localidad \citep{jaramillo2014documentacion}.
 
-Las características del flujo se obtienen por medición, previo a realizar el traslado a la planta de potabilización; esta acción evita el ingreso de agua de mala calidad y ayuda a establecer el modo de operación del sistema. [23] Si la captación es por gravedad o mecanizada, con estructura física fija, el flujo de entrada es constante, según la calidad del agua. La estacionalidad define el caudal de extracción y la calidad, siempre se debe respetar el caudal ecológico, en cualquier caso.
+Algunos de los parámetros a medir en la fuente de captación, que afectan la calidad del flujo de entrada a la planta, son los sustratos y los cationes, tabla \ref{table-sustrat} y tabla \ref{table-cat} respectivamente.
 
-Las condiciones principales del flujo de salida de la unidad de potabilización, de igual forma, son calidad (pH, turbiedad, color y cloro residual) y cantidad (caudal). La calidad del agua al finalizar el proceso de potabilización, debe cumplir con las características físico químicas descritas en la tabla \ref{table-caract}.
+				\begin{table}[H]
+				\begin{center}
+				\begin{tabular}{|l|l|}
+				\hline 
+				\textbf{Sustrato} & \textbf{Dimensión} \\ \hline \hline
+				Arena             & $0,1 - 1 mm$       \\ \hline
+				Grava             & $0,1 - 5 cm$       \\ \hline
+				Guijarros         & $5 - 25 cm$        \\ \hline
+				Piedras           & $25 - 100 cm$      \\ \hline
+				Rocas             & $> 100 cm$         \\ \hline
+				\end{tabular}
+				\caption{Granulometría de Sustratos.}
+				\label{table-sustrat}
+				\end{center}
+				\end{table}
+				
+				\begin{table}[H]
+				\begin{center}
+				\begin{tabular}{|l|c|}
+				\hline 
+				\textbf{Catión} & \multicolumn{1}{l|}{\textbf{Valor referencial $(mg/L)$}} \\ \hline \hline
+				Calcio (Ca)     & $<  15$                                                  \\ \hline
+				Magnesio (Mg)   & $1 - 100$                                                \\ \hline
+				Sodio (Na)      & $< 50$                                                   \\ \hline
+				Potasio (K)     & $< 10$                                                   \\ \hline
+				Hierro (Fe)     & $< 4$                                                    \\ \hline
+				Manganeso (Mn)  & $< 0,6$  \\ \hline
+				\end{tabular}
+				\caption{Cationes en agua potable.}
+				\label{table-cat}
+				\end{center}
+				\end{table}
+			
+			\subsection{Determinación de las características del agua}
+			
+Para establecer la secuencia operacional de la unidad de potabilización se consideran dos condiciones principales, la calidad del flujo de entrada, que comprende la turbiedad, el caudal, el color, la temperatura, oxígeno disuelto y el pH de la fuente proveniente de la unidad de captación, incluyendo valores de caudal, y la capacidad máxima de la planta de potabilización (en L/s o m3/s), en condiciones reales de funcionamiento.
+
+Las características del flujo se obtienen por medición, previo a realizar el traslado a la planta de potabilización; esta acción evita el ingreso de agua de mala calidad y ayuda a establecer el modo de operación del sistema. Si la captación es por gravedad o mecanizada, con estructura física fija, el flujo de entrada es constante, según la calidad del agua. La estacionalidad define el caudal de extracción y la calidad, siempre se debe respetar el caudal ecológico, en cualquier caso.
+
+Las condiciones principales del flujo de salida de la unidad de potabilización, de igual forma, son calidad (pH, turbiedad, color y cloro residual) y cantidad (caudal). La calidad del agua al finalizar el proceso de potabilización, debe cumplir con las características físico químicas descritas en la tabla \ref{table-caract}. La descripción de los instrumentos de medición se encuentra en el Anexo B.
 
 				\begin{table}[htbp]
 					\begin{center}
 						\resizebox{15cm}{!} {
-						\begin{tabular}{|l|l|l|}
+						\begin{tabular}{|p{3cm}|p{5cm}|p{3cm}|p{3,3cm}|}
 							\hline
-							\textbf{Características físicas} & \textbf{Expresadas como} & \textbf{Valor aceptable} \\
+							\textbf{Características físicas} & \textbf{Expresadas como} & \textbf{Valor aceptable} & \textbf{Instrumento de Medición} \\
 							\hline \hline
-							Turbiedad & Unidades Nefelométricas de Turbiedad (NTU) & Hasta 2 NTU \\ \hline
-							pH & - & 6,5 - 9,0 \\ \hline
-							Cloro residual & mg/L & Hasta 2 mg/L \\ \hline
-							Color aparente & Unidades de Platino Cobalto (UPC) & Hasta 15 UPC \\ \hline
-							Olor y sabor & Aceptable o No Aceptable & Aceptable \\ \hline
+							Turbiedad & Unidades Nefelométricas de Turbiedad (NTU) & Hasta 2 NTU & Turbidímetro \\ \hline
+							pH & - & 6,5 - 9,0 & pHmetro \\ \hline
+							Cloro residual & mg/L & Hasta 2 mg/L & Medidor de cloro amperométrico \\ \hline
+							Color aparente & Unidades de Platino Cobalto (UPC) & Hasta 15 UPC & Espectrofotómetro \\ \hline
+							Olor y sabor & Aceptable o No Aceptable & Aceptable & - \\ \hline
 						\end{tabular}
 						}
-						\caption{Características físicas del agua potable. [37]}
+						\caption{Características físicas del agua potable \citep{jaramillo2014documentacion}.}
 						\label{table-caract}
 					\end{center}
 				\end{table}
@@ -777,13 +776,13 @@ Es una medida del grado en el cual el agua pierde su transparencia debido a la p
 
 La turbidez se mide en Unidades Nefelométricas de turbidez, o Nephelometric Turbidity Unit (NTU). Se utiliza para su medición un Nefelómetro o Turbidímetro, que mide la intensidad de la luz dispersada a 90 grados cuando un rayo de luz pasa a través de una muestra de agua.
 
-Las condiciones de turbidez en agua cruda dependen de condiciones climáticas y contaminantes que afecten a la fuente, registrándose valores entre 0 y 1000 NTU, sin embargo el valor máximo adecuado para la entrada a la planta de potabilización es de 50 NTU.
+Las condiciones de turbidez en agua cruda dependen de condiciones climáticas y contaminantes que afecten a la fuente, registrándose valores entre 0 y 1000 NTU, sin embargo el valor máximo adecuado para la entrada a la planta de potabilización es de 100 NTU.
 
 Para disminuir la turbidez del agua se utiliza un coagulante que, en condiciones y dosis adecuadas, modifica el comportamiento de las partículas presentes en el agua, haciendo que se aglomeren y desciendan, de esta manera las unidades de NTU disminuyen. 
 
 			\subsubsection{pH}
 
-Coeficiente que indica el grado de acidez o basicidad de una solución acuosa. En general, un agua con un pH menor que 7 se considera ácido y con un pH mayor que 7 se considera básica o alcalina. La alcalinidad es una medida de la capacidad del agua para resistir un cambio de pH que tendería a hacerla más ácida. El rango normal de pH en agua superficial es de 6,5 a 9 y para las aguas subterráneas 6 ? 8.5. La medición de pH se realiza con un pHmetro.
+Coeficiente que indica el grado de acidez o basicidad de una solución acuosa. En general, un agua con un pH menor que 7 se considera ácido y con un pH mayor que 7 se considera básica o alcalina. La alcalinidad es una medida de la capacidad del agua para resistir un cambio de pH que tendería a hacerla más ácida. El rango normal de pH en agua superficial es de 6,5 a 9 y para las aguas subterráneas 6 a 8.5. La medición de pH se realiza con un pHmetro.
 
 			\subsubsection{Cloro Residual}
 
@@ -791,7 +790,7 @@ Es aquella porción de cloro que queda en el agua después de un período de contac
 
 			\subsubsection{Color Aparente}
 				
-El color del agua dependerá tanto de las sustancias que se encuentren disueltas, como de las partículas que se encuentren en suspensión. Se clasifica como ?color verdadero? al que depende solamente el agua y sustancias disueltas, mientras el ?aparente? es el que incluye las partículas en suspensión (que a su vez generan turbidez). El color aparente es entonces el de la muestra tal como se obtiene en el sistema a estudiar.
+El color del agua dependerá tanto de las sustancias que se encuentren disueltas, como de las partículas que se encuentren en suspensión. Se clasifica como \textit{color verdadero} al que depende solamente el agua y sustancias disueltas, mientras el \textit{aparente} es el que incluye las partículas en suspensión (que a su vez generan turbidez). El color aparente es entonces el de la muestra tal como se obtiene en el sistema a estudiar.
 
 La medición de color se realiza por medio de un espectrofotómetro por medio del color Platino-Cobalto (Pt-Co) que es el color que se encuentra en aguas y aguas residuales. Varía de un aspecto amarillo claro hasta marrón, con un rango de 0-500 en Unidades de Platino - Cobalto (UPC).
 
@@ -799,7 +798,7 @@ La medición de color se realiza por medio de un espectrofotómetro por medio del 
 				
 Es un parametro utilizado para determinar el oxígeno disuelto en el agua, a mayor temperatura menor concentración de oxígeno disuelto; la disminución de oxígeno disuelto genera trastornos en el ambiente acuático. La temperatura aceptable para el consumo humano es de 15°C.
 
-			\subsubsection{Prueba de Jarras}
+			\subsubsection{Determinación de Dosis de Coagulante: Prueba de Jarras}
 				
 En la industria hidrológica es la Prueba de Jarras la que proporciona los rangos óptimos de la dosis de coagulante según el pH de agua a tratar, para llevar a cabo la coagulación; este ensayo de laboratorio simula las condiciones en que se realiza el proceso de coagulación, floculación y sedimentación en la planta, partiendo de varias muestras de agua cruda tomada de la fuente, con características de calidad conocidas, y añadiendo en cada muestra los productos químicos variando tipo y dosis. El tiempo de retención de las unidades del proceso también es determinado mediante la Prueba de Jarras, tiempo necesario para la mezcla rápida e inicio de formación del flóculo (grumo formado por adhesión de sólidos en suspensión). Las condiciones operacionales para las etapas que comprende el proceso de potabilización, se determinan con esta prueba.
 
@@ -807,8 +806,8 @@ La metodología para realizar la prueba de Jarras consiste primero en tener conoc
 
 				\begin{figure}
 					\centering
-					\includegraphics[scale=0.6]{figures/3jarras}
-					\caption{Prueba de Jarras. [41]}
+					\includegraphics[scale=0.53]{figures/3jarras}
+					\caption{Prueba de Jarras \citep{perezNAabastecimiento}.}
 					\label{fig-jarras}
 				\end{figure}
 				
@@ -816,16 +815,14 @@ La metodología para realizar la prueba de Jarras consiste primero en tener conoc
 			
 La Unidad de Potabilización es la encargada de tomar el agua cruda con características particulares y convertirla en agua potable, tal como se muestra en el diagrama de la figura \ref{fig-potab}. Partiendo del modelo de negocio de la unidad de Operaciones, se desglosan las unidades funcionales de la Potabilización (véase figura \ref{fig-valuechainpotab}): Coagulación, floculación, sedimentación, filtración, desinfección.
 
-				\begin{figure}
+				\begin{figure}[H]
 					\centering
-					\includegraphics[scale=0.7]{figures/3valuechainpotab}
+					\includegraphics[scale=0.8]{figures/2valuechainpotab}
 					\caption{Cadena de valor de la Unidad de Potabilización.}
 					\label{fig-valuechainpotab}
 				\end{figure}
-				
-Como se mencionó previamente, se toma como caso de estudio la Planta de Potabilización "Dr. Eduardo Jáuregui", ubicada en la Hoyada de Milla, municipio Milla del Estado Mérida, la cual tiene una producción de 300 L/s de agua potable, siendo este el caudal promedio que genera la fuente. Es importante mencionar que el diseño estructural de las plantas de potabilización se realiza luego de aplicar estudios a la fuente que surtirá el proceso, de modo que en casos extremos, usualmente periodos de sequía, el caudal mínimo que entre a la planta logre en lo posible mantener la producción, sin afectar la distribución de agua a la población.
 
-La unidad de potabilización debe cuidar que el proceso, el flujo de producto y los recursos estén coordinados. El modelo del proceso comprende la información y buen funcionamiento de cada eslabón de la potabilización, incluyendo los modelos de mantenimiento en las unidades y de consumo de la población; en el caso de la planta Jáuregui no se tienen registros de consumo. Respecto al flujo de producto se debe cuidar que la calidad y cantidad de agua en la entrada y salida del proceso sean las adecuadas. El modelo de recursos por su parte, permite distribuir los químicos utilizados, como el sulfato de aluminio y el cloro, en las unidades que lo requieran.
+La unidad de potabilización debe cuidar que el proceso, el flujo de producto y los recursos estén coordinados. El modelo del proceso comprende la información y buen funcionamiento de cada eslabón de la potabilización, incluyendo los modelos de mantenimiento en las unidades y de consumo de la población. Respecto al flujo de producto se debe cuidar que la calidad y cantidad de agua en la entrada y salida del proceso sean las adecuadas. El modelo de recursos por su parte, permite distribuir los químicos utilizados, como el sulfato de aluminio y el cloro, en las unidades que lo requieran.
 
 La unidad debe llevar un registro de rendimiento y fallas, de manera que se puedan tomar decisiones en pro de mejorías en la producción mientras se mantiene la continuidad del proceso.
 
@@ -857,9 +854,16 @@ El proceso de coagulación consiste en quitar la turbidez del agua cruda provenie
 					\item  \textbf{Liofílicos:} Si las partículas tienen fuerte afinidad al medio de suspensión. Por ejemplo el jabón disperso en agua, gelatina en agua, proteínas, virus.
 				\end{itemize}
 					
-Para remover la turbidez se realiza un procedimiento de desestabilización química sobre el agua turbia, neutralizando las fuerzas que mantienen separadas las partículas coloidales mediante adición de coagulantes químicos, estos comúnmente son: Sulfato de aluminio, Sulfato Férrico o Polímeros catiónicos.
+Para remover la turbidez se realiza un procedimiento de desestabilización química sobre el agua turbia, neutralizando las fuerzas que mantienen separadas las partículas coloidales mediante adición de coagulantes químicos, estos comúnmente son: Sulfato de aluminio, Sulfato Férrico o Polímeros catiónicos. En la figura \ref{fig-coloides} se presenta la formación de flóculos al añadir el coagulante.
 
-Para que la desestabilización se realice de forma adecuada es necesaria la aplicación de energía por mezclado rápido (hidráulico o mecánico), que hace que el material en suspensión cargado eléctricamente al entrar en contacto con los elementos químicos (dispersados de forma rápida y homogénea), permitan la aglomeración de las partículas en suspensión, formando partículas de mayor tamaño llamadas flóculos. Los tiempos de retención varían entre 0,3 y 5 minutos [6] dependiendo del coagulante y el mecanismo de la mezcla, por ejemplo, los polímeros se distribuyen más lentamente que los iones metálicos debido a su mayor molécula, por lo tanto, requerirán mayor tiempo de residencia en la unidad que los coagulantes metálicos hidrolizantes. Esta desestabilización química que genera cargas iónicas permite eliminar el 95\% de las bacterias presentes en el agua cruda en los flóculos y el 90\% de las arcillas, partículas gramnegativas que quedan neutralizadas al añadir el químico.
+				\begin{figure}[H]
+					\centering
+					\includegraphics[scale=0.55]{figures/2coloides}
+					\caption{Formación de coloides.}
+					\label{fig-coloides}
+				\end{figure}
+
+Para que la desestabilización se realice de forma adecuada es necesaria la aplicación de energía por mezclado rápido (hidráulico o mecánico), que hace que el material en suspensión cargado eléctricamente al entrar en contacto con los elementos químicos (dispersados de forma rápida y homogénea), permitan la aglomeración de las partículas en suspensión, formando partículas de mayor tamaño llamadas flóculos. Los tiempos de retención varían entre 0,3 y 5 minutos dependiendo del coagulante y el mecanismo de la mezcla, por ejemplo, los polímeros se distribuyen más lentamente que los iones metálicos debido a su mayor molécula, por lo tanto, requerirán mayor tiempo de residencia en la unidad que los coagulantes metálicos hidrolizantes. Esta desestabilización química que genera cargas iónicas permite eliminar el 95\% de las bacterias presentes en el agua cruda en los flóculos y el 90\% de las arcillas, partículas gramnegativas que quedan neutralizadas al añadir el químico.
 
 Para realizar el proceso de coagulación hay dos estructuras principales, la estructura mecánica consiste en un tanque con un agitador a motor, y la estructura hidráulica que trata de un canal de ingreso con desnivel, tal desnivel genera un resalto hidráulico óptimo para realizar la mezcla requerida con el coagulante.
 
@@ -899,16 +903,14 @@ Flujo de agua con añadidura de químicos coagulantes, características de calidad 
 
 El mantenimiento de la unidad se asocia al control de válvulas o compuertas (entrada, salida, drenaje), y a los equipos electromecánicos, si aplica.
 
+En la figura \ref{fig-parshall} se presenta un canal Parshall, utilizado para generar la mezcla rápida en la unidad de coagulación, mediante el resalto hidráulico.
+
 \vspace{4mm}
 
-En la planta Jáuregui el proceso de coagulación se realiza de forma hidráulica con un canal Parshall (véase figura \ref{fig-parshall}). La dosis de coagulante se añade justo en el resalto hidráulico que genera la mezcla rápida, en cuestión de segundos. El coagulante utilizado es el Sulfato de Aluminio ($Al_{2}(SO_{4})_{3} 18H_{2}O$), químico que debe aplicarse con un rango óptimo de pH entre 5 - 8, consideración que se cumple puesto que la fuente mantiene un pH de 7,1. De igual forma, la temperatura del agua es templada sin cambios bruscos, por tanto no afecta las reacciones químicas.
-
-En esta planta se condiciona la adición de coagulante, es decir, según el resultado de calidad de agua, si la turbidez se encuentra por debajo de 13 NTU, no se añade ninguna dosis de coagulante. La razón de esta decisión se debe a que el proceso disminuye la turbidez lo suficiente para asegurar agua con calidad aceptable al culminar la potabilización, por lo que se reserva el químico coagulante para cuando se generen cambios de turbidez bruscos en la entrada de la planta.
-
-				\begin{figure}
+				\begin{figure}[t]
 					\centering
-					\includegraphics[scale=0.5]{figures/2parshall}
-					\caption{Canal Parshall, unidad de coagulación.[138]}
+					\includegraphics[scale=0.45]{figures/2parshall}
+					\caption{Canal Parshall, unidad de coagulación \citep{hudson1997medicion}.}
 					\label{fig-parshall}
 				\end{figure}
 				
@@ -924,7 +926,7 @@ Agua cruda con coagulantes añadidos en la unidad anterior; valores de calidad y 
 
 El objetivo principal de la floculación es reunir las partículas desestabilizadas en el proceso de coagulación, para formar aglomeraciones de mayor peso y tamaño que sedimenten con mayor eficiencia. La masa de agua es sometida a una mezcla lenta que permite la aglomeración de las partículas coloidales para disminuir la turbiedad existente.
 
-La unidad se compone de tanques de floculación con agitadores mecánicos o hidráulicos, de flujo vertical, horizontal, alabama o helicoidales. Con gradientes de velocidad decrecientes para garantizar el crecimiento progresivo de los flóculos. El tiempo de mezcla y el gradiente de la velocidad se obtienen mediante la prueba de Jarras detallada previamente, generalmente el gradiente (G) suele ubicarse entre $20s^{?1} ? 70s^{?1}$, y el tiempo de retención (T) entre 20 y 30 minutos. La agitación muy lenta o muy rápida del fluido, puede producir sedimentación o rompimiento de flóculos en la unidad, respectivamente.
+La unidad se compone de tanques de floculación con agitadores mecánicos o hidráulicos, de flujo vertical, horizontal, alabama o helicoidales. Con gradientes de velocidad decrecientes para garantizar el crecimiento progresivo de los flóculos. El tiempo de mezcla y el gradiente de la velocidad se obtienen mediante la prueba de Jarras detallada previamente, generalmente el gradiente (G) suele ubicarse entre $20s^{-1} y 70s^{-1}$, y el tiempo de retención (T) entre 20 y 30 minutos. La agitación muy lenta o muy rápida del fluido, puede producir sedimentación o rompimiento de flóculos en la unidad, respectivamente.
 
 Los parámetros operacionales y procesos de control de la unidad de floculación son:
 
@@ -941,18 +943,33 @@ Flujo de agua con flóculos listos para la sedimentación.
 
 \vspace{4mm}
 
-Para operación y mantenimiento de la unidad funcional, cada floculador cuenta con drenaje protegido que descarga en una línea común; el sistema debe incluir una válvula de compuerta. [8]
+Para operación y mantenimiento de la unidad funcional, cada floculador debe contar con drenaje protegido que descarga en una línea común; el sistema también debe incluir una válvula de compuerta \citep{pinos2016analisis}.
 
 \vspace{4mm}
 
-En la planta Jáuregui se cuentan con dos unidades de floculación; el flujo proveniente de coagulación es dividido hacia dos unidades de floculación mecánica de turbina (véase figura \ref{fig-flocculator}), de dos cámaras cada una. La segunda cámara de cada floculador se conecta a la unidad de sedimentación.
+En la figura \ref{fig-flocc}, $(a)$ y $(b)$, se presentan los floculadores mecánicos e hidráulicos respectivamente.
 
-				\begin{figure}
+				\begin{figure}[H]
 					\centering
-					\includegraphics[scale=0.5]{figures/3flocculator}
-					\caption{Floculador mecánico de turbina.[115]}
-					\label{fig-flocculator}
+					\subfigure[Floculador mecánico de turbina.]{\includegraphics[scale=0.4]{figures/3flocculator}}
+					\subfigure[Floculador hidráulico.]{\includegraphics[scale=0.5]{figures/3flocculator2}}
+					\caption{Floculadores \citep{sena1999operacion}.}
+					\label{fig-flocc}
 				\end{figure}
+
+%				\begin{figure}
+%					\centering
+%					\includegraphics[scale=0.5]{figures/3flocculator}
+%					\caption{Floculador mecánico de turbina \citep{sena1999operacion}.}
+%					\label{fig-flocculator}
+%				\end{figure}
+%				
+%				\begin{figure}
+%					\centering
+%					\includegraphics[scale=0.5]{figures/3flocculator2}
+%					\caption{Floculador hidráulico \citep{sena1999operacion}.}
+%					\label{fig-flocculator2}
+%				\end{figure}
 				
 			\subsubsection{Sedimentación}
 				
@@ -990,12 +1007,12 @@ Agua clarificada; calidad y cantidad de flujo.
 
 El mantenimiento de la unidad gira en torno a la calidad del agua; de recibir agua con baja turbidez, usualmente en periodos sin lluvia, el manto de lodos puede vaciarse cada 3 o 4 días, de lo contrario debe realizarse a diario. El flujo de salida hacia los filtros se verá interrumpido sin afectar la distribución hacia la comunidad. Con periodos de tiempo más distanciados, cercano a dos meses, debe realizarse una limpieza profunda de la unidad, con vaciado total para el lavado, con el fin de evitar la formación de algas y organismos que afecten la calidad del agua.
 
-En la planta Jáuregui se tienen dos unidades de sedimentación de tipo laminar (véase figura \ref{sediment}), cada una con dos canales de recolección, es decir, cuatro pasillos de tubos recolectores. El agua proveniente de la unidad de floculación entra por la parte inferior del tanque de sedimentación, de forma que los flóculos se asienten en las láminas y el agua clarificada se mantenga en la superficie. Los cuatro canales recolectores se unen en un canal común que se dirige a la unidad de filtración.
+En la figura \ref{fig-sediment} se muestra un sedimentador tipo laminar, uno de los más comunes en el campo de potabilización.
 
-				\begin{figure}
+				\begin{figure}[H]
 					\centering
-					\includegraphics[scale=0.8]{figures/3sediment}
-					\caption{Sedimentador laminar.[116]}
+					\includegraphics[scale=0.75]{figures/3sediment}
+					\caption{Sedimentador laminar \citep{gonzalez2016teoria}.}
 					\label{fig-sediment}
 				\end{figure}
 
@@ -1013,18 +1030,18 @@ Filtración se denomina al proceso de separación de partículas suspendidas en un 
 
 La filtración rápida es utilizada como pulimento final en la cadena de potabilización, previo a la desinfección; por su parte, la filtración lenta se lleva a cabo cuando no hay una cadena de potabilización, sino un proceso de prefiltrado, como tratamiento único o como pretratamiento a algún proceso que lo amerite. Las velocidades de filtración son 120-360 m3/m2/día para filtros rápidos y 7-14 m3/m2/día en filtros lentos.
 
-El diseño de filtros consta de un falso fondo, compuesto por lechos que pueden variar en composición (arena, grava, antracita, o mezcla de varios componentes), elección ligada a la calidad de agua a tratar. Debido a este fondo se hace difícil la medición de caudal en la salida de cada filtro, pudiendo utilizarse sensores en la tubería de recolección o realizar el cálculo aproximado mediante aforo. En la figura \ref{filter} se tiene el detalle de los componentes del filtro, el agua proveniente de la unidad de sedimentación ingresa por la parte superior, el agua es recolectada por la parte inferior, bajo el lecho filtrante. Se tienen válvulas de retro lavado (el agua se impulsa de abajo hacia arriba) para el mantenimiento de la unidad, y canales superiores que dirigen el agua de lavado hacia el drenaje.
+El diseño de filtros consta de un falso fondo, compuesto por lechos que pueden variar en composición (arena, grava, antracita, o mezcla de varios componentes), elección ligada a la calidad de agua a tratar. Debido a este fondo se hace difícil la medición de caudal en la salida de cada filtro, pudiendo utilizarse sensores en la tubería de recolección o realizar el cálculo aproximado mediante aforo. En la figura \ref{fig-filter} se tiene el detalle de los componentes del filtro, el agua proveniente de la unidad de sedimentación ingresa por la parte superior, el agua es recolectada por la parte inferior, bajo el lecho filtrante. Se tienen válvulas de retro lavado (el agua se impulsa de abajo hacia arriba) para el mantenimiento de la unidad, y canales superiores que dirigen el agua de lavado hacia el drenaje.
+
+				\begin{figure}[H]
+					\centering
+					\includegraphics[scale=0.65]{figures/3filter}
+					\caption{Filtro rápido \citep{sena1999operacion}.}
+					\label{fig-filter}
+				\end{figure}
 
 En esta unidad se debe ejecutar un protocolo para limpieza de filtros una vez esté colmatado. El lavado debe realizarse con agua potable, la mínima cantidad posible, alrededor de 3\% mensual de consumo de agua tratada como máximo. La frecuencia de limpieza depende de la calidad de agua a tratar, esta puede variar desde 2 días hasta dos meses según sea el caso.
 
 La condición operacional sobre la colmatación de los filtros, es dada por el flujo de salida del filtro, si el flujo de salida es menor a la velocidad de filtración (rango asociado a la estructura del filtro, calidad del agua, etc.), considerando también el caudal de entrada, se debe proceder al lavado, sin embargo esta medición puede ser difícil de obtener dependiendo del diseño de la unidad, es por ello que se puede utilizar una medición indirecta de la colmatación de los filtros asociadas a la turbulencia y/o nivel en el tanque de filtración. Una unidad con poca turbulencia, o con nivel máximo de agua, debe pasar a retro lavado.
-
-				\begin{figure}
-					\centering
-					\includegraphics[scale=0.7]{figures/3filter}
-					\caption{Filtro rápido.[51]}
-					\label{fig-filter}
-				\end{figure}
 
 Los procesos que deben mantenerse controlados en la unidad de filtración son:
 
@@ -1043,16 +1060,7 @@ Agua sin sedimentos.
 
 \vspace{4mm}
 
-En la planta Jáuregui la unidad de filtración consta de seis filtros rápidos instalados en serie, con un lecho filtrante de 1,05 m, compuesto por grava, arena y antracita (véase figura \ref{realfilter}). Se realiza retro lavado con agua y aire, proceso que dura alrededor de 15 minutos.
-
 Cuando un filtro sale de producción, los demás tienen la capacidad para recibir el caudal desviado de éste, lo que resalta la robustez del proceso y la redundancia estructural, de modo que no se pierda la continuidad en la producción.
-
-				\begin{figure}
-					\centering
-					\includegraphics[scale=0.1]{figures/3realfilter}
-					\caption{Lecho filtrante.}
-					\label{fig-realfilter}
-				\end{figure}
 
 			\subsubsection{Desinfección}
 				
@@ -1081,56 +1089,90 @@ Procesos que deben ser controlados en la unidad de desinfección:
 
 Agua potabilizada. Calidad y cantidad de flujo a distribuir.
 
-		\section{Sistemas Holónicos}
-		\label{sec-uph}
+\vspace{5mm}
 
-			\subsection{Descripción del conocimiento de la UPH}
-
-			\subsection{Dinámica del proceso físico y su supervisión}
-
-Los procesos físicos que ocurren dentro de una unidad pueden ser continuos, discontinuos o discretos. La capacidad de construir modelos que describan su comportamiento permite tener mecanismos de control que garanticen los objetivos establecidos para una unidad. El comportamiento del proceso depende de las capacidades y la condición del equipo, la materia prima, la energía, etc. Se espera que los procesos continuos sean "estacionarios", pero tienen varios modos de operación que resultan de cambios en las entradas o salidas, o cambios en la condición del equipo. Los sistemas híbridos son técnicas formales que permiten describir el comportamiento de ese tipo de procesos  (citep {Antsaklis1998, Antsaklis2003, Branicky1998, Lemmon1999, VanDerSchaft2000}). Del mismo modo, un proceso por lotes se caracteriza por secuencias de modos de operación que permiten realizar una tarea de producción \ citep {Alvarez1999, Lennartson1994, Lennartson2016, Mendez2006, Tittus1999a}. 
-
-Entonces, un sistema de producción tiene dos tipos de dinámica: \emph{dinámica continua} que describe las reglas mecánicas, químicas o biológicas y un conjunto de reglas lógicas; \emph{dinámica discreta}, que conmuta la dinámica continua y se activa por eventos. La dinámica continua está representada por un conjunto de ecuaciones diferenciales y las discretas por sistemas a eventos discretos \ citep {Cassandras2009}. 
-
-Un sistema dinámico híbrido (HDS) se define de varias maneras: como un sistema de transición de fase \ citep {Manna1993}, como un autómata híbrido \ citep {Alur2000, Branicky1998, Henzinger2000, Lygeros2012}, por medio de redes Petri \ citep {DAVID2001, David2005}. \ cite {Lygeros2012} da una descripción de conceptos como \emph{Trayectoria híbrida, ejecución, estado alcanzable, componibilidad} que permite la construcción de mecanismos de control y supervisión para el HDS a partir de un automata en conjunción con la dinámica continua.
-
-En el caso estudiado, la sincronización (cooperación entre unidades) procede físicamente por los flujos de salida que son entradas a otras unidades, por lo que se realiza una extensión de la dinámica híbrida definida por Lygeros.
-
-Como muestra la figura \ref{fig-uphmodel}, los mecanismos de toma de decisiones de la UPH son los controladores, el supervisor, y el programador, su síntesis está sujeta de manera clásica a los modelos de procesos físicos y tangencialmente al escrutinio de los equipos dado por mantenimiento. Desde la visión de I4.0, la unidad de producción debe ser cognitiva, para ello se requiere del modelo de conocimiento y del modelo de gestión de la unidad. El modelo de conocimiento (modelo físico) es derivado de los modelos de comportamiento de los elementos que conforman la unidad, a saber, los recursos, el proceso físico, su infraestructura y su equipamiento. El modelo físico proporciona el estado interno de la unidad, y está descrito desde la óptica de sistemas dinámicos. El modelo de gestión contiene la capacidad, habilidades/competencias, estado de la unidad, y tiene la propiedad de dialogar con otras unidades o con un coordinador para negociar su producción, mostrar la evolución de la producción y su condición para la programación. El modelo de gestión de la unidad suple información  al coordinador (supervisor sintetizado del modelo de gestión de rutas del producto) para garantizar objetivos de producción, esto es, la planificación determina la ruta de producción por medio del modelo de gestión de cada unidad, la programación determina el supervisor con el fin de seguir, evaluar y reconfigurar, de ser necesario y si es posible lo establecido según la planificación acordada. Compatibilizar el modelo de gestión y el modelo físico en el gemelo digital conlleva a establecer un modelo de Sistemas a Eventos Discretos que proporciona una imagen del comportamiento físico de la unidad que no es más que la imagen de los componentes de la unidad.
-
-El modelo cognitivo anterior corresponde a una dinámica híbrida de una unidad holónica de producción y está matemáticamente dado por un autómata híbrido $ H $ como una colección $H~=~(Q,~X,~U,~\Gamma,~Y,~f,~h_e,~h_i,~y_e,~g, ~Init,~Dom,~E,~G,~R)$ donde: 
-\\
-\\
- $Q \in Z^k, \{q_i\}, i=1, \cdots,k $ es el conjunto de \emph{estados discretos}, \\
- $X \in\Re^n, \{x_i\}, i=1, \cdots,n$ es el conjunto de \emph{variables de estado continuos}, \\
- $U \in\Re^{m+l}, \{u_{c_i}\}, i=1, \cdots,m$ es el conjunto de \emph{entradas de control}, \\
- $\{u_{f_i}\}, i=1, \cdots,l$ es el conjunto de \emph{entradas físicas}, \\  
- $\Gamma \in\Re^p, \{\Gamma\}, i=1, \cdots,p$ es el conjunto de \emph{parametros}, \\
- $Y \in\Re^{s+r}, \{y_{in_i}\}, i=1, \cdots,s$  es el conjunto de \emph{salidas de proceso}, \\
- $\{y_{e_i}\}, i=1, \cdots,r$ es el conjunto de \emph{salidas de gestión}, \\ 
- $f(\cdotp ,\cdotp): Q\times X \times U \mapsto \Re^n$ es el \emph{campo vectorial}, \\ 
- $g(\cdotp): \Re^s \mapsto \Re^m$ es la \emph{función del control}, \\
- $y_{e-1} \in\Re^l$ son las \emph{entradas físicas}, \\
- $h_e(\cdotp): X\mapsto \Re^r$ son las \emph{salidas del proceso}, \\
- $h_in(\cdotp): X\mapsto \Re^s$ es la \emph{función de salida para la gestión}, \\
- $Init\subseteq Q \times X$ es el conjunto de \emph{estados iniciales}, \\
- $Dom(\cdotp)~:~ Q \mapsto 2^X$ es el \emph{dominio}, \\
- $E \subseteq Q \times Q$ es el conjunto  de \emph{aristas}, \\ 
- $G(\cdotp)~:~ E \mapsto 2^X$ son las \emph{condiciones de guarda}, \\ 
- $R(\cdotp ,\cdotp)~:~E \times X \mapsto 2^X$ es el \emph{mapa de reinicio}. \\
-
-En la Figura \ref{fig-uphmodel} se muestra la arquitectura de modelos requeridos para conformar el gemelo digital de una UHP, solo considerando el proceso físico 
+Según los diseños observados en las plantas de tratamiento, se deduce que su estructura general consta de demultiplexores y multiplexores (figura \ref{fig-multiplexbase}), es decir, la entrada es dividida al finalizar el paso por las unidades para generar varias líneas de producción compuestas por coagulación - floculación - sedimentación, disminuyendo la velocidad del flujo circulante. El efluente de cada sedimentador se recolecta en un canal único, la velocidad y caudal aumentan para dirigir la masa de agua hacia la unidad de filtración, donde se divide nuevamente y por última vez, ya que el canal de recolección de agua filtrada dirige el flujo hacia desinfección, sin ninguna desviación. Los instrumentos mínimos para obtener un gemelo digital adecuado de la planta se ubican en el diagrama adjunto, consta de herramientas de medición de caudal, pH, turbidez, color para las características del flujo, y de nivel de agua en los tanques.
 
 			\begin{figure}
 				\centering
-				\includegraphics[scale=0.5]{figures/2uphmodel}
+				\includegraphics[scale=0.4]{figures/2multiplexbase}
+				\caption{Planta de tratamiento plano superior.}
+				\label{fig-multiplexbase}
+			\end{figure}
+
+		\section{Sistemas Holónicos de Producción}
+		\label{sec-uph}
+
+			\subsection{Descripción del conocimiento de la UHP}
+			
+Según lo descrito en \cite{chacon2019a}, cada Unidad de Producción (UP) tiene su propio comportamiento, y el comportamiento global proviene de la composición de los comportamientos locales. Para construir un enfoque integrado de automatización es necesario contar con modelos que cubran \citep{perez2015a}:
+
+				\begin{itemize}
+					\item[$-$]	Modelos de Producción, que consta de modelos de producto y modelos de proceso para cada etapa del modelo de producto.
+					\item[$-$]	Modelos Topológicos, que es la disposición de la planta que describe el equipo, su jerarquía y las interconexiones entre las PU.
+					\item[$-$]	Modelo de Intercambio de Información, representa el flujo de datos desde el piso de la planta a las capas de decisión.
+					\item[$-$]	Modelo de Información de la Planta (PIM).
+				\end{itemize}
+				
+La arquitectura de las UHP cubre los aspectos descritos, y sus componentes, dados en la figura \ref{fig-umlhpu},  tienen el conocimiento necesario para la toma de decisiones.
+
+				\begin{figure}[H]
+					\centering
+					\includegraphics[scale=0.4]{figures/2umlhpu}
+					\caption{Diagrama de clases de los componentes de una UHP \citep{chacon2019a}.}
+					\label{fig-umlhpu}
+				\end{figure}
+
+La producción basada en el conocimiento se agrupa en dos elementos: 
+
+				\begin{itemize}
+					\item[$-$]	El modelo de producto que describe el conjunto de servicios que proporcionan los recursos inteligentes para obtener un producto y su orden de ejecución, incluida la fórmula.
+					\item[$-$]	El modelo del proceso, que es el procedimiento utilizado por una HPU para proporcionar un servicio.
+				\end{itemize}
+
+Los recursos pueden ser internos de la UHP o pueden ser de otra UHP. 
+
+El Holón de Ingeniería (EH, por sus siglas en inglés) gestiona el conocimiento asociado a la producción.
+
+El Holón Misión (MH, por sus siglas en inglés), tiene el objetivo de ser alcanzado por una UP durante un período, también tiene la información sobre el estado, cumplimiento de la misión y las metas.
+
+El Holón de Recursos (RH) es el elemento central de la arquitectura utilizada. RH gestiona sus recursos internos y ejecuta los procesos físicos necesarios para alcanzar el objetivo de producción. RH negocia con otras misiones, establece compromisos de producción y calcula el supervisor que se utilizará para monitorear y controlar la misión. Una UHP puede ser un recurso para otra UHP más genérica. 
+
+Para gestionar los procesos internos, la UHP está dividida en varias capas de recursos, como se muestra en la figura \ref{fig-holonknowledge}. Las capas superiores de recursos realizan la negociación con otras UHP. Evalúa las posibilidades de lograr su parte de la meta global y envía un comportamiento esperado para evaluar todo el comportamiento. Si la composición del sistema se considera viable, se llega a un acuerdo.
+
+				\begin{figure}
+					\centering
+					\includegraphics[scale=0.6]{figures/3holonknowledge}
+					\caption{Capas de recursos  en la UHP \citep{chacon2019a}.}
+					\label{fig-holonknowledge}
+				\end{figure}
+
+El Holón Supervisor (SH) realiza actividades de gestión de recursos. Las actividades de planificación y programación comienzan con la recepción de un objetivo de producción de la capa empresarial. Se construye un árbol de accesibilidad componiendo una abstracción del comportamiento de los procesos físicos, y se genera el camino deseado para cada recurso y un supervisor "distribuido" para los recursos "distribuidos", como se muestra (Chacón et al. 2012). Los supervisores locales determinan los reguladores de acuerdo al estado del proceso físico y la trayectoria deseada cuando suceden los eventos; esto se conmuta a un regulador de acuerdo al estado del proceso de producción.
+
+Para conseguir la autonomía, cada UP debe disponer de modelos que almacenen el conocimiento de la planta (comportamiento, interconexiones y controladores) que interactúan entre sí para conseguir el control global de la unidad.
+
+			\subsection{Dinámica del proceso físico y su supervisión}
+
+Los procesos físicos que ocurren dentro de una unidad pueden ser continuos, discontinuos o discretos. La capacidad de construir modelos que describan su comportamiento permite tener mecanismos de control que garanticen los objetivos establecidos para una unidad. El comportamiento del proceso depende de las capacidades y la condición del equipo, la materia prima, la energía, etc. Se espera que los procesos continuos sean "estacionarios", pero tienen varios modos de operación que resultan de cambios en las entradas o salidas, o cambios en la condición del equipo. Los sistemas híbridos son técnicas formales que permiten describir el comportamiento de ese tipo de procesos \citep{Antsaklis1998, Antsaklis2003, Branicky1998, Lemmon1999, VanDerSchaft2000}. Del mismo modo, un proceso por lotes se caracteriza por secuencias de modos de operación que permiten realizar una tarea de producción \citep{Lennartson1994, Mendez2006, Tittus1999a}. 
+
+Entonces, un sistema de producción tiene dos tipos de dinámica: \emph{dinámica continua} que describe las reglas mecánicas, químicas o biológicas y un conjunto de reglas lógicas; \emph{dinámica discreta}, que conmuta la dinámica continua y se activa por eventos. La dinámica continua está representada por un conjunto de ecuaciones diferenciales y las discretas por sistemas a eventos discretos \citep{Cassandras2009}.
+
+Un sistema dinámico híbrido (HDS) se define de varias maneras: como un sistema de transición de fase \citep{Manna1993}, como un autómata híbrido \citep{Lygeros2012}, por medio de redes Petri. \cite{Lygeros2012} da una descripción de conceptos como \emph{Trayectoria híbrida, ejecución, estado alcanzable, componibilidad} que permite la construcción de mecanismos de control y supervisión para el HDS a partir de un automata en conjunción con la dinámica continua.
+
+Los mecanismos de toma de decisiones de la UHP son los controladores, el supervisor, y el programador, su síntesis está sujeta de manera clásica a los modelos de procesos físicos y tangencialmente al escrutinio de los equipos dado por mantenimiento. Desde la visión de I4.0, la unidad de producción debe ser cognitiva, para ello se requiere del modelo de conocimiento y del modelo de gestión de la unidad. El modelo de conocimiento (modelo físico) es derivado de los modelos de comportamiento de los elementos que conforman la unidad, a saber, los recursos, el proceso físico, su infraestructura y su equipamiento. El modelo físico proporciona el estado interno de la unidad, y está descrito desde la óptica de sistemas dinámicos. El modelo de gestión contiene la capacidad, habilidades/competencias, estado de la unidad, y tiene la propiedad de dialogar con otras unidades o con un coordinador para negociar su producción, mostrar la evolución de la producción y su condición para la programación. El modelo de gestión de la unidad suple información  al coordinador (supervisor sintetizado del modelo de gestión de rutas del producto) para garantizar objetivos de producción, esto es, la planificación determina la ruta de producción por medio del modelo de gestión de cada unidad, la programación determina el supervisor con el fin de seguir, evaluar y reconfigurar, de ser necesario y si es posible lo establecido según la planificación acordada. Compatibilizar el modelo de gestión y el modelo físico en el gemelo digital conlleva a establecer un modelo de Sistemas a Eventos Discretos que proporciona una imagen del comportamiento físico de la unidad que no es más que la imagen de los componentes de la unidad. El modelo cognitivo descrito corresponde a una dinámica híbrida.
+
+En la Figura \ref{fig-uphmodel} se muestra la arquitectura de modelos requeridos para conformar el gemelo digital de una UHP, solo considerando el proceso físico.
+
+			\begin{figure}
+				\centering
+				\includegraphics[scale=0.4]{figures/2uphmodel}
 				\caption{Arquitectura de modelo para ge1melo digital de HPU, comportamiento físico.}
 				\label{fig-uphmodel}
 			\end{figure}
 
-La definición dada en \ citep {Lygeros2012} para un sistema dinámico híbrido general controlado.
+En el caso estudiado, la sincronización (cooperación entre unidades) procede físicamente por los flujos de salida que son entradas a otras unidades, por lo que se realiza una extensión de la dinámica híbrida definida por Lygeros.
 
-Un autómata híbrido $H$ es un conjunto $H~=~(Q,~X,~f,~Init,~Dom,~E,~G,~R)$ donde: 
+La definición dada en \cite{Lygeros2012} para un sistema dinámico híbrido general controlado, se presenta como un autómata híbrido $H$ que es un conjunto $H~=~(Q,~X,~f,~Init,~Dom,~E,~G,~R)$, donde: 
 \\
 \\
  $Q~=~\{q_1,q_2,q_3.\ldots\}$ es el conjunto de \emph{estados discretos}, \\ 
@@ -1142,13 +1184,38 @@ Un autómata híbrido $H$ es un conjunto $H~=~(Q,~X,~f,~Init,~Dom,~E,~G,~R)$ donde
  $G(\cdotp)~:~ E \mapsto 2^X$ son las \emph{condiciones de guarda}, \\
  $R(\cdotp ,\cdotp)~:~E \times X \mapsto 2^X$ es un \emph{mapa de reinicio}. \\
  
- 		\section{Unidades Holónicas en Hidrológicas}
-		
-Desde la visión propuesta de un enfoque holónico asociado a los sistemas ciber-físicos, la descripción del modelo de conocimiento de las unidades holónicas de producción (UPH) pasa por una caracterización del equipamiento de la unidad, descripción de las competencias-habilidades, modelos y modos de operación, información que constituye el modelo de conocimiento. Una visión que asocia la cadena de valor con unidades de producción para el área de operaciones es mostrado en la figura \ref{fig-holonichydro}.
-			
-De la cadena de unidades en las hidrológicas, se tomará para el estudio el proceso de Potabilización del Área de Operaciones, con el fin de generar los modelos de conocimiento e integrarlos desde una visión de sistemas híbridos.
+Para el desarrollo de los modelos híbridos se utilizan ecuaciones con dinámicas continuas que describan partes del proceso y en el caso de estudio se utilizan redes de Petri para los eventos discretos.
 
-Debido a la variedad posible en la configuración del proceso de potabilización, se toma como referencia la Planta de Potabilización "Dr. Eduardo Jáuregui", ubicada en el Estado Mérida. La referencia no hace exclusiva la visión del proyecto, sino que sirve de base para el desarrollo de los modelos de comportamiento.
+Las redes de Petri son una herramienta matemática que permite la representación gráfica de un modelo, facilitando el análisis y modificaciones del mismo. Están representadas por un diagrama compuesto de cuatro bloques: Lugares, transiciones, arcos y marcas o tokens; los lugares simbolizan los posibles estados del sistema, las transiciones representan los eventos que causan cambios en los estados, permitiendo la relación entre dos lugares, los arcos son la unión entre lugares y/o transiciones, armando la red e indicando el sentido del flujo y las marcas, que se ubican en los lugares, representan unidades de materia prima, productos en proceso o productos terminados. (véase figura \ref{fig-petrinet})
+
+			\begin{figure}[H]
+				\centering
+				\includegraphics[scale=0.5]{figures/2petrinet}
+				\caption{Ejemplo: componentes de una red de Petri.}
+				\label{fig-petrinet}
+			\end{figure}
+			
+Formalmente las redes de Petri se denotan mediante una quíntupla \citep{indriago2008modelo}:
+		
+			\begin{equation}
+				\label{eq-petridef}
+				RdP = (P, T, D^{+}, D^{-}, \mu_{0})
+			\end{equation}
+			
+donde,\\
+$P = \{p_{1}, p_{2}, ..., p_{n},\}$ es un conjunto finito de lugares, \\
+$T = \{t_{1}, t_{2}, ..., t_{m},\}$ es un conjunto finito de transiciones, \\
+$D^{+} \in Z^{n \times m}$ es la matriz de los lugares de salida, \\
+$D^{-} \in Z^{n \times m}$ es la matriz de los lugares de entrada, \\
+$D = D^{+} - D^{-}$ es la matriz de incidencia, \\
+$\mu_{0}: P \rightarrow \{\mu_{1}, \mu_{2}, \mu_{3}, ..., \mu_{n}\}$ es el vector marcación inicial con dimensión $n \times 1$, donde $\mu_{i}$ es la marcación inicial de cada lugar $p_{i}$,
+$P \cap T = \emptyset$ y $P \cup T \neq \emptyset$.\\
+Cada elemento de la matriz $D^{+}$, es el peso del arco del lugar de salida ${i}$ desde la transición ${j}$, y cada elemento de la matriz $D^{-}$, es el peso del arco desde el lugar de entrada ${i}$ hacia la transición ${j}$.
+\\
+ 
+ 		\subsection{Unidades Holónicas en Hidrológicas}
+		
+Desde la visión propuesta de un enfoque holónico asociado a los sistemas ciber-físicos, la descripción del modelo de conocimiento de las unidades holónicas de producción (UHP) pasa por una caracterización del equipamiento de la unidad, descripción de las competencias-habilidades, modelos y modos de operación, información que constituye el modelo de conocimiento. Una visión que asocia la cadena de valor con unidades de producción para el área de operaciones es mostrado en la figura \ref{fig-holonichydro}.
 
 			\begin{figure}[H]
 				\centering
@@ -1156,6 +1223,10 @@ Debido a la variedad posible en la configuración del proceso de potabilización, 
 				\caption{Unidades Holónicas de Producción para Hidrológicas.}
 				\label{fig-holonichydro}
 			\end{figure}
+			
+De la cadena de unidades en las hidrológicas, se tomará para el estudio el proceso de Potabilización del Área de Operaciones, con el fin de generar los modelos de conocimiento e integrarlos desde una visión de sistemas híbridos.
+
+Debido a la variedad posible en la configuración del proceso de potabilización, se toma como referencia la Planta de Potabilización "Dr. Eduardo Jáuregui", ubicada en el Estado Mérida. La referencia no hace exclusiva la visión del proyecto, sino que sirve de base para el desarrollo de los modelos de comportamiento.
 			
 		\section{Epanet}
 		
@@ -1171,7 +1242,7 @@ Es un programa orientado al análisis de los procesos de distribución de agua y e
 				\end{center}
 			\end{table}
 
-Epanet realiza un seguimiento de la evolución de caudales en tuberías, presión en los nodos, nivel en tanques, estado de bombas y válvulas, a lo largo del periodo de simulación, realizando un equilibrio hidráulico mediante cálculos iterativos. Los algoritmos de cálculo se encuentran en el manual del programa, apéndice D. [123]. El cálculo principal que efectúa Epanet es el de pérdidas de carga, usando como base la ecuación \ref{eq-hl}.
+Epanet realiza un seguimiento de la evolución de caudales en tuberías, presión en los nodos, nivel en tanques, estado de bombas y válvulas, a lo largo del periodo de simulación, realizando un equilibrio hidráulico mediante cálculos iterativos. Los algoritmos de cálculo se encuentran en el manual del programa, apéndice D. \citep{rossman2001epanet}. El cálculo principal que efectúa Epanet es el de pérdidas de carga, usando como base la ecuación \ref{eq-hl}.
 
 			\begin{equation}
 				\label{eq-hl}
@@ -1201,17 +1272,23 @@ $d$ diámetro de tubería (m), \\
 $L$ longitud de la tubería (m), \\
 $q$ caudal ($m^{3}/s$). \\
 
-Dentro de las opciones que ofrece Epanet se encuentra el EPANET-Matlab Toolkit, un software de código abierto desarrollado por el KIOS Research Center for Intelligent Systems and Networks de la Universidad de Chipre, que opera en el entorno Matlab, proporcionando una interfaz de programación para la última versión de EPANET. El Toolkit incluye comandos fáciles de usar para visualizar, modificar, simular y trazar los resultados producidos por las bibliotecas de EPANET. [59]
+Dentro de las opciones que ofrece Epanet se encuentra el EPANET-Matlab Toolkit, un software de código abierto desarrollado por el KIOS Research Center for Intelligent Systems and Networks de la Universidad de Chipre, que opera en el entorno MATLAB, proporcionando una interfaz de programación para la última versión de EPANET. El Toolkit incluye comandos fáciles de usar para visualizar, modificar, simular y trazar los resultados producidos por las bibliotecas de EPANET \citep{eliades2016epanet}.
+
+		\section{MATLAB}
 		
-	\chapter{Modelos del Gemelo Digital para Unidad de Potabilización}
+MATLAB (MATrix LABoratory) es un sistema de cómputo numérico, líder en desarrollo de software para cáculo técnico, dirigido especialmente a ingenieros y científicos en el sector industrial/empresarial \citep{mathworksNA}. Ofrece un entorno de desarrollo integrado con lenguaje de programación propio.
+
+Es un programa apto para el manejo de algoritmos, matrices, representación de datos y funciones, e incluso permite la comunicación con otros programas (como es el caso de el Toolkit-Epanet) y otros dispositivos de hardware.
+		
+	\chapter{Consideraciones Operativas para las UHP en Potabilización}
 	
 La propuesta del gemelo digital contempla la determinación de las condiciones del modelo de flujo de producto para cada unidad, no está determinado el modelo de infraestructura y equipos.
 
 			\section{Condiciones de Operación en Potabilización}
 			
-El proceso de potabilización se compone de unidades cuyo flujo de producto es continuo, y se requiere definir los modos de operación de cada unidad. Así, se tiene que toda unidad inicia, opera y se detiene, asociado a estados de arranque, operación y parada. Con la salvedad que la parada puede efectuarse por parada condicionada, por finalización de producción o por falla y la operación puede ser normal o degradada. Una descripción más precisa de los modos de operación se puede definir como: Arranque (A), Vacío (V), Operando (O), Parada (P); el diagrama básico que describe la unidad se presenta en la \ref{fig-unitstatesrdp}, las condiciones que rigen la evolución de la red dependen del funcionamiento de cada unidad. Para cada modo se debe tener un modelo de comportamiento que puede estar dado en función de su desempeño como: Normal (N), Degradado (D), Fallo (F).
+El proceso de potabilización se compone de unidades cuyo flujo de producto es continuo, y se requiere definir los modos de operación de cada unidad. Así, se tiene que toda unidad inicia, opera y se detiene, asociado a estados de arranque, operación y parada. Con la salvedad que la parada puede efectuarse por parada condicionada, por finalización de producción o por falla y la operación puede ser normal o degradada. Una descripción más precisa de los modos de operación se puede definir como: Arranque (A), Vacío (V), Operando (O), Parada (P); el diagrama básico que describe la unidad se presenta en la figura \ref{fig-unitstatesrdp}, las condiciones que rigen la evolución de la red dependen del funcionamiento de cada unidad. Para cada modo se debe tener un modelo de comportamiento que puede estar dado en función de su desempeño como: Normal (N), Degradado (D), Fallo (F).
 
-				\begin{table}[]
+				\begin{table}[H]
 					\begin{center}
 						\begin{tabular}{|l|l|}
 							\hline
@@ -1235,15 +1312,14 @@ El proceso de potabilización se compone de unidades cuyo flujo de producto es co
 						\label{table-unitstatesrdp}
 					\end{center}
 				\end{table}
-
 				\begin{figure}[H]
 					\centering
-					\includegraphics[scale=0.6]{figures/3unitstatesrdp}
+					\includegraphics[scale=0.5]{figures/3unitstatesrdp}
 					\caption{Estados generales de la unidad.}
 					\label{fig-unitstatesrdp}
 				\end{figure}
-
-Cada modelo debe ir relacionado a los estados que interactúan en el sistema, esto es el estado del flujo de producto, de los recursos y del proceso; descrito para cada unidad funcional, de manera que se cumpla con la visión establecida de sistemas holónicos.
+				
+El modelo operacional de la unidad debe ir relacionado a los estados que interactúan en el sistema, esto es el estado del flujo de producto, de los recursos y del proceso; descrito para cada unidad funcional, de manera que se cumpla con la visión establecida de sistemas holónicos.
 
 			\subsection{Unidad de Coagulación}
 			
@@ -1252,14 +1328,14 @@ El arranque en condición normal, en general, debe cuidar principalmente que el c
 \begin{table}[H]
 	\begin{center}
 		\resizebox{15,5cm}{!} {
-			\begin{tabular}{|p{3cm}|p{3,7cm}|p{5,25cm}|p{5,25cm}|}
+			\begin{tabular}{|p{3cm}|p{3,7cm}|p{6cm}|p{4cm}|}
 				\hline
 				\multirow{2}{1cm}{\textbf{Condición}} & \multicolumn{3}{c|}{\textbf{Modelos de Conocimiento}} \\
 				\cline{2-4}
 				& \centering{\textbf{Flujo}} & \centering{\textbf{Recursos}} & \textbf{\centering{Proceso}} \\
 				\hline \hline
 				\textbf{Normal} & $Q_{i} \approx Q_{p} \approx Q_{o}$ & Compuertas operativas, sin fallas. \par Sensores calibrados, sin fallas. \par Químico coagulante disponible. \par Maquinaria para adición de coagulante sin fallas. & Pruebas de laboratorio realizadas. \\ \hline
-				\textbf{Degradado} & $Q_{i} \ll Q_{p}$ \par $NTU > 50$ & Compuertas con obstrucciones, sin interrupción total del flujo. \par Falta de químico coagulante para añadir. \par Maquinaria para adición de coagulante con fallas. & Pruebas de laboratorio no realizadas. \\ \hline
+				\textbf{Degradado} & $Q_{i} \ll Q_{p}$ \par $NTU > 100$ & Compuertas con obstrucciones, sin interrupción total del flujo. \par Falta de químico coagulante para añadir. \par Maquinaria para adición de coagulante con fallas. & Pruebas de laboratorio no realizadas. \\ \hline
 				\textbf{Falla} & $Q_{i} \approx 0$ & Compuertas bloqueadas, con interrupción considerable de flujo. & \\ \hline
 			\end{tabular}
 		}
@@ -1281,8 +1357,8 @@ Si la unidad se encuentra operando en degradado debido a calidad de agua, el lab
 				\cline{2-4}
 				& \centering{\textbf{Flujo}} & \centering{\textbf{Recursos}} & \textbf{\centering{Proceso}} \\
 				\hline \hline
-				\textbf{Normal} & $Q_{i} \approx Q_{p} \approx Q_{o}$ \par $NTU < 50$ \par $6,5 < pH < 9$ & Químicos disponibles para adicionar. \par Sensores funcionales (recurso humano o tecnológico). \par Compuerta de salida abierta, en funcionamiento. \par Compuerta de entrada abierta, en funcionamiento. & Cantidad de coagulante adicionado adecuado, segun estudios previos. \\ \hline
-				\textbf{Degradado} & $Q_{i} \ll Q_{p}, Q_{i} \gg Q_{p}$ \par $Q_{o} \ll Q_{p}, Q_{o} \gg Q_{p}$ \par $NTU > 50$ \par $pH < 6,5 - pH > 9$ & Cantidad limitada o nula de químicos para adicionar. \par Sensores en falla (falta de personal, falla en dispositivos de medición). \par Compuertas con fallas mecánicas, sin interrupción total del flujo. & Mantenimiento de la unidad. \par Cantidad de coagulante añadido fuera del rango ideal. \\ \hline
+				\textbf{Normal} & $Q_{i} \approx Q_{p} \approx Q_{o}$ \par $NTU < 100$ \par $6,5 < pH < 9$ & Químicos disponibles para adicionar. \par Sensores funcionales (recurso humano o tecnológico). \par Compuerta de salida abierta, en funcionamiento. \par Compuerta de entrada abierta, en funcionamiento. & Cantidad de coagulante adicionado adecuado, segun estudios previos. \\ \hline
+				\textbf{Degradado} & $Q_{i} \ll Q_{p}, Q_{i} \gg Q_{p}$ \par $Q_{o} \ll Q_{p}, Q_{o} \gg Q_{p}$ \par $NTU > 100$ \par $pH < 6,5 - pH > 9$ & Cantidad limitada o nula de químicos para adicionar. \par Sensores en falla (falta de personal, falla en dispositivos de medición). \par Compuertas con fallas mecánicas, sin interrupción total del flujo. & Mantenimiento de la unidad. \par Cantidad de coagulante añadido fuera del rango ideal. \\ \hline
 				\textbf{Falla} & $Q_{i} \approx 0$ & Compuerta de entrada en falla, interrupción total del flujo. \par Compuerta de salida cerrada en falla, imposibilidad de salida del flujo. & \\ \hline
 			\end{tabular}
 		}
@@ -1309,7 +1385,7 @@ El arranque normal de la unidad de floculación debe contar con un nivel de agua 
 \begin{table}[H]
 	\begin{center}
 		\resizebox{15,5cm}{!} {
-			\begin{tabular}{|p{3cm}|p{3,7cm}|p{5,25cm}|p{5,25cm}|}
+			\begin{tabular}{|p{3cm}|p{4,5cm}|p{5cm}|p{4,25cm}|}
 				\hline
 				\multirow{2}{1cm}{\textbf{Condición}} & \multicolumn{3}{c|}{\textbf{Modelos de Conocimiento}} \\
 				\cline{2-4}
@@ -1394,7 +1470,7 @@ Cuando las unidades anteriores no operan en condición normal, la unidad de sedim
 
 El mantenimiento de la unidad corresponde a una de las operaciones de mayor importancia, ya que al llenarse el almacenamiento de lodos o al fermentarse el lodo acumulado, se genera un deterioro en la calidad de agua recolectada. De no contar con un sensor de nivel de lodos, la acumulación de burbujas de gas en la superficie, el aumento del NTU, la visualización de flóculos en la zona de recolección o el aumento de nivel de agua en la unidad (sin aumento del caudal de entrada), son indicios de problemas con acumulación de lodos, por lo que se debe realizar el lavado del tanque.
 
-Para realizar el mantenimiento de rutina se apertura la compuerta de descarga de lodos, hasta que el nivel de agua baje $30 cm$. Durante el mantenimiento la unidad queda fuera de operación por un periodo de tiempo de aproximadamente TANTOS MINUTOS, con caudal de entrada $300 \frac{L}{s}$ (caso de estudio), contando el tiempo que tarda en volver al nivel de operación una vez cerrada la compuerta de descarga. En mantenimientos profundos, realizados cada 2 meses en sequía y mensual en tiempos de lluvia, se debe proceder de la siguiente manera:
+Para realizar el mantenimiento de rutina se apertura la compuerta de descarga de lodos, hasta que el nivel de agua esté entre $40 y 50 cm$ por debajo del canal recolector. Durante el mantenimiento la unidad queda fuera de operación por un periodo de tiempo de aproximadamente $30  min$, contando el tiempo que tarda en volver al nivel de operación una vez cerrada la compuerta de descarga. En mantenimientos profundos, realizados cada 2 meses en sequía y mensual en tiempos de lluvia, se debe proceder de la siguiente manera:
 
 				\begin{enumerate}
 					\item  Cerrar la compuerta de entrada.
@@ -1408,7 +1484,7 @@ El tiempo en este caso depende de los operadores y la profundidad de limpieza.
 
 En la tabla \ref{table-Osediment} se describen las condiciones de operación de la unidad de sedimentación.
 				
-\begin{table}[H]
+\begin{table}
 	\begin{center}
 		\resizebox{15,5cm}{!} {
 			\begin{tabular}{|p{3cm}|p{3,7cm}|p{5,25cm}|p{5,25cm}|}
@@ -1484,7 +1560,7 @@ El mantenimiento de la unidad se realiza cuando el filtro se encuentra colmatado
 				
 En la tabla \ref{table-Ofilt} se detallan las condiciones para la operación de la unidad de filtros.
 
-\begin{table}[H]
+\begin{table}
 	\begin{center}
 		\resizebox{15,5cm}{!} {
 			\begin{tabular}{|p{3cm}|p{3,7cm}|p{5,25cm}|p{5,25cm}|}
@@ -1538,7 +1614,7 @@ El arranque adecuado de la unidad de desinfección debe cuidar el funcionamiento 
 
 La operación en desinfección debe mantenerse informada de las cualidades químicas del agua a tratar, de manera de dosificar adecuadamente el cloro a la masa de agua. La unidad entrará en degradado cuando se deban realizar acciones de mantenimiento o cuando algún recurso esté faltando. (tabla \ref{table-Odesinf}).
 			
-\begin{table}[H]
+\begin{table}
 	\begin{center}
 		\resizebox{15,5cm}{!} {
 			\begin{tabular}{|p{3cm}|p{3,7cm}|p{5,25cm}|p{5,25cm}|}
@@ -1566,58 +1642,302 @@ La unidad de desinfección detenerse si:
 			\end{itemize}
 				
 Para llevar a cabo la parada de la unidad se debe cerrar la compuerta de entrada e informar las razones para la detención, de modo que el almacenamiento y la distribución estén al tanto de la situación.
-					
-	\chapter{Implementación}
+
+		\section{Modelos Generales de las Entidades}
+		
+Según lo descrito previamente para UHP, el modelo de conocimiento incluye modelos continuos que rigen el proceso físico y discretos que contienen las transiciones entre tales modelos, dependiendo de las condiciones dadas.
+
+Así, una de las configuraciones para las unidades particulares es el modelado de un tanque, cuya dinámica continua es de la forma:
+
+Dado,
+\begin{equation}
+\begin{array}{l}
+H
+q_{s} = Q_{2}Cd\sqrt{2gh}	\\
+q_{i} = \Phi \\
+q_{o} = \left\lbrace
+\begin{array}{ll}
+\textup{si } q_{s} > \Phi_{demanda} & \rightarrow q_{o} = \Phi_{demanda} \\
+\textup{cc } & \rightarrow q_{o} = q_{s}
+\end{array}
+\right.
+\end{array}
+\end{equation}
+
+Se desglosan las condiciones de operación del tanque,
+
+ \paragraph{Condición Normal:} $H_{min} < H < H_{max}$
+ 
+ \begin{equation}
+ 	\dot{h} = \frac{1}{A}(V_{1}q_{i}-V_{2}q_{o})
+ \end{equation}
+ 
+ Donde, $V_{1} = V_{2} = 1$
+ 
+ \paragraph{Condición de desborde:} $H > H_{max}$
+ 
+ \begin{equation}
+ 	\dot{h} = \frac{1}{A}(V_{1}q_{i}-V_{2}q_{o}-V_{3}(q_{i}-q_{o}))
+ \end{equation}
+ 
+ Donde, $V_{1} = V_{2} = V_{3} = 1$
+ 
+  \paragraph{Condición sin agua:} $H < H_{min}$
+ 
+ \begin{equation}
+ 	\dot{h} = \frac{1}{A}(V_{1}q_{i}-V_{2}q_{o}-Q_{2}Cd\sqrt{2gh_{min}})
+ \end{equation}
+ 
+ Donde, $V_{1} = V_{2} = 1$	\\
+ 
+ $A$ es el área	\\
+ $V$ son las válvulas	\\
+ $q_{i}$ es el caudal de entrada	\\
+ $q_{o}$ es el caudal de salida	\\
+ $Cd$ es el coeficiente de descarga	\\
+ $h$ es la altura	\\
+ $g$ es la gravedad.	\\
+ 
+ Las transiciones discretas que influyen en el comportamiento del tanque se detallan a continuación:
+ 
+ \paragraph{Caudal:} Referente al caudal de entrada a una unidad.
+ 
+ 			\begin{table}[H]
+				\begin{center}
+					\resizebox{5cm}{!} {
+					\begin{tabular}{|l|l|}
+					\hline
+					\multicolumn{2}{|l|}{\textbf{Estados}}     \\ \hline
+					$L_{a}$ & Caudal de operación              \\ \hline
+					$L_{b}$ & Caudal en degradado              \\ \hline
+					$L_{c}$ & Caudal en falla                  \\ \hline
+					\multicolumn{2}{|l|}{\textbf{Eventos}}     \\ \hline
+					$T_{a}$ & Cadal normal \\ \hline
+					$T_{b}$ & Caudal en degradado                 \\ \hline
+					$T_{c}$ & Caudal en falla                \\ \hline
+					\end{tabular}
+					}
+					\caption{Estados y eventos del caudal.}
+					\label{table-qirdp}
+				\end{center}
+			\end{table}
 	
-Según los diseños observados en las plantas de tratamiento, se deduce que su estructura general consta de demultiplexores y multiplexores (figura \ref{fig-multiplex1}), es decir, la entrada es dividida al finalizar el paso por las unidades para generar varias líneas de producción compuestas por coagulación - floculación - sedimentación, disminuyendo la velocidad del flujo circulante. El efluente de cada sedimentador se recolecta en un canal único, la velocidad y caudal aumentan para dirigir la masa de agua hacia la unidad de filtración, donde se divide nuevamente y por última vez (figura \ref{fig-multiplex2}), ya que el canal de recolección de agua filtrada dirige el flujo hacia desinfección, sin ninguna desviación. Los instrumentos mínimos para obtener un gemelo digital adecuado de la planta se ubican en el diagrama adjunto, consta de herramientas de medición de caudal, pH, turbidez, color para las características del flujo, y de nivel de agua en los tanques.
+			\begin{figure}[H]
+				\centering
+				\includegraphics[scale=0.6]{figures/4qirdp}
+				\caption{Estado del caudal de entrada a sedimentación.}
+				\label{fig-qirdp}
+			\end{figure}
+ 
+ \paragraph{Altura del Tanque:} Describe los niveles de agua en los que la unidad puede operar, junto con saturación, vacío y nivel mínimo, depende de las mediciones de altura $h$ en el tanque.
+ 
+ 			\begin{table}[H]
+				\begin{center}
+					\begin{tabular}{|l|l|}
+					\hline
+					\multicolumn{2}{|l|}{\textbf{Estados}} \\ \hline
+					$L_{x}$  & Altura máxima               \\ \hline
+					$L_{o}$  & Altura de operación         \\ \hline
+					$L_{v}$  & Altura en vacío             \\ \hline
+					$L_{m}$  & Altura mínima               \\ \hline
+					\multicolumn{2}{|l|}{\textbf{Eventos}} \\ \hline
+					$T_{x}$  & $h > h_{max}$                \\ \hline
+					$T_{o}$  & $h_opmin \leq h \leq h_opmax$ \\ \hline
+					$T_{v}$  & $h_min < h < h_opmin$       \\ \hline
+					$T_{m}$  & $h \leq h_min$                 \\ \hline
+					\end{tabular}
+					\caption{Estados y eventos de la altura en el tanque.}
+					\label{table-hrdp}
+				\end{center}
+			\end{table}
+			
+			\begin{figure}[H]
+				\centering
+				\includegraphics[scale=0.7]{figures/4hrdp}
+				\caption{Estado de la altura del agua en el tanque.}
+				\label{fig-hrdp}
+			\end{figure}
+			
+			\paragraph{Estado del tanque:} Según el estado de altura del agua y la compuerta de la unidad, se determina si el tanque está operando, en máximo o mínimo, llenando o vaciandose. Figura \ref{fig-tankrdp}.
+			
+			\begin{table}[H]
+				\begin{center}
+					\begin{tabular}{|l|l|}
+					\hline
+					\multicolumn{2}{|l|}{\textbf{Estados}}        \\ \hline
+					$L_{o}$          & Tanque en operación        \\ \hline
+					$L_{x}$          & Tanque saturado            \\ \hline
+					$L_{v}$          & Tanque en ciclo de vacío   \\ \hline
+					$L_{m}$          & Tanque en mínimo           \\ \hline
+					$L_{l}$          & Tanque en ciclo de llenado \\ \hline
+					\textbf{Eventos} &                            \\ \hline
+					$T_{o}$          & Condiciones de operación   \\ \hline
+					$T_{x}$          & Condiciones de saturación  \\ \hline
+					$T_{v}$          & Condiciones para vaciar    \\ \hline
+					$T_{m}$          & Condiciones de mínimo      \\ \hline
+					$T_{l}$          & Condiciones para llenar    \\ \hline
+					\end{tabular}
+					\caption{Estados y eventos del tanque.}
+					\label{table-tankrdp}
+				\end{center}
+			\end{table}
 
-		\begin{figure}
-			\centering
-			\includegraphics[scale=0.5]{figures/4multiplex}
-			\caption{Planta de tratamiento plano superior.}
-			\label{fig-multiplex1}
-		\end{figure}
+			\begin{figure}[H]
+				\centering
+				\includegraphics[scale=0.7]{figures/4tankrdp}
+				\caption{Estado del tanque.}
+				\label{fig-tankrdp}
+			\end{figure}
+			
+	De igual forma se presenta un modelo discreto que rige las válvulas o compuertas en el sistema:
+ 
+ \paragraph{Estado de la compuerta:} Abierta o cerrada según condición de nivel del agua en el tanque. Figura \ref{fig-valverdp}.
+			
+			\begin{table}[H]
+				\begin{center}
+					\begin{tabular}{|l|l|}
+					\hline
+					\multicolumn{2}{|l|}{\textbf{Estados}} \\ \hline
+					$L_{a}$       & Compuerta abierta      \\ \hline
+					$L_{c}$       & Compuerta cerrada      \\ \hline
+					\multicolumn{2}{|l|}{\textbf{Eventos}} \\ \hline
+					$T_{a}$       & Abrir compuerta        \\ \hline
+					$T_{fa}$      & Falla en apertura      \\ \hline
+					$T_{c}$       & Cerrar compuerta       \\ \hline
+					$T_{fc}$      & Falla en cierre        \\ \hline
+					\end{tabular}
+					\caption{Estados y eventos de la compuerta.}
+					\label{table-vavlerdp}
+				\end{center}
+			\end{table}
+			
+			\begin{figure}[H]
+				\centering
+				\includegraphics[scale=0.7]{figures/4valverdp}
+				\caption{Estado de la compuerta.}
+				\label{fig-valverdp}
+			\end{figure}
+			
+	En el caso específico de la unidad de coagulación, se tiene conocimiento de la cantidad de coagulante a añadir obtenida mediante la prueba de jarras. En referencias consultadas, se han realizado modelos basados en métodos numéricos para coseguir tal valor de dosificación \citep{farhaoui2016optimization, apostol2011optimization, leon2016determination, bazer1990model}.
+	
+	Los modelos discretos que rigen la dosificación de coagulante en el tratamiento de agua, se basan en la evolución de las condiciones de calidad del flujo entrante y la condición de dosificación específica en cada planta. 
+	
+	\paragraph{Calidad de agua:} Depende de las variables medidas en cada planta y las consideraciones de calidad alta, media y baja que se tengan.
+	
+	\begin{table}[H]
+		\begin{center}
+			\begin{tabular}{|l|l|}
+			\hline
+			\multicolumn{2}{|l|}{\textbf{Estados}} \\ \hline
+			$L_{a}$     & Calidad alta            \\ \hline
+			$L_{b}$     & Calidad media           \\ \hline
+			$L_{c}$     & Calidad baja            \\ \hline
+			\multicolumn{2}{|l|}{\textbf{Eventos}} \\ \hline
+			$T_{a}$     & $Condiciones de calidad en rango alto$                 \\ \hline
+			$T_{b}$     & $Condiciones de calidad en rango medio$     \\ \hline
+			$T_{c}$     & $Condiciones de calidad en rango bajo$                \\ \hline
+			\end{tabular}
+			\caption{Estados y eventos de la turbidez.}
+			\label{table-nturdp}
+		\end{center}
+	\end{table}
+	
+	\begin{figure}[H]
+		\centering
+		\includegraphics{figures/4NTUrdp}
+		\caption{Estado de la turbidez en coagulación.}
+		\label{fig-nturdp}
+	\end{figure}
+	
+	\paragraph{Dosificación de coagulante:} Dependerá también de los lineamientos operativos que se tengan en cada planta. Básicamente es una condición de dosificar o no, según las condiciones de calidad (figura \ref{fig-nturdp}) y caudal de entrada (\ref{fig-qirdp}).
+	
+	\begin{table}[H]
+		\begin{center}
+			\begin{tabular}{|l|l|}
+			\hline
+			\multicolumn{2}{|l|}{\textbf{Estados}}      \\ \hline
+			$L_{0}$  & Unidad sin dosificar             \\ \hline
+			$L_{1}$  & Unidad con dosificación          \\ \hline
+			\multicolumn{2}{|l|}{\textbf{Eventos}}      \\ \hline
+			$T_{n0}$ & Condición para no dosificar                       \\ \hline
+			$T_{n1}$ & Condición para dosificar              \\ \hline
+			\end{tabular}
+			\caption{Estados y eventos de dosificación de coagulante.}
+			\label{table-coagulantrdp}
+		\end{center}
+	\end{table}
 
-%		\begin{figure}
-%			\centering
-%			\includegraphics[scale=0.5]{figures/4multiplex1}
-%			\caption{Planta de tratamiento plano superior.}
-%			\label{fig-multiplex1}
-%		\end{figure}
-%		
-%		\begin{figure}
-%			\centering
-%			\includegraphics[scale=0.5]{figures/4multiplex2}
-%			\caption{Planta de tratamiento plano superior.}
-%			\label{fig-multiplex2}
-%		\end{figure}
-%		
-%		\begin{figure}
-%			\centering
-%			\includegraphics[scale=0.5]{figures/4multiplexlegend}
-%			\label{fig-multiplexlegend}
-%		\end{figure}
+	\begin{figure}[H]
+		\centering
+		\includegraphics{figures/3coagulantbase}
+		\caption{Estado de dosificación.}
+		\label{fig-coagulantrdp}
+	\end{figure}
+			
+	Las condiciones y modelos obtenidos se componen, con el fin de recrear el comportamiento de una unidad específica y obtener una respuesta.
+					
+	\chapter{Caso de Uso}
+	
+	Las herramientas a utilizar para la composición de los modelos serán Epanet y MATLAB; con Epanet se emularán los modos de operación con dinámicas continuas, mientras que MATLAB funcionará como un motor de evolución de los modelos discretos. La conexión entre ambos programas es realizada mediante el Epanet-Matlab Toolkit, esto permite la modificación de los valores de la dinámica continua según condiciones obtenidas en la simulación.
+	
+	Se toma como caso de estudio la Planta de Potabilización "Dr. Eduardo Jáuregui", ubicada en la Hoyada de Milla, municipio Milla del Estado Mérida, la cual tiene una producción de 300 L/s de agua potable, siendo este el caudal promedio que genera la fuente. Es importante mencionar que el diseño estructural de las plantas de potabilización se realiza luego de aplicar estudios a la fuente que surtirá el proceso, de modo que en casos extremos, usualmente periodos de sequía, el caudal mínimo que entre a la planta logre en lo posible mantener la producción, sin afectar la distribución de agua a la población.
+	
+	Brevemente se especificarán algunas condiciones en cada unidad de la planta real:
+	
+	\paragraph{Coagulación:} Se realiza de forma hidráulica con un canal Parshall (véase figura \ref{fig-parshall}). La dosis de coagulante se añade justo en el resalto hidráulico que genera la mezcla rápida, en cuestión de segundos. El coagulante utilizado es el Sulfato de Aluminio ($Al_{2}(SO_{4})_{3} 18H_{2}O$), químico que debe aplicarse con un rango óptimo de pH entre 5 - 8, consideración que se cumple puesto que la fuente mantiene un pH de 7,1. De igual forma, la temperatura del agua es templada sin cambios bruscos, por tanto no afecta las reacciones químicas.
+	
+	En esta planta se condiciona la adición de coagulante, es decir, según el resultado de calidad de agua, si la turbidez se encuentra por debajo de 13 NTU, no se añade ninguna dosis de coagulante. La razón de esta decisión se debe a que el proceso disminuye la turbidez lo suficiente para asegurar agua con calidad aceptable al culminar la potabilización, por lo que se reserva el químico coagulante para cuando se generen cambios de turbidez bruscos en la entrada de la planta.
+	
+	\paragraph{Floculación:} En la planta Jáuregui se cuenta con dos unidades de floculación; el flujo proveniente de coagulación es dividido hacia dos unidades de floculación mecánica de turbina (véase figura \ref{fig-flocc} $(a)$), de dos cámaras cada una. La segunda cámara de cada floculador se conecta a la unidad de sedimentación.
+	
+	\paragraph{Sedimentación:} Se tienen dos unidades de sedimentación de tipo laminar (véase figura \ref{fig-sediment}), cada una con dos canales de recolección, es decir, cuatro pasillos de tubos recolectores. El agua proveniente de la unidad de floculación entra por la parte inferior del tanque de sedimentación, de forma que los flóculos se asienten en las láminas y el agua clarificada se mantenga en la superficie. Los cuatro canales recolectores se unen en un canal común que se dirige a la unidad de filtración.
+	
+	\paragraph{Filtración:} La unidad de filtración consta de seis filtros rápidos instalados en serie, con un lecho filtrante de 1,05 m, compuesto por grava, arena y antracita (véase figura \ref{fig-realfilter}). Se realiza retro lavado con agua y aire, proceso que dura alrededor de 15 minutos.
+	
+				\begin{figure}
+					\centering
+					\includegraphics[scale=0.08]{figures/3realfilter}
+					\caption{Lecho filtrante.}
+					\label{fig-realfilter}
+				\end{figure}
+	
+	\paragraph{Desinfección:} La desinfección se realiza en línea, previo a dirigir la masa de agua hacia el almacenamiento.
+	
+		\section{Propuesta de Medición}
+		
+		Parte de la propuesta se trata de incluir mediciones en planta que no se tienen actualmente, y son necesarias para el seguimiento y evalución del proceso. En ese sentido, se adjunta un diagrama con intrumentación mínima de indicadores requeridos para obtener los valores en tiempo real, figura \ref{fig-multiplex}. Así, es posible conocer el estado de calidad de agua, o una aproximación, durante todo el proceso de tratamiento, permitiendo identificar valores fuera de los rangos adecuados, en condición degradada por ejemplo, que ameriten revisión de alguna unidad.
+		
+		La eficiencia de los modelos dependerá de la precisión de los datos obtenidos en planta; si la medición realizada tiene un amplio margen de error, los modelos contenidos en el gemelo digital no serán fieles al comportamiento real.
+		
+			\begin{figure}
+				\centering
+				\includegraphics[scale=0.4]{figures/4multiplex}
+				\caption{Mediciones propuestas en planta.}
+				\label{fig-multiplex}
+			\end{figure}
 	
 		\section{Generación de la Propuesta de Gemelo Digital}
 	
-Según lo descrito en \ref{sec-uph}, la implementación del gemelo digital requiere de datos del proceso y de modelos de comportamiento de la unidad. Para llevar a cabo la prueba de concepto se tomaron dos de las unidades funcionales del proceso de potabilización, la unidad de Coagulación y la unidad de Sedimentación. En la unidad de Coagulación se utilizó un modelo matemático para aproximar la relación de dependencia entre la dosis de coagulante a adicionar y las condiciones físico químicas del flujo entrante. Para el caso de la unidad de Sedimentación se utilizó un programa de análisis y simulación de sistemas de distribución de agua potable llamado Epanet, esto con el fin de hacer uso de herramientas conocidas en el ámbito hidrológico, que incluyen algoritmos de cálculo matemático especializado en el área.
+Según lo descrito en \ref{sec-uph}, la implementación del gemelo digital requiere de datos del proceso y de modelos de comportamiento de la unidad. Para llevar a cabo la prueba de concepto se tomaron dos de las unidades funcionales del proceso de potabilización, la unidad de Coagulación y la unidad de Sedimentación. 
 	
 		\subsection{Modelo de la Unidad de Coagulación}
 		
 La adición de coagulante representa uno de los procedimientos primordiales en una planta de tratamiento de agua, ya que conlleva a que el flujo de salida se encuentre dentro de los límites permisibles para el consumo humano. La efectividad del proceso de coagulación se verá afectada por la dosis de coagulante añadido.
 
-Para obtener la dosis óptima se realiza la prueba de jarras cada vez que se observa un cambio en la turbidez del flujo, sin embargo, es posible realizar un modelo que arroje la cantidad de Sulfato de Aluminio a adicionar, de manera que el procedimiento se realice con mayor rapidez y confiabilidad.
+Para obtener la dosis óptima se realiza la prueba de jarras cada vez que se observa un cambio en la turbidez del flujo, sin embargo, es posible realizar un modelo que permita obtener en línea una estimación de coagulante a suministrar para actuar de forma inmediata en el sistema. Esto aporta robustez y flexibilidad en el proceso, mientras se verifica con la prueba de jarras para realizar ajustes posteriores en caso de ser requeridos. Es por ello que se utilizó un modelo matemático para aproximar la relación de dependencia entre la dosis de coagulante a adicionar y las condiciones físico químicas del flujo entrante.
 
-Debido a la naturaleza aleatoria de los valores del agua bruta que ingresa a la planta, es razonable utilizar un modelo de predicción estadístico, partiendo de un enfoque de regresión, para determinar la dosis de coagulante apropiada en cada caso. [112] Los parámetros que se toman en cuenta al generar un modelo son las características fisicoquímicas del agua, tales como: Turbidez, pH, color, temperatura, alcalinidad, conductividad.
+En la literatura consultada no se muestra ningún modelo matemático asociado a la reacción del coagulante sobre el agua cruda agitada, para determinar la dosis del mismo, ya que su complejidad multifactorial lo hace impráctico cuando los procedimientos son manuales o semiautomáticos. También se considera que, en principio, las condiciones de agua cruda no difieren mayormente en periodos estacionales, por lo que a pesar del retraso, la prueba de jarras funciona y es la única fuente que se tiene para obtener la dosis de coagulante. 
 
-Para generar un modelo que se adapte a las condiciones hidrológicas del estado Mérida, se utilizaron datos suministrados por el personal de la planta de potabilización, cuyo formato incluye:
+Dado que la planta Jáuregui posee datos históricos, como un primer modelo se propone un modelo de predicción estadístico a partir de correlación de variables, basado en regresión lineal debido a la naturaleza de los datos.
+
+Los parámetros que se toman en cuenta al generar un modelo son las características fisicoquímicas del agua, tales como: Turbidez, pH, color, temperatura, alcalinidad, conductividad.
 
 			\begin{itemize}
 				\item  \textbf{Características del flujo:} pH, turbidez ($NTU$), color ($UC$), alcalinidad ($mg/L$), cloro residual ($mg/L$).
 				\item  \textbf{Dosis de químicos adicionadas:} Gas cloro ($kg/h$), sulfato de aluminio ($kg/h$), cal hidratada ($kg/h$).
 			\end{itemize}
 
-El tiempo de muestreo de los datos es de 1 hora.
+El tiempo de muestreo de los datos es de 1 hora. El formato de los datos utilizados se adjunta en el Anexo A.
 
 El desarrollo del modelo se realizó mediante regresión polinomial, utilizado para predecir una variable dependiente $Y$ con base en múltiples variables predictoras $X = (x_{1}, x_{2}, ..., x_{k})$; puede ser expresado como:
 
@@ -1626,7 +1946,7 @@ El desarrollo del modelo se realizó mediante regresión polinomial, utilizado par
 				Y = a_{0} + a_{1}x + a_{2}x^{2} + ... + a_{n}x^{n}
 			\end{equation}
 
-Para efectos de determinar la dosis de coagulante ideal, se utilizaron como descriptores las condiciones iniciales del flujo: Turbidez, pH, color y alcalinidad (tabla \ref{table-variables}), tomando en cuenta aquellas muestras a las cuales se le adicionó una cantidad adecuada de coagulante, esto evidenciado en los valores de salida:
+Para efectos de determinar la dosis de coagulante ideal, se utilizaron como descriptores las condiciones iniciales del flujo: Turbidez, pH, color y alcalinidad (tabla \ref{table-variables}), tomando en cuenta solo aquellas muestras a las cuales se le adicionó una cantidad adecuada de coagulante; es decir, la muestras cuyos valores de salida cumplen con las características siguientes:
 
 			\begin{table}[H]
 					\begin{tabular}{p{3cm}}
@@ -1635,7 +1955,7 @@ Para efectos de determinar la dosis de coagulante ideal, se utilizaron como desc
 						$pH \approx 7$ \\
 					\end{tabular}
 			\end{table}
-			
+
 			\begin{table}[H]
 				\begin{center}
 					\resizebox{13cm}{!} {
@@ -1655,32 +1975,13 @@ Para efectos de determinar la dosis de coagulante ideal, se utilizaron como desc
 				\end{center}
 			\end{table}
 
-Siguiendo estudios  enfocados en la optimización de la dosis de coagulante ([83, 124, 125, 126]), se realizaron pruebas con modelos desarrollados en Matlab; los modelos se hallaron mediante el uso de las funciones $polyfit(.)$, $regress(.)$, $fitlm(.)$, y la combinación de los valores medidos en planta, considerando la turbidez como variable clave para el cálculo de coagulante a añadir. Los seis modelos que mejor se ajustaron al comportamiento real se presentan en la tabla \ref{table-validation}.
-
-			\begin{table}[H]
-				\begin{center}
-					\resizebox{15,5cm}{!} {
-					\begin{tabular}{|p{3cm}|p{3cm}|p{3cm}|p{4cm}|p{4cm}|}
-						\hline
-						\textbf{Modelo} & \textbf{Variables} & \textbf{$R^{2}$} & \textbf{RMSE-Modelo} & \textbf{RMSE-Validación} \\
-						\hline \hline
-						Md2 & T, C & 0,9839 & 5,2719 & 7,2295 \\ \hline
-						Md6 & T, C & 0,9826 & 5,4767 & 50,1042 \\ \hline
-						Md1 & T & 0,9322 & 10,8130 & 10,1283 \\ \hline
-						Md5 & T, C, Ph, A & 0,9076 & 12,6241 & 11,5470 \\ \hline
-						Md3 & T, C, Ph & 0,9070 & 12,6699 & 12,0967 \\ \hline
-						Md4 & T, C & 0,9038 & 12,8805 & 12,0229 \\ \hline
-					\end{tabular}
-					}
-					\caption{Pruebas y validación de modelos.}
-					\label{table-validation}
-				\end{center}
-			\end{table}
+Siguiendo estudios  enfocados en la optimización de la dosis de coagulante, se utilizó la plataforma MATLAB y su toolbox para determinar la regresión polimonial, considerando la turbidez como variable clave para el cálculo de coagulante a añadir.
 			
 En un principio se intentó utilizar el total de las variables medidas en planta, pero mediante un estudio de correlación (tabla \ref{table-corr}), se determinó que el pH y la alcalinidad guardan baja correlación con la dosis de coagulante, en el caso particular de la planta estudiada.
 
-			\begin{table}[]
+			\begin{table}
 				\begin{center}
+				\resizebox{7cm}{!}{
 				\begin{tabular}{|c|c|c|c|c|c|}
 				\hline
 				\textbf{Corr} & \textbf{DSA} & \textbf{T} & \textbf{C} & \textbf{Ph} & \textbf{A} \\ \hline
@@ -1690,41 +1991,80 @@ En un principio se intentó utilizar el total de las variables medidas en planta,
 				\textbf{Ph}   & -0,53        & -0,48      & -0,50      & 1,00        & 0,45       \\ \hline
 				\textbf{A}    & -0,25        & -0,18      & -0,31      & 0,45        & 1,00       \\ \hline
 				\end{tabular}
+				}
 				\caption{Estudio de correlación.}
 				\label{table-corr}
 				\end{center}
 			\end{table}
 
-Por tanto, en pro de obtener un modelo cuyo comportamiento se asemeje al proceso real y a su vez se ajuste al comportamiento aleatorio que presentan los valores en campo, se optó por seleccionar un modelo promedial, con lo que se obtuvo un RMSE en los datos de validación de $7,6543$ y la inclusión de las variables T y C. El modelo queda de la forma:
+En pro de obtener un modelo cuyo comportamiento se asemeje al proceso real, se consideran las condiciones de operación de la unidad. Se estableció previamente que con un valor de turbidez mayor a $100 NTU$, la unidad entra en estado degradado, a ésta condición se suma el caso particular de la planta Jáuregui, donde con turbidez menor a $12 NTU$, no se realiza dosificación de coagulante. Así pues, se obtiene el modelo de dosificación que sigue la forma expresada en la ecuación \ref{eq-dosage}.
 
 			\begin{equation}
-				\label{eq-md2}
-				md7 = a_{0} + a_{1}T + a_{2}C + a_{3}T^{2} + a_{4}TC + a_{5}C^{2} + a_{6}T^{2}C + a_{7}TC^{2} + a_{8}C^{3} + a_{9}T^{3}
+			\label{eq-dosage}
+				DSA = \left\lbrace
+				\begin{array}{lll}
+				\textup{si } NTU < 12 &\rightarrow DSA = 0 \\
+				\textup{si } 12 \leq NTU < 100 &\rightarrow DSA = md1 \\
+				\textup{si } NTU >= 100 &\rightarrow DSA = md2 \\
+				\end{array}
+				\right.
 			\end{equation}
-			
-			\begin{table}[H]
-					\begin{tabular}{p{15cm}}
-						\textbf{Variables involucradas:} $T, C$  \\
-						\textbf{$R^{2}$:} $0,9699$ \\
-						\textbf{RMSE-Modelo:} $7,2029$ \\
-						\textbf{RMSE-Validación:} $7,6543$
+
+Donde,
+			\begin{equation}
+				\label{eq-mds}
+				\left\lbrace
+				\begin{array}{ll}
+				md1 = a_{0} + a_{1}T + a_{2}C + a_{3}T^{2} + a_{4}TC + a_{5}T^{3} + a_{6}T^{2}C + a_{7}T^{4} + a_{8}T^{3}C	\\
+				md2 = b_{0} + b_{1}T + b_{2}C + b_{3}T^{2} + b_{4}TC + b_{5}C^{2} + b_{6}T^{2}C + b_{7}TC^{2} + b_{8}C^{3} + b_{9}T^{3}
+				\end{array}
+				\right.
+			\end{equation}
+
+Los valores de los coeficientes obtenidos para los modelos md1 y md2 (expresión \ref{eq-mds}), se reflejan en la tabla \ref{table-mds}.
+		
+			\begin{table}[]
+				\begin{center}
+					\begin{tabular}{|l|l|l|l|}
+						\hline
+						\multicolumn{4}{|c|}{\textbf{Coeficientes}}                    \\ \hline 
+						\textbf{md1} & \textbf{Valor} & \textbf{md2} & \textbf{Valor}  \\ \hline
+						$a_{0}$      & $-136,4$       & $b_{0}$      & $75,950$        \\ \hline
+						$a_{1}$      & $27,99$        & $b_{1}$      & $-5,0675e^{-2}$ \\ \hline
+						$a_{2}$      & $2,909$        & $b_{2}$      & $-3,0520e^{-3}$ \\ \hline
+						$a_{3}$      & $-1,319$       & $b_{3}$      & $2,3948e^{-3}$  \\ \hline
+						$a_{4}$      & $-2,884e^{-1}$ & $b_{4}$      & $-2,1850e^{-3}$ \\ \hline
+						$a_{5}$      & $2,669e^{-2}$  & $b_{5}$      & $2,7150e^{-4}$  \\ \hline
+						$a_{6}$      & $8,650e^{-3}$  & $b_{6}$      & $-3,1740e^{-6}$ \\ \hline
+						$a_{7}$      & $-1,926e^{-4}$ & $b_{7}$      & $1,4230e^{-6}$  \\ \hline
+						$a_{8}$      & $-8,122e^{-5}$ & $b_{8}$      & $-1,5130e^{-7}$ \\ \hline
+						-            & -              & $b_{9}$      & $-3,1430e^{-7}$ \\ \hline
 					\end{tabular}
+					\caption{Coeficientes de las expresiones md1 y md2.}
+					\label{table-mds}
+				\end{center}
 			\end{table}
 
-En la figura \ref{fig-coagulantmodel} se presenta la cantidad de coagulante a dosificar según las condiciones iniciales de calidad de agua ingresadas al modelo. Se debe destacar que en el caso de las plantas de potabilización de la ciudad de Mérida, se suministra coagulante solo cuando la turbidez del agua cruda supera los 12 NTU.
+En la figura \ref{fig-coagulantmodel} se presenta la comparación entre el modelo calculado y los datos reales de la planta; modelo que representa la cantidad de coagulante a dosificar según las condiciones iniciales de calidad de agua (turbidez y color, en este caso).
 
 			\begin{figure}
 				\centering
 				\includegraphics[scale=0.5]{figures/4coagulantmodel}
-				\caption{Dosis de coagulante real vs Dosis calculada.}
+				\caption{Dosis de coagulante real en comparación con Dosis calculada.}
 				\label{fig-coagulantmodel}
 			\end{figure}
 			
-Los modelos discretos que se utilizaron para la unidad de coagulación describen la evolución posible en la turbidez de agua cruda (\ref{fig-nturdp}) y la decisión de dosificación de coagulante dependiente de dicha turbidez (\ref{fig-coagulantrdp}); la composición de ambos modelos arroja el estado de la unidad según el flujo de producto. Se toman en cuenta las condiciones operativas descritas en TAL LADO.
+Para evaluar el desempeño del modelo en comparación con los datos reales, se realizó el cálculo del porcentaje de variación de la variable DSA que explica su relación con las variables predictoras ($R^{2}$), y el cálculo del error cuadrático medio (RMSE):\\
+\\
+						\textbf{Variables involucradas:} $T, C$  \\
+						\textbf{$R^{2}$:} $0,9791$ \\
+						\textbf{RMSE-Modelo:} $6,2176$ \\
+			
+Los modelos discretos que rigen la unidad de coagulación, desarrollados de forma general en $3.2$, describen la decisión de dosificar o no coagulante, que depende de la evolución en la red de calidad de entrada. En el caso de la planta Jáuregui, se considerará el valor de turbidez como condición para el cambio de estado en la dosificación, tal como se determina en el modelo continuo. La composición de ambos modelos arroja el estado de la unidad según el flujo de producto, véase figura \ref{fig-nturdp}. Se toman en cuenta las condiciones operativas descritas en 3.1.
 
-Se debe resaltar que en las plantas de tratamiento del estado Mérida, se adiciona sulfato de aluminio al proceso solo cuando la turbidez supera los 12 NTU.
+\vspace{6mm}
 
-			\begin{table}[]
+			\begin{table}[H]
 				\begin{center}
 					\begin{tabular}{|l|l|}
 					\hline
@@ -1732,60 +2072,43 @@ Se debe resaltar que en las plantas de tratamiento del estado Mérida, se adicion
 					$L_{a}$     & Turbidez baja            \\ \hline
 					$L_{b}$     & Turbidez media           \\ \hline
 					$L_{c}$     & Turbidez alta            \\ \hline
+					$L_{0}$  & Unidad sin dosificar             \\ \hline
+					$L_{1}$  & Unidad con dosificación          \\ \hline
+					$L_{2}$  & Unidad dosificando, en degradado \\ \hline
+					$L_{n}$  & Intercambio de información, turbidez baja, detener dosificación \\ \hline
+					$L_{nd}$  & Intercambio de información, turbidez media, iniciar dosificación \\ \hline
+					$L_{dd}$  & Intercambio de información, turbidez alta \\ \hline
 					\multicolumn{2}{|l|}{\textbf{Eventos}} \\ \hline
-					$T_{a}$     & $T < 12$                 \\ \hline
-					$T_{b}$     & $12 \leq T \leq 100$     \\ \hline
-					$T_{c}$     & $T > 100$                \\ \hline
+					$T_{a}, T_{0}$     & $T < 12$                 \\ \hline
+					$T_{b}, T_{1}$   & $12 \leq T \leq 100$     \\ \hline
+					$T_{c}, T_{2}$     & $T > 100$                \\ \hline
 					\end{tabular}
-					\caption{Estados y eventos de la turbidez medida.}
+					\caption{Estados y eventos de la unidad de coagulación.}
 					\label{table-nturdp}
 				\end{center}
 			\end{table}
 			
-			\begin{figure}
+			\begin{figure}[H]
 				\centering
-				\includegraphics{figures/4NTUrdp}
-				\caption{Estado de la turbidez en coagulación.}
+				\includegraphics[scale=0.9]{figures/4coagcomprdp}
+				\caption{Red de petri de la unidad de coagulación.}
 				\label{fig-nturdp}
 			\end{figure}
 			
-			\begin{table}[]
-				\begin{center}
-					\begin{tabular}{|l|l|}
-					\hline
-					\multicolumn{2}{|l|}{\textbf{Estados}}      \\ \hline
-					$L_{0}$  & Unidad sin dosificar             \\ \hline
-					$L_{1}$  & Unidad con dosificación          \\ \hline
-					$L_{d}$  & Unidad dosificando, en degradado \\ \hline
-					\multicolumn{2}{|l|}{\textbf{Eventos}}      \\ \hline
-					$T_{n0}$ & $NTU < 12$                       \\ \hline
-					$T_{n1}$ & $12 \leq NTU \geq 50$              \\ \hline
-					$T_{n2}$ & $NTU > 50$                       \\ \hline
-					\end{tabular}
-					\caption{Estados y eventos de la unidad de coagulación.}
-					\label{table-coagulantrdp}
-				\end{center}
-			\end{table}
-
-			\begin{figure}
-				\centering
-				\includegraphics{figures/4coagulantrdp}
-				\caption{Estado de la unidad de coagulación.}
-				\label{fig-coagulantrdp}
-			\end{figure}
-
+\vspace{6mm}
+			
 		\subsection{Modelo de la Unidad de Sedimentación}
-		
-En el caso de la unidad de sedimentación se hizo uso del programa de redes hidráulicas Epanet. Para llevar a cabo la emulación, se utilizaron longitudes reales de los tanques y tuberías presentes en la planta, según el plano de diseño suministrado. La unidad consta de dos sedimentadores con una entrada de agua floculada, una salida de agua decantada y una descarga de lodos para cada uno. (figura \ref{fig-sedimentsimu})
+
+En el caso de la unidad de sedimentación se hizo uso del programa de redes hidráulicas Epanet, con el fin de hacer uso de herramientas conocidas en el ámbito hidrológico, que incluyen algoritmos de cálculo matemático especializado en el área. Para llevar a cabo la emulación, se utilizaron longitudes reales de los tanques y tuberías presentes en la planta, según el plano de diseño suministrado. La unidad consta de dos sedimentadores con una entrada de agua floculada, una salida de agua decantada y una descarga de lodos para cada uno. (figura \ref{fig-sedimentsimu})
 
 			\begin{figure}
 				\centering
-				\includegraphics{figures/4sedimentsimu}
+				\includegraphics[scale=0.8]{figures/4sedimentsimu}
 				\caption{Estructura de la unidad de Sedimentación en Epanet.}
 				\label{fig-sedimentsimu}
 			\end{figure}
 
-En la simulación se añaden válvulas de Control de Caudal (VCQ o FCV por sus siglas en inglés), para asignar el caudal según la información obtenida de la unidad anterior o las mediciones propias de la unidad de sedimentción; en un principio se fija el caudal de operación ideal (caudal de diseño, $150 L/s$ para cada sedimentador). Se configuran también dos reglas simples de control de tanque para su mantenimiento, que consisten en la apertura y cierre de compuertas de lodos según los niveles de operación, los cuales se describen en la tabla \ref{table-sedimentlevelsop}.
+Al emular el comportamiento del tanque, se añaden válvulas de Control de Caudal (VCQ o FCV por sus siglas en inglés), para asignar el caudal según la información obtenida de la unidad anterior o las mediciones propias de la unidad de sedimentción; en un principio se fija el caudal de operación ideal (caudal de diseño, $150 L/s$ para cada sedimentador). Se configuran también dos reglas simples de control de tanque para su mantenimiento, que consisten en la apertura y cierre de compuertas de lodos según los niveles de operación, los cuales se describen en la tabla \ref{table-sedimentlevelsop}.
 
 			\begin{table}[H]
 				\begin{center}
@@ -1800,148 +2123,67 @@ En la simulación se añaden válvulas de Control de Caudal (VCQ o FCV por sus sigl
 						min-min & 2,65 & Cierre de compuerta de lodos \\ \hline
 					\end{tabular}
 					}
-					\caption{Condición de mantenimiento de la unidad de sedimentación.}
+					\caption{Condición de operación de la unidad de sedimentación.}
 					\label{table-sedimentlevelsop}
 				\end{center}
 			\end{table}
 			
-El nivel max-max indica una acumulación en el fondo de lodos, por lo que se apertura la compuerta de vaciado. Entre los niveles min y max se maneja una operación normal, con flujo saliente hacia la unidad de filtración. El nivel min-min indica el nivel mínimo de vaciado del tanque, por lo que se debe cerrar la compuerta de lodos y, en caso de no haber flujo de entrada, anunciar la parada de la unidad.
+Ya que el volumen el fluido es constante, un aumento al nivel max-max indica una acumulación en el fondo de lodos, por lo que se apertura la compuerta de vaciado. Entre los niveles min y max se define la operación normal, con flujo saliente al colector que va a la unidad de filtración. El nivel min-min indica el nivel mínimo de vaciado del tanque, por lo que se debe cerrar la compuerta de lodos y, en caso de no haber flujo de entrada, anunciar la parada de la unidad.
 			
-Los modelos discretos utilizados para simular la unidad de sedimentación describen:
+Los modelos discretos de la unidad de sedimentación se basan en los desarrollados en $3.2$ para tanques. El modelo compuesto se presenta en la figura \ref{fig-sedimentcomprdp}.
 
-			\paragraph{Estado del caudal de entrada:} Asumiendo medición en campo con un valor normal de $300 LPS$. Figura \ref{fig-qirdp}.
-			
-			\begin{table}[]
+			\begin{table}[H]
 				\begin{center}
-					\begin{tabular}{|l|l|}
+					\begin{tabular}{|l|l|l|l|}
 					\hline
-					\multicolumn{2}{|l|}{\textbf{Estados}}     \\ \hline
-					$L_{a}$ & Caudal de operación              \\ \hline
-					$L_{b}$ & Caudal en degradado              \\ \hline
-					$L_{c}$ & Caudal en falla                  \\ \hline
-					\multicolumn{2}{|l|}{\textbf{Eventos}}     \\ \hline
-					$T_{a}$ & $270 \leq q_{i} \leq 300$ aprox. \\ \hline
-					$T_{b}$ & $q_{i} \leq 270$                 \\ \hline
-					$T_{c}$ & $q_{i} \approx 0$                \\ \hline
-					\end{tabular}
-					\caption{Estados y eventos del caudal de entrada.}
-					\label{table-qirdp}
-				\end{center}
-			\end{table}
-	
-			\begin{figure}
-				\centering
-				\includegraphics[scale=0.7]{figures/4qirdp}
-				\caption{Estado del caudal de entrada a sedimentación.}
-				\label{fig-qirdp}
-			\end{figure}
-			
-			\paragraph{Estado de la altura del agua:} Describe los niveles de agua en los que la unidad puede operar, junto con saturación, vacío y nivel mínimo, depende de las mediciones de altura $h$ en el sedimentador. Figura \ref{fig-hrdp}.
-			
-			\begin{table}[]
-				\begin{center}
-					\begin{tabular}{|l|l|}
-					\hline
-					\multicolumn{2}{|l|}{\textbf{Estados}} \\ \hline
-					$L_{x}$  & Altura máxima               \\ \hline
-					$L_{o}$  & Altura de operación         \\ \hline
-					$L_{v}$  & Altura en vacío             \\ \hline
-					$L_{m}$  & Altura mínima               \\ \hline
-					\multicolumn{2}{|l|}{\textbf{Eventos}} \\ \hline
-					$T_{x}$  & $h > 3,40 m$                \\ \hline
-					$T_{o}$  & $3,20 m \leq h \leq 3,40 m$ \\ \hline
-					$T_{v}$  & $2,65 m < h < 3,40 m$       \\ \hline
-					$T_{m}$  & $h \leq 2,65 m$                 \\ \hline
+					\multicolumn{2}{|l|}{\textbf{Estados}} & \multicolumn{2}{l|}{\textbf{Eventos}} \\ \hline
+					$L_{x}$ & Altura máxima & $T_{x}$ & $h > 3,40 m$ \\ \hline
+					$L_{o}$ & Altura de operación & $T_{o}$ & $3,20 m \leq h \leq 3,40 m$ \\ \hline
+					$L_{v}$ & Altura en vacío & $T_{v}$ & $2,65 m < h < 3,40 m$ \\ \hline
+					$L_{m}$ & Altura mínima & $T_{m}$ & $h \leq 2,65 m$ \\ \hline
+					$L_{o1}$ & Tanque en operación & $T_{o1}$ & Condiciones de operación \\ \hline
+					$L_{x1}$ & Tanque saturado & $T_{x1}$ & Condiciones de saturación \\ \hline
+					$L_{v1}$ & Tanque en ciclo de vacío & $T_{v1}$ & Condiciones para vaciar \\ \hline
+					$L_{m1}$ & Tanque en mínimo & $T_{m1}$ & Condiciones de mínimo \\ \hline
+					$L_{l}$ & Tanque en ciclo de llenado & $T_{l}$ & Condiciones para llenar \\ \hline
+					$L_{a}$ & Compuerta abierta & $T_{a}$ & Abrir compuerta \\ \hline
+					$L_{c}$ & Compuerta cerrada & $T_{fa}$ & Falla en apertura \\ \hline
+					- & - & $T_{c}$ & Cerrar compuerta \\ \hline
+					- & - & $T_{fc}$ & Falla en cierre \\ \hline
 					\end{tabular}
 					\caption{Estados y eventos de la altura en el tanque.}
 					\label{table-hrdp}
 				\end{center}
 			\end{table}
 			
-			\begin{figure}
+			\begin{figure}[H]
 				\centering
-				\includegraphics[scale=0.7]{figures/4hrdp}
-				\caption{Estado de la altura del agua en el tanque.}
-				\label{fig-hrdp}
+				\includegraphics[scale=0.4]{figures/4sedimentcomprdp}
+				\caption{Red de petri de la unidad de sedimentación.}
+				\label{fig-sedimentcomprdp}
 			\end{figure}
 			
-			\paragraph{Estado de la compuerta de lodos:} Abierta o cerrada según condición de nivel del agua en el tanque. Figura \ref{fig-valverdp}.
-			
-			\begin{table}[]
-				\begin{center}
-					\begin{tabular}{|l|l|}
-					\hline
-					\multicolumn{2}{|l|}{\textbf{Estados}} \\ \hline
-					$L_{a}$       & Compuerta abierta      \\ \hline
-					$L_{c}$       & Compuerta cerrada      \\ \hline
-					\multicolumn{2}{|l|}{\textbf{Eventos}} \\ \hline
-					$T_{a}$       & Abrir compuerta        \\ \hline
-					$T_{fa}$      & Falla en apertura      \\ \hline
-					$T_{c}$       & Cerrar compuerta       \\ \hline
-					$T_{fc}$      & Falla en cierre        \\ \hline
-					\end{tabular}
-					\caption{Estados y eventos de la compuerta de lodos.}
-					\label{table-vavlerdp}
-				\end{center}
-			\end{table}
-			
-			\begin{figure}
-				\centering
-				\includegraphics[scale=0.7]{figures/4valverdp}
-				\caption{Estado de la compuerta de lodos.}
-				\label{fig-valerdp}
-			\end{figure}
-			
-			\paragraph{Estado del tanque:} Según el estado de altura del agua y la compuerta de lodos, se determina si el tanque está operando, en máximo o mínimo, llenando o vaciandose. Figura \ref{fig-tankrdp}.
-			
-			\begin{table}[]
-				\begin{center}
-					\begin{tabular}{|l|l|}
-					\hline
-					\multicolumn{2}{|l|}{\textbf{Estados}}        \\ \hline
-					$L_{o}$          & Tanque en operación        \\ \hline
-					$L_{x}$          & Tanque saturado            \\ \hline
-					$L_{v}$          & Tanque en ciclo de vacío   \\ \hline
-					$L_{m}$          & Tanque en mínimo           \\ \hline
-					$L_{l}$          & Tanque en ciclo de llenado \\ \hline
-					\textbf{Eventos} &                            \\ \hline
-					$T_{o}$          & Condiciones de operación   \\ \hline
-					$T_{x}$          & Condiciones de saturación  \\ \hline
-					$T_{v}$          & Condiciones para vaciar    \\ \hline
-					$T_{m}$          & Condiciones de mínimo      \\ \hline
-					$T_{l}$          & Condiciones para llenar    \\ \hline
-					\end{tabular}
-					\caption{Estados y eventos del tanque de sedimentación.}
-					\label{table-tankrdp}
-				\end{center}
-			\end{table}
+Utilizando epanet con condiciones ideales, se puede apreciar un ciclo de carga y descarga del tanque luego de aproximadamente 4 días de simulación en periodo extendido (figura \ref{fig-htankepanet}).
 
 			\begin{figure}
 				\centering
-				\includegraphics[scale=0.7]{figures/4tankrdp}
-				\caption{Estado del tanque de sedimentación.}
-				\label{fig-valerdp}
-			\end{figure}
-			
-Así, con la composición de estos modelos se conoce el comportamiento de la unidad. Utilizando epanet con condiciones ideales, se puede apreciar un ciclo de carga y descarga del tanque luego de aproximadamente 4 días de simulación en periodo extendido (figura \ref{fig-htankepanet}).
-
-			\begin{figure}
-				\centering
-				\includegraphics[scale=0.5]{figures/4htankepanet}
+				\includegraphics[scale=0.4]{figures/4htankepanet}
 				\caption{Comportamiento de la unidad de sedimentación en condiciones ideales.}
 				\label{fig-htankepanet}
 			\end{figure}
+			
+La última parte de este capítulo define que la propuesta de gemelo digital está conformada por la instauración de los modelos discretos compuestos, emulados en MATLAB, junto con las condiciones operativas y modelos continuos emulados en epanet, tal y como lo expresa la extensión de \cite{Lygeros2012} en la sección \ref{sec-uph}, figura \ref{fig-uphmodel}.
 
-		\section{Emulación del Gemelo Digital}
+		\section{Escenarios de Prueba}
 		
-Una vez condicionado el comportamiento de cada unidad, se realizó un programa matriz donde se emula el funcionamiento de las unidades en simultáneo. Con tal fin se utilizó a Epanet como motor para obtener las variables del proceso que incluye, según \ref{sec-uph}, los valores de campo más los valores del modelo para el análisis dinámico; mientras que la evolución de eventos se realizó en Matlab. Para llevar a cabo la interconexión de archivos se utiliza la herramienta Epanet Matlab Toolkit.
+Una vez condicionado el comportamiento de cada unidad, se realizó un programa matriz donde se emula el funcionamiento de las unidades en simultáneo. Con tal fin se utilizó a Epanet como motor para obtener las variables del proceso que incluye, según \ref{sec-uph}, los valores de campo más los valores del modelo para el análisis dinámico; mientras que la evolución de eventos se realizó en MATLAB. Para llevar a cabo la interconexión de archivos se utiliza la herramienta Epanet MATLAB Toolkit.
 
 La metodología consiste en cargar el archivo MATLAB que contiene el modelo de dosis de coagulante, el Toolkit de Epanet con las funciones de manejo de redes hidráulicas y el archivo de Epanet para la unidad de sedimentación, cuya estructura será replicada por MATLAB, permitiendo la modificación de variables desde el entorno de simulación (figura \ref{fig-sedimentmatlab}).
 
-			\begin{figure}
+			\begin{figure}[H]
 				\centering
-				\includegraphics[scale=0.7]{figures/4sedimentmatlab}
-				\caption{Replica de la unidad de sedimentación realizada en Epanet, desde Matlab.}
+				\includegraphics[scale=0.65]{figures/4sedimentmatlab}
+				\caption{Replica de la unidad de sedimentación realizada en Epanet, desde MATLAB.}
 				\label{fig-sedimentmatlab}
 			\end{figure}
 			
@@ -1952,33 +2194,33 @@ Se establecen los parámetros iniciales de caudal y se selecciona el conjunto de 
 			En primera instancia se propone un escenario ideal, es decir que presente rangos bajos de turbidez, de modo que en el sedimentador se mantengan los lodos por debajo del nivel de mantenimiento durante más tiempo (tabla \ref{table-sedimentlevelsop}). Es utilizado uno de los conjuntos de datos cuya turbidez inicial máxima es de $5.5 NTU$, este conjunto se replica durante cinco días ya que es el único que ofrece las características deseadas.
 			El resultado se presenta en la figura \ref{fig-idealscen}, donde la descarga de lodos ocurre a las $102,2$ horas, cerca de 4 días y 11 horas de funcionamiento continuo, coincidiendo con lo descrito por los operadores en planta (descarga de lodos cada cuatro días). Como se mencionó anteriormente, debido a los bajos niveles de turbidez no hay adición de coagulante.
 			
-			\begin{figure}
+			\begin{figure}[H]
 				\centering
-				\includegraphics[scale=0.5]{figures/4idealscen}
+				\includegraphics[scale=0.45]{figures/4idealscen}
 				\caption{Escenario 1: Bajo nivel de turbidez y color inicial.}
 				\label{fig-idealscen}
 			\end{figure}
 			
 			\paragraph{Escenario 2:}
 			
-			Siguiendo los modelos de la unidad de coagulación descritos previamente, se propone un escenario donde la turbidez cubra un rango entre $1 NTU$ y $99 NTU$, de manera que se añada coagulante al proceso y los sedimentadores se colmaten más rapidamente (figura \ref{fig-degscen}).
+			Siguiendo los modelos de la unidad de coagulación descritos previamente, se propone un escenario donde la turbidez cubra un rango entre $1 NTU$ y $99 NTU$, de manera que se añada coagulante al proceso y los sedimentadores se colmaten más rapidamente (figura \ref{fig-scennormaldosis}).
 			En este caso el nivel máximo de turbidez se ubica en $53 NTU$ con un color de $120 UC$, con la inclusión de algunos valores de turbidez por debajo de $12 NTU$, el sedimentador se colmata a las $64,92$ horas, aproximadamente 3 días y 14 horas de funcionamiento.
-			
-			\begin{figure}
-				\centering
-				\includegraphics[scale=0.5]{figures/4degscen}
-				\caption{Escenario 2: Nivel bajo/medio de turbidez y color inicial.}
-				\label{fig-degscen}
-			\end{figure}
 			
 			\paragraph{Escenario 3:}
 			
-			Para el tercer escenario se supuso la entrada de agua con turbidez alta durante todo un día, esto para corroborar que en un caso dado el sedimentador cumpla con la descarga de lodos. Se utilizaron los datos superiores a $95 NTU$ de la planta real, tomados de los conjuntos de datos iniciales, debido a que ninguno de ellos que cumpla con las características de baja calidad de agua entrante durante un periodo prolongado. (\ref{fig-4deg2scen})
+			Para el tercer escenario se supuso la entrada de agua con turbidez alta durante todo un día, esto para corroborar que en un caso dado el sedimentador cumpla con la descarga de lodos. Se utilizaron los datos superiores a $95 NTU$ de la planta real, tomados cpmo combinación de los conjuntos de datos iniciales. (figura \ref{fig-deg2scen})
 			Con un nivel máximo de turbidez de $1500 NTU$ y $9000 UC$, la dosis de coagulante suministrada es de $252,8 kg/h$ en la primera unidad, alcanzando que el sedimentador se colmate a las $24,38$ horas, aproximadamente 1 día y 10 horas.
 			
-			\begin{figure}
+			\begin{figure}[H]
 				\centering
-				\includegraphics[scale=0.5]{figures/4deg2scen}
+				\includegraphics[scale=0.48]{figures/4scennormaldosis}
+				\caption{Escenario 2: Nivel bajo/medio de turbidez y color inicial.}
+				\label{fig-scennormaldosis}
+			\end{figure}
+			
+			\begin{figure}[H]
+				\centering
+				\includegraphics[scale=0.44]{figures/4deg2scen}
 				\caption{Escenario 3: Nivel alto de turbidez y color inicial.}
 				\label{fig-deg2scen}
 			\end{figure}
@@ -1986,33 +2228,40 @@ Se establecen los parámetros iniciales de caudal y se selecciona el conjunto de 
 			\paragraph{Escenario 4:}
 			
 			El cuarto escenario consiste en mostrar las dos opciones operativas desencadenadas por un nivel alto de turbidez en el agua entrante, considerando un rango alto a partir de $100 NTU$ para la simulación. Este caso incluye el aumento de la dosis de coagulante como se observa en el escenario 3 o el cierre del flujo entrante, que eventualmente interrumpe la salida hacia los filtros. El actuar ante estas opciones depende exclusivamente de los lineamientos de la planta y la decisión del operador.
-			Se utilizaron dos de los conjuntos de datos que contienen los rangos más altos de color y turbidez inicial; así en caso de mantener la compuerta de entrada a la planta abierta, se observa el aumento de coagulante que se debe añadir al proceso (\ref{fig-failscen}), razón por la que coagulación se considera la unidad que mayor gasto puede generar en el tratamiento de agua.
+			Se utilizaron dos de los conjuntos de datos que contienen los rangos más altos de color y turbidez inicial; así en caso de mantener la compuerta de entrada a la planta abierta, se observa el aumento de coagulante que se debe añadir al proceso (figura \ref{fig-failscen}), razón por la que coagulación se considera la unidad que mayor gasto puede generar en el tratamiento de agua.
 			
-			\begin{figure}
+			\begin{figure}[H]
 				\centering
-				\includegraphics[scale=0.5]{figures/4failscen}
+				\includegraphics[scale=0.45]{figures/4failscen}
 				\caption{Escenario 4: Niveles altos de turbidez y color, con aumento de coagulante.}
 				\label{fig-failscen}
 			\end{figure}
 			
-			Si, por el contrario, al obtener valores altos de turbidez en la entrada la compuerta se cierra (\ref{fig-fail2scen}), el sedimentador mantendrá el nivel justo debajo del canal recolector ($3,16 m$) y se deberá avisar a la siguiente unidad para que active la parada.
+			Si, por el contrario, al obtener valores altos de turbidez en la entrada la compuerta se cierra (figura \ref{fig-fail2scen}), el sedimentador mantendrá el nivel justo debajo del canal recolector ($3,16 m$) y se deberá avisar a la siguiente unidad para que active la parada.
 			
-			\begin{figure}
+			\begin{figure}[H]
 				\centering
 				\includegraphics[scale=0.5]{figures/4fail2scen}
 				\caption{Escenario 4: Niveles altos de turbidez y color, con cierre de compuerta.}
-				\label{fig-failscen}
+				\label{fig-fail2scen}
 			\end{figure}
 			
 			\paragraph{Escenario 5:}
 			
-			Una vez descritos los escenarios predeterminados para un comportamiento ideal, en degradado y en falla, se toman aleatoriamente cuatro de los conjuntos de datos y se corre el programa para observar el comportamiento durante esos cuatro días.
+			Una vez descritos los escenarios predeterminados para un comportamiento ideal, en degradado y en falla, se toman aleatoriamente cuatro de los conjuntos de datos y se corre el programa para observar el comportamiento durante esos cuatro días. En el escenario 5.1 (figura \ref{fig-tank1scen}), el tanque se satura al día 3 de simulación, con promedio de turbidez media. Se observa que en las mediciones reales, con turbidez de $15 NTU$, se adicionó coagulante al proceso; esto ocurre debido a que los operadores toman ciertas decisiones según su experticia, en este caso fuera del rango de comportamiento definido para el modelo. En el escenario aleatorio 5.2 (figura \ref{fig-tank2scen}), se mantiene una turbidez media durante la mayoría del tiempo por lo que el tanque se satura de igual forma a los 3 días aproximadamente. Presenta un aumento de turbidez al final del ciclo que precisa de un aumento en la dosis de coagulante.
 			
-			\begin{figure}
+			\begin{figure}[H]
 				\centering
-				\includegraphics[scale=0.5]{figures/4tank4124scen}
-				\caption{Escenario 5: Simulación de datos de entrada reales durante 4 días.}
-				\label{fig-tank4124scen}
+				\includegraphics[scale=0.45]{figures/4tank1scen}
+				\caption{Escenario 5.1: Simulación de datos de entrada reales durante 4 días.}
+				\label{fig-tank1scen}
+			\end{figure}
+			
+			\begin{figure}[H]
+				\centering
+				\includegraphics[scale=0.45]{figures/4tank2scen}
+				\caption{Escenario 5.2: Simulación de datos de entrada reales durante 4 días.}
+				\label{fig-tank2scen}
 			\end{figure}
 
 	\chapter{Conclusiones y Recomendaciones}
@@ -2027,20 +2276,47 @@ Se establecen los parámetros iniciales de caudal y se selecciona el conjunto de 
 	
 	Se establecieron condiciones generales para desarrollar un gemelo digital del proceso e incorporarlas al ambiente de simulación. Esto incluye la propuesta de mejoría en la infraestructura de automatización (sensores, actuadores, mediante PLC, SCADA), requerida  para obtener y hacer seguimiento del comportamiento en planta para el ajuste de los modelos.
 	
-	Se debe destacar la relevancia de los modelos al momento de proponer un gemelo digital; es en ellos donde se almacena todo el conocimiento del proceso, lo que da pie a que se tomen decisiones basadas en condiciones, en pro de la eficiencia de la producción.
+	Se debe destacar la relevancia de los modelos al momento de proponer un gemelo digital; es en ellos donde se almacena todo el conocimiento del proceso, lo que da pie a que se tomen decisiones basadas en condiciones, en pro de la eficiencia de la producción. La obtención de los modelos de cada unidad es clave para generar un gemelo digital del proceso de potabilización, así como también las mediciones en línea.
 	
-	La implementación de un gemelo digital permite la planificación de modificaciones en la unidad, el seguimiento del comportamiento y gestón en la misma, y el uso de los datos obtenidos para programación y evaluación. 
+	La implementación de un gemelo digital permite la planificación de modificaciones en la unidad, el seguimiento del comportamiento y gestión en la misma, y el uso de los datos obtenidos para programación y evaluación.
 	
-	Hay gemelos de la unidad, de gestion, y usas los datos para hacer planificación, programación, seguimiento, evaluación
+	Se recomienda realizar la medición de la temperatura del flujo, debido a que es un parámetro influyente al momento de añadir químicos a un flujo. Conociendo el valor es posible que el modelo de dosificación de coagulante se ajuste mejor al proceso.
 	
 	\chapter{Anexos}
 	
-Para llevar a cabo las mediciones de calidad de agua se uilizan principalmente los instrumentos descritos en la tabla \ref{tabla-caract}.
+	\section{Anexo A}
+	
+	Se presenta el formato de los valores con los que se trabajó el modelo para dosis de coagulante. Por motivos de confidencialidad no pueden ser adjuntados en su totalidad; se adjuntan un conjunto de datos usados para el caso ideal de turbidez baja, uno con turbidez media y uno con turbidez alta.
+	
+		\begin{figure}[H]
+			\centering
+			\includegraphics[scale=0.8, angle=90]{figures/5anexo4}
+			\caption{Conjunto de datos (1 día), turbidez baja.}
+			\label{fig-5anexo4}
+		\end{figure}
+		
+		\begin{figure}[H]
+			\centering
+			\includegraphics[scale=0.8, angle=90]{figures/5anexo1}
+			\caption{Conjunto de datos (1 día), turbidez media.}
+			\label{fig-5anexo1}
+		\end{figure}
+		
+		\begin{figure}[H]
+			\centering
+			\includegraphics[scale=0.8, angle=90]{figures/5anexo3}
+			\caption{Conjunto de datos (1 día), turbidez alta.}
+			\label{fig-5anexo3}
+		\end{figure}
+	
+	\section{Anexo B}
+	
+Las mediciones de calidad de agua se realizan principalmente con los instrumentos descritos en la tabla \ref{table-inst}.
 
 			\begin{table}[htbp]
 				\begin{center}
 					\resizebox{15cm}{!} {
-					\begin{tabular}{|p{5cm}|p{5cm}|p{5cm}|}
+					\begin{tabular}{|p{3,3cm}|p{6cm}|p{6cm}|}
 						\hline
 						\textbf{Instrumento} & \textbf{Función} & \textbf{Funcionamiento} \\
 						\hline \hline
@@ -2051,7 +2327,7 @@ Para llevar a cabo las mediciones de calidad de agua se uilizan principalmente l
 					\end{tabular}
 					}
 					\caption{Desripción de instrumentos de medición.}
-					\label{tabla-caract}
+					\label{table-inst}
 				\end{center}
 			\end{table}
 

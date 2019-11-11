@@ -30,41 +30,45 @@
 \BOOKMARK [3][-]{subsubsection.2.6.2.2}{Operaciones}{subsection.2.6.2}% 30
 \BOOKMARK [3][-]{subsubsection.2.6.2.3}{Comercial}{subsection.2.6.2}% 31
 \BOOKMARK [3][-]{subsubsection.2.6.2.4}{Soporte}{subsection.2.6.2}% 32
-\BOOKMARK [2][-]{subsection.2.6.3}{Esquema Integral de Cadena de Valor para Hidrol\363gicas}{section.2.6}% 33
-\BOOKMARK [2][-]{subsection.2.6.4}{Planificaci\363n}{section.2.6}% 34
-\BOOKMARK [2][-]{subsection.2.6.5}{Modelo APS en Hidrol\363gicas}{section.2.6}% 35
-\BOOKMARK [1][-]{section.2.7}{Descripci\363n del Proceso de Potabilizaci\363n}{chapter.2}% 36
-\BOOKMARK [2][-]{subsection.2.7.1}{Captaci\363n del agua}{section.2.7}% 37
-\BOOKMARK [2][-]{subsection.2.7.2}{Determinaci\363n de las caracter\355sticas del agua cruda}{section.2.7}% 38
-\BOOKMARK [3][-]{subsubsection.2.7.2.1}{Turbidez}{subsection.2.7.2}% 39
-\BOOKMARK [3][-]{subsubsection.2.7.2.2}{pH}{subsection.2.7.2}% 40
-\BOOKMARK [3][-]{subsubsection.2.7.2.3}{Cloro Residual}{subsection.2.7.2}% 41
-\BOOKMARK [3][-]{subsubsection.2.7.2.4}{Color Aparente}{subsection.2.7.2}% 42
-\BOOKMARK [3][-]{subsubsection.2.7.2.5}{Temperatura}{subsection.2.7.2}% 43
-\BOOKMARK [3][-]{subsubsection.2.7.2.6}{Prueba de Jarras}{subsection.2.7.2}% 44
-\BOOKMARK [2][-]{subsection.2.7.3}{Unidad de Potabilizaci\363n}{section.2.7}% 45
-\BOOKMARK [3][-]{subsubsection.2.7.3.1}{Coagulaci\363n}{subsection.2.7.3}% 46
-\BOOKMARK [3][-]{subsubsection.2.7.3.2}{Floculaci\363n}{subsection.2.7.3}% 47
-\BOOKMARK [3][-]{subsubsection.2.7.3.3}{Sedimentaci\363n}{subsection.2.7.3}% 48
-\BOOKMARK [3][-]{subsubsection.2.7.3.4}{Filtraci\363n}{subsection.2.7.3}% 49
-\BOOKMARK [3][-]{subsubsection.2.7.3.5}{Desinfecci\363n}{subsection.2.7.3}% 50
-\BOOKMARK [1][-]{section.2.8}{Sistemas Hol\363nicos}{chapter.2}% 51
-\BOOKMARK [2][-]{subsection.2.8.1}{Descripci\363n del conocimiento de la UPH}{section.2.8}% 52
-\BOOKMARK [2][-]{subsection.2.8.2}{Din\341mica del proceso f\355sico y su supervisi\363n}{section.2.8}% 53
-\BOOKMARK [1][-]{section.2.9}{Unidades Hol\363nicas en Hidrol\363gicas}{chapter.2}% 54
-\BOOKMARK [1][-]{section.2.10}{Epanet}{chapter.2}% 55
-\BOOKMARK [0][-]{chapter.3}{Modelos del Gemelo Digital para Unidad de Potabilizaci\363n}{}% 56
+\BOOKMARK [2][-]{subsection.2.6.3}{Esquema de Interacciones para las Hidrol\363gicas}{section.2.6}% 33
+\BOOKMARK [2][-]{subsection.2.6.4}{Modelo APS en Hidrol\363gicas}{section.2.6}% 34
+\BOOKMARK [1][-]{section.2.7}{Proceso de Potabilizaci\363n}{chapter.2}% 35
+\BOOKMARK [2][-]{subsection.2.7.1}{Captaci\363n del agua}{section.2.7}% 36
+\BOOKMARK [2][-]{subsection.2.7.2}{Determinaci\363n de las caracter\355sticas del agua}{section.2.7}% 37
+\BOOKMARK [3][-]{subsubsection.2.7.2.1}{Turbidez}{subsection.2.7.2}% 38
+\BOOKMARK [3][-]{subsubsection.2.7.2.2}{pH}{subsection.2.7.2}% 39
+\BOOKMARK [3][-]{subsubsection.2.7.2.3}{Cloro Residual}{subsection.2.7.2}% 40
+\BOOKMARK [3][-]{subsubsection.2.7.2.4}{Color Aparente}{subsection.2.7.2}% 41
+\BOOKMARK [3][-]{subsubsection.2.7.2.5}{Temperatura}{subsection.2.7.2}% 42
+\BOOKMARK [3][-]{subsubsection.2.7.2.6}{Determinaci\363n de Dosis de Coagulante: Prueba de Jarras}{subsection.2.7.2}% 43
+\BOOKMARK [2][-]{subsection.2.7.3}{Unidad de Potabilizaci\363n}{section.2.7}% 44
+\BOOKMARK [3][-]{subsubsection.2.7.3.1}{Coagulaci\363n}{subsection.2.7.3}% 45
+\BOOKMARK [3][-]{subsubsection.2.7.3.2}{Floculaci\363n}{subsection.2.7.3}% 46
+\BOOKMARK [3][-]{subsubsection.2.7.3.3}{Sedimentaci\363n}{subsection.2.7.3}% 47
+\BOOKMARK [3][-]{subsubsection.2.7.3.4}{Filtraci\363n}{subsection.2.7.3}% 48
+\BOOKMARK [3][-]{subsubsection.2.7.3.5}{Desinfecci\363n}{subsection.2.7.3}% 49
+\BOOKMARK [1][-]{section.2.8}{Sistemas Hol\363nicos de Producci\363n}{chapter.2}% 50
+\BOOKMARK [2][-]{subsection.2.8.1}{Descripci\363n del conocimiento de la UHP}{section.2.8}% 51
+\BOOKMARK [2][-]{subsection.2.8.2}{Din\341mica del proceso f\355sico y su supervisi\363n}{section.2.8}% 52
+\BOOKMARK [2][-]{subsection.2.8.3}{Unidades Hol\363nicas en Hidrol\363gicas}{section.2.8}% 53
+\BOOKMARK [1][-]{section.2.9}{Epanet}{chapter.2}% 54
+\BOOKMARK [1][-]{section.2.10}{MATLAB}{chapter.2}% 55
+\BOOKMARK [0][-]{chapter.3}{Consideraciones Operativas para las UHP en Potabilizaci\363n}{}% 56
 \BOOKMARK [1][-]{section.3.1}{Condiciones de Operaci\363n en Potabilizaci\363n}{chapter.3}% 57
 \BOOKMARK [2][-]{subsection.3.1.1}{Unidad de Coagulaci\363n}{section.3.1}% 58
 \BOOKMARK [2][-]{subsection.3.1.2}{Unidad de Floculaci\363n}{section.3.1}% 59
 \BOOKMARK [2][-]{subsection.3.1.3}{Unidad de Sedimentaci\363n}{section.3.1}% 60
 \BOOKMARK [2][-]{subsection.3.1.4}{Unidad de Filtraci\363n}{section.3.1}% 61
 \BOOKMARK [2][-]{subsection.3.1.5}{Unidad de Desinfecci\363n}{section.3.1}% 62
-\BOOKMARK [0][-]{chapter.4}{Implementaci\363n}{}% 63
-\BOOKMARK [1][-]{section.4.1}{Generaci\363n de la Propuesta de Gemelo Digital}{chapter.4}% 64
-\BOOKMARK [2][-]{subsection.4.1.1}{Modelo de la Unidad de Coagulaci\363n}{section.4.1}% 65
-\BOOKMARK [2][-]{subsection.4.1.2}{Modelo de la Unidad de Sedimentaci\363n}{section.4.1}% 66
-\BOOKMARK [1][-]{section.4.2}{Emulaci\363n del Gemelo Digital}{chapter.4}% 67
-\BOOKMARK [0][-]{chapter.5}{Conclusiones y Recomendaciones}{}% 68
-\BOOKMARK [0][-]{chapter.6}{Anexos}{}% 69
-\BOOKMARK [0][-]{table.6.1}{Bibliograf\355a}{}% 70
+\BOOKMARK [1][-]{section.3.2}{Modelos Generales de las Entidades}{chapter.3}% 63
+\BOOKMARK [0][-]{chapter.4}{Caso de Uso}{}% 64
+\BOOKMARK [1][-]{section.4.1}{Propuesta de Medici\363n}{chapter.4}% 65
+\BOOKMARK [1][-]{section.4.2}{Generaci\363n de la Propuesta de Gemelo Digital}{chapter.4}% 66
+\BOOKMARK [2][-]{subsection.4.2.1}{Modelo de la Unidad de Coagulaci\363n}{section.4.2}% 67
+\BOOKMARK [2][-]{subsection.4.2.2}{Modelo de la Unidad de Sedimentaci\363n}{section.4.2}% 68
+\BOOKMARK [1][-]{section.4.3}{Escenarios de Prueba}{chapter.4}% 69
+\BOOKMARK [0][-]{chapter.5}{Conclusiones y Recomendaciones}{}% 70
+\BOOKMARK [0][-]{chapter.6}{Anexos}{}% 71
+\BOOKMARK [1][-]{section.6.1}{Anexo A}{chapter.6}% 72
+\BOOKMARK [1][-]{section.6.2}{Anexo B}{chapter.6}% 73
+\BOOKMARK [0][-]{table.6.1}{Bibliograf\355a}{}% 74
