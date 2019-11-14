@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6800) (preloaded format=pdflatex 2018.9.30)  11 NOV 2019 00:13
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6800) (preloaded format=pdflatex 2018.9.30)  13 NOV 2019 17:40
 entering extended mode
 **./proyecto_YsisLacruz.tex
 (proyecto_YsisLacruz.tex
@@ -1242,7 +1242,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 
 ]
-<figures/1industry40.png, id=627, 525.46312pt x 263.48438pt>
+<figures/1industry40.png, id=631, 525.46312pt x 263.48438pt>
 File: figures/1industry40.png Graphic file (type png)
 <use figures/1industry40.png>
 Package pdftex.def Info: figures/1industry40.png  used on input line 284.
@@ -1311,7 +1311,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 [8
 
 ]
-<figures/2wss.png, id=695, 425.33907pt x 418.56375pt>
+<figures/2wss.png, id=699, 425.33907pt x 418.56375pt>
 File: figures/2wss.png Graphic file (type png)
 <use figures/2wss.png>
 Package pdftex.def Info: figures/2wss.png  used on input line 373.
@@ -1349,7 +1349,7 @@ Underfull \hbox (badness 1112) in paragraph at lines 405--406
 a-cionales, guardando
  []
 
-<figures/2cps.png, id=732, 423.83344pt x 326.72063pt>
+<figures/2cps.png, id=736, 423.83344pt x 326.72063pt>
 File: figures/2cps.png Graphic file (type png)
 <use figures/2cps.png>
 Package pdftex.def Info: figures/2cps.png  used on input line 411.
@@ -1374,22 +1374,34 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [13]
+<figures/2dt.png, id=775, 657.95813pt x 279.29344pt>
+File: figures/2dt.png Graphic file (type png)
+<use figures/2dt.png>
+Package pdftex.def Info: figures/2dt.png  used on input line 446.
+(pdftex.def)             Requested size: 263.17859pt x 111.7154pt.
+
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[14]
-Underfull \hbox (badness 1642) in paragraph at lines 450--451
+[14pdfTeX warning (ext4): destination with the same identifier (name{figure.2.3
+}) has been already used, duplicate ignored
+
+\@EveryShipout@Output ...@Org@Shipout \box \@cclv 
+                                                  
+l.452 
+       <./figures/2dt.png>]
+Underfull \hbox (badness 1642) in paragraph at lines 457--458
 []\OT1/cmr/m/n/12 El conocimiento, desde una vision or-ga-ni-za-cional, es con
 -sid-er-ado como la
  []
 
-<figures/2valuechain.png, id=784, 332.74312pt x 137.7647pt>
+<figures/2valuechain.png, id=792, 332.74312pt x 137.7647pt>
 File: figures/2valuechain.png Graphic file (type png)
 <use figures/2valuechain.png>
-Package pdftex.def Info: figures/2valuechain.png  used on input line 458.
+Package pdftex.def Info: figures/2valuechain.png  used on input line 465.
 (pdftex.def)             Requested size: 332.7423pt x 137.76434pt.
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1404,32 +1416,21 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[16pdfTeX warning (ext4): destination with the same identifier (name{figure.2.3
+[16pdfTeX warning (ext4): destination with the same identifier (name{figure.2.4
 }) has been already used, duplicate ignored
 
 \@EveryShipout@Output ...@Org@Shipout \box \@cclv 
                                                   
-l.480 
-       <./figures/2valuechain.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 483--503
-[]\OT1/cmr/m/n/12 Un automata hbrido $\OML/cmm/m/it/12 H$ \OT1/cmr/m/n/12 es
-ta definido como una coleccion
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 483--503
+l.482 E
+       s posible, en algunos casos, que cuando el flujo de producto se coloc...
+ <./figures/2valuechain.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 490--510
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 483--503
+Underfull \hbox (badness 10000) in paragraph at lines 490--510
 
- []
-
-
-Underfull \hbox (badness 1248) in paragraph at lines 506--507
-[]\OT1/cmr/m/n/12 Las hidrologicas son una em-presa de ser-vi-cio cuya mision
- es pro-por-cionar
  []
 
 
@@ -1439,15 +1440,34 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [17]
-<figures/2waterprocess.jpg, id=817, 841.59581pt x 549.01888pt>
+Underfull \hbox (badness 1248) in paragraph at lines 513--514
+[]\OT1/cmr/m/n/12 Las hidrologicas son una em-presa de ser-vi-cio cuya mision
+ es pro-por-cionar
+ []
+
+<figures/2waterprocess.jpg, id=828, 841.59581pt x 549.01888pt>
 File: figures/2waterprocess.jpg Graphic file (type jpg)
 <use figures/2waterprocess.jpg>
-Package pdftex.def Info: figures/2waterprocess.jpg  used on input line 510.
+Package pdftex.def Info: figures/2waterprocess.jpg  used on input line 517.
 (pdftex.def)             Requested size: 336.63235pt x 219.60365pt.
-<figures/3valuechainhydro.png, id=820, 623.32875pt x 356.83313pt>
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[18pdfTeX warning (ext4): destination with the same identifier (name{figure.2.5
+}) has been already used, duplicate ignored
+
+\@EveryShipout@Output ...@Org@Shipout \box \@cclv 
+                                                  
+l.527 				\item E
+                 studio de las fuentes para una determinada población. <./figur
+es/2waterprocess.jpg>]
+<figures/3valuechainhydro.png, id=835, 623.32875pt x 356.83313pt>
 File: figures/3valuechainhydro.png Graphic file (type png)
 <use figures/3valuechainhydro.png>
-Package pdftex.def Info: figures/3valuechainhydro.png  used on input line 527.
+Package pdftex.def Info: figures/3valuechainhydro.png  used on input line 534.
 (pdftex.def)             Requested size: 374.00014pt x 214.10152pt.
 
 
@@ -1456,27 +1476,14 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[18pdfTeX warning (ext4): destination with the same identifier (name{figure.2.4
+[19pdfTeX warning (ext4): destination with the same identifier (name{figure.2.6
 }) has been already used, duplicate ignored
 
 \@EveryShipout@Output ...@Org@Shipout \box \@cclv 
                                                   
-l.537 					\item E
-                  studio y caracterización de la demanda de agua para el con...
- <./figures/2waterprocess.jpg>]
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 14.49998pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[19pdfTeX warning (ext4): destination with the same identifier (name{figure.2.5
-}) has been already used, duplicate ignored
-
-\@EveryShipout@Output ...@Org@Shipout \box \@cclv 
-                                                  
-l.549 
-       <./figures/3valuechainhydro.png>]
+l.548 					\item E
+                  stimación de los costos de desarrollo y operación de los s...
+ <./figures/3valuechainhydro.png>]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
@@ -1491,16 +1498,11 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [21]
-<figures/3chainsource.png, id=839, 307.1475pt x 37.64063pt>
+<figures/3chainsource.png, id=850, 307.1475pt x 37.64063pt>
 File: figures/3chainsource.png Graphic file (type png)
 <use figures/3chainsource.png>
-Package pdftex.def Info: figures/3chainsource.png  used on input line 609.
+Package pdftex.def Info: figures/3chainsource.png  used on input line 616.
 (pdftex.def)             Requested size: 307.14674pt x 37.64052pt.
-<figures/3chainop.png, id=841, 607.51968pt x 36.88782pt>
-File: figures/3chainop.png Graphic file (type png)
-<use figures/3chainop.png>
-Package pdftex.def Info: figures/3chainop.png  used on input line 627.
-(pdftex.def)             Requested size: 425.26086pt x 25.82127pt.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1508,86 +1510,92 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[22pdfTeX warning (ext4): destination with the same identifier (name{figure.2.6
+[22pdfTeX warning (ext4): destination with the same identifier (name{figure.2.7
 }) has been already used, duplicate ignored
 
 \@EveryShipout@Output ...@Org@Shipout \box \@cclv 
                                                   
-l.634 			\subsubsection
-                       {Comercial} <./figures/3chainsource.png>]
-<figures/3chaincom.png, id=847, 288.3272pt x 36.88782pt>
+l.626 				\end{itemize}
+                        <./figures/3chainsource.png>]
+<figures/3chainop.png, id=856, 607.51968pt x 36.88782pt>
+File: figures/3chainop.png Graphic file (type png)
+<use figures/3chainop.png>
+Package pdftex.def Info: figures/3chainop.png  used on input line 634.
+(pdftex.def)             Requested size: 425.26086pt x 25.82127pt.
+<figures/3chaincom.png, id=858, 288.3272pt x 36.88782pt>
 File: figures/3chaincom.png Graphic file (type png)
 <use figures/3chaincom.png>
-Package pdftex.def Info: figures/3chaincom.png  used on input line 640.
+Package pdftex.def Info: figures/3chaincom.png  used on input line 647.
 (pdftex.def)             Requested size: 288.32648pt x 36.88771pt.
 
-Underfull \hbox (badness 3815) in paragraph at lines 647--648
+Underfull \hbox (badness 3815) in paragraph at lines 654--655
 \OT1/cmr/m/n/12 Hu-manos, Rela-ciones In-dus-tri-ales, Pro-teccion In-te-gral,
  Rela-ciones con otros
  []
 
-<figures/3support.png, id=849, 332.74312pt x 115.18031pt>
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[23pdfTeX warning (ext4): destination with the same identifier (name{figure.2.8
+}) has been already used, duplicate ignored
+
+\@EveryShipout@Output ...@Org@Shipout \box \@cclv 
+                                                  
+l.655 
+      pdfTeX warning (ext4): destination with the same identifier (name{figure.
+2.9}) has been already used, duplicate ignored
+
+\@EveryShipout@Output ...@Org@Shipout \box \@cclv 
+                                                  
+l.655 
+       <./figures/3chainop.png> <./figures/3chaincom.png>]
+<figures/3support.png, id=864, 332.74312pt x 115.18031pt>
 File: figures/3support.png Graphic file (type png)
 <use figures/3support.png>
-Package pdftex.def Info: figures/3support.png  used on input line 651.
+Package pdftex.def Info: figures/3support.png  used on input line 658.
 (pdftex.def)             Requested size: 332.7423pt x 115.18001pt.
-<figures/3planning.png, id=851, 703.12688pt x 397.485pt>
+<figures/3planning.png, id=866, 703.12688pt x 397.485pt>
 File: figures/3planning.png Graphic file (type png)
 <use figures/3planning.png>
-Package pdftex.def Info: figures/3planning.png  used on input line 662.
+Package pdftex.def Info: figures/3planning.png  used on input line 669.
 (pdftex.def)             Requested size: 351.56258pt x 198.742pt.
 
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 14.49998pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[23pdfTeX warning (ext4): destination with the same identifier (name{figure.2.7
-}) has been already used, duplicate ignored
-
-\@EveryShipout@Output ...@Org@Shipout \box \@cclv 
-                                                  
-l.670 
-      pdfTeX warning (ext4): destination with the same identifier (name{figure.
-2.8}) has been already used, duplicate ignored
-
-\@EveryShipout@Output ...@Org@Shipout \box \@cclv 
-                                                  
-l.670 
-       <./figures/3chainop.png> <./figures/3chaincom.png>]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[24pdfTeX warning (ext4): destination with the same identifier (name{figure.2.9
-}) has been already used, duplicate ignored
+[24pdfTeX warning (ext4): destination with the same identifier (name{figure.2.1
+0}) has been already used, duplicate ignored
 
 \@EveryShipout@Output ...@Org@Shipout \box \@cclv 
                                                   
-l.670 
+l.677 
       pdfTeX warning (ext4): destination with the same identifier (name{figure.
-2.10}) has been already used, duplicate ignored
+2.11}) has been already used, duplicate ignored
 
 \@EveryShipout@Output ...@Org@Shipout \box \@cclv 
                                                   
-l.670 
+l.677 
        <./figures/3support.png> <./figures/3planning.png>]
-<figures/2aps2d.jpg, id=862, 342.297pt x 188.2305pt>
+<figures/2aps2d.jpg, id=873, 342.297pt x 188.2305pt>
 File: figures/2aps2d.jpg Graphic file (type jpg)
 <use figures/2aps2d.jpg>
-Package pdftex.def Info: figures/2aps2d.jpg  used on input line 673.
+Package pdftex.def Info: figures/2aps2d.jpg  used on input line 680.
 (pdftex.def)             Requested size: 239.60626pt x 131.76044pt.
-<figures/2aps.jpg, id=864, 935.1738pt x 521.3076pt>
+<figures/2aps.jpg, id=875, 935.1738pt x 521.3076pt>
 File: figures/2aps.jpg Graphic file (type jpg)
 <use figures/2aps.jpg>
-Package pdftex.def Info: figures/2aps.jpg  used on input line 682.
+Package pdftex.def Info: figures/2aps.jpg  used on input line 689.
 (pdftex.def)             Requested size: 374.0629pt x 208.51933pt.
-<figures/2potab.png, id=866, 302.63063pt x 343.2825pt>
+<figures/2potab.png, id=877, 302.63063pt x 343.2825pt>
 File: figures/2potab.png Graphic file (type png)
 <use figures/2potab.png>
-Package pdftex.def Info: figures/2potab.png  used on input line 693.
+Package pdftex.def Info: figures/2potab.png  used on input line 700.
 (pdftex.def)             Requested size: 211.83998pt x 240.2961pt.
 
 
@@ -1597,11 +1605,11 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [25pdfTeX warning (ext4): destination with the same identifier (name{figure.2.1
-1}) has been already used, duplicate ignored
+2}) has been already used, duplicate ignored
 
 \@EveryShipout@Output ...@Org@Shipout \box \@cclv 
                                                   
-l.701 
+l.708 
        <./figures/2aps2d.jpg>]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1610,22 +1618,22 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [26pdfTeX warning (ext4): destination with the same identifier (name{figure.2.1
-2}) has been already used, duplicate ignored
+3}) has been already used, duplicate ignored
 
 \@EveryShipout@Output ...@Org@Shipout \box \@cclv 
                                                   
-l.701 
+l.708 
       pdfTeX warning (ext4): destination with the same identifier (name{figure.
-2.13}) has been already used, duplicate ignored
+2.14}) has been already used, duplicate ignored
 
 \@EveryShipout@Output ...@Org@Shipout \box \@cclv 
                                                   
-l.701 
+l.708 
        <./figures/2aps.jpg> <./figures/2potab.png>]
-<figures/3catchwater.png, id=878, 654.19406pt x 383.18156pt>
+<figures/3catchwater.png, id=889, 654.19406pt x 383.18156pt>
 File: figures/3catchwater.png Graphic file (type png)
 <use figures/3catchwater.png>
-Package pdftex.def Info: figures/3catchwater.png  used on input line 704.
+Package pdftex.def Info: figures/3catchwater.png  used on input line 711.
 (pdftex.def)             Requested size: 327.09622pt x 191.5903pt.
 
 
@@ -1635,11 +1643,11 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [27pdfTeX warning (ext4): destination with the same identifier (name{figure.2.1
-4}) has been already used, duplicate ignored
+5}) has been already used, duplicate ignored
 
 \@EveryShipout@Output ...@Org@Shipout \box \@cclv 
                                                   
-l.712 
+l.719 
        <./figures/3catchwater.png>]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1652,30 +1660,30 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 \@EveryShipout@Output ...@Org@Shipout \box \@cclv 
                                                   
-l.751 
+l.758 
       pdfTeX warning (ext4): destination with the same identifier (name{table.2
 .2}) has been already used, duplicate ignored
 
 \@EveryShipout@Output ...@Org@Shipout \box \@cclv 
                                                   
-l.751 
+l.758 
       ]
-Overfull \hbox (1.91678pt too wide) in paragraph at lines 767--767
+Overfull \hbox (1.91678pt too wide) in paragraph at lines 774--774
 []|\OT1/cmr/bx/n/12 Caractersticas
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 767--767
+Underfull \hbox (badness 10000) in paragraph at lines 774--774
 []|\OT1/cmr/bx/n/12 Valor
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 767--767
+Underfull \hbox (badness 10000) in paragraph at lines 774--774
 []|\OT1/cmr/m/n/12 Unidades de Platino
  []
 
 
-Overfull \hbox (0.98401pt too wide) in paragraph at lines 767--767
+Overfull \hbox (0.98401pt too wide) in paragraph at lines 774--774
 []|\OT1/cmr/m/n/12 Espectrofotometro| 
  []
 
@@ -1690,7 +1698,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 \@EveryShipout@Output ...@Org@Shipout \box \@cclv 
                                                   
-l.780 
+l.787 
       ]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1699,10 +1707,10 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [30]
-<figures/3jarras.png, id=907, 438.8897pt x 298.11375pt>
+<figures/3jarras.png, id=918, 438.8897pt x 298.11375pt>
 File: figures/3jarras.png Graphic file (type png)
 <use figures/3jarras.png>
-Package pdftex.def Info: figures/3jarras.png  used on input line 809.
+Package pdftex.def Info: figures/3jarras.png  used on input line 816.
 (pdftex.def)             Requested size: 232.61043pt x 157.99953pt.
 
 
@@ -1712,10 +1720,10 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [31]
-<figures/2valuechainpotab.png, id=915, 420.82219pt x 114.4275pt>
+<figures/2valuechainpotab.png, id=926, 420.82219pt x 114.4275pt>
 File: figures/2valuechainpotab.png Graphic file (type png)
 <use figures/2valuechainpotab.png>
-Package pdftex.def Info: figures/2valuechainpotab.png  used on input line 820.
+Package pdftex.def Info: figures/2valuechainpotab.png  used on input line 827.
 (pdftex.def)             Requested size: 336.6582pt x 91.54211pt.
 
 
@@ -1725,28 +1733,26 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [32pdfTeX warning (ext4): destination with the same identifier (name{figure.2.1
-5}) has been already used, duplicate ignored
+6}) has been already used, duplicate ignored
 
 \@EveryShipout@Output ...@Org@Shipout \box \@cclv 
                                                   
-l.827 L
-       a unidad debe llevar un registro de rendimiento y fallas, de manera q...
-pdfTeX warning (ext4): destination with the same identifier (name{figure.2.16})
- has been already used, duplicate ignored
+l.835 
+      pdfTeX warning (ext4): destination with the same identifier (name{figure.
+2.17}) has been already used, duplicate ignored
 
 \@EveryShipout@Output ...@Org@Shipout \box \@cclv 
                                                   
-l.827 L
-       a unidad debe llevar un registro de rendimiento y fallas, de manera q...
- <./figures/3jarras.png> <./figures/2valuechainpotab.png>]
-<figures/3pid.png, id=921, 1293.33188pt x 732.48656pt>
+l.835 
+       <./figures/3jarras.png> <./figures/2valuechainpotab.png>]
+<figures/3pid.png, id=932, 1293.33188pt x 732.48656pt>
 File: figures/3pid.png Graphic file (type png)
 <use figures/3pid.png>
-Package pdftex.def Info: figures/3pid.png  used on input line 835.
+Package pdftex.def Info: figures/3pid.png  used on input line 842.
 (pdftex.def)             Requested size: 646.66435pt x 366.24237pt.
 
 
-LaTeX Warning: Float too large for page by 58.59253pt on input line 838.
+LaTeX Warning: Float too large for page by 58.59253pt on input line 845.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1762,19 +1768,19 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [34pdfTeX warning (ext4): destination with the same identifier (name{figure.2.1
-7}) has been already used, duplicate ignored
+8}) has been already used, duplicate ignored
 
 \@EveryShipout@Output ...@Org@Shipout \box \@cclv 
                                                   
-l.855 				\end{itemize}
+l.862 				\end{itemize}
                         <./figures/3pid.png>]
-<figures/2coloides.png, id=932, 504.38437pt x 421.575pt>
+<figures/2coloides.png, id=943, 504.38437pt x 421.575pt>
 File: figures/2coloides.png Graphic file (type png)
 <use figures/2coloides.png>
-Package pdftex.def Info: figures/2coloides.png  used on input line 861.
+Package pdftex.def Info: figures/2coloides.png  used on input line 868.
 (pdftex.def)             Requested size: 277.41226pt x 231.86696pt.
 
-Underfull \hbox (badness 1052) in paragraph at lines 866--867
+Underfull \hbox (badness 1052) in paragraph at lines 873--874
 []\OT1/cmr/m/n/12 Para que la de-ses-ta-bi-lizacion se re-al-ice de forma ade-
 cuada es nece-saria la
  []
@@ -1786,13 +1792,13 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [35pdfTeX warning (ext4): destination with the same identifier (name{figure.2.1
-8}) has been already used, duplicate ignored
+9}) has been already used, duplicate ignored
 
 \@EveryShipout@Output ...@Org@Shipout \box \@cclv 
                                                   
-l.867 
+l.874 
        <./figures/2coloides.png>]
-Underfull \hbox (badness 1221) in paragraph at lines 883--884
+Underfull \hbox (badness 1221) in paragraph at lines 890--891
 []\OT1/cmr/m/n/12 Monitorear la sal-ida del flujo una vez cumplido el tiempo ad
 e-cuado de
  []
@@ -1804,10 +1810,10 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [36]
-<figures/2parshall.png, id=943, 451.18562pt x 489.83pt>
+<figures/2parshall.png, id=954, 451.18562pt x 489.83pt>
 File: figures/2parshall.png Graphic file (type png)
 <use figures/2parshall.png>
-Package pdftex.def Info: figures/2parshall.png  used on input line 912.
+Package pdftex.def Info: figures/2parshall.png  used on input line 919.
 (pdftex.def)             Requested size: 203.03165pt x 220.42146pt.
 
 
@@ -1823,23 +1829,23 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[38pdfTeX warning (ext4): destination with the same identifier (name{figure.2.1
-9}) has been already used, duplicate ignored
+[38pdfTeX warning (ext4): destination with the same identifier (name{figure.2.2
+0}) has been already used, duplicate ignored
 
 \@EveryShipout@Output ...@Org@Shipout \box \@cclv 
                                                   
-l.937 					\item  C
+l.944 					\item  C
                    ontrolar el flujo de salida y realizar las mediciones nec...
  <./figures/2parshall.png>]
-<figures/3flocculator.png, id=958, 487.8225pt x 380.92313pt>
+<figures/3flocculator.png, id=969, 487.8225pt x 380.92313pt>
 File: figures/3flocculator.png Graphic file (type png)
 <use figures/3flocculator.png>
-Package pdftex.def Info: figures/3flocculator.png  used on input line 954.
+Package pdftex.def Info: figures/3flocculator.png  used on input line 961.
 (pdftex.def)             Requested size: 195.12553pt x 152.36655pt.
-<figures/3flocculator2.png, id=959, 384.6872pt x 129.48375pt>
+<figures/3flocculator2.png, id=970, 384.6872pt x 129.48375pt>
 File: figures/3flocculator2.png Graphic file (type png)
 <use figures/3flocculator2.png>
-Package pdftex.def Info: figures/3flocculator2.png  used on input line 955.
+Package pdftex.def Info: figures/3flocculator2.png  used on input line 962.
 (pdftex.def)             Requested size: 192.34312pt x 64.7417pt.
 
 
@@ -1849,11 +1855,11 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [39pdfTeX warning (ext4): destination with the same identifier (name{figure.2.2
-0}) has been already used, duplicate ignored
+1}) has been already used, duplicate ignored
 
 \@EveryShipout@Output ...@Org@Shipout \box \@cclv 
                                                   
-l.985 
+l.992 
        <./figures/3flocculator.png> <./figures/3flocculator2.png>]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1862,10 +1868,10 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [40]
-<figures/3sediment.png, id=975, 277.035pt x 199.947pt>
+<figures/3sediment.png, id=986, 277.035pt x 199.947pt>
 File: figures/3sediment.png Graphic file (type png)
 <use figures/3sediment.png>
-Package pdftex.def Info: figures/3sediment.png  used on input line 1014.
+Package pdftex.def Info: figures/3sediment.png  used on input line 1021.
 (pdftex.def)             Requested size: 207.77573pt x 149.95987pt.
 
 
@@ -1875,16 +1881,16 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [41pdfTeX warning (ext4): destination with the same identifier (name{figure.2.2
-1}) has been already used, duplicate ignored
+2}) has been already used, duplicate ignored
 
 \@EveryShipout@Output ...@Org@Shipout \box \@cclv 
                                                   
-l.1032 
+l.1039 
         <./figures/3sediment.png>]
-<figures/3filter.png, id=984, 484.81125pt x 258.21469pt>
+<figures/3filter.png, id=995, 484.81125pt x 258.21469pt>
 File: figures/3filter.png Graphic file (type png)
 <use figures/3filter.png>
-Package pdftex.def Info: figures/3filter.png  used on input line 1037.
+Package pdftex.def Info: figures/3filter.png  used on input line 1044.
 (pdftex.def)             Requested size: 315.12357pt x 167.83755pt.
 
 
@@ -1894,11 +1900,11 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [42pdfTeX warning (ext4): destination with the same identifier (name{figure.2.2
-2}) has been already used, duplicate ignored
+3}) has been already used, duplicate ignored
 
 \@EveryShipout@Output ...@Org@Shipout \box \@cclv 
                                                   
-l.1045 
+l.1052 
         <./figures/3filter.png>]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1907,10 +1913,10 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [43]
-<figures/2multiplexbase.png, id=997, 898.10532pt x 1342.2647pt>
+<figures/2multiplexbase.png, id=1008, 898.10532pt x 1342.2647pt>
 File: figures/2multiplexbase.png Graphic file (type png)
 <use figures/2multiplexbase.png>
-Package pdftex.def Info: figures/2multiplexbase.png  used on input line 1098.
+Package pdftex.def Info: figures/2multiplexbase.png  used on input line 1105.
 (pdftex.def)             Requested size: 359.23576pt x 536.89638pt.
 
 
@@ -1927,16 +1933,16 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [45pdfTeX warning (ext4): destination with the same identifier (name{figure.2.2
-3}) has been already used, duplicate ignored
+4}) has been already used, duplicate ignored
 
 \@EveryShipout@Output ...@Org@Shipout \box \@cclv 
                                                   
-l.1109 
+l.1114 
         <./figures/2multiplexbase.png>]
-<figures/2umlhpu.png, id=1012, 650.43pt x 350.81062pt>
+<figures/2umlhpu.png, id=1023, 650.43pt x 350.81062pt>
 File: figures/2umlhpu.png Graphic file (type png)
 <use figures/2umlhpu.png>
-Package pdftex.def Info: figures/2umlhpu.png  used on input line 1121.
+Package pdftex.def Info: figures/2umlhpu.png  used on input line 1126.
 (pdftex.def)             Requested size: 260.16739pt x 140.32175pt.
 
 
@@ -1946,17 +1952,16 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [46pdfTeX warning (ext4): destination with the same identifier (name{figure.2.2
-4}) has been already used, duplicate ignored
+5}) has been already used, duplicate ignored
 
 \@EveryShipout@Output ...@Org@Shipout \box \@cclv 
                                                   
-l.1130 					\item[$-$]
-                      	El modelo del proceso, que es el procedimiento utiliz...
- <./figures/2umlhpu.png>]
-<figures/3holonknowledge.png, id=1023, 330.48468pt x 341.77687pt>
+l.1136 				\end{itemize}
+                         <./figures/2umlhpu.png>]
+<figures/3holonknowledge.png, id=1034, 330.48468pt x 341.77687pt>
 File: figures/3holonknowledge.png Graphic file (type png)
 <use figures/3holonknowledge.png>
-Package pdftex.def Info: figures/3holonknowledge.png  used on input line 1145.
+Package pdftex.def Info: figures/3holonknowledge.png  used on input line 1150.
 (pdftex.def)             Requested size: 198.29233pt x 205.0677pt.
 
 
@@ -1973,12 +1978,19 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [48pdfTeX warning (ext4): destination with the same identifier (name{figure.2.2
-5}) has been already used, duplicate ignored
+6}) has been already used, duplicate ignored
 
 \@EveryShipout@Output ...@Org@Shipout \box \@cclv 
                                                   
-l.1159 
-        <./figures/3holonknowledge.png>]
+l.1165 U
+        n sistema dinámico híbrido (HDS) se define de varias maneras: como u...
+ <./figures/3holonknowledge.png>]
+<figures/2uphmodel.jpg, id=1079, 939.0282pt x 536.2434pt>
+File: figures/2uphmodel.jpg Graphic file (type jpg)
+<use figures/2uphmodel.jpg>
+Package pdftex.def Info: figures/2uphmodel.jpg  used on input line 1173.
+(pdftex.def)             Requested size: 375.60463pt x 214.49355pt.
+
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
@@ -1986,18 +1998,12 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [49]
-<figures/2uphmodel.jpg, id=1076, 939.0282pt x 536.2434pt>
-File: figures/2uphmodel.jpg Graphic file (type jpg)
-<use figures/2uphmodel.jpg>
-Package pdftex.def Info: figures/2uphmodel.jpg  used on input line 1168.
-(pdftex.def)             Requested size: 375.60463pt x 214.49355pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 1175--1186
+Underfull \hbox (badness 10000) in paragraph at lines 1180--1191
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1175--1186
+Underfull \hbox (badness 10000) in paragraph at lines 1180--1191
 
  []
 
@@ -2008,22 +2014,23 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [50pdfTeX warning (ext4): destination with the same identifier (name{figure.2.2
-6}) has been already used, duplicate ignored
+7}) has been already used, duplicate ignored
 
 \@EveryShipout@Output ...@Org@Shipout \box \@cclv 
                                                   
-l.1186 
-        <./figures/2uphmodel.jpg>]
-<figures/2petrinet.png, id=1084, 92.59593pt x 191.21437pt>
-File: figures/2petrinet.png Graphic file (type png)
-<use figures/2petrinet.png>
-Package pdftex.def Info: figures/2petrinet.png  used on input line 1193.
-(pdftex.def)             Requested size: 46.29784pt x 95.60695pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 1205--1215
-
+l.1196  					\item  S
+                     e establece el modelo imagen del comportamiento y opera...
+ <./figures/2uphmodel.jpg>]
+Underfull \hbox (badness 1112) in paragraph at lines 1196--1197
+[]\OT1/cmr/m/n/12 Se es-tablece el mod-elo im-a-gen del com-por-tamiento y op-e
+racion de cada
  []
 
+<figures/2petrinet.png, id=1096, 92.59593pt x 191.21437pt>
+File: figures/2petrinet.png Graphic file (type png)
+<use figures/2petrinet.png>
+Package pdftex.def Info: figures/2petrinet.png  used on input line 1209.
+(pdftex.def)             Requested size: 46.29784pt x 95.60695pt.
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
@@ -2031,21 +2038,26 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [51pdfTeX warning (ext4): destination with the same identifier (name{figure.2.2
-7}) has been already used, duplicate ignored
+8}) has been already used, duplicate ignored
 
 \@EveryShipout@Output ...@Org@Shipout \box \@cclv 
                                                   
-l.1215 
-        <./figures/2petrinet.png>]
-Underfull \hbox (badness 2781) in paragraph at lines 1218--1219
+l.1216 			\begin{equation}
+                           <./figures/2petrinet.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 1221--1231
+
+ []
+
+
+Underfull \hbox (badness 2781) in paragraph at lines 1234--1235
 \OT1/cmr/m/n/12 de-scripcion de las competencias-habilidades, mod-e-los y mo-d
 os de op-eracion,
  []
 
-<figures/3holonichydro.png, id=1095, 572.1375pt x 414.79968pt>
+<figures/3holonichydro.png, id=1109, 572.1375pt x 414.79968pt>
 File: figures/3holonichydro.png Graphic file (type png)
 <use figures/3holonichydro.png>
-Package pdftex.def Info: figures/3holonichydro.png  used on input line 1222.
+Package pdftex.def Info: figures/3holonichydro.png  used on input line 1238.
 (pdftex.def)             Requested size: 343.28514pt x 248.88173pt.
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2053,17 +2065,11 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[52pdfTeX warning (ext4): destination with the same identifier (name{figure.2.2
-8}) has been already used, duplicate ignored
-
-\@EveryShipout@Output ...@Org@Shipout \box \@cclv 
-                                                  
-l.1228 
-        <./figures/3holonichydro.png>]
-<figures/2epanet.png, id=1101, 210.03468pt x 164.86594pt>
+[52]
+<figures/2epanet.png, id=1117, 210.03468pt x 164.86594pt>
 File: figures/2epanet.png Graphic file (type png)
 <use figures/2epanet.png>
-Package pdftex.def Info: figures/2epanet.png  used on input line 1238.
+Package pdftex.def Info: figures/2epanet.png  used on input line 1254.
 (pdftex.def)             Requested size: 210.03416pt x 164.86551pt.
 
 
@@ -2072,19 +2078,19 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[53pdfTeX warning (ext4): destination with the same identifier (name{table.2.4}
-) has been already used, duplicate ignored
+[53pdfTeX warning (ext4): destination with the same identifier (name{figure.2.2
+9}) has been already used, duplicate ignored
 
 \@EveryShipout@Output ...@Org@Shipout \box \@cclv 
                                                   
-l.1247 			\begin{equation}
-                           <./figures/2epanet.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 1252--1257
+l.1260 
+        <./figures/3holonichydro.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 1268--1273
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1268--1274
+Underfull \hbox (badness 10000) in paragraph at lines 1284--1290
 
  []
 
@@ -2094,7 +2100,13 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[54]
+[54pdfTeX warning (ext4): destination with the same identifier (name{table.2.4}
+) has been already used, duplicate ignored
+
+\@EveryShipout@Output ...@Org@Shipout \box \@cclv 
+                                                  
+l.1290 
+        <./figures/2epanet.png>]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
@@ -2103,10 +2115,10 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [55]
 Cap\'{\i }tulo 3.
-<figures/3unitstatesrdp.png, id=1126, 490.83376pt x 308.65312pt>
+<figures/3unitstatesrdp.png, id=1142, 490.83376pt x 308.65312pt>
 File: figures/3unitstatesrdp.png Graphic file (type png)
 <use figures/3unitstatesrdp.png>
-Package pdftex.def Info: figures/3unitstatesrdp.png  used on input line 1317.
+Package pdftex.def Info: figures/3unitstatesrdp.png  used on input line 1337.
 (pdftex.def)             Requested size: 245.41628pt x 154.32617pt.
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2128,56 +2140,56 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 \@EveryShipout@Output ...@Org@Shipout \box \@cclv 
                                                   
-l.1324 			\subsection
+l.1344 			\subsection
                      {Unidad de Coagulación}pdfTeX warning (ext4): destination 
 with the same identifier (name{figure.3.1}) has been already used, duplicate ig
 nored
 
 \@EveryShipout@Output ...@Org@Shipout \box \@cclv 
                                                   
-l.1324 			\subsection
+l.1344 			\subsection
                      {Unidad de Coagulación} <./figures/3unitstatesrdp.png>]
-Overfull \hbox (30.79726pt too wide) in paragraph at lines 1341--1341
+Overfull \hbox (30.79726pt too wide) in paragraph at lines 1361--1361
 []|\OT1/cmr/bx/n/12 Condicion|  
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1341--1341
+Underfull \hbox (badness 10000) in paragraph at lines 1361--1361
 []\OT1/cmr/m/n/12 Maquinaria para adicion de
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1341--1341
+Underfull \hbox (badness 10000) in paragraph at lines 1361--1361
 []|\OT1/cmr/m/n/12 Pruebas de
  []
 
 
-Underfull \hbox (badness 2359) in paragraph at lines 1341--1341
+Underfull \hbox (badness 2359) in paragraph at lines 1361--1361
 []|\OT1/cmr/m/n/12 Compuertas con ob-struc-ciones,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1341--1341
+Underfull \hbox (badness 10000) in paragraph at lines 1361--1361
 []\OT1/cmr/m/n/12 Maquinaria para adicion de
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1341--1341
+Underfull \hbox (badness 10000) in paragraph at lines 1361--1361
 []|\OT1/cmr/m/n/12 Pruebas de
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1341--1341
+Underfull \hbox (badness 10000) in paragraph at lines 1361--1361
 \OT1/cmr/m/n/12 lab-o-ra-to-rio no
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1341--1341
+Underfull \hbox (badness 10000) in paragraph at lines 1361--1361
 []|\OT1/cmr/m/n/12 Compuertas blo-queadas, con
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1341--1341
+Underfull \hbox (badness 10000) in paragraph at lines 1361--1361
 \OT1/cmr/m/n/12 in-ter-rupcion con-sid-er-able de
  []
 
@@ -2192,59 +2204,59 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 \@EveryShipout@Output ...@Org@Shipout \box \@cclv 
                                                   
-l.1348 
+l.1368 
        ]
-Overfull \hbox (30.79726pt too wide) in paragraph at lines 1364--1364
+Overfull \hbox (30.79726pt too wide) in paragraph at lines 1384--1384
 []|\OT1/cmr/bx/n/12 Condicion|  
  []
 
 
-Underfull \hbox (badness 4940) in paragraph at lines 1364--1364
+Underfull \hbox (badness 4940) in paragraph at lines 1384--1384
 []|\OT1/cmr/m/n/12 Qumicos disponibles para
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1364--1364
+Underfull \hbox (badness 10000) in paragraph at lines 1384--1384
 []\OT1/cmr/m/n/12 Compuerta de en-trada
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1364--1364
+Underfull \hbox (badness 10000) in paragraph at lines 1384--1384
 []|\OT1/cmr/m/n/12 Cantidad de co-ag-u-lante
  []
 
 
-Underfull \hbox (badness 1092) in paragraph at lines 1364--1364
+Underfull \hbox (badness 1092) in paragraph at lines 1384--1384
 []\OT1/cmr/m/n/12 Sensores en falla (falta de
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1364--1364
+Underfull \hbox (badness 10000) in paragraph at lines 1384--1384
 []\OT1/cmr/m/n/12 Compuertas con fal-las
  []
 
 
-Underfull \hbox (badness 1014) in paragraph at lines 1364--1364
+Underfull \hbox (badness 1014) in paragraph at lines 1384--1384
 \OT1/cmr/m/n/12 mecanicas, sin in-ter-rupcion
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1364--1364
+Underfull \hbox (badness 10000) in paragraph at lines 1384--1384
 []\OT1/cmr/m/n/12 Cantidad de co-ag-u-lante
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1364--1364
+Underfull \hbox (badness 10000) in paragraph at lines 1384--1384
 \OT1/cmr/m/n/12 a~nadido fuera del rango
  []
 
 
-Underfull \hbox (badness 2799) in paragraph at lines 1364--1364
+Underfull \hbox (badness 2799) in paragraph at lines 1384--1384
 []|\OT1/cmr/m/n/12 Compuerta de en-trada en
  []
 
 
-Underfull \hbox (badness 3128) in paragraph at lines 1364--1364
+Underfull \hbox (badness 3128) in paragraph at lines 1384--1384
 \OT1/cmr/m/n/12 en falla, im-posi-bil-i-dad de
  []
 
@@ -2259,35 +2271,35 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 \@EveryShipout@Output ...@Org@Shipout \box \@cclv 
                                                   
-l.1373 					\item  I
+l.1393 					\item  I
                     nterrupción del flujo de entrada debido a bloqueos en la...
 ]
-Overfull \hbox (30.79726pt too wide) in paragraph at lines 1398--1398
+Overfull \hbox (30.79726pt too wide) in paragraph at lines 1418--1418
 []|\OT1/cmr/bx/n/12 Condicion|  
  []
 
 
-Underfull \hbox (badness 1092) in paragraph at lines 1398--1398
+Underfull \hbox (badness 1092) in paragraph at lines 1418--1418
 \OT1/cmr/m/n/12 rango de op-eracion, al
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1398--1398
+Underfull \hbox (badness 10000) in paragraph at lines 1418--1418
 []|\OT1/cmr/m/n/12 Motor del ag-i-ta-dor en
  []
 
 
-Underfull \hbox (badness 1997) in paragraph at lines 1398--1398
+Underfull \hbox (badness 1997) in paragraph at lines 1418--1418
 []\OT1/cmr/m/n/12 Falla en com-puer-tas, sin
  []
 
 
-Underfull \hbox (badness 1609) in paragraph at lines 1398--1398
+Underfull \hbox (badness 1609) in paragraph at lines 1418--1418
 \OT1/cmr/m/n/12 para la for-macion de
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1398--1398
+Underfull \hbox (badness 10000) in paragraph at lines 1418--1418
 []|\OT1/cmr/m/n/12 Compuertas blo-queadas,
  []
 
@@ -2302,64 +2314,64 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 \@EveryShipout@Output ...@Org@Shipout \box \@cclv 
                                                   
-l.1405 
+l.1425 
        ]
-Overfull \hbox (30.79726pt too wide) in paragraph at lines 1419--1419
+Overfull \hbox (30.79726pt too wide) in paragraph at lines 1439--1439
 []|\OT1/cmr/bx/n/12 Condicion|  
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1419--1419
+Underfull \hbox (badness 10000) in paragraph at lines 1439--1439
 []\OT1/cmr/m/n/12 Nivel de agua
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1419--1419
+Underfull \hbox (badness 10000) in paragraph at lines 1439--1439
 []\OT1/cmr/m/n/12 Compuerta de en-trada
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1419--1419
+Underfull \hbox (badness 10000) in paragraph at lines 1439--1439
 []\OT1/cmr/m/n/12 Compuerta de drenaje
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1419--1419
+Underfull \hbox (badness 10000) in paragraph at lines 1439--1439
 []\OT1/cmr/m/n/12 Mezclador mecanico en
  []
 
 
-Underfull \hbox (badness 1320) in paragraph at lines 1419--1419
+Underfull \hbox (badness 1320) in paragraph at lines 1439--1439
 []\OT1/cmr/m/n/12 Nivel de agua por
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1419--1419
+Underfull \hbox (badness 10000) in paragraph at lines 1439--1439
 []|\OT1/cmr/m/n/12 Sensores en falla (falta
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1419--1419
+Underfull \hbox (badness 10000) in paragraph at lines 1439--1439
 \OT1/cmr/m/n/12 de per-sonal, falla en
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1419--1419
+Underfull \hbox (badness 10000) in paragraph at lines 1439--1439
 []\OT1/cmr/m/n/12 Compuertas con fal-las
  []
 
 
-Underfull \hbox (badness 1014) in paragraph at lines 1419--1419
+Underfull \hbox (badness 1014) in paragraph at lines 1439--1439
 \OT1/cmr/m/n/12 mecanicas, sin in-ter-rupcion
  []
 
 
-Underfull \hbox (badness 1320) in paragraph at lines 1419--1419
+Underfull \hbox (badness 1320) in paragraph at lines 1439--1439
 []\OT1/cmr/m/n/12 Nivel de agua por
  []
 
 
-Underfull \hbox (badness 2799) in paragraph at lines 1419--1419
+Underfull \hbox (badness 2799) in paragraph at lines 1439--1439
 []|\OT1/cmr/m/n/12 Compuerta de en-trada en
  []
 
@@ -2374,60 +2386,60 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 \@EveryShipout@Output ...@Org@Shipout \box \@cclv 
                                                   
-l.1428 					\item  N
+l.1448 					\item  N
                     ivel del agua debajo del rango de operación.]
-Underfull \hbox (badness 1824) in paragraph at lines 1444--1445
+Underfull \hbox (badness 1824) in paragraph at lines 1464--1465
 []\OT1/cmr/m/n/12 Con nivel del agua bajo los recolec-tores, la unidad no puede
  ini-ciar su
  []
 
 
-Overfull \hbox (30.79726pt too wide) in paragraph at lines 1461--1461
+Overfull \hbox (30.79726pt too wide) in paragraph at lines 1481--1481
 []|\OT1/cmr/bx/n/12 Condicion|  
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1461--1461
+Underfull \hbox (badness 10000) in paragraph at lines 1481--1481
 []\OT1/cmr/m/n/12 Nivel de agua
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1461--1461
+Underfull \hbox (badness 10000) in paragraph at lines 1481--1481
 []|\OT1/cmr/m/n/12 Compuertas en
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1461--1461
+Underfull \hbox (badness 10000) in paragraph at lines 1481--1481
 []\OT1/cmr/m/n/12 Recolectores de agua
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1461--1461
+Underfull \hbox (badness 10000) in paragraph at lines 1481--1481
 []\OT1/cmr/m/n/12 Disminucion con-sid-er-able
  []
 
 
-Underfull \hbox (badness 2941) in paragraph at lines 1461--1461
+Underfull \hbox (badness 2941) in paragraph at lines 1481--1481
 \OT1/cmr/m/n/12 de $\OML/cmm/m/it/12 Q[]$ \OT1/cmr/m/n/12 en los canales de
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1461--1461
+Underfull \hbox (badness 10000) in paragraph at lines 1481--1481
 []\OT1/cmr/m/n/12 Nivel de agua
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1461--1461
+Underfull \hbox (badness 10000) in paragraph at lines 1481--1481
 \OT1/cmr/m/n/12 por de-bajo de
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1461--1461
+Underfull \hbox (badness 10000) in paragraph at lines 1481--1481
 \OT1/cmr/m/n/12 las laminas de
  []
 
 
-Underfull \hbox (badness 3601) in paragraph at lines 1461--1461
+Underfull \hbox (badness 3601) in paragraph at lines 1481--1481
 []|\OT1/cmr/m/n/12 Compuertas en falla, con
  []
 
@@ -2449,109 +2461,109 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 \@EveryShipout@Output ...@Org@Shipout \box \@cclv 
                                                   
-l.1474 
+l.1494 
        ]
-Overfull \hbox (30.79726pt too wide) in paragraph at lines 1500--1500
+Overfull \hbox (30.79726pt too wide) in paragraph at lines 1520--1520
 []|\OT1/cmr/bx/n/12 Condicion|  
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1500--1500
+Underfull \hbox (badness 10000) in paragraph at lines 1520--1520
 []\OT1/cmr/m/n/12 Nivel de agua
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1500--1500
+Underfull \hbox (badness 10000) in paragraph at lines 1520--1520
 []\OT1/cmr/m/n/12 Compuerta de en-trada
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1500--1500
+Underfull \hbox (badness 10000) in paragraph at lines 1520--1520
 []\OT1/cmr/m/n/12 Compuerta de drenaje
  []
 
 
-Underfull \hbox (badness 1320) in paragraph at lines 1500--1500
+Underfull \hbox (badness 1320) in paragraph at lines 1520--1520
 []\OT1/cmr/m/n/12 Nivel de agua por
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1500--1500
+Underfull \hbox (badness 10000) in paragraph at lines 1520--1520
 []|\OT1/cmr/m/n/12 Sensores en falla (falta
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1500--1500
+Underfull \hbox (badness 10000) in paragraph at lines 1520--1520
 \OT1/cmr/m/n/12 de per-sonal, falla en
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1500--1500
+Underfull \hbox (badness 10000) in paragraph at lines 1520--1520
 []\OT1/cmr/m/n/12 Compuertas con fal-las
  []
 
 
-Underfull \hbox (badness 1014) in paragraph at lines 1500--1500
+Underfull \hbox (badness 1014) in paragraph at lines 1520--1520
 \OT1/cmr/m/n/12 mecanicas, sin in-ter-rupcion
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1500--1500
+Underfull \hbox (badness 10000) in paragraph at lines 1520--1520
 []\OT1/cmr/m/n/12 Se vi-su-al-izan floculos en
  []
 
 
-Underfull \hbox (badness 1052) in paragraph at lines 1500--1500
+Underfull \hbox (badness 1052) in paragraph at lines 1520--1520
 \OT1/cmr/m/n/12 (de-nota falla en el calculo
  []
 
 
-Underfull \hbox (badness 2293) in paragraph at lines 1500--1500
+Underfull \hbox (badness 2293) in paragraph at lines 1520--1520
 \OT1/cmr/m/n/12 de la fre-cuen-cia de as-pas
  []
 
 
-Underfull \hbox (badness 1383) in paragraph at lines 1500--1500
+Underfull \hbox (badness 1383) in paragraph at lines 1520--1520
 \OT1/cmr/m/n/12 de mez-clado en la unidad
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1500--1500
+Underfull \hbox (badness 10000) in paragraph at lines 1520--1520
 \OT1/cmr/m/n/12 de co-ag-u-lante a~nadido,
  []
 
 
-Underfull \hbox (badness 1320) in paragraph at lines 1500--1500
+Underfull \hbox (badness 1320) in paragraph at lines 1520--1520
 []\OT1/cmr/m/n/12 Nivel de agua por
  []
 
 
-Underfull \hbox (badness 2799) in paragraph at lines 1500--1500
+Underfull \hbox (badness 2799) in paragraph at lines 1520--1520
 []|\OT1/cmr/m/n/12 Compuerta de en-trada en
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1500--1500
+Underfull \hbox (badness 10000) in paragraph at lines 1520--1520
 []\OT1/cmr/m/n/12 Compuerta de descarga
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1500--1500
+Underfull \hbox (badness 10000) in paragraph at lines 1520--1520
 \OT1/cmr/m/n/12 de lo-dos en falla, con
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1500--1500
+Underfull \hbox (badness 10000) in paragraph at lines 1520--1520
 \OT1/cmr/m/n/12 perdida con-sid-er-able de
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1500--1500
+Underfull \hbox (badness 10000) in paragraph at lines 1520--1520
 \OT1/cmr/m/n/12 flujo o im-posi-bil-i-dad de
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1500--1500
+Underfull \hbox (badness 10000) in paragraph at lines 1520--1520
 \OT1/cmr/m/n/12 descar-gar lo-dos por un
  []
 
@@ -2573,39 +2585,39 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 \@EveryShipout@Output ...@Org@Shipout \box \@cclv 
                                                   
-l.1519 			\subsection
+l.1539 			\subsection
                      {Unidad de Filtración}]
-Overfull \hbox (30.79726pt too wide) in paragraph at lines 1540--1540
+Overfull \hbox (30.79726pt too wide) in paragraph at lines 1560--1560
 []|\OT1/cmr/bx/n/12 Condicion|  
  []
 
 
-Underfull \hbox (badness 1320) in paragraph at lines 1540--1540
+Underfull \hbox (badness 1320) in paragraph at lines 1560--1560
 []\OT1/cmr/m/n/12 Nivel de agua por
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1540--1540
+Underfull \hbox (badness 10000) in paragraph at lines 1560--1560
 []|\OT1/cmr/m/n/12 Manto fil-trante en
  []
 
 
-Underfull \hbox (badness 7722) in paragraph at lines 1540--1540
+Underfull \hbox (badness 7722) in paragraph at lines 1560--1560
 []\OT1/cmr/m/n/12 Motor de retrolavado en
  []
 
 
-Underfull \hbox (badness 2012) in paragraph at lines 1540--1540
+Underfull \hbox (badness 2012) in paragraph at lines 1560--1560
 []\OT1/cmr/m/n/12 Bombas de retrolavado en
  []
 
 
-Underfull \hbox (badness 2165) in paragraph at lines 1540--1540
+Underfull \hbox (badness 2165) in paragraph at lines 1560--1560
 []\OT1/cmr/m/n/12 Imposibilidad para re-alizar
  []
 
 
-Underfull \hbox (badness 1946) in paragraph at lines 1540--1540
+Underfull \hbox (badness 1946) in paragraph at lines 1560--1560
 \OT1/cmr/m/n/12 el retrolavado, falla en el
  []
 
@@ -2620,69 +2632,69 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 \@EveryShipout@Output ...@Org@Shipout \box \@cclv 
                                                   
-l.1547 
+l.1567 
        ]
-Overfull \hbox (30.79726pt too wide) in paragraph at lines 1576--1576
+Overfull \hbox (30.79726pt too wide) in paragraph at lines 1596--1596
 []|\OT1/cmr/bx/n/12 Condicion|  
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1576--1576
+Underfull \hbox (badness 10000) in paragraph at lines 1596--1596
 []\OT1/cmr/m/n/12 Nivel de agua
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1576--1576
+Underfull \hbox (badness 10000) in paragraph at lines 1596--1596
 []\OT1/cmr/m/n/12 Compuerta de en-trada
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1576--1576
+Underfull \hbox (badness 10000) in paragraph at lines 1596--1596
 []\OT1/cmr/m/n/12 Compuerta de drenaje
  []
 
 
-Underfull \hbox (badness 1320) in paragraph at lines 1576--1576
+Underfull \hbox (badness 1320) in paragraph at lines 1596--1596
 []\OT1/cmr/m/n/12 Nivel de agua por
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1576--1576
+Underfull \hbox (badness 10000) in paragraph at lines 1596--1596
 []|\OT1/cmr/m/n/12 Sensores en falla (falta
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1576--1576
+Underfull \hbox (badness 10000) in paragraph at lines 1596--1596
 \OT1/cmr/m/n/12 de per-sonal, falla en
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1576--1576
+Underfull \hbox (badness 10000) in paragraph at lines 1596--1596
 []\OT1/cmr/m/n/12 Compuertas con fal-las
  []
 
 
-Underfull \hbox (badness 1014) in paragraph at lines 1576--1576
+Underfull \hbox (badness 1014) in paragraph at lines 1596--1596
 \OT1/cmr/m/n/12 mecanicas, sin in-ter-rupcion
  []
 
 
-Underfull \hbox (badness 1320) in paragraph at lines 1576--1576
+Underfull \hbox (badness 1320) in paragraph at lines 1596--1596
 []\OT1/cmr/m/n/12 Nivel de agua por
  []
 
 
-Underfull \hbox (badness 2799) in paragraph at lines 1576--1576
+Underfull \hbox (badness 2799) in paragraph at lines 1596--1596
 []|\OT1/cmr/m/n/12 Compuerta de en-trada en
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1576--1576
+Underfull \hbox (badness 10000) in paragraph at lines 1596--1596
 []\OT1/cmr/m/n/12 Compuerta de drenaje
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1576--1576
+Underfull \hbox (badness 10000) in paragraph at lines 1596--1596
 \OT1/cmr/m/n/12 en falla, con perdida
  []
 
@@ -2704,109 +2716,109 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 \@EveryShipout@Output ...@Org@Shipout \box \@cclv 
                                                   
-l.1595 			
+l.1615 			
           ]
-Overfull \hbox (30.79726pt too wide) in paragraph at lines 1609--1609
+Overfull \hbox (30.79726pt too wide) in paragraph at lines 1629--1629
 []|\OT1/cmr/bx/n/12 Condicion|  
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1609--1609
+Underfull \hbox (badness 10000) in paragraph at lines 1629--1629
 []\OT1/cmr/m/n/12 Nivel den-tro del
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1609--1609
+Underfull \hbox (badness 10000) in paragraph at lines 1629--1629
 []\OT1/cmr/m/n/12 Compuertas en
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1609--1609
+Underfull \hbox (badness 10000) in paragraph at lines 1629--1629
 []|\OT1/cmr/m/n/12 Pruebas de lab-o-ra-to-rio
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1609--1609
+Underfull \hbox (badness 10000) in paragraph at lines 1629--1629
 []|\OT1/cmr/m/n/12 Bomba de adicion de
  []
 
 
-Underfull \hbox (badness 1320) in paragraph at lines 1609--1609
+Underfull \hbox (badness 1320) in paragraph at lines 1629--1629
 []\OT1/cmr/m/n/12 Nivel de agua por
  []
 
 
-Overfull \hbox (30.79726pt too wide) in paragraph at lines 1630--1630
+Overfull \hbox (30.79726pt too wide) in paragraph at lines 1650--1650
 []|\OT1/cmr/bx/n/12 Condicion|  
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1630--1630
+Underfull \hbox (badness 10000) in paragraph at lines 1650--1650
 []\OT1/cmr/m/n/12 Nivel de agua
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1630--1630
+Underfull \hbox (badness 10000) in paragraph at lines 1650--1650
 []\OT1/cmr/m/n/12 Compuerta de en-trada
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1630--1630
+Underfull \hbox (badness 10000) in paragraph at lines 1650--1650
 []\OT1/cmr/m/n/12 Compuerta de drenaje
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1630--1630
+Underfull \hbox (badness 10000) in paragraph at lines 1650--1650
 []\OT1/cmr/m/n/12 Qumicos de desin-feccion
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1630--1630
+Underfull \hbox (badness 10000) in paragraph at lines 1650--1650
 []|\OT1/cmr/m/n/12 Adicion de la can-ti-dad
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1630--1630
+Underfull \hbox (badness 10000) in paragraph at lines 1650--1650
 []\OT1/cmr/m/n/12 Nivel de agua
  []
 
 
-Underfull \hbox (badness 2486) in paragraph at lines 1630--1630
+Underfull \hbox (badness 2486) in paragraph at lines 1650--1650
 \OT1/cmr/m/n/12 por encima o por
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1630--1630
+Underfull \hbox (badness 10000) in paragraph at lines 1650--1650
 []|\OT1/cmr/m/n/12 Sensores en falla (falta
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1630--1630
+Underfull \hbox (badness 10000) in paragraph at lines 1650--1650
 \OT1/cmr/m/n/12 de per-sonal, falla en
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1630--1630
+Underfull \hbox (badness 10000) in paragraph at lines 1650--1650
 []\OT1/cmr/m/n/12 Compuertas con fal-las
  []
 
 
-Underfull \hbox (badness 1014) in paragraph at lines 1630--1630
+Underfull \hbox (badness 1014) in paragraph at lines 1650--1650
 \OT1/cmr/m/n/12 mecanicas, sin in-ter-rupcion
  []
 
 
-Underfull \hbox (badness 2799) in paragraph at lines 1630--1630
+Underfull \hbox (badness 2799) in paragraph at lines 1650--1650
 []|\OT1/cmr/m/n/12 Compuerta de en-trada en
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1630--1630
+Underfull \hbox (badness 10000) in paragraph at lines 1650--1650
 []\OT1/cmr/m/n/12 Compuerta de drenaje
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1630--1630
+Underfull \hbox (badness 10000) in paragraph at lines 1650--1650
 \OT1/cmr/m/n/12 en falla, con perdida
  []
 
@@ -2821,7 +2833,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 \@EveryShipout@Output ...@Org@Shipout \box \@cclv 
                                                   
-l.1645 
+l.1665 
        ]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2834,9 +2846,14 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 \@EveryShipout@Output ...@Org@Shipout \box \@cclv 
                                                   
-l.1645 
+l.1665 
        ]
-Underfull \hbox (badness 10000) in paragraph at lines 1691--1692
+Underfull \hbox (badness 10000) in paragraph at lines 1711--1720
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1711--1720
 
  []
 
@@ -2847,15 +2864,12 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [71]
-Underfull \hbox (badness 10000) in paragraph at lines 1693--1700
-
- []
-
-<figures/4qirdp.png, id=1224, 268.75406pt x 164.11313pt>
+<figures/4qirdp.png, id=1240, 268.75406pt x 164.11313pt>
 File: figures/4qirdp.png Graphic file (type png)
 <use figures/4qirdp.png>
-Package pdftex.def Info: figures/4qirdp.png  used on input line 1727.
+Package pdftex.def Info: figures/4qirdp.png  used on input line 1747.
 (pdftex.def)             Requested size: 161.25368pt x 98.46863pt.
+
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
@@ -2867,18 +2881,18 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 \@EveryShipout@Output ...@Org@Shipout \box \@cclv 
                                                   
-l.1733 
+l.1753 
        pdfTeX warning (ext4): destination with the same identifier (name{figure
 .3.2}) has been already used, duplicate ignored
 
 \@EveryShipout@Output ...@Org@Shipout \box \@cclv 
                                                   
-l.1733 
+l.1753 
         <./figures/4qirdp.png>]
-<figures/4hrdp.png, id=1230, 290.58563pt x 190.46156pt>
+<figures/4hrdp.png, id=1246, 290.58563pt x 190.46156pt>
 File: figures/4hrdp.png Graphic file (type png)
 <use figures/4hrdp.png>
-Package pdftex.def Info: figures/4hrdp.png  used on input line 1756.
+Package pdftex.def Info: figures/4hrdp.png  used on input line 1776.
 (pdftex.def)             Requested size: 203.40854pt x 133.32216pt.
 
 
@@ -2892,18 +2906,18 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 \@EveryShipout@Output ...@Org@Shipout \box \@cclv 
                                                   
-l.1784 
+l.1804 
        pdfTeX warning (ext4): destination with the same identifier (name{figure
 .3.3}) has been already used, duplicate ignored
 
 \@EveryShipout@Output ...@Org@Shipout \box \@cclv 
                                                   
-l.1784 
+l.1804 
         <./figures/4hrdp.png>]
-<figures/4tankrdp.png, id=1238, 360.59718pt x 113.67468pt>
+<figures/4tankrdp.png, id=1254, 360.59718pt x 113.67468pt>
 File: figures/4tankrdp.png Graphic file (type png)
 <use figures/4tankrdp.png>
-Package pdftex.def Info: figures/4tankrdp.png  used on input line 1787.
+Package pdftex.def Info: figures/4tankrdp.png  used on input line 1807.
 (pdftex.def)             Requested size: 252.4163pt x 79.57172pt.
 
 
@@ -2917,21 +2931,21 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 \@EveryShipout@Output ...@Org@Shipout \box \@cclv 
                                                   
-l.1813 			
+l.1833 			
           pdfTeX warning (ext4): destination with the same identifier (name{fig
 ure.3.4}) has been already used, duplicate ignored
 
 \@EveryShipout@Output ...@Org@Shipout \box \@cclv 
                                                   
-l.1813 			
+l.1833 			
            <./figures/4tankrdp.png>]
-<figures/4valverdp.png, id=1245, 214.55156pt x 261.97874pt>
+<figures/4valverdp.png, id=1261, 214.55156pt x 261.97874pt>
 File: figures/4valverdp.png Graphic file (type png)
 <use figures/4valverdp.png>
-Package pdftex.def Info: figures/4valverdp.png  used on input line 1816.
+Package pdftex.def Info: figures/4valverdp.png  used on input line 1836.
 (pdftex.def)             Requested size: 150.18506pt x 183.38387pt.
 
-Underfull \hbox (badness 1194) in paragraph at lines 1825--1826
+Underfull \hbox (badness 1194) in paragraph at lines 1845--1846
  []\OT1/cmr/bx/n/12 Calidad de agua:[] \OT1/cmr/m/n/12 De-pende de las vari-abl
 es me-di-das en cada planta y las
  []
@@ -2947,18 +2961,18 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 \@EveryShipout@Output ...@Org@Shipout \box \@cclv 
                                                   
-l.1843 	\end{table}
+l.1863 	\end{table}
                    pdfTeX warning (ext4): destination with the same identifier 
 (name{figure.3.5}) has been already used, duplicate ignored
 
 \@EveryShipout@Output ...@Org@Shipout \box \@cclv 
                                                   
-l.1843 	\end{table}
+l.1863 	\end{table}
                     <./figures/4valverdp.png>]
-<figures/4NTUrdp.png, id=1263, 268.75406pt x 164.11313pt>
+<figures/4NTUrdp.png, id=1279, 268.75406pt x 164.11313pt>
 File: figures/4NTUrdp.png Graphic file (type png)
 <use figures/4NTUrdp.png>
-Package pdftex.def Info: figures/4NTUrdp.png  used on input line 1847.
+Package pdftex.def Info: figures/4NTUrdp.png  used on input line 1867.
 (pdftex.def)             Requested size: 268.7534pt x 164.11272pt.
 
 
@@ -2972,18 +2986,18 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 \@EveryShipout@Output ...@Org@Shipout \box \@cclv 
                                                   
-l.1869 
+l.1889 
        pdfTeX warning (ext4): destination with the same identifier (name{figure
 .3.6}) has been already used, duplicate ignored
 
 \@EveryShipout@Output ...@Org@Shipout \box \@cclv 
                                                   
-l.1869 
+l.1889 
         <./figures/4NTUrdp.png>]
-<figures/3coagulantbase.png, id=1272, 159.59625pt x 167.87718pt>
+<figures/3coagulantbase.png, id=1288, 159.59625pt x 167.87718pt>
 File: figures/3coagulantbase.png Graphic file (type png)
 <use figures/3coagulantbase.png>
-Package pdftex.def Info: figures/3coagulantbase.png  used on input line 1872.
+Package pdftex.def Info: figures/3coagulantbase.png  used on input line 1892.
 (pdftex.def)             Requested size: 159.59584pt x 167.87677pt.
 
 
@@ -2997,13 +3011,13 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 \@EveryShipout@Output ...@Org@Shipout \box \@cclv 
                                                   
-l.1879 	\chapter
+l.1899 	\chapter
                 {Caso de Uso}pdfTeX warning (ext4): destination with the same i
 dentifier (name{figure.3.7}) has been already used, duplicate ignored
 
 \@EveryShipout@Output ...@Org@Shipout \box \@cclv 
                                                   
-l.1879 	\chapter
+l.1899 	\chapter
                 {Caso de Uso} <./figures/3coagulantbase.png>]
 Cap\'{\i }tulo 4.
 
@@ -3015,10 +3029,10 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 [78
 
 ]
-<figures/3realfilter.png, id=1286, 1298.60156pt x 1762.33406pt>
+<figures/3realfilter.png, id=1302, 1298.60156pt x 1762.33406pt>
 File: figures/3realfilter.png Graphic file (type png)
 <use figures/3realfilter.png>
-Package pdftex.def Info: figures/3realfilter.png  used on input line 1899.
+Package pdftex.def Info: figures/3realfilter.png  used on input line 1919.
 (pdftex.def)             Requested size: 103.89024pt x 140.98961pt.
 
 
@@ -3028,10 +3042,10 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [79]
-<figures/4multiplex.png, id=1296, 898.10532pt x 1342.2647pt>
+<figures/4multiplex.png, id=1313, 898.10532pt x 1342.2647pt>
 File: figures/4multiplex.png Graphic file (type png)
 <use figures/4multiplex.png>
-Package pdftex.def Info: figures/4multiplex.png  used on input line 1914.
+Package pdftex.def Info: figures/4multiplex.png  used on input line 1934.
 (pdftex.def)             Requested size: 359.23576pt x 536.89638pt.
 
 
@@ -3045,7 +3059,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 \@EveryShipout@Output ...@Org@Shipout \box \@cclv 
                                                   
-l.1928 
+l.1946 
         <./figures/3realfilter.png>]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -3058,7 +3072,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 \@EveryShipout@Output ...@Org@Shipout \box \@cclv 
                                                   
-l.1928 
+l.1946 
         <./figures/4multiplex.png>]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -3078,24 +3092,24 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 \@EveryShipout@Output ...@Org@Shipout \box \@cclv 
                                                   
-l.2001 
-       ]
+l.2018 			\end{table}
+                     ]
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 2026.
+               Default added (so using `tbp') on input line 2046.
 
-<figures/4coagulantmodel.png, id=1323, 788.9475pt x 513.41812pt>
+<figures/4coagulantmodel.png, id=1340, 788.9475pt x 513.41812pt>
 File: figures/4coagulantmodel.png Graphic file (type png)
 <use figures/4coagulantmodel.png>
-Package pdftex.def Info: figures/4coagulantmodel.png  used on input line 2052.
+Package pdftex.def Info: figures/4coagulantmodel.png  used on input line 2072.
 (pdftex.def)             Requested size: 394.47278pt x 256.70842pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 2057--2062
+Underfull \hbox (badness 10000) in paragraph at lines 2077--2082
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2057--2062
+Underfull \hbox (badness 10000) in paragraph at lines 2077--2082
 
  []
 
@@ -3110,8 +3124,8 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 \@EveryShipout@Output ...@Org@Shipout \box \@cclv 
                                                   
-l.2064 
-       ]
+l.2082 			
+          ]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
@@ -3123,18 +3137,18 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 \@EveryShipout@Output ...@Org@Shipout \box \@cclv 
                                                   
-l.2064 
-       pdfTeX warning (ext4): destination with the same identifier (name{figure
-.4.3}) has been already used, duplicate ignored
+l.2082 			
+          pdfTeX warning (ext4): destination with the same identifier (name{fig
+ure.4.3}) has been already used, duplicate ignored
 
 \@EveryShipout@Output ...@Org@Shipout \box \@cclv 
                                                   
-l.2064 
-        <./figures/4coagulantmodel.png>]
-<figures/4coagcomprdp.png, id=1335, 477.28313pt x 296.60812pt>
+l.2082 			
+           <./figures/4coagulantmodel.png>]
+<figures/4coagcomprdp.png, id=1352, 477.28313pt x 296.60812pt>
 File: figures/4coagcomprdp.png Graphic file (type png)
 <use figures/4coagcomprdp.png>
-Package pdftex.def Info: figures/4coagcomprdp.png  used on input line 2093.
+Package pdftex.def Info: figures/4coagcomprdp.png  used on input line 2113.
 (pdftex.def)             Requested size: 429.55084pt x 266.94484pt.
 
 
@@ -3148,12 +3162,12 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 \@EveryShipout@Output ...@Org@Shipout \box \@cclv 
                                                   
-l.2097 			
+l.2117 			
           ]
-<figures/4sedimentsimu.png, id=1341, 411.03563pt x 255.95625pt>
+<figures/4sedimentsimu.png, id=1358, 411.03563pt x 255.95625pt>
 File: figures/4sedimentsimu.png Graphic file (type png)
 <use figures/4sedimentsimu.png>
-Package pdftex.def Info: figures/4sedimentsimu.png  used on input line 2106.
+Package pdftex.def Info: figures/4sedimentsimu.png  used on input line 2126.
 (pdftex.def)             Requested size: 328.82895pt x 204.76526pt.
 
 
@@ -3167,7 +3181,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 \@EveryShipout@Output ...@Org@Shipout \box \@cclv 
                                                   
-l.2112 
+l.2132 
         <./figures/4coagcomprdp.png>]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -3180,24 +3194,24 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 \@EveryShipout@Output ...@Org@Shipout \box \@cclv 
                                                   
-l.2158 			
+l.2178 			
           pdfTeX warning (ext4): destination with the same identifier (name{tab
 le.4.5}) has been already used, duplicate ignored
 
 \@EveryShipout@Output ...@Org@Shipout \box \@cclv 
                                                   
-l.2158 			
+l.2178 			
            <./figures/4sedimentsimu.png>]
-<figures/4sedimentcomprdp.png, id=1353, 930.47626pt x 441.90094pt>
+<figures/4sedimentcomprdp.png, id=1370, 930.47626pt x 441.90094pt>
 File: figures/4sedimentcomprdp.png Graphic file (type png)
 <use figures/4sedimentcomprdp.png>
-Package pdftex.def Info: figures/4sedimentcomprdp.png  used on input line 2161.
+Package pdftex.def Info: figures/4sedimentcomprdp.png  used on input line 2181.
 
 (pdftex.def)             Requested size: 372.18391pt x 176.75723pt.
-<figures/4htankepanet.png, id=1355, 927.465pt x 450.18187pt>
+<figures/4htankepanet.png, id=1372, 927.465pt x 450.18187pt>
 File: figures/4htankepanet.png Graphic file (type png)
 <use figures/4htankepanet.png>
-Package pdftex.def Info: figures/4htankepanet.png  used on input line 2170.
+Package pdftex.def Info: figures/4htankepanet.png  used on input line 2190.
 (pdftex.def)             Requested size: 370.97943pt x 180.06955pt.
 
 
@@ -3211,18 +3225,18 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 \@EveryShipout@Output ...@Org@Shipout \box \@cclv 
                                                   
-l.2176 
+l.2196 
        pdfTeX warning (ext4): destination with the same identifier (name{figure
 .4.6}) has been already used, duplicate ignored
 
 \@EveryShipout@Output ...@Org@Shipout \box \@cclv 
                                                   
-l.2176 
+l.2196 
         <./figures/4sedimentcomprdp.png>]
-<figures/4sedimentmatlab.png, id=1366, 372.64218pt x 261.97874pt>
+<figures/4sedimentmatlab.png, id=1383, 372.64218pt x 261.97874pt>
 File: figures/4sedimentmatlab.png Graphic file (type png)
 <use figures/4sedimentmatlab.png>
-Package pdftex.def Info: figures/4sedimentmatlab.png  used on input line 2185.
+Package pdftex.def Info: figures/4sedimentmatlab.png  used on input line 2205.
 (pdftex.def)             Requested size: 242.21454pt x 170.28416pt.
 
 
@@ -3236,12 +3250,12 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 \@EveryShipout@Output ...@Org@Shipout \box \@cclv 
                                                   
-l.2189 			
+l.2209 			
            <./figures/4htankepanet.png>]
-<figures/4idealscen.png, id=1373, 908.64468pt x 578.16pt>
+<figures/4idealscen.png, id=1390, 908.64468pt x 578.16pt>
 File: figures/4idealscen.png Graphic file (type png)
 <use figures/4idealscen.png>
-Package pdftex.def Info: figures/4idealscen.png  used on input line 2199.
+Package pdftex.def Info: figures/4idealscen.png  used on input line 2219.
 (pdftex.def)             Requested size: 408.88634pt x 260.16959pt.
 
 
@@ -3255,17 +3269,17 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 \@EveryShipout@Output ...@Org@Shipout \box \@cclv 
                                                   
-l.2203 			
+l.2223 			
            <./figures/4sedimentmatlab.png>]
-Underfull \hbox (badness 2142) in paragraph at lines 2206--2208
+Underfull \hbox (badness 2142) in paragraph at lines 2226--2228
  []\OT1/cmr/bx/n/12 Escenario 2:[] \OT1/cmr/m/n/12 Sigu-iendo los mod-e-los de 
 la unidad de co-ag-u-lacion de-scritos
  []
 
-<figures/4scennormaldosis.png, id=1381, 813.0375pt x 566.86781pt>
+<figures/4scennormaldosis.png, id=1398, 813.0375pt x 566.86781pt>
 File: figures/4scennormaldosis.png Graphic file (type png)
 <use figures/4scennormaldosis.png>
-Package pdftex.def Info: figures/4scennormaldosis.png  used on input line 2216.
+Package pdftex.def Info: figures/4scennormaldosis.png  used on input line 2236.
 
 (pdftex.def)             Requested size: 390.25357pt x 272.09346pt.
 
@@ -3279,12 +3293,12 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 \@EveryShipout@Output ...@Org@Shipout \box \@cclv 
                                                   
-l.2220 			
+l.2240 			
            <./figures/4idealscen.png>]
-<figures/4deg2scen.png, id=1388, 926.71219pt x 583.42969pt>
+<figures/4deg2scen.png, id=1405, 926.71219pt x 583.42969pt>
 File: figures/4deg2scen.png Graphic file (type png)
 <use figures/4deg2scen.png>
-Package pdftex.def Info: figures/4deg2scen.png  used on input line 2223.
+Package pdftex.def Info: figures/4deg2scen.png  used on input line 2243.
 (pdftex.def)             Requested size: 407.75462pt x 256.70985pt.
 
 
@@ -3298,23 +3312,23 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 \@EveryShipout@Output ...@Org@Shipout \box \@cclv 
                                                   
-l.2232 			
+l.2252 			
           pdfTeX warning (ext4): destination with the same identifier (name{fig
 ure.4.11}) has been already used, duplicate ignored
 
 \@EveryShipout@Output ...@Org@Shipout \box \@cclv 
                                                   
-l.2232 			
+l.2252 			
            <./figures/4scennormaldosis.png> <./figures/4deg2scen.png>]
-<figures/4failscen.png, id=1395, 927.465pt x 587.94656pt>
+<figures/4failscen.png, id=1412, 927.465pt x 587.94656pt>
 File: figures/4failscen.png Graphic file (type png)
 <use figures/4failscen.png>
-Package pdftex.def Info: figures/4failscen.png  used on input line 2235.
+Package pdftex.def Info: figures/4failscen.png  used on input line 2255.
 (pdftex.def)             Requested size: 417.3554pt x 264.5735pt.
-<figures/4fail2scen.png, id=1397, 826.58812pt x 580.41844pt>
+<figures/4fail2scen.png, id=1414, 826.58812pt x 580.41844pt>
 File: figures/4fail2scen.png Graphic file (type png)
 <use figures/4fail2scen.png>
-Package pdftex.def Info: figures/4fail2scen.png  used on input line 2244.
+Package pdftex.def Info: figures/4fail2scen.png  used on input line 2264.
 (pdftex.def)             Requested size: 413.29305pt x 290.20851pt.
 
 
@@ -3328,17 +3342,17 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 \@EveryShipout@Output ...@Org@Shipout \box \@cclv 
                                                   
-l.2248 			
+l.2268 			
            <./figures/4failscen.png>]
-Underfull \hbox (badness 6063) in paragraph at lines 2251--2252
+Underfull \hbox (badness 6063) in paragraph at lines 2271--2272
  []\OT1/cmr/bx/n/12 Escenario 5:[] \OT1/cmr/m/n/12 Una vez de-scritos los es-ce
 -nar-ios pre-de-ter-mi-na-dos para un
  []
 
-<figures/4tank1scen.png, id=1405, 813.79031pt x 566.115pt>
+<figures/4tank1scen.png, id=1422, 813.79031pt x 566.115pt>
 File: figures/4tank1scen.png Graphic file (type png)
 <use figures/4tank1scen.png>
-Package pdftex.def Info: figures/4tank1scen.png  used on input line 2255.
+Package pdftex.def Info: figures/4tank1scen.png  used on input line 2275.
 (pdftex.def)             Requested size: 366.20226pt x 254.74939pt.
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -3351,12 +3365,12 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 \@EveryShipout@Output ...@Org@Shipout \box \@cclv 
                                                   
-l.2259 			
+l.2279 			
            <./figures/4fail2scen.png>]
-<figures/4tank2scen.png, id=1411, 828.09375pt x 566.86781pt>
+<figures/4tank2scen.png, id=1428, 828.09375pt x 566.86781pt>
 File: figures/4tank2scen.png Graphic file (type png)
 <use figures/4tank2scen.png>
-Package pdftex.def Info: figures/4tank2scen.png  used on input line 2262.
+Package pdftex.def Info: figures/4tank2scen.png  used on input line 2282.
 (pdftex.def)             Requested size: 372.63875pt x 255.08815pt.
 
 
@@ -3370,17 +3384,35 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 \@EveryShipout@Output ...@Org@Shipout \box \@cclv 
                                                   
-l.2267 	\chapter
+l.2287 	\chapter
                 {Conclusiones y Recomendaciones}pdfTeX warning (ext4): destinat
 ion with the same identifier (name{figure.4.15}) has been already used, duplica
 te ignored
 
 \@EveryShipout@Output ...@Org@Shipout \box \@cclv 
                                                   
-l.2267 	\chapter
+l.2287 	\chapter
                 {Conclusiones y Recomendaciones} <./figures/4tank1scen.png> <./
 figures/4tank2scen.png>]
 Cap\'{\i }tulo 5.
+
+Underfull \hbox (badness 1424) in paragraph at lines 2293--2294
+[]\OT1/cmr/m/n/12 Es fun-da-men-tal en la dig-i-tal-izacion de la em-presa el 
+con-tar con mod-e-los
+ []
+
+
+Underfull \hbox (badness 7468) in paragraph at lines 2293--2294
+\OT1/cmr/m/n/12 de com-por-tamiento, ya que ese es el so-porte para re-alizar l
+a gestion
+ []
+
+
+Underfull \hbox (badness 5592) in paragraph at lines 2293--2294
+\OT1/cmr/m/n/12 (plan-i-fi-cacion/programacion/ejecucion/seguimiento del por
+ceso a par-tir de la
+ []
+
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
@@ -3398,10 +3430,10 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [98]
 Cap\'{\i }tulo 6.
-<figures/5anexo4.png, id=1424, 726.46407pt x 353.82187pt>
+<figures/5anexo4.png, id=1444, 726.46407pt x 353.82187pt>
 File: figures/5anexo4.png Graphic file (type png)
 <use figures/5anexo4.png>
-Package pdftex.def Info: figures/5anexo4.png  used on input line 2293.
+Package pdftex.def Info: figures/5anexo4.png  used on input line 2307.
 (pdftex.def)             Requested size: 581.17204pt x 283.05788pt.
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -3412,10 +3444,10 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 [99
 
 ]
-<figures/5anexo1.png, id=1430, 727.21687pt x 355.3275pt>
+<figures/5anexo1.png, id=1450, 727.21687pt x 355.3275pt>
 File: figures/5anexo1.png Graphic file (type png)
 <use figures/5anexo1.png>
-Package pdftex.def Info: figures/5anexo1.png  used on input line 2300.
+Package pdftex.def Info: figures/5anexo1.png  used on input line 2314.
 (pdftex.def)             Requested size: 581.77428pt x 284.26237pt.
 
 
@@ -3429,12 +3461,12 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 \@EveryShipout@Output ...@Org@Shipout \box \@cclv 
                                                   
-l.2304 		
+l.2318 		
           <./figures/5anexo4.png>]
-<figures/5anexo3.png, id=1435, 730.98094pt x 356.83313pt>
+<figures/5anexo3.png, id=1455, 730.98094pt x 356.83313pt>
 File: figures/5anexo3.png Graphic file (type png)
 <use figures/5anexo3.png>
-Package pdftex.def Info: figures/5anexo3.png  used on input line 2307.
+Package pdftex.def Info: figures/5anexo3.png  used on input line 2321.
 (pdftex.def)             Requested size: 584.78555pt x 285.46687pt.
 
 
@@ -3448,74 +3480,74 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 \@EveryShipout@Output ...@Org@Shipout \box \@cclv 
                                                   
-l.2311 	
+l.2325 	
          <./figures/5anexo1.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 2328--2328
+Underfull \hbox (badness 10000) in paragraph at lines 2342--2342
 []|\OT1/cmr/m/n/12 Turbidmetro
  []
 
 
-Underfull \hbox (badness 8132) in paragraph at lines 2328--2328
+Underfull \hbox (badness 8132) in paragraph at lines 2342--2342
 []|\OT1/cmr/m/n/12 Medicion de tur-bidez en el
  []
 
 
-Underfull \hbox (badness 1297) in paragraph at lines 2328--2328
+Underfull \hbox (badness 1297) in paragraph at lines 2342--2342
 \OT1/cmr/m/n/12 agua. De-ter-mina la can-ti-dad
  []
 
 
-Underfull \hbox (badness 4832) in paragraph at lines 2328--2328
+Underfull \hbox (badness 4832) in paragraph at lines 2342--2342
 \OT1/cmr/m/n/12 de sus-tan-cias en un lquido,
  []
 
 
-Underfull \hbox (badness 2103) in paragraph at lines 2328--2328
+Underfull \hbox (badness 2103) in paragraph at lines 2342--2342
 \OT1/cmr/m/n/12 se em-plea en la medicion de
  []
 
 
-Underfull \hbox (badness 3849) in paragraph at lines 2328--2328
+Underfull \hbox (badness 3849) in paragraph at lines 2342--2342
 []|\OT1/cmr/m/n/12 Medicion de la difer-en-cia de
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2328--2328
+Underfull \hbox (badness 10000) in paragraph at lines 2342--2342
 \OT1/cmr/m/n/12 po-ten-cial electrico en-tre un
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2328--2328
+Underfull \hbox (badness 10000) in paragraph at lines 2342--2342
 \OT1/cmr/m/n/12 Am-perometrico
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2328--2328
+Underfull \hbox (badness 10000) in paragraph at lines 2342--2342
 []|\OT1/cmr/m/n/12 Medicion am-perometrica con
  []
 
 
-Underfull \hbox (badness 6348) in paragraph at lines 2328--2328
+Underfull \hbox (badness 6348) in paragraph at lines 2342--2342
 \OT1/cmr/m/n/12 po-ten-cial con-stante, he-cho a
  []
 
 
-Underfull \hbox (badness 1005) in paragraph at lines 2328--2328
+Underfull \hbox (badness 1005) in paragraph at lines 2342--2342
 \OT1/cmr/m/n/12 cor-ri-ente con-sume el con-tenido
  []
 
 
-Overfull \hbox (0.98401pt too wide) in paragraph at lines 2328--2328
+Overfull \hbox (0.98401pt too wide) in paragraph at lines 2342--2342
 []|\OT1/cmr/m/n/12 Espectrofotometro
  []
 
 
-Underfull \hbox (badness 5519) in paragraph at lines 2328--2328
+Underfull \hbox (badness 5519) in paragraph at lines 2342--2342
 []|\OT1/cmr/m/n/12 Deteccion del color me-di-ante
  []
 
 
-Underfull \hbox (badness 1881) in paragraph at lines 2328--2328
+Underfull \hbox (badness 1881) in paragraph at lines 2342--2342
 []|\OT1/cmr/m/n/12 Se pro-duce un rango de-seado
  []
 
@@ -3530,7 +3562,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 \@EveryShipout@Output ...@Org@Shipout \box \@cclv 
                                                   
-l.2332 			\end{table}
+l.2346 			\end{table}
                       <./figures/5anexo3.png>]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -3543,7 +3575,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 \@EveryShipout@Output ...@Org@Shipout \box \@cclv 
                                                   
-l.2347 	\bibliography{Bibliog}
+l.2361 	\bibliography{Bibliog}
                               ] (proyecto_YsisLacruz.bbl
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -3584,7 +3616,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 185--189
  []
 
 
-Underfull \hbox (badness 1406) in paragraph at lines 221--225
+Underfull \hbox (badness 1406) in paragraph at lines 226--230
 []\OT1/cmr/m/n/12 Moteff, J. and Par-fo-mak, P. (2004).  Crit-i-cal in-fras-tru
 c-ture and key as-sets:
  []
@@ -3596,7 +3628,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [107]
-Underfull \hbox (badness 10000) in paragraph at lines 268--272
+Underfull \hbox (badness 10000) in paragraph at lines 273--277
 []\OT1/cmr/m/n/12 Rouse, M. (2012).  Analisis de datos.  Disponible en:
  []
 
@@ -3614,25 +3646,25 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [109]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 2354.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 2354.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 2368.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 2368.
  (proyecto_YsisLacruz.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 2354.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 2354.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 2368.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 2368.
 
 Package rerunfilecheck Info: File `proyecto_YsisLacruz.out' has not changed.
-(rerunfilecheck)             Checksum: 186B6102329A009E92B0C57CD323F00F;5710.
+(rerunfilecheck)             Checksum: 483F4A611C5F72CEB90DE5800D119184;5692.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 2354.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 2368.
  ) 
 Here is how much of TeX's memory you used:
- 29484 strings out of 492973
- 566720 string characters out of 3127135
- 614911 words of memory out of 3000000
- 32519 multiletter control sequences out of 15000+200000
+ 29499 strings out of 492973
+ 566948 string characters out of 3127135
+ 614136 words of memory out of 3000000
+ 32527 multiletter control sequences out of 15000+200000
  540357 words of font info for 53 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  62i,15n,65p,1923b,524s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -3650,9 +3682,9 @@ blic/amsfonts/cm/cmr8.pfb><C:/Users/Ysis/AppData/Local/Programs/MiKTeX 2.9/font
 s/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Ysis/AppData/Local/Programs/MiK
 TeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/Ysis/AppData/Local/P
 rograms/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on proyecto_YsisLacruz.pdf (119 pages, 9879067 bytes).
+Output written on proyecto_YsisLacruz.pdf (119 pages, 10174101 bytes).
 PDF statistics:
- 1597 PDF objects out of 1728 (max. 8388607)
- 374 named destinations out of 1000 (max. 500000)
- 890 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1618 PDF objects out of 1728 (max. 8388607)
+ 380 named destinations out of 1000 (max. 500000)
+ 895 words of extra memory for PDF output out of 10000 (max. 10000000)
 

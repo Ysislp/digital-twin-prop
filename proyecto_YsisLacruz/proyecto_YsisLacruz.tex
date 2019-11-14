@@ -332,7 +332,7 @@ El hecho de proponer un Gemelo Digital en el proceso de potabilización, es tener
 		\item  Establecer las condiciones de conmutación de los modelos obtenidos desde el punto de vista de sistemas a eventos discretos.
 		\item  Generar el modelo de comportamiento desde el punto de vista de los sistemas híbridos.
 		\item  Implementar el modelo de comportamiento de la unidad de potabilización en un ambiente de simulación.
-		\item  Establecer condiciones para generar el gemelo digital e incorporarlas al ambiente de simulación.
+		\item  Establecer condiciones para generar la propuesta de gemelo digital e incorporarlas al ambiente de simulación.
 	\end{itemize}
 	
 	\section{Metodología}
@@ -353,8 +353,8 @@ El documento está organizado de la siguiente manera:
 		\begin{itemize}
 			\item[$-$]  Capítulo 1: Introducción y propuesta.
 			\item[$-$]  Capítulo 2: Marco teórico.
-			\item[$-$]  Capítulo 3: Consideraciones operativas para las UHP en producción.
-			\item[$-$]  Capítulo 4: Caso de uso, inclusión de modelos y escenarios de prueba.
+			\item[$-$]  Capítulo 3: Modelado de UHP en Potabilización.
+			\item[$-$]  Capítulo 4: Caso de uso, Planta de Potabilización "Dr. Eduardo Jáuregui".
 			\item[$-$]  Capítulo 5: Conclusiones y recomendaciones.
 		\end{itemize}
 	
@@ -435,11 +435,18 @@ En \cite{hermann2015design} se basan en los conceptos de CPS e IoT para definir 
 		
 Previamente se describe que los CPS interactúan con un sistema virtual a través de redes de comunicación, en ese sentido cada módulo físico tendrá una representación digital de sí mismo, permitiendo la interconexión de procesos en un dispositivo que pueda monitorear y controlar la unidad física, el término es conocido como Gemelo Digital \citep{schroeder2016digital}.
 
-El Gemelo Digital ofrece la posibilidad de crear una planta virtual haciendo uso de modelos matemáticos, modelos de comportamiento, medición de parámetros en campo, historial de datos y análisis, para visualizar posibles acciones a tomar según el estado real del proceso; estas acciones son accesibles gracias al IoT, debido a que facilita de forma eficiente la conexión entre el comportamiento real y el Gemelo Digital \citep{schroeder2016digital,marr2019amazing}.
+El Gemelo Digital ofrece la posibilidad de crear una planta virtual haciendo uso de modelos matemáticos, modelos de comportamiento, medición de parámetros en campo, historial de datos y análisis (figura \ref{fig-dt}), para visualizar posibles acciones a tomar según el estado real del proceso; estas acciones son accesibles gracias al IoT, debido a que facilita de forma eficiente la conexión entre el comportamiento real y el Gemelo Digital \citep{schroeder2016digital,marr2019amazing}.
 
 La aplicación de la tecnología de gemelos digitales ayuda a comprender las operaciones de la planta, visualizar mejorías y detectar problemas físicos en fases tempranas, de esta manera es posible cumplir las expectativas cada vez mayores de los clientes \citep{lietha2018la}.
 
 Para lograr la digitalización de una planta, es necesario en primera instancia conocer a fondo cómo opera y realizar la documentación necesaria, de manera que los detalles del proceso estén disponibles. Se deben implementar soluciones digitales a medida que se vayan recreando los modelos físicos en un ambiente virtual, mientras se hace revisión de las estrategias de control y producción, de modo que la colaboración entre virtualización y trabajadores resulte en mejoras de estrategias de gestión \citep{mrosik2018era}.
+
+			\begin{figure}[H]
+				\centering
+				\includegraphics[scale=0.4]{figures/2dt}
+				\caption{Representación de un Gemelo Digital \citep{mit2018digital}}
+				\label{fig-dt}
+			\end{figure}
 
 Entre los beneficios que esta tecnología ofrece, está la posibilidad de obtener un gemelo digital del producto, diseñar, planificar y optimizar, para luego generar simulaciones de la producción previas a la implementación física, de esta forma se pueden visualizar escenarios de riesgo sin necesidad de realizar inversiones en pruebas reales. Una vez que el sistema físico esté instalado, transmitirá datos al gemelo digital que actuará como monitor de desempeño, evaluando el proceso de producción y el producto resultante. Los datos obtenidos de planta deben ser analizados según el contexto para asegurar eficiencia en el sistema \citep{mrosik2018era}.
 
@@ -480,7 +487,7 @@ Un sistema híbrido consta de varios modos de operación de dinámicas continuas en
 
 Un modelo híbrido es la representación de las transiciones discretas y la evolución de las dinámicas continuas, afectadas por los eventos discretos. Al momento de modelar se debe cuidar tanto la precisión de los resultados como la simplicidad del modelo, incorporando correctamente las entradas, demás componentes del proceso y la interrelación entre ellos \citep{cruz2007control}.
 
-Un autómata híbrido $ H $ está definido como una colección $H~=~(Q,~X,~U,~\Gamma,~Y,~f,~h_e,~h_i,~y_e,~g, ~Init,~Dom,~E,~G,~R)$ donde: 
+La definición dada en \cite{Lygeros2012}, un autómata híbrido $ H $ está definido como una colección $H~=~(Q,~X,~U,~\Gamma,~Y,~f,~h_e,~h_i,~y_e,~g, ~Init,~Dom,~E,~G,~R)$ donde: 
 \\
 \\
  $Q \in Z^k, \{q_i\}, i=1, \cdots,k $ es el conjunto de \emph{estados discretos}, \\
@@ -686,7 +693,7 @@ El modelo APS (Advanced Planning \& Schedulling), define la interrelación entre 
 			
 		\section{Proceso de Potabilización}
 		
-El proceso de potabilización comprende el conjunto de recursos y actividades necesarias para administrar y operar los sistemas de agua, sumado al mantenimiento de las instalaciones y equipos utilizados; incluye las unidades fundamentales del proceso de producción: captación, potabilización, almacenamiento y distribución. En la figura \ref{fig-potab} se presentan las unidades correspondientes a Potabilización. 
+La unidad de producción comprende el conjunto de recursos y actividades necesarias para administrar y operar los sistemas de agua, sumado al mantenimiento de las instalaciones y equipos utilizados; incluye las unidades fundamentales del proceso de producción: captación, potabilización, almacenamiento y distribución. Uno de los eslabones es la unidad de Potabilización, en la figura \ref{fig-potab} se presentan las unidades correspondientes. 
 
 			\begin{figure}
 				\centering
@@ -765,7 +772,7 @@ Las condiciones principales del flujo de salida de la unidad de potabilización, 
 							Olor y sabor & Aceptable o No Aceptable & Aceptable & - \\ \hline
 						\end{tabular}
 						}
-						\caption{Características físicas del agua potable \citep{jaramillo2014documentacion}.}
+						\caption{Parámetros de calidad del agua potable \citep{jaramillo2014documentacion}.}
 						\label{table-caract}
 					\end{center}
 				\end{table}
@@ -800,7 +807,7 @@ Es un parametro utilizado para determinar el oxígeno disuelto en el agua, a mayo
 
 			\subsubsection{Determinación de Dosis de Coagulante: Prueba de Jarras}
 				
-En la industria hidrológica es la Prueba de Jarras la que proporciona los rangos óptimos de la dosis de coagulante según el pH de agua a tratar, para llevar a cabo la coagulación; este ensayo de laboratorio simula las condiciones en que se realiza el proceso de coagulación, floculación y sedimentación en la planta, partiendo de varias muestras de agua cruda tomada de la fuente, con características de calidad conocidas, y añadiendo en cada muestra los productos químicos variando tipo y dosis. El tiempo de retención de las unidades del proceso también es determinado mediante la Prueba de Jarras, tiempo necesario para la mezcla rápida e inicio de formación del flóculo (grumo formado por adhesión de sólidos en suspensión). Las condiciones operacionales para las etapas que comprende el proceso de potabilización, se determinan con esta prueba.
+En la industria hidrológica es la Prueba de Jarras la que proporciona los rangos óptimos de la dosis de coagulante según las condiciones de agua a tratar, para llevar a cabo la coagulación; este ensayo de laboratorio simula las condiciones en que se realiza el proceso de coagulación, floculación y sedimentación en la planta, partiendo de varias muestras de agua cruda tomada de la fuente, con características de calidad conocidas, y añadiendo en cada muestra los productos químicos variando tipo y dosis. El tiempo de retención de las unidades del proceso también es determinado mediante la Prueba de Jarras, tiempo necesario para la mezcla rápida e inicio de formación del flóculo (grumo formado por adhesión de sólidos en suspensión). Las condiciones operacionales para las etapas que comprende el proceso de potabilización, se determinan con esta prueba.
 
 La metodología para realizar la prueba de Jarras consiste primero en tener conocimiento de turbidez, pH y color del agua cruda que está ingresando a la planta. Se toman entre 4 y 6 muestras de agua de igual cantidad en vasos de precipitado, y se les suministra distintas dosis de coagulante a cada muestra, según conocimiento previo. Cada muestra es sometida a una mezcla mecánica que emula el comportamiento de la planta real. La determinación óptima de coagulante resulta de aquella muestra en que se formen y desciendan mayor cantidad de sólidos aglomerados, disminuyendo así la turbidez presente en el agua. (véase figura \ref{fig-jarras})
 
@@ -822,11 +829,11 @@ La Unidad de Potabilización es la encargada de tomar el agua cruda con caracterí
 					\label{fig-valuechainpotab}
 				\end{figure}
 
-La unidad de potabilización debe cuidar que el proceso, el flujo de producto y los recursos estén coordinados. El modelo del proceso comprende la información y buen funcionamiento de cada eslabón de la potabilización, incluyendo los modelos de mantenimiento en las unidades y de consumo de la población. Respecto al flujo de producto se debe cuidar que la calidad y cantidad de agua en la entrada y salida del proceso sean las adecuadas. El modelo de recursos por su parte, permite distribuir los químicos utilizados, como el sulfato de aluminio y el cloro, en las unidades que lo requieran.
+La unidad de potabilización debe cuidar que el proceso, el flujo de producto y los recursos estén coordinados. El modelo del proceso comprende la información y buen funcionamiento de cada eslabón de la potabilización, incluyendo el consumo de la población. Respecto al flujo de producto se debe cuidar que la calidad y cantidad de agua en la entrada y salida del proceso sean las adecuadas. El modelo de recursos (estado, mantenimiento, etc) por su parte, permite distribuir los químicos utilizados, como el sulfato de aluminio y el cloro, en las unidades que lo requieran.
 
 La unidad debe llevar un registro de rendimiento y fallas, de manera que se puedan tomar decisiones en pro de mejorías en la producción mientras se mantiene la continuidad del proceso.
 
-En la figura \ref{fig-pid} se presenta el diagrama P\&ID del proceso de potabilización generalizado, donde cada tanque representa una unidad del proceso, con los sensores que determinan la calidad del agua en la entrada y salida de cada una de ellas. En la práctica, la configuración y número de unidades varía segun el tamaño de la planta; de igual forma, puede que se omitan sensores del proceso, dependiendo de los datos que el personal requiera transmitir. La adición de los sensores se debe a que, si bien es un proceso continuo, al aplicar la visión holónica cada unidad debería poder comunicar el estado en el que se encuentra.
+En la figura \ref{fig-pid} se presenta el diagrama P\&ID del proceso de potabilización genérico, donde cada tanque representa una unidad del proceso, con los sensores que determinan la calidad del agua en la entrada y salida de cada una de ellas. En la práctica, la configuración y número de unidades varía segun el tamaño de la planta; de igual forma, puede que se omitan sensores del proceso, dependiendo de los datos que el personal requiera transmitir. La adición de los sensores se debe a que, si bien es un proceso continuo, al aplicar la visión holónica cada unidad debería poder comunicar el estado en el que se encuentra.
 
 La descripción de las unidades funcionales del proceso se presenta a continuación:
 
@@ -1091,7 +1098,7 @@ Agua potabilizada. Calidad y cantidad de flujo a distribuir.
 
 \vspace{5mm}
 
-Según los diseños observados en las plantas de tratamiento, se deduce que su estructura general consta de demultiplexores y multiplexores (figura \ref{fig-multiplexbase}), es decir, la entrada es dividida al finalizar el paso por las unidades para generar varias líneas de producción compuestas por coagulación - floculación - sedimentación, disminuyendo la velocidad del flujo circulante. El efluente de cada sedimentador se recolecta en un canal único, la velocidad y caudal aumentan para dirigir la masa de agua hacia la unidad de filtración, donde se divide nuevamente y por última vez, ya que el canal de recolección de agua filtrada dirige el flujo hacia desinfección, sin ninguna desviación. Los instrumentos mínimos para obtener un gemelo digital adecuado de la planta se ubican en el diagrama adjunto, consta de herramientas de medición de caudal, pH, turbidez, color para las características del flujo, y de nivel de agua en los tanques.
+Según los diseños observados en las plantas de tratamiento, se deduce que su estructura genérica consta de demultiplexores y multiplexores (figura \ref{fig-multiplexbase}), es decir, la entrada es dividida al finalizar el paso por las unidades para generar varias líneas de producción compuestas por coagulación - floculación - sedimentación, disminuyendo la velocidad del flujo circulante. El efluente de cada sedimentador se recolecta en un canal único, la velocidad y caudal aumentan para dirigir la masa de agua hacia la unidad de filtración, donde se divide nuevamente y por última vez, ya que el canal de recolección de agua filtrada dirige el flujo hacia desinfección, sin ninguna desviación. Los indicadores usados generalmente para conocer el estado de calidad y flujo de agua, también se representan en la figura adjunta.
 
 			\begin{figure}
 				\centering
@@ -1100,12 +1107,10 @@ Según los diseños observados en las plantas de tratamiento, se deduce que su est
 				\label{fig-multiplexbase}
 			\end{figure}
 
-		\section{Sistemas Holónicos de Producción}
+		\section{Unidades Holónicas de Producción}
 		\label{sec-uph}
-
-			\subsection{Descripción del conocimiento de la UHP}
 			
-Según lo descrito en \cite{chacon2019a}, cada Unidad de Producción (UP) tiene su propio comportamiento, y el comportamiento global proviene de la composición de los comportamientos locales. Para construir un enfoque integrado de automatización es necesario contar con modelos que cubran \citep{perez2015a}:
+En \cite{chacon2019a}, cada Unidad de Producción (UP) tiene su propio comportamiento, y el comportamiento global proviene de la composición de los comportamientos locales. Para construir un enfoque integrado de automatización es necesario contar con modelos que cubran \citep{perez2015a}:
 
 				\begin{itemize}
 					\item[$-$]	Modelos de Producción, que consta de modelos de producto y modelos de proceso para cada etapa del modelo de producto.
@@ -1166,13 +1171,13 @@ En la Figura \ref{fig-uphmodel} se muestra la arquitectura de modelos requeridos
 			\begin{figure}
 				\centering
 				\includegraphics[scale=0.4]{figures/2uphmodel}
-				\caption{Arquitectura de modelo para ge1melo digital de HPU, comportamiento físico.}
+				\caption{Arquitectura de modelos para gemelo digital de HPU.}
 				\label{fig-uphmodel}
 			\end{figure}
 
 En el caso estudiado, la sincronización (cooperación entre unidades) procede físicamente por los flujos de salida que son entradas a otras unidades, por lo que se realiza una extensión de la dinámica híbrida definida por Lygeros.
 
-La definición dada en \cite{Lygeros2012} para un sistema dinámico híbrido general controlado, se presenta como un autómata híbrido $H$ que es un conjunto $H~=~(Q,~X,~f,~Init,~Dom,~E,~G,~R)$, donde: 
+Según la definición dada en \cite{Lygeros2012} para un sistema dinámico híbrido general controlado, se presenta como un autómata híbrido $H$ que es un conjunto $H~=~(Q,~X,~f,~Init,~Dom,~E,~G,~R)$, donde: 
 \\
 \\
  $Q~=~\{q_1,q_2,q_3.\ldots\}$ es el conjunto de \emph{estados discretos}, \\ 
@@ -1183,6 +1188,17 @@ La definición dada en \cite{Lygeros2012} para un sistema dinámico híbrido genera
  $E \subseteq Q \times Q$ es un conjunto de \emph{aristas}, \\  
  $G(\cdotp)~:~ E \mapsto 2^X$ son las \emph{condiciones de guarda}, \\
  $R(\cdotp ,\cdotp)~:~E \times X \mapsto 2^X$ es un \emph{mapa de reinicio}. \\
+ 
+ 				\subsubsection{Modelo de Comportamiento para UHP}
+ 				
+ 				\begin{enumerate}
+ 					\item  Se establece el modelo físico de cada componente de la unidad (elementos físicos, infraestuctura, flujo de producto, etc)
+ 					\item  Se establece el modelo imagen del comportamiento y operación de cada componente.
+ 					\item  $1.$ y $2.$ establece el modelo híbrido (extensión de \cite{Lygeros2012}).
+ 					\item  Se obtiene el modelo de gestión como la composición particular de los modelos imagen de cada componente.
+ 				\end{enumerate}
+ 				
+El modelo de comportamiento de la UHP es el utilizado en el Gemelo Digital de la unidad.
  
 Para el desarrollo de los modelos híbridos se utilizan ecuaciones con dinámicas continuas que describan partes del proceso y en el caso de estudio se utilizan redes de Petri para los eventos discretos.
 
@@ -1274,13 +1290,17 @@ $q$ caudal ($m^{3}/s$). \\
 
 Dentro de las opciones que ofrece Epanet se encuentra el EPANET-Matlab Toolkit, un software de código abierto desarrollado por el KIOS Research Center for Intelligent Systems and Networks de la Universidad de Chipre, que opera en el entorno MATLAB, proporcionando una interfaz de programación para la última versión de EPANET. El Toolkit incluye comandos fáciles de usar para visualizar, modificar, simular y trazar los resultados producidos por las bibliotecas de EPANET \citep{eliades2016epanet}.
 
+En este trabajo Epanet es utilizado para emular el comportamiento físico (modelo, más adquisición de datos de campo), asociados al modelo de comportamiento usado por el gemelo digital.
+
 		\section{MATLAB}
 		
 MATLAB (MATrix LABoratory) es un sistema de cómputo numérico, líder en desarrollo de software para cáculo técnico, dirigido especialmente a ingenieros y científicos en el sector industrial/empresarial \citep{mathworksNA}. Ofrece un entorno de desarrollo integrado con lenguaje de programación propio.
 
 Es un programa apto para el manejo de algoritmos, matrices, representación de datos y funciones, e incluso permite la comunicación con otros programas (como es el caso de el Toolkit-Epanet) y otros dispositivos de hardware.
+
+En este trabajo MATLAB es usado con doble proposito. El primero es usarlo como emulador de sistemas a eventos discretos, modelo imagen del comportamiento y gestión de una unidad de producción. El segundo, es usarlo como interfase para  interactuar con Epanet en el establecimiento del modelo híbrido de la unidad para el gemelo digital.
 		
-	\chapter{Consideraciones Operativas para las UHP en Potabilización}
+	\chapter{Modelado de las UHP en Potabilización}
 	
 La propuesta del gemelo digital contempla la determinación de las condiciones del modelo de flujo de producto para cada unidad, no está determinado el modelo de infraestructura y equipos.
 
@@ -1308,14 +1328,14 @@ El proceso de potabilización se compone de unidades cuyo flujo de producto es co
 								$T_{m}$  & Mantenimiento                     \\ \hline
 								$T_{sm}$ & Fin de secuencia de mantenimiento \\ \hline
 						\end{tabular}
-						\caption{Estados y eventos generales de la unidad.}
+						\caption{Estados y eventos generales de una unidad.}
 						\label{table-unitstatesrdp}
 					\end{center}
 				\end{table}
 				\begin{figure}[H]
 					\centering
 					\includegraphics[scale=0.5]{figures/3unitstatesrdp}
-					\caption{Estados generales de la unidad.}
+					\caption{Estados generales de una unidad.}
 					\label{fig-unitstatesrdp}
 				\end{figure}
 				
@@ -1330,7 +1350,7 @@ El arranque en condición normal, en general, debe cuidar principalmente que el c
 		\resizebox{15,5cm}{!} {
 			\begin{tabular}{|p{3cm}|p{3,7cm}|p{6cm}|p{4cm}|}
 				\hline
-				\multirow{2}{1cm}{\textbf{Condición}} & \multicolumn{3}{c|}{\textbf{Modelos de Conocimiento}} \\
+				\multirow{2}{1cm}{\textbf{Condición}} & \multicolumn{3}{c|}{\textbf{Condiciones Operativas}} \\
 				\cline{2-4}
 				& \centering{\textbf{Flujo}} & \centering{\textbf{Recursos}} & \textbf{\centering{Proceso}} \\
 				\hline \hline
@@ -1339,7 +1359,7 @@ El arranque en condición normal, en general, debe cuidar principalmente que el c
 				\textbf{Falla} & $Q_{i} \approx 0$ & Compuertas bloqueadas, con interrupción considerable de flujo. & \\ \hline
 			\end{tabular}
 		}
-		\caption{Modo de Arranque para Coagulación.}
+		\caption{Modo de Operación en Arranque para Coagulación.}
 		\label{table-Acoag}
 	\end{center}
 \end{table}
@@ -1353,7 +1373,7 @@ Si la unidad se encuentra operando en degradado debido a calidad de agua, el lab
 		\resizebox{15,5cm}{!} {
 			\begin{tabular}{|p{3cm}|p{3,7cm}|p{5,25cm}|p{5,25cm}|}
 				\hline
-				\multirow{2}{1cm}{\textbf{Condición}} & \multicolumn{3}{c|}{\textbf{Modelos de Conocimiento}} \\
+				\multirow{2}{1cm}{\textbf{Condición}} & \multicolumn{3}{c|}{\textbf{Condiciones Operativas}} \\
 				\cline{2-4}
 				& \centering{\textbf{Flujo}} & \centering{\textbf{Recursos}} & \textbf{\centering{Proceso}} \\
 				\hline \hline
@@ -1387,7 +1407,7 @@ El arranque normal de la unidad de floculación debe contar con un nivel de agua 
 		\resizebox{15,5cm}{!} {
 			\begin{tabular}{|p{3cm}|p{4,5cm}|p{5cm}|p{4,25cm}|}
 				\hline
-				\multirow{2}{1cm}{\textbf{Condición}} & \multicolumn{3}{c|}{\textbf{Modelos de Conocimiento}} \\
+				\multirow{2}{1cm}{\textbf{Condición}} & \multicolumn{3}{c|}{\textbf{Condiciones Operativas}} \\
 				\cline{2-4}
 				& \centering{\textbf{Flujo}} & \centering{\textbf{Recursos}} & \textbf{\centering{Proceso}} \\
 				\hline \hline
@@ -1396,7 +1416,7 @@ El arranque normal de la unidad de floculación debe contar con un nivel de agua 
 				\textbf{Falla} & $Q_{i} \approx 0$ \par Nivel de agua por debajo del rango de operación. & Compuertas bloqueadas, impidiendo paso de agua. & \\ \hline
 			\end{tabular}
 		}
-		\caption{Modo de Arranque para Floculación.}
+		\caption{Modo de Operación en Arranque para Floculación.}
 		\label{table-Afloc}
 	\end{center}
 \end{table}
@@ -1408,7 +1428,7 @@ La unidad de floculación en operación debe cuidar la mezcla de la masa de agua, 
 		\resizebox{15,5cm}{!} {
 			\begin{tabular}{|p{3cm}|p{3,7cm}|p{5,25cm}|p{5,25cm}|}
 				\hline
-				\multirow{2}{1cm}{\textbf{Condición}} & \multicolumn{3}{c|}{\textbf{Modelos de Conocimiento}} \\
+				\multirow{2}{1cm}{\textbf{Condición}} & \multicolumn{3}{c|}{\textbf{Condiciones Operativas}} \\
 				\cline{2-4}
 				& \centering{\textbf{Flujo}} & \centering{\textbf{Recursos}} & \textbf{\centering{Proceso}} \\
 				\hline \hline
@@ -1450,7 +1470,7 @@ En la tabla \ref{table-Asediment} se describen las condiciones de arranque de la
 		\resizebox{15,5cm}{!} {
 			\begin{tabular}{|p{3cm}|p{3,7cm}|p{5,25cm}|p{5,25cm}|}
 				\hline
-				\multirow{2}{1cm}{\textbf{Condición}} & \multicolumn{3}{c|}{\textbf{Modelos de Conocimiento}} \\
+				\multirow{2}{1cm}{\textbf{Condición}} & \multicolumn{3}{c|}{\textbf{Condiciones Operativas}} \\
 				\cline{2-4}
 				& \centering{\textbf{Flujo}} & \centering{\textbf{Recursos}} & \textbf{\centering{Proceso}} \\
 				\hline \hline
@@ -1459,7 +1479,7 @@ En la tabla \ref{table-Asediment} se describen las condiciones de arranque de la
 				\textbf{Falla} & $Q_{i} \approx 0$ \par Nivel de agua por debajo de las láminas de sedimentación. & Compuertas en falla, con obstrucción del flujo. &  \\ \hline
 			\end{tabular}
 		}
-		\caption{Modo de Arranque para Sedimentación.}
+		\caption{Modo de Operación en Arranque para Sedimentación.}
 		\label{table-Asediment}
 	\end{center}
 \end{table}
@@ -1489,7 +1509,7 @@ En la tabla \ref{table-Osediment} se describen las condiciones de operación de l
 		\resizebox{15,5cm}{!} {
 			\begin{tabular}{|p{3cm}|p{3,7cm}|p{5,25cm}|p{5,25cm}|}
 				\hline
-				\multirow{2}{1cm}{\textbf{Condición}} & \multicolumn{3}{c|}{\textbf{Modelos de Conocimiento}} \\
+				\multirow{2}{1cm}{\textbf{Condición}} & \multicolumn{3}{c|}{\textbf{Condiciones Operativas}} \\
 				\cline{2-4}
 				& \centering{\textbf{Flujo}} & \centering{\textbf{Recursos}} & \textbf{\centering{Proceso}} \\
 				\hline \hline
@@ -1529,7 +1549,7 @@ En la tabla \ref{table-Afilt} se describen las condiciones de arranque de la uni
 		\resizebox{15,5cm}{!} {
 			\begin{tabular}{|p{3cm}|p{3,7cm}|p{5,25cm}|p{5,25cm}|}
 				\hline
-				\multirow{2}{1cm}{\textbf{Condición}} & \multicolumn{3}{c|}{\textbf{Modelos de Conocimiento}} \\
+				\multirow{2}{1cm}{\textbf{Condición}} & \multicolumn{3}{c|}{\textbf{Condiciones Operativas}} \\
 				\cline{2-4}
 				& \centering{\textbf{Flujo}} & \centering{\textbf{Recursos}} & \textbf{\centering{Proceso}} \\
 				\hline \hline
@@ -1538,7 +1558,7 @@ En la tabla \ref{table-Afilt} se describen las condiciones de arranque de la uni
 				\textbf{Falla} & $Q_{i} \approx 0$ & Bloqueo de compuertas, con interrupción de flujo. \par Imposibilidad para realizar el retrolavado, falla en el sistema de bombeo. & \\ \hline
 			\end{tabular}
 		}
-		\caption{Modo de Arranque para Filtración.}
+		\caption{Modo de Operación en Arranque para Filtración.}
 		\label{table-Afilt}
 	\end{center}
 \end{table}
@@ -1565,7 +1585,7 @@ En la tabla \ref{table-Ofilt} se detallan las condiciones para la operación de l
 		\resizebox{15,5cm}{!} {
 			\begin{tabular}{|p{3cm}|p{3,7cm}|p{5,25cm}|p{5,25cm}|}
 				\hline
-				\multirow{2}{1cm}{\textbf{Condición}} & \multicolumn{3}{c|}{\textbf{Modelos de Conocimiento}} \\
+				\multirow{2}{1cm}{\textbf{Condición}} & \multicolumn{3}{c|}{\textbf{Condiciones Operativas}} \\
 				\cline{2-4}
 				& \centering{\textbf{Flujo}} & \centering{\textbf{Recursos}} & \textbf{\centering{Proceso}} \\
 				\hline \hline
@@ -1598,7 +1618,7 @@ El arranque adecuado de la unidad de desinfección debe cuidar el funcionamiento 
 		\resizebox{15,5cm}{!} {
 			\begin{tabular}{|p{3cm}|p{3,7cm}|p{5,25cm}|p{5,25cm}|}
 				\hline
-				\multirow{2}{1cm}{\textbf{Condición}} & \multicolumn{3}{c|}{\textbf{Modelos de Conocimiento}} \\
+				\multirow{2}{1cm}{\textbf{Condición}} & \multicolumn{3}{c|}{\textbf{Condiciones Operativas}} \\
 				\cline{2-4}
 				& \centering{\textbf{Flujo}} & \centering{\textbf{Recursos}} & \textbf{\centering{Proceso}} \\
 				\hline \hline
@@ -1607,7 +1627,7 @@ El arranque adecuado de la unidad de desinfección debe cuidar el funcionamiento 
 				\textbf{Falla} & $Q_{i} \approx 0$ \par Nivel de agua por debajo del rango de operación. & Compuertas en falla, bloqueo del flujo de agua. & \\ \hline
 			\end{tabular}
 		}
-		\caption{Modo de Arranque para Desinfección.}
+		\caption{Modo de Operación en Arranque para Desinfección.}
 		\label{table-Adesinf}
 	\end{center}
 \end{table}
@@ -1619,7 +1639,7 @@ La operación en desinfección debe mantenerse informada de las cualidades química
 		\resizebox{15,5cm}{!} {
 			\begin{tabular}{|p{3cm}|p{3,7cm}|p{5,25cm}|p{5,25cm}|}
 				\hline
-				\multirow{2}{1cm}{\textbf{Condición}} & \multicolumn{3}{c|}{\textbf{Modelos de Conocimiento}} \\
+				\multirow{2}{1cm}{\textbf{Condición}} & \multicolumn{3}{c|}{\textbf{Condiciones Operativas}} \\
 				\cline{2-4}
 				& \centering{\textbf{Flujo}} & \centering{\textbf{Recursos}} & \textbf{\centering{Proceso}} \\
 				\hline \hline
@@ -1647,12 +1667,12 @@ Para llevar a cabo la parada de la unidad se debe cerrar la compuerta de entrada
 		
 Según lo descrito previamente para UHP, el modelo de conocimiento incluye modelos continuos que rigen el proceso físico y discretos que contienen las transiciones entre tales modelos, dependiendo de las condiciones dadas.
 
-Así, una de las configuraciones para las unidades particulares es el modelado de un tanque, cuya dinámica continua es de la forma:
+Así, una de las configuraciones para las unidades particulares es el modelado de un tanque, cuya dinámica continua y operacional es dada por:
 
 Dado,
 \begin{equation}
 \begin{array}{l}
-H
+H \\
 q_{s} = Q_{2}Cd\sqrt{2gh}	\\
 q_{i} = \Phi \\
 q_{o} = \left\lbrace
@@ -1689,7 +1709,7 @@ Se desglosan las condiciones de operación del tanque,
  \end{equation}
  
  Donde, $V_{1} = V_{2} = 1$	\\
- 
+ \\
  $A$ es el área	\\
  $V$ son las válvulas	\\
  $q_{i}$ es el caudal de entrada	\\
@@ -1725,7 +1745,7 @@ Se desglosan las condiciones de operación del tanque,
 			\begin{figure}[H]
 				\centering
 				\includegraphics[scale=0.6]{figures/4qirdp}
-				\caption{Estado del caudal de entrada a sedimentación.}
+				\caption{Modelo en RdP del caudal de entrada a sedimentación.}
 				\label{fig-qirdp}
 			\end{figure}
  
@@ -1754,7 +1774,7 @@ Se desglosan las condiciones de operación del tanque,
 			\begin{figure}[H]
 				\centering
 				\includegraphics[scale=0.7]{figures/4hrdp}
-				\caption{Estado de la altura del agua en el tanque.}
+				\caption{Modelo en RdP de la altura del agua en el tanque.}
 				\label{fig-hrdp}
 			\end{figure}
 			
@@ -1785,7 +1805,7 @@ Se desglosan las condiciones de operación del tanque,
 			\begin{figure}[H]
 				\centering
 				\includegraphics[scale=0.7]{figures/4tankrdp}
-				\caption{Estado del tanque.}
+				\caption{Modelo en RdP del estado del tanque.}
 				\label{fig-tankrdp}
 			\end{figure}
 			
@@ -1814,7 +1834,7 @@ Se desglosan las condiciones de operación del tanque,
 			\begin{figure}[H]
 				\centering
 				\includegraphics[scale=0.7]{figures/4valverdp}
-				\caption{Estado de la compuerta.}
+				\caption{Modelo en RdP de la compuerta.}
 				\label{fig-valverdp}
 			\end{figure}
 			
@@ -1845,7 +1865,7 @@ Se desglosan las condiciones de operación del tanque,
 	\begin{figure}[H]
 		\centering
 		\includegraphics{figures/4NTUrdp}
-		\caption{Estado de la turbidez en coagulación.}
+		\caption{Modelo en RdP de la turbidez en el agua cruda.}
 		\label{fig-nturdp}
 	\end{figure}
 	
@@ -1870,7 +1890,7 @@ Se desglosan las condiciones de operación del tanque,
 	\begin{figure}[H]
 		\centering
 		\includegraphics{figures/3coagulantbase}
-		\caption{Estado de dosificación.}
+		\caption{Modelo en RdP de la dosificación de químicos.}
 		\label{fig-coagulantrdp}
 	\end{figure}
 			
@@ -1905,9 +1925,9 @@ Se desglosan las condiciones de operación del tanque,
 	
 		\section{Propuesta de Medición}
 		
-		Parte de la propuesta se trata de incluir mediciones en planta que no se tienen actualmente, y son necesarias para el seguimiento y evalución del proceso. En ese sentido, se adjunta un diagrama con intrumentación mínima de indicadores requeridos para obtener los valores en tiempo real, figura \ref{fig-multiplex}. Así, es posible conocer el estado de calidad de agua, o una aproximación, durante todo el proceso de tratamiento, permitiendo identificar valores fuera de los rangos adecuados, en condición degradada por ejemplo, que ameriten revisión de alguna unidad.
+		Parte de la propuesta se trata de incluir mediciones en planta que no se tienen actualmente, y son necesarias para el seguimiento y evalución del proceso; en la figura \ref{fig-multiplexbase} se hace referencia a las mediciones presentes generalmente en una planta de tratamiento, en el caso de Jáuregui, las mediciones se restringen a turbidez y color en la entrada a la planta, caudal de agua en la salida de filtros y turbidez y cloro residual al finalizar el proceso de tratamiento. Con el fin de incluir mediciones faltantes, se adjunta un diagrama con intrumentación mínima de indicadores requeridos para obtener los valores en tiempo real, figura \ref{fig-multiplex}. Así, es posible conocer el estado de calidad de agua, o una aproximación, durante todo el proceso de tratamiento, permitiendo identificar valores fuera de los rangos adecuados, en condición degradada por ejemplo, que ameriten revisión de alguna unidad. Los indicadores faltantes se señalan en color rojo; son añadidos indicadores de caudal, pH, turbidez, temperatura y color para las características del flujo, y de nivel de agua para los tanques.
 		
-		La eficiencia de los modelos dependerá de la precisión de los datos obtenidos en planta; si la medición realizada tiene un amplio margen de error, los modelos contenidos en el gemelo digital no serán fieles al comportamiento real.
+		La eficiencia de los modelos dependerá de la precisión de los datos obtenidos en planta; si la medición realizada tiene un amplio margen de error, los modelos contenidos en el gemelo digital no serán fieles al comportamiento real. 
 		
 			\begin{figure}
 				\centering
@@ -2091,7 +2111,7 @@ Los modelos discretos que rigen la unidad de coagulación, desarrollados de forma
 			\begin{figure}[H]
 				\centering
 				\includegraphics[scale=0.9]{figures/4coagcomprdp}
-				\caption{Red de petri de la unidad de coagulación.}
+				\caption{Modelo de Gestión en RdP de la unidad de coagulación.}
 				\label{fig-nturdp}
 			\end{figure}
 			
@@ -2159,7 +2179,7 @@ Los modelos discretos de la unidad de sedimentación se basan en los desarrollado
 			\begin{figure}[H]
 				\centering
 				\includegraphics[scale=0.4]{figures/4sedimentcomprdp}
-				\caption{Red de petri de la unidad de sedimentación.}
+				\caption{Modelo de Gestión en RdP de la unidad de sedimentación.}
 				\label{fig-sedimentcomprdp}
 			\end{figure}
 			
@@ -2203,12 +2223,12 @@ Se establecen los parámetros iniciales de caudal y se selecciona el conjunto de 
 			
 			\paragraph{Escenario 2:}
 			
-			Siguiendo los modelos de la unidad de coagulación descritos previamente, se propone un escenario donde la turbidez cubra un rango entre $1 NTU$ y $99 NTU$, de manera que se añada coagulante al proceso y los sedimentadores se colmaten más rapidamente (figura \ref{fig-scennormaldosis}).
+			Siguiendo los modelos de la unidad de coagulación descritos previamente, se propone un escenario donde la turbidez cubra un rango entre $1 NTU$ y $99 NTU$, de manera que se añada coagulante al proceso y los sedimentadores se colmaten más rápidamente (figura \ref{fig-scennormaldosis}).
 			En este caso el nivel máximo de turbidez se ubica en $53 NTU$ con un color de $120 UC$, con la inclusión de algunos valores de turbidez por debajo de $12 NTU$, el sedimentador se colmata a las $64,92$ horas, aproximadamente 3 días y 14 horas de funcionamiento.
 			
 			\paragraph{Escenario 3:}
 			
-			Para el tercer escenario se supuso la entrada de agua con turbidez alta durante todo un día, esto para corroborar que en un caso dado el sedimentador cumpla con la descarga de lodos. Se utilizaron los datos superiores a $95 NTU$ de la planta real, tomados cpmo combinación de los conjuntos de datos iniciales. (figura \ref{fig-deg2scen})
+			Para el tercer escenario se supuso la entrada de agua con turbidez alta durante todo un día, esto para corroborar que en un caso dado el sedimentador cumpla con la descarga de lodos. Se utilizaron los datos superiores a $95 NTU$ de la planta real, tomados como combinación de los conjuntos de datos iniciales. (figura \ref{fig-deg2scen})
 			Con un nivel máximo de turbidez de $1500 NTU$ y $9000 UC$, la dosis de coagulante suministrada es de $252,8 kg/h$ en la primera unidad, alcanzando que el sedimentador se colmate a las $24,38$ horas, aproximadamente 1 día y 10 horas.
 			
 			\begin{figure}[H]
@@ -2266,21 +2286,15 @@ Se establecen los parámetros iniciales de caudal y se selecciona el conjunto de 
 
 	\chapter{Conclusiones y Recomendaciones}
 	
-	Se determinaron los modelos de comportamiento de la unidad de potabilización.
+	El uso del enfoque de Unidad Holónica de Producción, da un marco de referencia para determinar el modelo de comportamiento de la unidad basado en una extensión del modelo de \cite{Lygeros2012}, que corresponde con el Gemelo Digital de la Unidad. Esto es, indistintamente del tipo de método de modelado o del modelo físico usado en el esquema híbrido presentado, se puede generar el estado de la unidad. 
 	
-	Se establecieron condiciones de unión de los modelos obtenidos desde el punto de vista de eventos discretos.
-	
-	Se generó un modelo de comportamiento general desde la visión de sistemas híbridos.
-	
-	Se realizó la implementación de los modelos obtenidos para dos unidades del proceso, en un ambiente de simulación.
-	
-	Se establecieron condiciones generales para desarrollar un gemelo digital del proceso e incorporarlas al ambiente de simulación. Esto incluye la propuesta de mejoría en la infraestructura de automatización (sensores, actuadores, mediante PLC, SCADA), requerida  para obtener y hacer seguimiento del comportamiento en planta para el ajuste de los modelos.
-	
-	Se debe destacar la relevancia de los modelos al momento de proponer un gemelo digital; es en ellos donde se almacena todo el conocimiento del proceso, lo que da pie a que se tomen decisiones basadas en condiciones, en pro de la eficiencia de la producción. La obtención de los modelos de cada unidad es clave para generar un gemelo digital del proceso de potabilización, así como también las mediciones en línea.
+	Se aplicó el marco de referencia para obtener el modelo de comportamiento para las unidades de coagulación y sedimentación en el proceso de potabilización, mostrando su desempeño en una emulación realizada sobre Epanet-Matlab. Con esto se dan por cumplidos los objetivos propuestos.
+
+	Es fundamental en la digitalización de la empresa el contar con modelos de comportamiento, ya que ese es el soporte para realizar la gestión (planificación/programación/ejecución/seguimiento del porceso a partir de la cordinación y supervisión de unidades, basado en el modelo de producto, modelo de proceso y modelos de recurso, segun el enfoque de UHP).
 	
 	La implementación de un gemelo digital permite la planificación de modificaciones en la unidad, el seguimiento del comportamiento y gestión en la misma, y el uso de los datos obtenidos para programación y evaluación.
 	
-	Se recomienda realizar la medición de la temperatura del flujo, debido a que es un parámetro influyente al momento de añadir químicos a un flujo. Conociendo el valor es posible que el modelo de dosificación de coagulante se ajuste mejor al proceso.
+	Como se muestra en la figura \ref{fig-multiplex}, se recomienda la medición de caudal, pH, turbidez, temperatura y color, al iniciar y culminar el proceso, mediciones de turbidez durante el proceso de tratamiento y nivel de agua en los tanques. Esto con el fin de poder obenter los modelos respectivos de comportamiento para cada unidad. En el caso de la unidad de coagulación podrían realizarse también mediciones de conductividad de agua, de esta manera desarrollar un modelo dinámico para la dosificación que esté más cerca del punto óptimo de coagulante.
 	
 	\chapter{Anexos}
 	

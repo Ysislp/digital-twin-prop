@@ -20,17 +20,17 @@
 \contentsline {section}{\numberline {2.4}Modelo de Conocimiento}{15}{section.2.4}
 \contentsline {section}{\numberline {2.5}Modelo H\IeC {\'\i }brido}{17}{section.2.5}
 \contentsline {section}{\numberline {2.6}Hidrol\'ogicas}{18}{section.2.6}
-\contentsline {subsection}{\numberline {2.6.1}\'Areas de Negocio}{18}{subsection.2.6.1}
+\contentsline {subsection}{\numberline {2.6.1}\'Areas de Negocio}{19}{subsection.2.6.1}
 \contentsline {subsubsection}{\numberline {2.6.1.1}Estudio de fuentes y caracterizaci\'on de la demanda}{19}{subsubsection.2.6.1.1}
-\contentsline {subsubsection}{\numberline {2.6.1.2}Operaci\'on}{19}{subsubsection.2.6.1.2}
-\contentsline {subsubsection}{\numberline {2.6.1.3}Comercializaci\'on}{20}{subsubsection.2.6.1.3}
+\contentsline {subsubsection}{\numberline {2.6.1.2}Operaci\'on}{20}{subsubsection.2.6.1.2}
+\contentsline {subsubsection}{\numberline {2.6.1.3}Comercializaci\'on}{21}{subsubsection.2.6.1.3}
 \contentsline {subsubsection}{\numberline {2.6.1.4}\'Areas de Soporte}{21}{subsubsection.2.6.1.4}
 \contentsline {subsection}{\numberline {2.6.2}Cadena de Valor de cada \'Area de Negocio}{22}{subsection.2.6.2}
 \contentsline {subsubsection}{\numberline {2.6.2.1}Fuentes y Estudio de la Demanda}{22}{subsubsection.2.6.2.1}
-\contentsline {subsubsection}{\numberline {2.6.2.2}Operaciones}{22}{subsubsection.2.6.2.2}
+\contentsline {subsubsection}{\numberline {2.6.2.2}Operaciones}{23}{subsubsection.2.6.2.2}
 \contentsline {subsubsection}{\numberline {2.6.2.3}Comercial}{23}{subsubsection.2.6.2.3}
 \contentsline {subsubsection}{\numberline {2.6.2.4}Soporte}{23}{subsubsection.2.6.2.4}
-\contentsline {subsection}{\numberline {2.6.3}Esquema de Interacciones para las Hidrol\'ogicas}{23}{subsection.2.6.3}
+\contentsline {subsection}{\numberline {2.6.3}Esquema de Interacciones para las Hidrol\'ogicas}{24}{subsection.2.6.3}
 \contentsline {subsection}{\numberline {2.6.4}Modelo APS en Hidrol\'ogicas}{25}{subsection.2.6.4}
 \contentsline {section}{\numberline {2.7}Proceso de Potabilizaci\'on}{25}{section.2.7}
 \contentsline {subsection}{\numberline {2.7.1}Captaci\'on del agua}{27}{subsection.2.7.1}
@@ -47,13 +47,13 @@
 \contentsline {subsubsection}{\numberline {2.7.3.3}Sedimentaci\'on}{39}{subsubsection.2.7.3.3}
 \contentsline {subsubsection}{\numberline {2.7.3.4}Filtraci\'on}{41}{subsubsection.2.7.3.4}
 \contentsline {subsubsection}{\numberline {2.7.3.5}Desinfecci\'on}{43}{subsubsection.2.7.3.5}
-\contentsline {section}{\numberline {2.8}Sistemas Hol\'onicos de Producci\'on}{46}{section.2.8}
-\contentsline {subsection}{\numberline {2.8.1}Descripci\'on del conocimiento de la UHP}{46}{subsection.2.8.1}
-\contentsline {subsection}{\numberline {2.8.2}Din\'amica del proceso f\IeC {\'\i }sico y su supervisi\'on}{48}{subsection.2.8.2}
-\contentsline {subsection}{\numberline {2.8.3}Unidades Hol\'onicas en Hidrol\'ogicas}{52}{subsection.2.8.3}
+\contentsline {section}{\numberline {2.8}Unidades Hol\'onicas de Producci\'on}{46}{section.2.8}
+\contentsline {subsection}{\numberline {2.8.1}Din\'amica del proceso f\IeC {\'\i }sico y su supervisi\'on}{48}{subsection.2.8.1}
+\contentsline {subsubsection}{\numberline {2.8.1.1}Modelo de Comportamiento para UHP}{51}{subsubsection.2.8.1.1}
+\contentsline {subsection}{\numberline {2.8.2}Unidades Hol\'onicas en Hidrol\'ogicas}{52}{subsection.2.8.2}
 \contentsline {section}{\numberline {2.9}Epanet}{53}{section.2.9}
 \contentsline {section}{\numberline {2.10}MATLAB}{55}{section.2.10}
-\contentsline {chapter}{\numberline {3}Consideraciones Operativas para las UHP en Potabilizaci\'on}{56}{chapter.3}
+\contentsline {chapter}{\numberline {3}Modelado de las UHP en Potabilizaci\'on}{56}{chapter.3}
 \contentsline {section}{\numberline {3.1}Condiciones de Operaci\'on en Potabilizaci\'on}{56}{section.3.1}
 \contentsline {subsection}{\numberline {3.1.1}Unidad de Coagulaci\'on}{58}{subsection.3.1.1}
 \contentsline {subsection}{\numberline {3.1.2}Unidad de Floculaci\'on}{60}{subsection.3.1.2}
@@ -78,7 +78,7 @@
 \contentsline {paragraph}{Desinfecci\'on:}{79}{section*.17}
 \contentsline {section}{\numberline {4.1}Propuesta de Medici\'on}{79}{section.4.1}
 \contentsline {section}{\numberline {4.2}Generaci\'on de la Propuesta de Gemelo Digital}{80}{section.4.2}
-\contentsline {subsection}{\numberline {4.2.1}Modelo de la Unidad de Coagulaci\'on}{80}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.1}Modelo de la Unidad de Coagulaci\'on}{82}{subsection.4.2.1}
 \contentsline {subsection}{\numberline {4.2.2}Modelo de la Unidad de Sedimentaci\'on}{87}{subsection.4.2.2}
 \contentsline {section}{\numberline {4.3}Escenarios de Prueba}{90}{section.4.3}
 \contentsline {paragraph}{Escenario 1:}{91}{section*.18}
