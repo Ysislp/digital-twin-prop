@@ -6,23 +6,8 @@ function [Ti, Ci, DSA, To, Co] = loadData()
     Ti=[]; Ci=[]; DSA=[]; To=[]; Co=[];
     i = 1;
     
-    % degradado
-    % rr=[1 2 1 2];
-    % falla
-    %x = load('falla');
-    %rr = [3 5 3 5];
-    
     while i < 5
         r = randi([1 6],1,1)
-        %ideal
-        %r = 4;
-        %degradado y falla
-        %r = rr(i);
-        
-%         %falla
-%         Ti = x.Ti;
-%         Ci = x.Ci;
-%         DSA = x.DSA;
         
         if i==1
             x = data(r);
@@ -42,3 +27,28 @@ function [Ti, Ci, DSA, To, Co] = loadData()
         i = i+1;
     end
 end
+
+
+
+
+
+
+
+
+
+% degradado
+    % rr=[1 2 1 2];
+    % falla
+    %x = load('falla');
+    %rr = [3 5 3 5];
+    
+    %en el while
+    %ideal
+        %r = 4;
+        %degradado y falla
+        %r = rr(i);
+        
+%         %falla
+%         Ti = x.Ti;
+%         Ci = x.Ci;
+%         DSA = x.DSA;

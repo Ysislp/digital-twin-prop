@@ -63,11 +63,11 @@
 \contentsline {section}{\numberline {3.2}Modelos Generales de las Entidades}{71}{section.3.2}
 \contentsline {paragraph}{Condici\'on Normal:}{71}{section*.4}
 \contentsline {paragraph}{Condici\'on de desborde:}{71}{section*.5}
-\contentsline {paragraph}{Condici\'on sin agua:}{71}{section*.6}
+\contentsline {paragraph}{Condici\'on sin agua:}{72}{section*.6}
 \contentsline {paragraph}{Caudal:}{72}{section*.7}
 \contentsline {paragraph}{Altura del Tanque:}{73}{section*.8}
-\contentsline {paragraph}{Estado del tanque:}{73}{section*.9}
-\contentsline {paragraph}{Estado de la compuerta:}{74}{section*.10}
+\contentsline {paragraph}{Estado del tanque:}{74}{section*.9}
+\contentsline {paragraph}{Estado de la compuerta:}{75}{section*.10}
 \contentsline {paragraph}{Calidad de agua:}{76}{section*.11}
 \contentsline {paragraph}{Dosificaci\'on de coagulante:}{76}{section*.12}
 \contentsline {chapter}{\numberline {4}Caso de Uso}{78}{chapter.4}
@@ -80,14 +80,14 @@
 \contentsline {section}{\numberline {4.2}Generaci\'on de la Propuesta de Gemelo Digital}{80}{section.4.2}
 \contentsline {subsection}{\numberline {4.2.1}Modelo de la Unidad de Coagulaci\'on}{82}{subsection.4.2.1}
 \contentsline {subsection}{\numberline {4.2.2}Modelo de la Unidad de Sedimentaci\'on}{87}{subsection.4.2.2}
-\contentsline {section}{\numberline {4.3}Escenarios de Prueba}{90}{section.4.3}
-\contentsline {paragraph}{Escenario 1:}{91}{section*.18}
+\contentsline {section}{\numberline {4.3}Escenarios de Prueba}{91}{section.4.3}
+\contentsline {paragraph}{Escenario 1:}{92}{section*.18}
 \contentsline {paragraph}{Escenario 2:}{92}{section*.19}
-\contentsline {paragraph}{Escenario 3:}{92}{section*.20}
+\contentsline {paragraph}{Escenario 3:}{93}{section*.20}
 \contentsline {paragraph}{Escenario 4:}{94}{section*.21}
-\contentsline {paragraph}{Escenario 5:}{95}{section*.22}
-\contentsline {chapter}{\numberline {5}Conclusiones y Recomendaciones}{97}{chapter.5}
-\contentsline {chapter}{\numberline {6}Anexos}{99}{chapter.6}
-\contentsline {section}{\numberline {6.1}Anexo A}{99}{section.6.1}
-\contentsline {section}{\numberline {6.2}Anexo B}{103}{section.6.2}
-\contentsline {chapter}{Bibliograf\'{\i }a}{104}{table.6.1}
+\contentsline {paragraph}{Escenario 5:}{96}{section*.22}
+\contentsline {chapter}{\numberline {5}Conclusiones y Recomendaciones}{98}{chapter.5}
+\contentsline {chapter}{\numberline {6}Anexos}{100}{chapter.6}
+\contentsline {section}{\numberline {6.1}Anexo A}{100}{section.6.1}
+\contentsline {section}{\numberline {6.2}Anexo B}{104}{section.6.2}
+\contentsline {chapter}{Bibliograf\'{\i }a}{105}{table.6.1}

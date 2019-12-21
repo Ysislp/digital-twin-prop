@@ -1170,7 +1170,7 @@ En la Figura \ref{fig-uphmodel} se muestra la arquitectura de modelos requeridos
 
 			\begin{figure}
 				\centering
-				\includegraphics[scale=0.4]{figures/2uphmodel}
+				\includegraphics[scale=0.7]{figures/2uphmodel}
 				\caption{Arquitectura de modelos para gemelo digital de HPU.}
 				\label{fig-uphmodel}
 			\end{figure}
@@ -1310,31 +1310,30 @@ El proceso de potabilización se compone de unidades cuyo flujo de producto es co
 
 				\begin{table}[H]
 					\begin{center}
-						\begin{tabular}{|l|l|}
+						\begin{tabular}{|l|l|l|l|}
 							\hline
-								\multicolumn{2}{|l|}{\textbf{Estados}}       \\ \hline
-								$L_{0}$  & Unidad disponible                 \\ \hline
-								$L_{a}$  & Unidad en arranque                \\ \hline
-								$L_{n}$  & Condición normal                  \\ \hline
-								$L_{d}$  & Condición degradada               \\ \hline
-								$L_{f}$  & Condición de falla                \\ \hline
-								$L_{m}$  & Mantenimiento de la unidad        \\ \hline
-								\multicolumn{2}{|l|}{\textbf{Eventos}}       \\ \hline
-								$T_{0}$  & Inicio                            \\ \hline
-								$T_{sa}$ & Fin de secuencia de arranque      \\ \hline
-								$T_{n}$  & Modo normal                       \\ \hline
-								$T_{d}$  & Modo degradado                    \\ \hline
-								$T_{f}$  & Modo falla                        \\ \hline
-								$T_{m}$  & Mantenimiento                     \\ \hline
-								$T_{sm}$ & Fin de secuencia de mantenimiento \\ \hline
+							\multicolumn{2}{|l|}{\textbf{Estados}} & \multicolumn{2}{l|}{\textbf{Eventos}} \\ \hline
+							$L_{0}$ & Unidad disponible & $T_{0}$ & Disponible \\ \hline
+							$L_{a}$ & Unidad en arranque & $T_{a}$ & Modo arranque \\ \hline
+							$L_{n}$ & Unidad en condición normal & $T_{sa}$ & Fin de secuencia de arranque \\ \hline
+							$L_{d}$ & Unidad en degradado & $T_{af}$ & Modo falla desde arranque \\ \hline
+							$L_{f}$ & Unidad en falla & $T_{n}$ & Modo normal \\ \hline
+							$L_{m}$ & Unidad en mantenimiento & $T_{nf}$ & Modo falla \\ \hline
+							- & - & $T_{d}$ & Modo degradado \\ \hline
+							- & - & $T_{f}$ & Modo falla desde degradado \\ \hline
+							- & - & $T_{nm}$ & De condición normal a mantenimiento \\ \hline
+							- & - & $T_{dm}$ & De degradado a mantenimiento \\ \hline
+							- & - & $T_{fm}$ & De falla a mantenimiento \\ \hline
+							- & - & $T_{sm}$ & Fin de secuencia de mantenimiento \\ \hline
 						\end{tabular}
 						\caption{Estados y eventos generales de una unidad.}
 						\label{table-unitstatesrdp}
 					\end{center}
 				\end{table}
+				
 				\begin{figure}[H]
 					\centering
-					\includegraphics[scale=0.5]{figures/3unitstatesrdp}
+					\includegraphics[scale=0.7]{figures/3unitstatesrdp}
 					\caption{Estados generales de una unidad.}
 					\label{fig-unitstatesrdp}
 				\end{figure}
@@ -1724,19 +1723,16 @@ Se desglosan las condiciones de operación del tanque,
  
  			\begin{table}[H]
 				\begin{center}
-					\resizebox{5cm}{!} {
-					\begin{tabular}{|l|l|}
-					\hline
-					\multicolumn{2}{|l|}{\textbf{Estados}}     \\ \hline
-					$L_{a}$ & Caudal de operación              \\ \hline
-					$L_{b}$ & Caudal en degradado              \\ \hline
-					$L_{c}$ & Caudal en falla                  \\ \hline
-					\multicolumn{2}{|l|}{\textbf{Eventos}}     \\ \hline
-					$T_{a}$ & Cadal normal \\ \hline
-					$T_{b}$ & Caudal en degradado                 \\ \hline
-					$T_{c}$ & Caudal en falla                \\ \hline
+					\begin{tabular}{|l|l|l|l|}
+						\hline
+						\multicolumn{2}{|l|}{\textbf{Estados}} & \multicolumn{2}{l|}{\textbf{Eventos}} \\ \hline
+						$L_{0}$ & Sin caudal & $T_{0}$ & Sin caudal \\ \hline
+						$L_{o}$ & Caudal de operación & $T_{o}$ & Modo operación \\ \hline
+						$L_{d}$ & Caudal en degradado & $T_{od}$ & De operación normal a degradado \\ \hline
+						$L_{f}$ & Caudal en falla & $T_{do}$ & De degradado a operación normal \\ \hline
+						- & - & $T_{f}$ & Modo falla \\ \hline
+						- & - & $T_{fd}$ & De falla a degradado \\ \hline
 					\end{tabular}
-					}
 					\caption{Estados y eventos del caudal.}
 					\label{table-qirdp}
 				\end{center}
@@ -1744,7 +1740,7 @@ Se desglosan las condiciones de operación del tanque,
 	
 			\begin{figure}[H]
 				\centering
-				\includegraphics[scale=0.6]{figures/4qirdp}
+				\includegraphics[scale=0.9]{figures/4qirdp}
 				\caption{Modelo en RdP del caudal de entrada a sedimentación.}
 				\label{fig-qirdp}
 			\end{figure}
@@ -1753,18 +1749,15 @@ Se desglosan las condiciones de operación del tanque,
  
  			\begin{table}[H]
 				\begin{center}
-					\begin{tabular}{|l|l|}
-					\hline
-					\multicolumn{2}{|l|}{\textbf{Estados}} \\ \hline
-					$L_{x}$  & Altura máxima               \\ \hline
-					$L_{o}$  & Altura de operación         \\ \hline
-					$L_{v}$  & Altura en vacío             \\ \hline
-					$L_{m}$  & Altura mínima               \\ \hline
-					\multicolumn{2}{|l|}{\textbf{Eventos}} \\ \hline
-					$T_{x}$  & $h > h_{max}$                \\ \hline
-					$T_{o}$  & $h_opmin \leq h \leq h_opmax$ \\ \hline
-					$T_{v}$  & $h_min < h < h_opmin$       \\ \hline
-					$T_{m}$  & $h \leq h_min$                 \\ \hline
+					\begin{tabular}{|l|l|l|l|}
+						\hline
+						\multicolumn{2}{|l|}{\textbf{Estados}} & \multicolumn{2}{l|}{\textbf{Eventos}} \\ \hline
+						$L_{x}$ & Altura máxima & $T_{x}$ & Desborde \\ \hline
+						$L_{o}$ & Altura de operación & $T_{xo}$ & Modo operación \\ \hline
+						$L_{v}$ & Altura en vacío & $T_{ov}$ & De operación a vacío \\ \hline
+						$L_{m}$ & Altura mínima & $T_{vo}$ & De vacío a operación \\ \hline
+						- & - & $T_{m}$ & Altura mínima \\ \hline
+						- & - & $T_{mv}$ & De mínimo a vacío \\ \hline
 					\end{tabular}
 					\caption{Estados y eventos de la altura en el tanque.}
 					\label{table-hrdp}
@@ -1773,7 +1766,7 @@ Se desglosan las condiciones de operación del tanque,
 			
 			\begin{figure}[H]
 				\centering
-				\includegraphics[scale=0.7]{figures/4hrdp}
+				\includegraphics[scale=0.9]{figures/4hrdp}
 				\caption{Modelo en RdP de la altura del agua en el tanque.}
 				\label{fig-hrdp}
 			\end{figure}
@@ -1782,20 +1775,23 @@ Se desglosan las condiciones de operación del tanque,
 			
 			\begin{table}[H]
 				\begin{center}
-					\begin{tabular}{|l|l|}
-					\hline
-					\multicolumn{2}{|l|}{\textbf{Estados}}        \\ \hline
-					$L_{o}$          & Tanque en operación        \\ \hline
-					$L_{x}$          & Tanque saturado            \\ \hline
-					$L_{v}$          & Tanque en ciclo de vacío   \\ \hline
-					$L_{m}$          & Tanque en mínimo           \\ \hline
-					$L_{l}$          & Tanque en ciclo de llenado \\ \hline
-					\textbf{Eventos} &                            \\ \hline
-					$T_{o}$          & Condiciones de operación   \\ \hline
-					$T_{x}$          & Condiciones de saturación  \\ \hline
-					$T_{v}$          & Condiciones para vaciar    \\ \hline
-					$T_{m}$          & Condiciones de mínimo      \\ \hline
-					$T_{l}$          & Condiciones para llenar    \\ \hline
+					\begin{tabular}{|l|l|l|l|}
+						\hline
+						\multicolumn{2}{|l|}{\textbf{Estados}} & \multicolumn{2}{l|}{\textbf{Eventos}} \\ \hline
+						$L_{x}$ & Tanque en rango de saturación & $T_{x}$ & Tanque saturado \\ \hline
+						$L_{xv}$ & Tanque saturado vaciando & $T_{xv}$ & Tanque saturado vaciando \\ \hline
+						$L_{xl}$ & Tanque saturado llenando & $T_{xl}$ & Tanque de operación a saturado \\ \hline
+						$L_{ov}$ & Tanque en operación vaciando & $T_{xlv}$ & Tanque saturado vaciando \\ \hline
+						$L_{ol}$ & Tanque en operación llenando & $T_{xvl}$ & Tanque saturado llenando \\ \hline
+						$L_{mv}$ & Tanque en rango mínimo vaciando & $T_{ov}$ & Tanque de saturado a operación \\ \hline
+						$L_{ml}$ & Tanque en rango mínimo llenando & $T_{ol}$ & Tanque de mínimo a operación \\ \hline
+						$L_{0}$ & Tanque vacío & $T_{olv}$ & Tanque en operación vaciando \\ \hline
+						- & - & $T_{ovl}$ & Tanque en operación llenando \\ \hline
+						- & - & $T_{mv}$ & Tanque de operación a mínimo \\ \hline
+						- & - & $T_{ml}$ & Tanque de vacío a mínimo \\ \hline
+						- & - & $T_{mlv}$ & Tanque en mínimo vaciando \\ \hline
+						- & - & $T_{mvl}$ & Tanque en mínimo llenando \\ \hline
+						- & - & $T_{0}$ & Tanque vacío \\ \hline
 					\end{tabular}
 					\caption{Estados y eventos del tanque.}
 					\label{table-tankrdp}
@@ -1804,7 +1800,7 @@ Se desglosan las condiciones de operación del tanque,
 
 			\begin{figure}[H]
 				\centering
-				\includegraphics[scale=0.7]{figures/4tankrdp}
+				\includegraphics[scale=0.8]{figures/4tankrdp}
 				\caption{Modelo en RdP del estado del tanque.}
 				\label{fig-tankrdp}
 			\end{figure}
@@ -1846,16 +1842,13 @@ Se desglosan las condiciones de operación del tanque,
 	
 	\begin{table}[H]
 		\begin{center}
-			\begin{tabular}{|l|l|}
-			\hline
-			\multicolumn{2}{|l|}{\textbf{Estados}} \\ \hline
-			$L_{a}$     & Calidad alta            \\ \hline
-			$L_{b}$     & Calidad media           \\ \hline
-			$L_{c}$     & Calidad baja            \\ \hline
-			\multicolumn{2}{|l|}{\textbf{Eventos}} \\ \hline
-			$T_{a}$     & $Condiciones de calidad en rango alto$                 \\ \hline
-			$T_{b}$     & $Condiciones de calidad en rango medio$     \\ \hline
-			$T_{c}$     & $Condiciones de calidad en rango bajo$                \\ \hline
+			\begin{tabular}{|l|l|l|l|}
+				\hline
+				\multicolumn{2}{|l|}{\textbf{Estados}} & \multicolumn{2}{l|}{\textbf{Eventos}} \\ \hline
+				$L_{a}$ & Calidad alta & $T_{a}$ & Condición de calidad alta \\ \hline
+				$L_{m}$ & Calidad media & $T_{am}$ & Condición de calidad de alta a media \\ \hline
+				$L_{b}$ & Calidad baja & $T_{b}$ & Condición de calidad baja \\ \hline
+				- & - & $T_{bm}$ & Condición de calidad de baja a media \\ \hline
 			\end{tabular}
 			\caption{Estados y eventos de la turbidez.}
 			\label{table-nturdp}
@@ -2086,23 +2079,21 @@ Los modelos discretos que rigen la unidad de coagulación, desarrollados de forma
 
 			\begin{table}[H]
 				\begin{center}
-					\begin{tabular}{|l|l|}
-					\hline
-					\multicolumn{2}{|l|}{\textbf{Estados}} \\ \hline
-					$L_{a}$     & Turbidez baja            \\ \hline
-					$L_{b}$     & Turbidez media           \\ \hline
-					$L_{c}$     & Turbidez alta            \\ \hline
-					$L_{0}$  & Unidad sin dosificar             \\ \hline
-					$L_{1}$  & Unidad con dosificación          \\ \hline
-					$L_{2}$  & Unidad dosificando, en degradado \\ \hline
-					$L_{n}$  & Intercambio de información, turbidez baja, detener dosificación \\ \hline
-					$L_{nd}$  & Intercambio de información, turbidez media, iniciar dosificación \\ \hline
-					$L_{dd}$  & Intercambio de información, turbidez alta \\ \hline
-					\multicolumn{2}{|l|}{\textbf{Eventos}} \\ \hline
-					$T_{a}, T_{0}$     & $T < 12$                 \\ \hline
-					$T_{b}, T_{1}$   & $12 \leq T \leq 100$     \\ \hline
-					$T_{c}, T_{2}$     & $T > 100$                \\ \hline
+					\resizebox{16cm}{!}{
+					\begin{tabular}{|l|l|l|l|}
+						\hline
+						\multicolumn{2}{|l|}{\textbf{Estados}} & \multicolumn{2}{l|}{\textbf{Eventos}} \\ \hline
+						$L_{a}$ & Turbidez baja & $T_{a}$ & $T < 12$ \\ \hline
+						$L_{m}$ & Turbidez media & $T_{am}, T_{bm},$ & $12 \leq T \leq 100$ \\ \hline
+						$L_{b}$ & Turbidez alta & $T_{b}$ & $T > 100$ \\ \hline
+						$L_{0}$ & Unidad sin dosificar & $T_{n0}$ & Cambio de calidad a alta \\ \hline
+						$L_{1}$ & Unidad con dosificación & $T_{1}$ & Cambio de calidad a media \\ \hline
+						$L_{2}$ & Unidad dosificando, en degradado & $T_{2}$ & Cambio de calidad a baja \\ \hline
+						$L_{n}$ & Intercambio de información, turbidez baja, detener dosificación & - & - \\ \hline
+						$L_{nd}$ & Intercambio de información, turbidez media, iniciar dosificación & - & - \\ \hline
+						$L_{dd}$ & Intercambio de información, turbidez alta & - & - \\ \hline
 					\end{tabular}
+					}
 					\caption{Estados y eventos de la unidad de coagulación.}
 					\label{table-nturdp}
 				\end{center}
@@ -2154,38 +2145,61 @@ Los modelos discretos de la unidad de sedimentación se basan en los desarrollado
 
 			\begin{table}[H]
 				\begin{center}
+				\resizebox{17cm}{!}{
 					\begin{tabular}{|l|l|l|l|}
-					\hline
-					\multicolumn{2}{|l|}{\textbf{Estados}} & \multicolumn{2}{l|}{\textbf{Eventos}} \\ \hline
-					$L_{x}$ & Altura máxima & $T_{x}$ & $h > 3,40 m$ \\ \hline
-					$L_{o}$ & Altura de operación & $T_{o}$ & $3,20 m \leq h \leq 3,40 m$ \\ \hline
-					$L_{v}$ & Altura en vacío & $T_{v}$ & $2,65 m < h < 3,40 m$ \\ \hline
-					$L_{m}$ & Altura mínima & $T_{m}$ & $h \leq 2,65 m$ \\ \hline
-					$L_{o1}$ & Tanque en operación & $T_{o1}$ & Condiciones de operación \\ \hline
-					$L_{x1}$ & Tanque saturado & $T_{x1}$ & Condiciones de saturación \\ \hline
-					$L_{v1}$ & Tanque en ciclo de vacío & $T_{v1}$ & Condiciones para vaciar \\ \hline
-					$L_{m1}$ & Tanque en mínimo & $T_{m1}$ & Condiciones de mínimo \\ \hline
-					$L_{l}$ & Tanque en ciclo de llenado & $T_{l}$ & Condiciones para llenar \\ \hline
-					$L_{a}$ & Compuerta abierta & $T_{a}$ & Abrir compuerta \\ \hline
-					$L_{c}$ & Compuerta cerrada & $T_{fa}$ & Falla en apertura \\ \hline
-					- & - & $T_{c}$ & Cerrar compuerta \\ \hline
-					- & - & $T_{fc}$ & Falla en cierre \\ \hline
-					\end{tabular}
-					\caption{Estados y eventos de la altura en el tanque.}
+				\hline
+				\multicolumn{2}{|l|}{\textbf{Estados}} & \multicolumn{2}{l|}{\textbf{Eventos}} \\ \hline
+				$L_{x}$ & Altura máxima & $T_{x}$ & $h > 3,40 m$ \\ \hline
+				$L_{o}$ & Altura de operación & $T_{xo}, T_{vo}$ & $3,20m \leq h \leq 3,40m$ \\ \hline
+				$L_{v}$ & Altura en vacío & $T_{ov}, T_{mv}$ & $2,65m < h < 3,40m$ \\ \hline
+				$L_{m}$ & Altura mínima & $T_{m}$ & $h \leq 2,65m$ \\ \hline
+				$L_{x1}$ & Tanque en rango de saturación & $T_{x1}$ & Tanque en rango de saturación \\ \hline
+				$L_{xv}$ & Tanque saturado vaciando & $T_{xv}$ & Tanque saturado vaciando \\ \hline
+				$L_{xl}$ & Tanque saturado llenando & $T_{xl}$ & Tanque saturado llenando \\ \hline
+				$L_{ov}$ & Tanque en operación vaciando & $T_{ov1}$ & De operando a vacío \\ \hline
+				$L_{ol}$ & Tanque en operación llenando & $T_{ol}$ & En operación, llenando \\ \hline
+				$L_{vv}$ & Tanque en vacío vaciando & $T_{vv}$ & En rango de vacío, vaciando \\ \hline
+				$L_{vl}$ & Tanque en vacío llenando & $T_{vl}$ & En rango de vacío, llenando \\ \hline
+				$L_{mv}$ & Tanque en rango mínimo vaciando & $T_{mv1}$ & En rango mínimo, vaciando \\ \hline
+				$L_{ml}$ & Tanque en rango mínimo llenando & $T_{ml}$ & En rango mínimo, llenando \\ \hline
+				$L_{0}$ & Tanque vacío & $T_{0}$ & Tanque vacío \\ \hline
+				$L_{c}$ & Compuerta cerrada & $T_{xvl}$ & Tanque en máximo, llenando \\ \hline
+				$L_{a}$ & Compuerta abierta & $T_{xlv}$ & Tanque en máximo, vaciando \\ \hline
+				$L_{u1}$ & Tanque en mínimo, compuerta cerrada, llenando & $T_{xovl}$ & Tanque en operación, llenando \\ \hline
+				$L_{u2}$ & Tanque en vacío, compuerta cerrada, llenando & $T_{xolv}$ & Tanque en operación, vaciando \\ \hline
+				$L_{u3}$ & Tanque en operación, compuerta cerrada, llenando & $T_{vvl}$ & Tanque en vacío, llenando \\ \hline
+				$L_{u4}$ & Tanque en máximo, compuerta cerrada, llenando & $T_{vlv}$ & Tanque en vacío, vaciando \\ \hline
+				$L_{u5}$ & Tanque en mínimo, compuerta abierta, vaciando & $T_{mlv}$ & Tanque en mínimo, vaciando \\ \hline
+				$L_{u6}$ & Tanque en vacío, compuerta abierta, vaciando & $T_{mvl}$ & Tanque en mínimo, llenando \\ \hline
+				$L_{u7}$ & Tanque en operación, compuerta abierta, vaciando & $T_{a}$ & Abrir compuerta \\ \hline
+				$L_{u8}$ & Tanque en máximo, compuerta abierta, vaciando & $T_{fa}$ & Falla al abrir compuerta \\ \hline
+				$L_{u9}$ & Tanque en mínimo, vaciando & $T_{c}$ & Cerrar compuerta \\ \hline
+				$L_{u10}$ & Tanque en máximo, llenando & $T_{fc}$ & Falla al cerrar compuerta \\ \hline
+				- & - & $T_{u1}$ & Tanque en mínimo, compuerta cerrada \\ \hline
+				- & - & $T_{u2}$ & Tanque en vacío, compuerta cerrada \\ \hline
+				- & - & $T_{u3}$ & Tanque en operación, compuerta cerrada \\ \hline
+				- & - & $T_{u4}$ & Tanque en saturación, compuerta cerrada \\ \hline
+				- & - & $T_{u5}$ & Tanque en mínimo, compuerta abierta \\ \hline
+				- & - & $T_{u6}$ & Tanque en vacío, compuerta abierta \\ \hline
+				- & - & $T_{u7}$ & Tanque en operación, compuerta abierta \\ \hline
+				- & - & $T_{u8}$ & Tanque en máximo, compuerta abierta \\ \hline
+				\end{tabular}
+				}
+					\caption{Estados y eventos de la unidad de sedimentación.}
 					\label{table-hrdp}
 				\end{center}
 			\end{table}
 			
 			\begin{figure}[H]
 				\centering
-				\includegraphics[scale=0.4]{figures/4sedimentcomprdp}
+				\includegraphics[scale=0.3]{figures/4sedimentcomprdp}
 				\caption{Modelo de Gestión en RdP de la unidad de sedimentación.}
 				\label{fig-sedimentcomprdp}
 			\end{figure}
 			
 Utilizando epanet con condiciones ideales, se puede apreciar un ciclo de carga y descarga del tanque luego de aproximadamente 4 días de simulación en periodo extendido (figura \ref{fig-htankepanet}).
 
-			\begin{figure}
+			\begin{figure}[H]
 				\centering
 				\includegraphics[scale=0.4]{figures/4htankepanet}
 				\caption{Comportamiento de la unidad de sedimentación en condiciones ideales.}
@@ -2286,11 +2300,21 @@ Se establecen los parámetros iniciales de caudal y se selecciona el conjunto de 
 
 	\chapter{Conclusiones y Recomendaciones}
 	
+	Se determinaron los modelos de comportamiento de la unidad de potabilización.
+	
+	Se establecieron las condiciones de conmutación de los modelos obtenidos desde el punto de vista de sistemas a eventos discretos.
+	
+	Se generó el modelo de comportamiento desde el punto de vista de los sistemas híbridos.
+	
+	Se implementó el modelo de comportamiento de la unidad de potabilización en un ambiente de simulación.
+	
+	Se establecieron las condiciones para generar la propuesta de gemelo digitale incorporarlas al ambiente de simulación.
+	
 	El uso del enfoque de Unidad Holónica de Producción, da un marco de referencia para determinar el modelo de comportamiento de la unidad basado en una extensión del modelo de \cite{Lygeros2012}, que corresponde con el Gemelo Digital de la Unidad. Esto es, indistintamente del tipo de método de modelado o del modelo físico usado en el esquema híbrido presentado, se puede generar el estado de la unidad. 
 	
-	Se aplicó el marco de referencia para obtener el modelo de comportamiento para las unidades de coagulación y sedimentación en el proceso de potabilización, mostrando su desempeño en una emulación realizada sobre Epanet-Matlab. Con esto se dan por cumplidos los objetivos propuestos.
+	Se aplicó el marco de referencia para obtener el modelo de comportamiento para las unidades de coagulación y sedimentación en el proceso de potabilización, mostrando su desempeño en una emulación realizada sobre Epanet-Matlab.
 
-	Es fundamental en la digitalización de la empresa el contar con modelos de comportamiento, ya que ese es el soporte para realizar la gestión (planificación/programación/ejecución/seguimiento del porceso a partir de la cordinación y supervisión de unidades, basado en el modelo de producto, modelo de proceso y modelos de recurso, segun el enfoque de UHP).
+	Es fundamental en la digitalización de la empresa el contar con modelos de comportamiento, ya que ese es el soporte para realizar la gestión (planificación/programación/ejecución/seguimiento del proceso a partir de la coordinación y supervisión de unidades, basado en el modelo de producto, modelo de proceso y modelos de recurso, según el enfoque de UHP).
 	
 	La implementación de un gemelo digital permite la planificación de modificaciones en la unidad, el seguimiento del comportamiento y gestión en la misma, y el uso de los datos obtenidos para programación y evaluación.
 	
